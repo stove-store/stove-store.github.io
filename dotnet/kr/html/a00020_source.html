@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>StovePCSDK3 .NET Plugin: IAPSDK.cs 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="StovePCSDK.jpg"/></td>
+  <td id="projectalign">
+   <div id="projectname">StovePCSDK3 .NET Plugin<span id="projectnumber">&#160;3.3.2</span>
+   </div>
+   <div id="projectbrief">C# DLL for Stove Platform Service</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','검색',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('a00020_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">로딩중...</div>
+<div class="SRStatus" id="Searching">검색중...</div>
+<div class="SRStatus" id="NoMatches">일치하는것 없음</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">IAPSDK.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="a00020.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>static <a class="code hl_namespace" href="a00032.html">Stove</a>.<a class="code hl_namespace" href="a00033.html">PCSDK</a>.<a class="code hl_class" href="a00041.html">Base</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="a00033.html">Stove.PCSDK</a></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">partial class </span>IAP</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    {</div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="a00125.html#aa15dad4353454fe87074d8adbc94e6d9">   14</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> Result <a class="code hl_function" href="a00125.html#aa15dad4353454fe87074d8adbc94e6d9">IAP_Initialize</a>(<span class="keywordtype">string</span> shopKey)</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            <span class="keywordflow">return</span> IAPInternalImpl.IAP_Initialize(shopKey);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        }</div>
+</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="a00125.html#aef1e38ec431e140ea40cc0be2c704025">   24</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> Result <a class="code hl_function" href="a00125.html#aef1e38ec431e140ea40cc0be2c704025">IAP_UnInitialize</a>()</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="keywordflow">return</span> IAPInternalImpl.IAP_UnInitialize();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        }</div>
+</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="a00125.html#a44de8d5f1c2f1171b77a335fe054ec73">   34</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00125.html#a44de8d5f1c2f1171b77a335fe054ec73">IAP_FetchShopCategories</a>(<a class="code hl_function" href="a00125.html#ab150a7be3bb1c24ed6ce86892ee4ba7a">OnFetchShopCategoriesFinished</a> onFinished)</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            IAPInternalImpl.IAP_FetchShopCategories(onFinished);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        }</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="a00125.html#ae54df3eceaa2ce59c6e146b5ab557981">   45</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00125.html#ae54df3eceaa2ce59c6e146b5ab557981">IAP_FetchProducts</a>(<a class="code hl_struct" href="a00133.html">StovePCFetchProductParam</a> productParam, <a class="code hl_function" href="a00125.html#aa4a1e55380210d1cf26c34983a4f494f">OnFetchProductsFinished</a> onFinished)</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            IAPInternalImpl.IAP_FetchProducts(productParam, onFinished);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        }</div>
+</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="foldopen" id="foldopen00056" data-start="{" data-end="}">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="a00125.html#a39d2cd5ca2198231a29cf28be89ef229">   56</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00125.html#a39d2cd5ca2198231a29cf28be89ef229">IAP_StartPurchase</a>(<a class="code hl_struct" href="a00149.html">StovePCStartPurchaseParam</a> startPurchaseParam, <a class="code hl_function" href="a00125.html#af18911307ca4127af2d10a4955528deb">OnStartPurchaseFinished</a> onFinished)</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            IAPInternalImpl.IAP_StartPurchase(startPurchaseParam, onFinished);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        }</div>
+</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="a00125.html#ab6a21999f832b3f4a7e5cbe4c12c0c8c">   67</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00125.html#ab6a21999f832b3f4a7e5cbe4c12c0c8c">IAP_ConfirmPurchase</a>(<span class="keywordtype">long</span> transactionMasterNo, <a class="code hl_function" href="a00125.html#a1e87d26464f72cafec74e0291f16a387">OnConfirmPurchaseFinished</a> onFinished)</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            IAPInternalImpl.IAP_ConfirmPurchase(transactionMasterNo, onFinished);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        }</div>
+</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="foldopen" id="foldopen00077" data-start="{" data-end="}">
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="a00125.html#a1a842ba4406aa1ce5239586cdbd03783">   77</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00125.html#a1a842ba4406aa1ce5239586cdbd03783">IAP_FetchInventory</a>(<a class="code hl_function" href="a00125.html#a0cc494614a9e15f06018a0e32fc0a22f">OnFetchInventoryFinished</a> onFinished)</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            IAPInternalImpl.IAP_FetchInventory(onFinished);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        }</div>
+</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="foldopen" id="foldopen00088" data-start="{" data-end="}">
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="a00125.html#ace0b6de76ceb19db78c0da9abac98c1f">   88</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00125.html#ace0b6de76ceb19db78c0da9abac98c1f">IAP_FetchTermsAgreement</a>(<a class="code hl_struct" href="a00169.html">StovePCTermsOption</a> option, <a class="code hl_function" href="a00125.html#a318e2dde138c748251d71a9368605d6b">OnFetchTermsAgreementFinished</a> onFinished)</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            IAPInternalImpl.IAP_FetchTermsAgreement(option, onFinished);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        }</div>
+</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="foldopen" id="foldopen00099" data-start="{" data-end="}">
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="a00125.html#ad656c905fe67a540ef7d44d88d9597e1">   99</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00125.html#ad656c905fe67a540ef7d44d88d9597e1">IAP_StartPayment</a>(<a class="code hl_struct" href="a00173.html">StovePCPaymentOption</a> option, <a class="code hl_function" href="a00125.html#a405f4cd5306cd399cb484548a95df19e">OnStartPaymentFinished</a> onFinished)</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        {</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            IAPInternalImpl.IAP_StartPayment(option, onFinished);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        }</div>
+</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="foldopen" id="foldopen00109" data-start="{" data-end="}">
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="a00125.html#a0a58b4c200861533d45626493c390c55">  109</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00125.html#a0a58b4c200861533d45626493c390c55">IAP_FetchVoidedPurchases</a>(<a class="code hl_function" href="a00125.html#a5d6f9abc4e96fbed20bc478fd95ec100">OnFetchVoidedPurchasesFinished</a> onFinished)</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        {</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            IAPInternalImpl.IAP_FetchVoidedPurchases(onFinished);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        }</div>
+</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="foldopen" id="foldopen00119" data-start="{" data-end="}">
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="a00125.html#aba3bd6902d21a5e3682ba64e7d46b0c2">  119</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> Result <a class="code hl_function" href="a00125.html#aba3bd6902d21a5e3682ba64e7d46b0c2">IAP_CloseAllPopups</a>()</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        {</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            <span class="keywordflow">return</span> IAPInternalImpl.IAP_CloseAllPopups();</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        }</div>
+</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="foldopen" id="foldopen00131" data-start="{" data-end="}">
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="a00125.html#a7a2d6406e0f095b89f6a4667bd0ee160">  131</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> Result <a class="code hl_function" href="a00125.html#a7a2d6406e0f095b89f6a4667bd0ee160">IAP_GetVersion</a>(ref <span class="keywordtype">string</span> version, uint length)</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        {</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            <span class="keywordflow">return</span> IAPInternalImpl.IAP_GetVersion(ref version, length);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        }</div>
+</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>}</div>
+<div class="ttc" id="aa00032_html"><div class="ttname"><a href="a00032.html">Stove</a></div><div class="ttdef"><b>Definition</b> <a href="a00002_source.html#l00040">BaseSDK.cs:41</a></div></div>
+<div class="ttc" id="aa00033_html"><div class="ttname"><a href="a00033.html">Stove.PCSDK</a></div><div class="ttdef"><b>Definition</b> <a href="a00002_source.html#l00040">BaseSDK.cs:41</a></div></div>
+<div class="ttc" id="aa00041_html"><div class="ttname"><a href="a00041.html">Stove.PCSDK.Base</a></div><div class="ttdef"><b>Definition</b> <a href="a00265_source.html#l00003">BaseSDK_NET/Deploy/Misc/Structures.cs:4</a></div></div>
+<div class="ttc" id="aa00125_html_a0a58b4c200861533d45626493c390c55"><div class="ttname"><a href="a00125.html#a0a58b4c200861533d45626493c390c55">Stove.PCSDK.IAP.IAP_FetchVoidedPurchases</a></div><div class="ttdeci">static void IAP_FetchVoidedPurchases(OnFetchVoidedPurchasesFinished onFinished)</div><div class="ttdoc">현재 사용자가 환불 처리한 구매 기록 목록을 조회합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00109">IAPSDK.cs:109</a></div></div>
+<div class="ttc" id="aa00125_html_a0cc494614a9e15f06018a0e32fc0a22f"><div class="ttname"><a href="a00125.html#a0cc494614a9e15f06018a0e32fc0a22f">Stove.PCSDK.IAP.OnFetchInventoryFinished</a></div><div class="ttdeci">delegate void OnFetchInventoryFinished(CallbackResult result, StovePCInventoryItem[] inventoryItems)</div><div class="ttdoc">IAP_FetchInventory API 호출 시 응답받는 델리게이트</div></div>
+<div class="ttc" id="aa00125_html_a1a842ba4406aa1ce5239586cdbd03783"><div class="ttname"><a href="a00125.html#a1a842ba4406aa1ce5239586cdbd03783">Stove.PCSDK.IAP.IAP_FetchInventory</a></div><div class="ttdeci">static void IAP_FetchInventory(OnFetchInventoryFinished onFinished)</div><div class="ttdoc">전체 구매한 상품목록을 조회합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00077">IAPSDK.cs:77</a></div></div>
+<div class="ttc" id="aa00125_html_a1e87d26464f72cafec74e0291f16a387"><div class="ttname"><a href="a00125.html#a1e87d26464f72cafec74e0291f16a387">Stove.PCSDK.IAP.OnConfirmPurchaseFinished</a></div><div class="ttdeci">delegate void OnConfirmPurchaseFinished(CallbackResult result, bool status, StovePCPurchasedProduct[] purchasedProducts, StovePCChargeInfo[] chargeInfos)</div><div class="ttdoc">IAP_ConfirmPurchase API 호출 시 응답받는 델리게이트</div></div>
+<div class="ttc" id="aa00125_html_a318e2dde138c748251d71a9368605d6b"><div class="ttname"><a href="a00125.html#a318e2dde138c748251d71a9368605d6b">Stove.PCSDK.IAP.OnFetchTermsAgreementFinished</a></div><div class="ttdeci">delegate void OnFetchTermsAgreementFinished(CallbackResult result, bool agreed, string url)</div><div class="ttdoc">IAP_FetchTermsAgreement API 호출 시 응답받는 델리게이트</div></div>
+<div class="ttc" id="aa00125_html_a39d2cd5ca2198231a29cf28be89ef229"><div class="ttname"><a href="a00125.html#a39d2cd5ca2198231a29cf28be89ef229">Stove.PCSDK.IAP.IAP_StartPurchase</a></div><div class="ttdeci">static void IAP_StartPurchase(StovePCStartPurchaseParam startPurchaseParam, OnStartPurchaseFinished onFinished)</div><div class="ttdoc">상품구매를 시작하기 위한 결제 URL 을 전달받거나 WebView2를 이용하여 결제를 시작합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00056">IAPSDK.cs:56</a></div></div>
+<div class="ttc" id="aa00125_html_a405f4cd5306cd399cb484548a95df19e"><div class="ttname"><a href="a00125.html#a405f4cd5306cd399cb484548a95df19e">Stove.PCSDK.IAP.OnStartPaymentFinished</a></div><div class="ttdeci">delegate void OnStartPaymentFinished(CallbackResult result, string url)</div><div class="ttdoc">IAP_StartPayment API 호출 시 응답받는 델리게이트</div></div>
+<div class="ttc" id="aa00125_html_a44de8d5f1c2f1171b77a335fe054ec73"><div class="ttname"><a href="a00125.html#a44de8d5f1c2f1171b77a335fe054ec73">Stove.PCSDK.IAP.IAP_FetchShopCategories</a></div><div class="ttdeci">static void IAP_FetchShopCategories(OnFetchShopCategoriesFinished onFinished)</div><div class="ttdoc">스토브 플랫폼에 등록된 상점 카테코리를 조회합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00034">IAPSDK.cs:34</a></div></div>
+<div class="ttc" id="aa00125_html_a5d6f9abc4e96fbed20bc478fd95ec100"><div class="ttname"><a href="a00125.html#a5d6f9abc4e96fbed20bc478fd95ec100">Stove.PCSDK.IAP.OnFetchVoidedPurchasesFinished</a></div><div class="ttdeci">delegate void OnFetchVoidedPurchasesFinished(CallbackResult result, StovePCVoidedPurchase[] voidedPurchase)</div><div class="ttdoc">IAP_FetchVoidedPurchases API 호출 시 응답받는 델리게이트</div></div>
+<div class="ttc" id="aa00125_html_a7a2d6406e0f095b89f6a4667bd0ee160"><div class="ttname"><a href="a00125.html#a7a2d6406e0f095b89f6a4667bd0ee160">Stove.PCSDK.IAP.IAP_GetVersion</a></div><div class="ttdeci">static Result IAP_GetVersion(ref string version, uint length)</div><div class="ttdoc">IAPSDK의 버전 정보를 조회합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00131">IAPSDK.cs:131</a></div></div>
+<div class="ttc" id="aa00125_html_aa15dad4353454fe87074d8adbc94e6d9"><div class="ttname"><a href="a00125.html#aa15dad4353454fe87074d8adbc94e6d9">Stove.PCSDK.IAP.IAP_Initialize</a></div><div class="ttdeci">static Result IAP_Initialize(string shopKey)</div><div class="ttdoc">IAPSDK를 초기화 합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00014">IAPSDK.cs:14</a></div></div>
+<div class="ttc" id="aa00125_html_aa4a1e55380210d1cf26c34983a4f494f"><div class="ttname"><a href="a00125.html#aa4a1e55380210d1cf26c34983a4f494f">Stove.PCSDK.IAP.OnFetchProductsFinished</a></div><div class="ttdeci">delegate void OnFetchProductsFinished(CallbackResult result, StovePCProduct[] products)</div><div class="ttdoc">IAP_FetchProducts API 호출 시 응답받는 델리게이트</div></div>
+<div class="ttc" id="aa00125_html_ab150a7be3bb1c24ed6ce86892ee4ba7a"><div class="ttname"><a href="a00125.html#ab150a7be3bb1c24ed6ce86892ee4ba7a">Stove.PCSDK.IAP.OnFetchShopCategoriesFinished</a></div><div class="ttdeci">delegate void OnFetchShopCategoriesFinished(CallbackResult result, StovePCShopCategory[] shopCategories)</div><div class="ttdoc">IAP_FetchShopCategories API 호출 시 응답받는 델리게이트</div></div>
+<div class="ttc" id="aa00125_html_ab6a21999f832b3f4a7e5cbe4c12c0c8c"><div class="ttname"><a href="a00125.html#ab6a21999f832b3f4a7e5cbe4c12c0c8c">Stove.PCSDK.IAP.IAP_ConfirmPurchase</a></div><div class="ttdeci">static void IAP_ConfirmPurchase(long transactionMasterNo, OnConfirmPurchaseFinished onFinished)</div><div class="ttdoc">상품구매 완료후 구매 ID로 정상처리 되었는지 확인 합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00067">IAPSDK.cs:67</a></div></div>
+<div class="ttc" id="aa00125_html_aba3bd6902d21a5e3682ba64e7d46b0c2"><div class="ttname"><a href="a00125.html#aba3bd6902d21a5e3682ba64e7d46b0c2">Stove.PCSDK.IAP.IAP_CloseAllPopups</a></div><div class="ttdeci">static Result IAP_CloseAllPopups()</div><div class="ttdoc">IAP SDK를 통해 열린 모든 팝업을 닫습니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00119">IAPSDK.cs:119</a></div></div>
+<div class="ttc" id="aa00125_html_ace0b6de76ceb19db78c0da9abac98c1f"><div class="ttname"><a href="a00125.html#ace0b6de76ceb19db78c0da9abac98c1f">Stove.PCSDK.IAP.IAP_FetchTermsAgreement</a></div><div class="ttdeci">static void IAP_FetchTermsAgreement(StovePCTermsOption option, OnFetchTermsAgreementFinished onFinished)</div><div class="ttdoc">필수 약관 동의 여부를 조회합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00088">IAPSDK.cs:88</a></div></div>
+<div class="ttc" id="aa00125_html_ad656c905fe67a540ef7d44d88d9597e1"><div class="ttname"><a href="a00125.html#ad656c905fe67a540ef7d44d88d9597e1">Stove.PCSDK.IAP.IAP_StartPayment</a></div><div class="ttdeci">static void IAP_StartPayment(StovePCPaymentOption option, OnStartPaymentFinished onFinished)</div><div class="ttdoc">1회성 결제를 시작하기 위한 결제 URL 을 전달받거나 WebView2를 이용하여 결제를 시작합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00099">IAPSDK.cs:99</a></div></div>
+<div class="ttc" id="aa00125_html_ae54df3eceaa2ce59c6e146b5ab557981"><div class="ttname"><a href="a00125.html#ae54df3eceaa2ce59c6e146b5ab557981">Stove.PCSDK.IAP.IAP_FetchProducts</a></div><div class="ttdeci">static void IAP_FetchProducts(StovePCFetchProductParam productParam, OnFetchProductsFinished onFinished)</div><div class="ttdoc">스토브 플랫폼에 등록된 상품 정보를 조회합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00045">IAPSDK.cs:45</a></div></div>
+<div class="ttc" id="aa00125_html_aef1e38ec431e140ea40cc0be2c704025"><div class="ttname"><a href="a00125.html#aef1e38ec431e140ea40cc0be2c704025">Stove.PCSDK.IAP.IAP_UnInitialize</a></div><div class="ttdeci">static Result IAP_UnInitialize()</div><div class="ttdoc">IAPSDK의 자원을 해제합니다</div><div class="ttdef"><b>Definition</b> <a href="#l00024">IAPSDK.cs:24</a></div></div>
+<div class="ttc" id="aa00125_html_af18911307ca4127af2d10a4955528deb"><div class="ttname"><a href="a00125.html#af18911307ca4127af2d10a4955528deb">Stove.PCSDK.IAP.OnStartPurchaseFinished</a></div><div class="ttdeci">delegate void OnStartPurchaseFinished(CallbackResult result, StovePCPurchaseResult purchase)</div><div class="ttdoc">IAP_StartPurchase API 호출 시 응답받는 델리게이트</div></div>
+<div class="ttc" id="aa00133_html"><div class="ttname"><a href="a00133.html">Stove.PCSDK.IAP.StovePCFetchProductParam</a></div><div class="ttdoc">IAP_FetchProducts API 실행 시 전달할 값을 담는 구조체입니다.</div><div class="ttdef"><b>Definition</b> <a href="a00271_source.html#l00046">IAPSDK_NET/Deploy/Misc/Structures.cs:47</a></div></div>
+<div class="ttc" id="aa00149_html"><div class="ttname"><a href="a00149.html">Stove.PCSDK.IAP.StovePCStartPurchaseParam</a></div><div class="ttdoc">IAP_StartPurchase API 실행 시 전달할 값을 담는 구조체입니다.</div><div class="ttdef"><b>Definition</b> <a href="a00271_source.html#l00275">IAPSDK_NET/Deploy/Misc/Structures.cs:276</a></div></div>
+<div class="ttc" id="aa00169_html"><div class="ttname"><a href="a00169.html">Stove.PCSDK.IAP.StovePCTermsOption</a></div><div class="ttdoc">IAP_FetchTermsAgreement API에 대한 옵션을 전달하는 구조체입니다.</div><div class="ttdef"><b>Definition</b> <a href="a00271_source.html#l00509">IAPSDK_NET/Deploy/Misc/Structures.cs:510</a></div></div>
+<div class="ttc" id="aa00173_html"><div class="ttname"><a href="a00173.html">Stove.PCSDK.IAP.StovePCPaymentOption</a></div><div class="ttdoc">IAP_StartPayment API에 대한 옵션을 전달하는 구조체입니다.</div><div class="ttdef"><b>Definition</b> <a href="a00271_source.html#l00545">IAPSDK_NET/Deploy/Misc/Structures.cs:546</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_248dc7cedc1ea0c288f821d4f2f68d94.html">Dist</a></li><li class="navelem"><a class="el" href="dir_1776cfe3663507e11a25c9ec63543070.html">DotNet_Document</a></li><li class="navelem"><a class="el" href="dir_3ff9b683d55485f92c842cef64d19335.html">IAPSDK_NET</a></li><li class="navelem"><a class="el" href="dir_cb3ab7a14af7abd3431a8765bb5dbdea.html">Deploy</a></li><li class="navelem"><a class="el" href="a00020.html">IAPSDK.cs</a></li>
+    <li class="footer">다음에 의해 생성됨 :  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

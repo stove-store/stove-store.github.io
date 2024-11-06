@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>StovePCSDK3: ViewSDKResult.h 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="StovePCSDK.jpg"/></td>
+  <td id="projectalign">
+   <div id="projectname">StovePCSDK3<span id="projectnumber">&#160;3.3.2.3.g9ca65.dirty</span>
+   </div>
+   <div id="projectbrief">C/C++ DLL for Stove Platform Service</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','검색',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('a00053_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">로딩중...</div>
+<div class="SRStatus" id="Searching">검색중...</div>
+<div class="SRStatus" id="NoMatches">일치하는것 없음</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ViewSDKResult.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="a00053.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="a00059.html">Stove</a></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">namespace </span>PCSDK</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keyword">namespace </span>View</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        {</div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39">   30</a></span>            <span class="keyword">enum class</span> <a class="code hl_enumeration" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39">SDKMethod</a> : uint32_t</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                <span class="comment">/*</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">                * Common Method</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">                */</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                <a class="code hl_enumvalue" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a67d00896560d72e79b9aa815b703e9b0">INITIALIZE</a> = 1U,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                <a class="code hl_enumvalue" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a2ff6505d033318bf1c77f16ede0da2e2">UNINITIALIZE</a> = 2U,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                <a class="code hl_enumvalue" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39aa75ba2b290d772da89ff02c12ebac0fd">INTERNAL_SEND_81PLUG</a> = 3U,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                <a class="code hl_enumvalue" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39af514c74728995327313519299d0bcc0b">INTERNAL_UPDATE_81PLUG</a> = 4U,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                <a class="code hl_enumvalue" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a3e4d39d03ce99d4daaab3749af67ff13">GET_VERSION</a> = 5U,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                <span class="comment">/*</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">                * ViewSDK Method</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">                */</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                <a class="code hl_enumvalue" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a06d824d082233e5e5063da579d996d2c">FETCH_AUTO</a> = 80U,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                <a class="code hl_enumvalue" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39ab771ba7294db84e0d3cae059fc5018f4">AUTO_POPUP</a> = 81U,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                <a class="code hl_enumvalue" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a6a113d9a7846d3ccfd9ca5d433a30f49">FETCH_MANUAL</a> = 82U,</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                <a class="code hl_enumvalue" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a5698506e8c78a53ab1006c3973455f69">MANUAL_POPUP</a> = 83U,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                <a class="code hl_enumvalue" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a0adf9e45583f100f30b44276a8275feb">FETCH_NEWS</a> = 84U,</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                <a class="code hl_enumvalue" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a9370e96ac5092dbe089aadebb5307b69">NEWS_POPUP</a> = 85U,</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                <a class="code hl_enumvalue" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a2dcf8de60b49ef11e2c75f501f06fcee">FETCH_COUPON</a> = 86U,</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                <a class="code hl_enumvalue" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a623d5e6c8cc1ebd6f69bbf7d689fc296">COUPON_POPUP</a> = 87U,</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                <a class="code hl_enumvalue" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39adbe8b038a5ab270d0e8805286c53b9ce">FETCH_COMMUNITY</a> = 88U,</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                <a class="code hl_enumvalue" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a7718c4f98d99689ebf15e87cf719b53d">COMMUNITY_POPUP</a> = 89U,</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                <a class="code hl_enumvalue" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a5cdec293163d27f8d8f1e7a156ea6aa7">SET_POPUP_DISALLOWED</a> = 160U,</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                <a class="code hl_enumvalue" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a361b88111754a925a6494aeeea56a886">CLOSE_ALL_POPUPS</a> = 161U,</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                <a class="code hl_enumvalue" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a39487d4714d3a4fbf64aedceae2c81fa">FETCH_WEB_OPEN_KEY</a> = 162U,</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            };</div>
+</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="foldopen" id="foldopen00104" data-start="{" data-end="};">
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="a00067.html#a7542759723183ad11d2524f59d94c9ce">  104</a></span>            <span class="keyword">enum class</span> <a class="code hl_enumeration" href="a00067.html#a7542759723183ad11d2524f59d94c9ce">SDKResultCode</a> : uint32_t</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                <span class="comment">/*</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">                * Common Result</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">                */</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9cead0749aaba8b833466dfcbb0428e4f89c">SUCCESS</a> = 0U,</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9ceac2759effffc94bb9acc71d69fe3e8a1f">FAIL</a> = 1U,</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9cea2188ade13df339354cd8c383dda3f8bb">INVALID_CONFIG</a> = 2U,</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9ceaf9b5d387731eda84307c7a5808c4eea4">INVALID_LOG_LEVEL</a> = 3U,</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9cea5bcbd8690b7f6ad566aff5274bb168d3">INVALID_LOG_PATH</a> = 4U,</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9cea4a775a051faafd7eed30f5a95548729a">INVALID_PARAM</a> = 5U,</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9cea1a9cebe6b290d77208bf3a6ee29338be">BASE_NOT_INITIALIZED</a> = 16U,</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9cea02de9649e258d1dd94056e676061e969">NOT_INITIALIZED</a> = 17U,</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9cea1940a630a2a25829533b90f9be04f184">ALREADY_INITIALIZED</a> = 18U,</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9cea697abab5f5d7e71608a29888daeca158">INVALID_ACCESS_TOKEN</a> = 19U,</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9cea5aaaa6f48c0ceebeaff2bdde6f9c463b">NULL_TOKEN_ENTITY</a> = 20U,</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9ceaa07555b85890c1a02b8bf1cf0d028d30">NULL_ENTITY</a> = 21U,</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9cea04a21bd3acbbb1ca97bb0787b13f891c">HTTP_ERROR</a> = 22U,</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9ceaad61b70936ef9772fbb93726087a72fc">RESPONSE_ERROR</a> = 23U,</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9ceaf0f78fca54db0634445759d2a2172e0e">RESPONSE_INVALID_CODE</a> = 24U,</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9cea569b30b95c9ef7eabaea7879e9311982">RESPONSE_VALUE_IS_NULL</a> = 25U,</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9ceac6fdba1c48d9813a1dfd878a1756d2d8">RESPONSE_INVALID_VALUE_FORMAT</a> = 26U,</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9ceaced61cd095bbd4b5da066fb670292e64">LOG_81PLUG_ERROR</a> = 27U,</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9cea4d77ea607bc5801f7413b0e8e060612e">UPDATE_81PLUG_FEED_ERROR</a> = 28U,</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9ceaa738d94a1223530902a971b9c5a11ae6">PCSDK_DLL_NOT_FOUND</a> = 251U,</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9cea3e860a081575fc82cc7b6ed2ca602947">NOT_IMPLEMENTED</a> = 252U,</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9ceae61780aea0c20d1019d1b24bfbd0a253">UNMANAGED_EXCEPTION</a> = 253U,</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9cead39caad7773f9d769161673dffba5db5">MANAGED_EXCEPTION</a> = 254U,</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span> </div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9cea9a10f345b0f755d461a8673a5e9ef6b4">UNKNOWN_ERROR</a> = 255U,</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>                <span class="comment">/*</span></div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span><span class="comment">                * View SDK Result</span></div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span><span class="comment">                */</span></div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span> </div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9cead9bb9e20bfb4a2c22d7f28070023ed22">VIEWUI_NOT_INITIALIZED</a> = 80U,</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span> </div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9cea7b9e96e189290b0b2f4c51fa1bf95815">VIEWUI_UNINIT_FAILED</a> = 81U,</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span> </div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9cead04fbfb98a350444d7c9a92d0ab393e8">WEBVIEW_CREATE_FAIL</a> = 82U,</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span> </div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9cea9540cf03deffbf38f8be361ea05dc94c">WEBVIEW_LOAD_URL_FAIL</a> = 83U,</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span> </div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>                <a class="code hl_enumvalue" href="a00067.html#a7542759723183ad11d2524f59d94c9ceaf37a8dc1bf13601f2854a392ef537519">WEBVIEW_CLOSE_ALL_FAIL</a> = 84U,</div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>            };</div>
+</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span> </div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno"><a class="line" href="a00067.html#af50c3233af59e02f428d573d265205ce">  414</a></span>            <span class="keyword">constexpr</span> <span class="keywordtype">wchar_t</span> <span class="keyword">const</span>* <a class="code hl_variable" href="a00067.html#af50c3233af59e02f428d573d265205ce">ViewSDKName</a> = L<span class="stringliteral">&quot;ViewSDK&quot;</span>;</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>        }</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>    }</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>}</div>
+<div class="ttc" id="aa00059_html"><div class="ttname"><a href="a00059.html">Stove</a></div><div class="ttdef"><b>Definition</b> <a href="a00002_source.html#l00070">BaseSDK.h:71</a></div></div>
+<div class="ttc" id="aa00067_html_a6ae77b1b5a45eb7c66f86cdf1203fb39"><div class="ttname"><a href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39">Stove::PCSDK::View::SDKMethod</a></div><div class="ttdeci">SDKMethod</div><div class="ttdef"><b>Definition</b> <a href="#l00030">ViewSDKResult.h:31</a></div></div>
+<div class="ttc" id="aa00067_html_a6ae77b1b5a45eb7c66f86cdf1203fb39a06d824d082233e5e5063da579d996d2c"><div class="ttname"><a href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a06d824d082233e5e5063da579d996d2c">Stove::PCSDK::View::SDKMethod::FETCH_AUTO</a></div><div class="ttdeci">@ FETCH_AUTO</div><div class="ttdoc">80 : Internal FetchAuto</div></div>
+<div class="ttc" id="aa00067_html_a6ae77b1b5a45eb7c66f86cdf1203fb39a0adf9e45583f100f30b44276a8275feb"><div class="ttname"><a href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a0adf9e45583f100f30b44276a8275feb">Stove::PCSDK::View::SDKMethod::FETCH_NEWS</a></div><div class="ttdeci">@ FETCH_NEWS</div><div class="ttdoc">84 : Internal FetchNews</div></div>
+<div class="ttc" id="aa00067_html_a6ae77b1b5a45eb7c66f86cdf1203fb39a2dcf8de60b49ef11e2c75f501f06fcee"><div class="ttname"><a href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a2dcf8de60b49ef11e2c75f501f06fcee">Stove::PCSDK::View::SDKMethod::FETCH_COUPON</a></div><div class="ttdeci">@ FETCH_COUPON</div><div class="ttdoc">86 : Internal FetchCoupon</div></div>
+<div class="ttc" id="aa00067_html_a6ae77b1b5a45eb7c66f86cdf1203fb39a2ff6505d033318bf1c77f16ede0da2e2"><div class="ttname"><a href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a2ff6505d033318bf1c77f16ede0da2e2">Stove::PCSDK::View::SDKMethod::UNINITIALIZE</a></div><div class="ttdeci">@ UNINITIALIZE</div><div class="ttdoc">2 : View_UnInitialize</div></div>
+<div class="ttc" id="aa00067_html_a6ae77b1b5a45eb7c66f86cdf1203fb39a361b88111754a925a6494aeeea56a886"><div class="ttname"><a href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a361b88111754a925a6494aeeea56a886">Stove::PCSDK::View::SDKMethod::CLOSE_ALL_POPUPS</a></div><div class="ttdeci">@ CLOSE_ALL_POPUPS</div><div class="ttdoc">161 : View_CloseAllPopups</div></div>
+<div class="ttc" id="aa00067_html_a6ae77b1b5a45eb7c66f86cdf1203fb39a39487d4714d3a4fbf64aedceae2c81fa"><div class="ttname"><a href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a39487d4714d3a4fbf64aedceae2c81fa">Stove::PCSDK::View::SDKMethod::FETCH_WEB_OPEN_KEY</a></div><div class="ttdeci">@ FETCH_WEB_OPEN_KEY</div><div class="ttdoc">162 : View_FetchWebOpenKey</div></div>
+<div class="ttc" id="aa00067_html_a6ae77b1b5a45eb7c66f86cdf1203fb39a3e4d39d03ce99d4daaab3749af67ff13"><div class="ttname"><a href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a3e4d39d03ce99d4daaab3749af67ff13">Stove::PCSDK::View::SDKMethod::GET_VERSION</a></div><div class="ttdeci">@ GET_VERSION</div><div class="ttdoc">5 : View_GetVersion</div></div>
+<div class="ttc" id="aa00067_html_a6ae77b1b5a45eb7c66f86cdf1203fb39a5698506e8c78a53ab1006c3973455f69"><div class="ttname"><a href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a5698506e8c78a53ab1006c3973455f69">Stove::PCSDK::View::SDKMethod::MANUAL_POPUP</a></div><div class="ttdeci">@ MANUAL_POPUP</div><div class="ttdoc">83 : View_ManualPopup</div></div>
+<div class="ttc" id="aa00067_html_a6ae77b1b5a45eb7c66f86cdf1203fb39a5cdec293163d27f8d8f1e7a156ea6aa7"><div class="ttname"><a href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a5cdec293163d27f8d8f1e7a156ea6aa7">Stove::PCSDK::View::SDKMethod::SET_POPUP_DISALLOWED</a></div><div class="ttdeci">@ SET_POPUP_DISALLOWED</div><div class="ttdoc">160 : View_SetPopupDisallowed</div></div>
+<div class="ttc" id="aa00067_html_a6ae77b1b5a45eb7c66f86cdf1203fb39a623d5e6c8cc1ebd6f69bbf7d689fc296"><div class="ttname"><a href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a623d5e6c8cc1ebd6f69bbf7d689fc296">Stove::PCSDK::View::SDKMethod::COUPON_POPUP</a></div><div class="ttdeci">@ COUPON_POPUP</div><div class="ttdoc">87 : View_CouponPopup</div></div>
+<div class="ttc" id="aa00067_html_a6ae77b1b5a45eb7c66f86cdf1203fb39a67d00896560d72e79b9aa815b703e9b0"><div class="ttname"><a href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a67d00896560d72e79b9aa815b703e9b0">Stove::PCSDK::View::SDKMethod::INITIALIZE</a></div><div class="ttdeci">@ INITIALIZE</div><div class="ttdoc">1 : View_Initialize</div></div>
+<div class="ttc" id="aa00067_html_a6ae77b1b5a45eb7c66f86cdf1203fb39a6a113d9a7846d3ccfd9ca5d433a30f49"><div class="ttname"><a href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a6a113d9a7846d3ccfd9ca5d433a30f49">Stove::PCSDK::View::SDKMethod::FETCH_MANUAL</a></div><div class="ttdeci">@ FETCH_MANUAL</div><div class="ttdoc">82 : Internal FetchManual</div></div>
+<div class="ttc" id="aa00067_html_a6ae77b1b5a45eb7c66f86cdf1203fb39a7718c4f98d99689ebf15e87cf719b53d"><div class="ttname"><a href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a7718c4f98d99689ebf15e87cf719b53d">Stove::PCSDK::View::SDKMethod::COMMUNITY_POPUP</a></div><div class="ttdeci">@ COMMUNITY_POPUP</div><div class="ttdoc">89 : View_CommunityPopup (Deprecated)</div></div>
+<div class="ttc" id="aa00067_html_a6ae77b1b5a45eb7c66f86cdf1203fb39a9370e96ac5092dbe089aadebb5307b69"><div class="ttname"><a href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a9370e96ac5092dbe089aadebb5307b69">Stove::PCSDK::View::SDKMethod::NEWS_POPUP</a></div><div class="ttdeci">@ NEWS_POPUP</div><div class="ttdoc">85 : View_NewsPopup</div></div>
+<div class="ttc" id="aa00067_html_a6ae77b1b5a45eb7c66f86cdf1203fb39aa75ba2b290d772da89ff02c12ebac0fd"><div class="ttname"><a href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39aa75ba2b290d772da89ff02c12ebac0fd">Stove::PCSDK::View::SDKMethod::INTERNAL_SEND_81PLUG</a></div><div class="ttdeci">@ INTERNAL_SEND_81PLUG</div><div class="ttdoc">3 : Internal method (Deprecated)</div></div>
+<div class="ttc" id="aa00067_html_a6ae77b1b5a45eb7c66f86cdf1203fb39ab771ba7294db84e0d3cae059fc5018f4"><div class="ttname"><a href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39ab771ba7294db84e0d3cae059fc5018f4">Stove::PCSDK::View::SDKMethod::AUTO_POPUP</a></div><div class="ttdeci">@ AUTO_POPUP</div><div class="ttdoc">81 : View_AutoPopup</div></div>
+<div class="ttc" id="aa00067_html_a6ae77b1b5a45eb7c66f86cdf1203fb39adbe8b038a5ab270d0e8805286c53b9ce"><div class="ttname"><a href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39adbe8b038a5ab270d0e8805286c53b9ce">Stove::PCSDK::View::SDKMethod::FETCH_COMMUNITY</a></div><div class="ttdeci">@ FETCH_COMMUNITY</div><div class="ttdoc">88 : Internal FetchCommunity (Deprecated)</div></div>
+<div class="ttc" id="aa00067_html_a6ae77b1b5a45eb7c66f86cdf1203fb39af514c74728995327313519299d0bcc0b"><div class="ttname"><a href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39af514c74728995327313519299d0bcc0b">Stove::PCSDK::View::SDKMethod::INTERNAL_UPDATE_81PLUG</a></div><div class="ttdeci">@ INTERNAL_UPDATE_81PLUG</div><div class="ttdoc">4 : Internal method (Deprecated)</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9ce"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9ce">Stove::PCSDK::View::SDKResultCode</a></div><div class="ttdeci">SDKResultCode</div><div class="ttdef"><b>Definition</b> <a href="#l00104">ViewSDKResult.h:105</a></div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9cea02de9649e258d1dd94056e676061e969"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9cea02de9649e258d1dd94056e676061e969">Stove::PCSDK::View::SDKResultCode::NOT_INITIALIZED</a></div><div class="ttdeci">@ NOT_INITIALIZED</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9cea04a21bd3acbbb1ca97bb0787b13f891c"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9cea04a21bd3acbbb1ca97bb0787b13f891c">Stove::PCSDK::View::SDKResultCode::HTTP_ERROR</a></div><div class="ttdeci">@ HTTP_ERROR</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9cea1940a630a2a25829533b90f9be04f184"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9cea1940a630a2a25829533b90f9be04f184">Stove::PCSDK::View::SDKResultCode::ALREADY_INITIALIZED</a></div><div class="ttdeci">@ ALREADY_INITIALIZED</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9cea1a9cebe6b290d77208bf3a6ee29338be"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9cea1a9cebe6b290d77208bf3a6ee29338be">Stove::PCSDK::View::SDKResultCode::BASE_NOT_INITIALIZED</a></div><div class="ttdeci">@ BASE_NOT_INITIALIZED</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9cea2188ade13df339354cd8c383dda3f8bb"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9cea2188ade13df339354cd8c383dda3f8bb">Stove::PCSDK::View::SDKResultCode::INVALID_CONFIG</a></div><div class="ttdeci">@ INVALID_CONFIG</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9cea3e860a081575fc82cc7b6ed2ca602947"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9cea3e860a081575fc82cc7b6ed2ca602947">Stove::PCSDK::View::SDKResultCode::NOT_IMPLEMENTED</a></div><div class="ttdeci">@ NOT_IMPLEMENTED</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9cea4a775a051faafd7eed30f5a95548729a"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9cea4a775a051faafd7eed30f5a95548729a">Stove::PCSDK::View::SDKResultCode::INVALID_PARAM</a></div><div class="ttdeci">@ INVALID_PARAM</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9cea4d77ea607bc5801f7413b0e8e060612e"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9cea4d77ea607bc5801f7413b0e8e060612e">Stove::PCSDK::View::SDKResultCode::UPDATE_81PLUG_FEED_ERROR</a></div><div class="ttdeci">@ UPDATE_81PLUG_FEED_ERROR</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9cea569b30b95c9ef7eabaea7879e9311982"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9cea569b30b95c9ef7eabaea7879e9311982">Stove::PCSDK::View::SDKResultCode::RESPONSE_VALUE_IS_NULL</a></div><div class="ttdeci">@ RESPONSE_VALUE_IS_NULL</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9cea5aaaa6f48c0ceebeaff2bdde6f9c463b"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9cea5aaaa6f48c0ceebeaff2bdde6f9c463b">Stove::PCSDK::View::SDKResultCode::NULL_TOKEN_ENTITY</a></div><div class="ttdeci">@ NULL_TOKEN_ENTITY</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9cea5bcbd8690b7f6ad566aff5274bb168d3"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9cea5bcbd8690b7f6ad566aff5274bb168d3">Stove::PCSDK::View::SDKResultCode::INVALID_LOG_PATH</a></div><div class="ttdeci">@ INVALID_LOG_PATH</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9cea697abab5f5d7e71608a29888daeca158"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9cea697abab5f5d7e71608a29888daeca158">Stove::PCSDK::View::SDKResultCode::INVALID_ACCESS_TOKEN</a></div><div class="ttdeci">@ INVALID_ACCESS_TOKEN</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9cea7b9e96e189290b0b2f4c51fa1bf95815"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9cea7b9e96e189290b0b2f4c51fa1bf95815">Stove::PCSDK::View::SDKResultCode::VIEWUI_UNINIT_FAILED</a></div><div class="ttdeci">@ VIEWUI_UNINIT_FAILED</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9cea9540cf03deffbf38f8be361ea05dc94c"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9cea9540cf03deffbf38f8be361ea05dc94c">Stove::PCSDK::View::SDKResultCode::WEBVIEW_LOAD_URL_FAIL</a></div><div class="ttdeci">@ WEBVIEW_LOAD_URL_FAIL</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9cea9a10f345b0f755d461a8673a5e9ef6b4"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9cea9a10f345b0f755d461a8673a5e9ef6b4">Stove::PCSDK::View::SDKResultCode::UNKNOWN_ERROR</a></div><div class="ttdeci">@ UNKNOWN_ERROR</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9ceaa07555b85890c1a02b8bf1cf0d028d30"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9ceaa07555b85890c1a02b8bf1cf0d028d30">Stove::PCSDK::View::SDKResultCode::NULL_ENTITY</a></div><div class="ttdeci">@ NULL_ENTITY</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9ceaa738d94a1223530902a971b9c5a11ae6"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9ceaa738d94a1223530902a971b9c5a11ae6">Stove::PCSDK::View::SDKResultCode::PCSDK_DLL_NOT_FOUND</a></div><div class="ttdeci">@ PCSDK_DLL_NOT_FOUND</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9ceaad61b70936ef9772fbb93726087a72fc"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9ceaad61b70936ef9772fbb93726087a72fc">Stove::PCSDK::View::SDKResultCode::RESPONSE_ERROR</a></div><div class="ttdeci">@ RESPONSE_ERROR</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9ceac2759effffc94bb9acc71d69fe3e8a1f"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9ceac2759effffc94bb9acc71d69fe3e8a1f">Stove::PCSDK::View::SDKResultCode::FAIL</a></div><div class="ttdeci">@ FAIL</div><div class="ttdoc">실패</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9ceac6fdba1c48d9813a1dfd878a1756d2d8"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9ceac6fdba1c48d9813a1dfd878a1756d2d8">Stove::PCSDK::View::SDKResultCode::RESPONSE_INVALID_VALUE_FORMAT</a></div><div class="ttdeci">@ RESPONSE_INVALID_VALUE_FORMAT</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9ceaced61cd095bbd4b5da066fb670292e64"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9ceaced61cd095bbd4b5da066fb670292e64">Stove::PCSDK::View::SDKResultCode::LOG_81PLUG_ERROR</a></div><div class="ttdeci">@ LOG_81PLUG_ERROR</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9cead04fbfb98a350444d7c9a92d0ab393e8"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9cead04fbfb98a350444d7c9a92d0ab393e8">Stove::PCSDK::View::SDKResultCode::WEBVIEW_CREATE_FAIL</a></div><div class="ttdeci">@ WEBVIEW_CREATE_FAIL</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9cead0749aaba8b833466dfcbb0428e4f89c"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9cead0749aaba8b833466dfcbb0428e4f89c">Stove::PCSDK::View::SDKResultCode::SUCCESS</a></div><div class="ttdeci">@ SUCCESS</div><div class="ttdoc">성공</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9cead39caad7773f9d769161673dffba5db5"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9cead39caad7773f9d769161673dffba5db5">Stove::PCSDK::View::SDKResultCode::MANAGED_EXCEPTION</a></div><div class="ttdeci">@ MANAGED_EXCEPTION</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9cead9bb9e20bfb4a2c22d7f28070023ed22"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9cead9bb9e20bfb4a2c22d7f28070023ed22">Stove::PCSDK::View::SDKResultCode::VIEWUI_NOT_INITIALIZED</a></div><div class="ttdeci">@ VIEWUI_NOT_INITIALIZED</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9ceae61780aea0c20d1019d1b24bfbd0a253"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9ceae61780aea0c20d1019d1b24bfbd0a253">Stove::PCSDK::View::SDKResultCode::UNMANAGED_EXCEPTION</a></div><div class="ttdeci">@ UNMANAGED_EXCEPTION</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9ceaf0f78fca54db0634445759d2a2172e0e"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9ceaf0f78fca54db0634445759d2a2172e0e">Stove::PCSDK::View::SDKResultCode::RESPONSE_INVALID_CODE</a></div><div class="ttdeci">@ RESPONSE_INVALID_CODE</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9ceaf37a8dc1bf13601f2854a392ef537519"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9ceaf37a8dc1bf13601f2854a392ef537519">Stove::PCSDK::View::SDKResultCode::WEBVIEW_CLOSE_ALL_FAIL</a></div><div class="ttdeci">@ WEBVIEW_CLOSE_ALL_FAIL</div></div>
+<div class="ttc" id="aa00067_html_a7542759723183ad11d2524f59d94c9ceaf9b5d387731eda84307c7a5808c4eea4"><div class="ttname"><a href="a00067.html#a7542759723183ad11d2524f59d94c9ceaf9b5d387731eda84307c7a5808c4eea4">Stove::PCSDK::View::SDKResultCode::INVALID_LOG_LEVEL</a></div><div class="ttdeci">@ INVALID_LOG_LEVEL</div></div>
+<div class="ttc" id="aa00067_html_af50c3233af59e02f428d573d265205ce"><div class="ttname"><a href="a00067.html#af50c3233af59e02f428d573d265205ce">Stove::PCSDK::View::ViewSDKName</a></div><div class="ttdeci">constexpr wchar_t const  * ViewSDKName</div><div class="ttdef"><b>Definition</b> <a href="#l00414">ViewSDKResult.h:414</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_248dc7cedc1ea0c288f821d4f2f68d94.html">Dist</a></li><li class="navelem"><a class="el" href="dir_adc6c1942b4d8396539aea5d81f19f69.html">Native_Document</a></li><li class="navelem"><a class="el" href="dir_afe270e1995775930f6672fc4ef53db9.html">ViewSDK</a></li><li class="navelem"><a class="el" href="dir_12890dc982db5418dc9d1340f8f73803.html">Deploy</a></li><li class="navelem"><a class="el" href="dir_41bc575b11d1ab165211640d06240ab2.html">Include</a></li><li class="navelem"><a class="el" href="dir_a73f1069ba1f778decc71792f452a1c5.html">Misc</a></li><li class="navelem"><a class="el" href="a00053.html">ViewSDKResult.h</a></li>
+    <li class="footer">다음에 의해 생성됨 :  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

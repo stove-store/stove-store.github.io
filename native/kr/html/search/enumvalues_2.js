@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['base_5fnot_5finitialized_0',['BASE_NOT_INITIALIZED',['../a00061.html#a26b534462135c359084763e5bdedef14a1a9cebe6b290d77208bf3a6ee29338be',1,'Stove::PCSDK::Base::BASE_NOT_INITIALIZED'],['../a00062.html#a86c2236c2100e11f886f0e190d751053a1a9cebe6b290d77208bf3a6ee29338be',1,'Stove::PCSDK::GameSupport::BASE_NOT_INITIALIZED'],['../a00063.html#a9ec4d0a39eac68d6e988e8b2c1fea6b3a1a9cebe6b290d77208bf3a6ee29338be',1,'Stove::PCSDK::GamingServices::BASE_NOT_INITIALIZED'],['../a00064.html#a1a6d21961b619f8e3e99469592298ee2a1a9cebe6b290d77208bf3a6ee29338be',1,'Stove::PCSDK::IAP::BASE_NOT_INITIALIZED'],['../a00065.html#a6f10fe667b8ac30569647c897e90eb4da1a9cebe6b290d77208bf3a6ee29338be',1,'Stove::PCSDK::Ownership::BASE_NOT_INITIALIZED'],['../a00066.html#a74c64925e27831d81c16bd331f15a491a1a9cebe6b290d77208bf3a6ee29338be',1,'Stove::PCSDK::PCBang::BASE_NOT_INITIALIZED'],['../a00067.html#a7542759723183ad11d2524f59d94c9cea1a9cebe6b290d77208bf3a6ee29338be',1,'Stove::PCSDK::View::BASE_NOT_INITIALIZED']]],
+  ['basic_1',['BASIC',['../a00065.html#a1ab9469feeaffb1366167e46fcca997bae4ac03f6c9f00665644e868dd1fb9f1e',1,'Stove::PCSDK::Ownership']]]
+];

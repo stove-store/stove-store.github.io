@@ -1,0 +1,1924 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>StovePCSDK3: Stove::PCSDK::IAP::StovePCProduct 구조체 참조</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="StovePCSDK.jpg"/></td>
+  <td id="projectalign">
+   <div id="projectname">StovePCSDK3<span id="projectnumber">&#160;3.3.2.3.g9ca65.dirty</span>
+   </div>
+   <div id="projectbrief">C/C++ DLL for Stove Platform Service</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','검색',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('a00151.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">로딩중...</div>
+<div class="SRStatus" id="Searching">검색중...</div>
+<div class="SRStatus" id="NoMatches">일치하는것 없음</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 멤버 함수</a> &#124;
+<a href="#pri-methods">Private 멤버 함수</a> &#124;
+<a href="#pri-attribs">Private 속성</a> &#124;
+<a href="a00148.html">모든 멤버 목록</a>  </div>
+  <div class="headertitle"><div class="title">Stove::PCSDK::IAP::StovePCProduct 구조체 참조</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>개별 상품 정보를 전달하는 구조체입니다. IAP_FetchProducts 콜백에 결과 전달 시 사용됩니다.    
+ <a href="#details">더 자세히 ...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00255_source.html">Structures.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 멤버 함수</h2></td></tr>
+<tr class="memitem:aa4733a3f1924e522ab068650d3783129" id="r_aa4733a3f1924e522ab068650d3783129"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4733a3f1924e522ab068650d3783129">GetProductId</a> () const</td></tr>
+<tr class="memdesc:aa4733a3f1924e522ab068650d3783129"><td class="mdescLeft">&#160;</td><td class="mdescRight">플랫폼 상품 아이디를 가져옵니다.    <br /></td></tr>
+<tr class="separator:aa4733a3f1924e522ab068650d3783129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13769ebc1900f513a57a8c532243d25b" id="r_a13769ebc1900f513a57a8c532243d25b"><td class="memItemLeft" align="right" valign="top">const wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13769ebc1900f513a57a8c532243d25b">GetGameItemId</a> () const</td></tr>
+<tr class="memdesc:a13769ebc1900f513a57a8c532243d25b"><td class="mdescLeft">&#160;</td><td class="mdescRight">상품 아이디에 매핑되는 게임 내 아이템 아이디를 가져옵니다.    <br /></td></tr>
+<tr class="separator:a13769ebc1900f513a57a8c532243d25b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a108ff108b7c06332c74e8ca1d25ccfdc" id="r_a108ff108b7c06332c74e8ca1d25ccfdc"><td class="memItemLeft" align="right" valign="top">const wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a108ff108b7c06332c74e8ca1d25ccfdc">GetName</a> () const</td></tr>
+<tr class="memdesc:a108ff108b7c06332c74e8ca1d25ccfdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">상품명을 가져옵니다.    <br /></td></tr>
+<tr class="separator:a108ff108b7c06332c74e8ca1d25ccfdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c8e8ee0fffee35410983419f881b7ae" id="r_a8c8e8ee0fffee35410983419f881b7ae"><td class="memItemLeft" align="right" valign="top">const wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c8e8ee0fffee35410983419f881b7ae">GetDescription</a> () const</td></tr>
+<tr class="memdesc:a8c8e8ee0fffee35410983419f881b7ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">상품 상세를 가져옵니다.    <br /></td></tr>
+<tr class="separator:a8c8e8ee0fffee35410983419f881b7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a220fdba7bcebdcdc8f0530666b4d52a3" id="r_a220fdba7bcebdcdc8f0530666b4d52a3"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a220fdba7bcebdcdc8f0530666b4d52a3">GetQuantity</a> () const</td></tr>
+<tr class="memdesc:a220fdba7bcebdcdc8f0530666b4d52a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">개별 상품 수량을 가져옵니다.    <br /></td></tr>
+<tr class="separator:a220fdba7bcebdcdc8f0530666b4d52a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76c1ae3d208dca639cd0b98ab484b7c6" id="r_a76c1ae3d208dca639cd0b98ab484b7c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00064.html#ac74424454915c79bef78bf5c6b9e846f">ProductTypeCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76c1ae3d208dca639cd0b98ab484b7c6">GetProductTypeCode</a> () const</td></tr>
+<tr class="memdesc:a76c1ae3d208dca639cd0b98ab484b7c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">아이템 유형 코드를 가져옵니다.    <br /></td></tr>
+<tr class="separator:a76c1ae3d208dca639cd0b98ab484b7c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5390d384364f9cde9f88df424b99f09a" id="r_a5390d384364f9cde9f88df424b99f09a"><td class="memItemLeft" align="right" valign="top">const wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5390d384364f9cde9f88df424b99f09a">GetCategoryId</a> () const</td></tr>
+<tr class="memdesc:a5390d384364f9cde9f88df424b99f09a"><td class="mdescLeft">&#160;</td><td class="mdescRight">카테고리 아이디를 가져옵니다.    <br /></td></tr>
+<tr class="separator:a5390d384364f9cde9f88df424b99f09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7486ff3a18bd2975d6403d440208fb2" id="r_ac7486ff3a18bd2975d6403d440208fb2"><td class="memItemLeft" align="right" valign="top">const wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7486ff3a18bd2975d6403d440208fb2">GetCategoryName</a> () const</td></tr>
+<tr class="memdesc:ac7486ff3a18bd2975d6403d440208fb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">카테고리 이름을 가져옵니다.    <br /></td></tr>
+<tr class="separator:ac7486ff3a18bd2975d6403d440208fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8fd85d61eecec3e2a38f6faf02c6951" id="r_ab8fd85d61eecec3e2a38f6faf02c6951"><td class="memItemLeft" align="right" valign="top">const wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8fd85d61eecec3e2a38f6faf02c6951">GetCurrencyCode</a> () const</td></tr>
+<tr class="memdesc:ab8fd85d61eecec3e2a38f6faf02c6951"><td class="mdescLeft">&#160;</td><td class="mdescRight">통화 코드를 가져옵니다.  <br /></td></tr>
+<tr class="separator:ab8fd85d61eecec3e2a38f6faf02c6951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93cd4da05579347067b01ea842201b71" id="r_a93cd4da05579347067b01ea842201b71"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93cd4da05579347067b01ea842201b71">GetPrice</a> () const</td></tr>
+<tr class="memdesc:a93cd4da05579347067b01ea842201b71"><td class="mdescLeft">&#160;</td><td class="mdescRight">상품 정가(결제)를 가져옵니다.  <br /></td></tr>
+<tr class="separator:a93cd4da05579347067b01ea842201b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa109784a74a5dd73f8dad60e6047f85d" id="r_aa109784a74a5dd73f8dad60e6047f85d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa109784a74a5dd73f8dad60e6047f85d">GetDisplayPrice</a> () const</td></tr>
+<tr class="memdesc:aa109784a74a5dd73f8dad60e6047f85d"><td class="mdescLeft">&#160;</td><td class="mdescRight">상품 정가(전시)를 가져옵니다.  <br /></td></tr>
+<tr class="separator:aa109784a74a5dd73f8dad60e6047f85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e7d221d7bae8438ca3e38d5a7dafbf4" id="r_a3e7d221d7bae8438ca3e38d5a7dafbf4"><td class="memItemLeft" align="right" valign="top">const wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e7d221d7bae8438ca3e38d5a7dafbf4">GetDisplayPriceString</a> () const</td></tr>
+<tr class="memdesc:a3e7d221d7bae8438ca3e38d5a7dafbf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">상품 정가 문자열(전시)을 가져옵니다.  <br /></td></tr>
+<tr class="separator:a3e7d221d7bae8438ca3e38d5a7dafbf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cb7ddc730d9d6f49a15c114b0fcc78a" id="r_a9cb7ddc730d9d6f49a15c114b0fcc78a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cb7ddc730d9d6f49a15c114b0fcc78a">GetSalePrice</a> () const</td></tr>
+<tr class="memdesc:a9cb7ddc730d9d6f49a15c114b0fcc78a"><td class="mdescLeft">&#160;</td><td class="mdescRight">상품 판매가(결제)를 가져옵니다.  <br /></td></tr>
+<tr class="separator:a9cb7ddc730d9d6f49a15c114b0fcc78a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa05e48d1c4ce29c784dbe1cbaf986637" id="r_aa05e48d1c4ce29c784dbe1cbaf986637"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa05e48d1c4ce29c784dbe1cbaf986637">GetDisplaySalePrice</a> () const</td></tr>
+<tr class="memdesc:aa05e48d1c4ce29c784dbe1cbaf986637"><td class="mdescLeft">&#160;</td><td class="mdescRight">상품 판매가(전시)를 가져옵니다.  <br /></td></tr>
+<tr class="separator:aa05e48d1c4ce29c784dbe1cbaf986637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8199184adc9c6a2e4f3272855659c30" id="r_aa8199184adc9c6a2e4f3272855659c30"><td class="memItemLeft" align="right" valign="top">const wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8199184adc9c6a2e4f3272855659c30">GetDisplaySalePriceString</a> () const</td></tr>
+<tr class="memdesc:aa8199184adc9c6a2e4f3272855659c30"><td class="mdescLeft">&#160;</td><td class="mdescRight">상품 판매가 문자열(전시)을 가져옵니다.  <br /></td></tr>
+<tr class="separator:aa8199184adc9c6a2e4f3272855659c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90fb6cf448bac35cdb29ad1f9784f190" id="r_a90fb6cf448bac35cdb29ad1f9784f190"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90fb6cf448bac35cdb29ad1f9784f190">IsDiscount</a> () const</td></tr>
+<tr class="memdesc:a90fb6cf448bac35cdb29ad1f9784f190"><td class="mdescLeft">&#160;</td><td class="mdescRight">할인 여부를 가져옵니다.    <br /></td></tr>
+<tr class="separator:a90fb6cf448bac35cdb29ad1f9784f190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91126511676599b25bc302469a7034d2" id="r_a91126511676599b25bc302469a7034d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00064.html#a45cc1e118445fd96d74d081c3fade2db">DiscountType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91126511676599b25bc302469a7034d2">GetDiscountType</a> () const</td></tr>
+<tr class="memdesc:a91126511676599b25bc302469a7034d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">할인 유형을 가져옵니다.    <br /></td></tr>
+<tr class="separator:a91126511676599b25bc302469a7034d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08babf73308315a82696d4351ea294e6" id="r_a08babf73308315a82696d4351ea294e6"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08babf73308315a82696d4351ea294e6">GetDiscountTypeValue</a> () const</td></tr>
+<tr class="memdesc:a08babf73308315a82696d4351ea294e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">할인 값을 가져옵니다.    <br /></td></tr>
+<tr class="separator:a08babf73308315a82696d4351ea294e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20b950c556499b41a18ce4689fb94ab4" id="r_a20b950c556499b41a18ce4689fb94ab4"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20b950c556499b41a18ce4689fb94ab4">GetDiscountBeginDate</a> () const</td></tr>
+<tr class="memdesc:a20b950c556499b41a18ce4689fb94ab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">할인 시작 일자(epoch time milliseconds)를 가져옵니다.    <br /></td></tr>
+<tr class="separator:a20b950c556499b41a18ce4689fb94ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2d35c0d139fe470cb7023413c191d65" id="r_ac2d35c0d139fe470cb7023413c191d65"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2d35c0d139fe470cb7023413c191d65">GetDiscountEndDate</a> () const</td></tr>
+<tr class="memdesc:ac2d35c0d139fe470cb7023413c191d65"><td class="mdescLeft">&#160;</td><td class="mdescRight">할인 종료 일자(epoch time milliseconds)를 가져옵니다.    <br /></td></tr>
+<tr class="separator:ac2d35c0d139fe470cb7023413c191d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad22fdd686e3cb68a086c7a8a02a6e0f" id="r_aad22fdd686e3cb68a086c7a8a02a6e0f"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad22fdd686e3cb68a086c7a8a02a6e0f">GetTotalQuantity</a> () const</td></tr>
+<tr class="memdesc:aad22fdd686e3cb68a086c7a8a02a6e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">상품 총 판매수량을 가져옵니다.    <br /></td></tr>
+<tr class="separator:aad22fdd686e3cb68a086c7a8a02a6e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac1b8f1ffcef07912942d4bc3fcf6e12" id="r_aac1b8f1ffcef07912942d4bc3fcf6e12"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac1b8f1ffcef07912942d4bc3fcf6e12">GetMemberQuantity</a> () const</td></tr>
+<tr class="memdesc:aac1b8f1ffcef07912942d4bc3fcf6e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">회원 구매 수량을 가져옵니다.  <br /></td></tr>
+<tr class="separator:aac1b8f1ffcef07912942d4bc3fcf6e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addcd55c0523176723b518012ae49eebf" id="r_addcd55c0523176723b518012ae49eebf"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addcd55c0523176723b518012ae49eebf">GetGuidQuantity</a> () const</td></tr>
+<tr class="memdesc:addcd55c0523176723b518012ae49eebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">guid 구매 수량을 가져옵니다.  <br /></td></tr>
+<tr class="separator:addcd55c0523176723b518012ae49eebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a9a422c03e9a1a57419a8abf16db5b5" id="r_a3a9a422c03e9a1a57419a8abf16db5b5"><td class="memItemLeft" align="right" valign="top">const wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a9a422c03e9a1a57419a8abf16db5b5">GetThumbnailUrl</a> () const</td></tr>
+<tr class="memdesc:a3a9a422c03e9a1a57419a8abf16db5b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">대표 상품 이미지를 가져옵니다.    <br /></td></tr>
+<tr class="separator:a3a9a422c03e9a1a57419a8abf16db5b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7147ba5d251806a9eb6f843570278764" id="r_a7147ba5d251806a9eb6f843570278764"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7147ba5d251806a9eb6f843570278764">CanWithdraw</a> () const</td></tr>
+<tr class="memdesc:a7147ba5d251806a9eb6f843570278764"><td class="mdescLeft">&#160;</td><td class="mdescRight">청약 철회 가능 여부를 가져옵니다.    <br /></td></tr>
+<tr class="separator:a7147ba5d251806a9eb6f843570278764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af111364ad218a1e7efd8c657d6d48058" id="r_af111364ad218a1e7efd8c657d6d48058"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af111364ad218a1e7efd8c657d6d48058">GetPurchasedAtLeastOnce</a> () const</td></tr>
+<tr class="memdesc:af111364ad218a1e7efd8c657d6d48058"><td class="mdescLeft">&#160;</td><td class="mdescRight">구매 여부 (구매 이력이 한 건 이상인 경우 true)를 가져옵니다.    <br /></td></tr>
+<tr class="separator:af111364ad218a1e7efd8c657d6d48058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a194ab2ca107cc35f94cebb94c99477ec" id="r_a194ab2ca107cc35f94cebb94c99477ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00064.html#a8bd701312797f34da3a44bf99a157a1b">PurchaseLimitTypeCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a194ab2ca107cc35f94cebb94c99477ec">GetPurchaseLimitTypeCode</a> () const</td></tr>
+<tr class="memdesc:a194ab2ca107cc35f94cebb94c99477ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">구매 여부 (구매 이력이 한 건 이상인 경우 true)를 가져옵니다.    <br /></td></tr>
+<tr class="separator:a194ab2ca107cc35f94cebb94c99477ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a161fc425027c236cb763e2e53a896e8a" id="r_a161fc425027c236cb763e2e53a896e8a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a161fc425027c236cb763e2e53a896e8a">GetPurchaseLimitCount</a> () const</td></tr>
+<tr class="memdesc:a161fc425027c236cb763e2e53a896e8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">판매 제한 수량을 가져옵니다.  <br /></td></tr>
+<tr class="separator:a161fc425027c236cb763e2e53a896e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e66656313feb0f84f25244f14a10b7e" id="r_a9e66656313feb0f84f25244f14a10b7e"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e66656313feb0f84f25244f14a10b7e">GetSaleLimitCount</a> () const</td></tr>
+<tr class="memdesc:a9e66656313feb0f84f25244f14a10b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">총 판매 제한 수량 (0일 경우 무제한)을 가져옵니다.    <br /></td></tr>
+<tr class="separator:a9e66656313feb0f84f25244f14a10b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addfe8a05aca6937a270329e7ee9d40f6" id="r_addfe8a05aca6937a270329e7ee9d40f6"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addfe8a05aca6937a270329e7ee9d40f6">GetSaleBeginDate</a> () const</td></tr>
+<tr class="memdesc:addfe8a05aca6937a270329e7ee9d40f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">판매 시작 일자(epoch time milliseconds)를 가져옵니다.  <br /></td></tr>
+<tr class="separator:addfe8a05aca6937a270329e7ee9d40f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa62b86538808e780269d6960dbd1a2ef" id="r_aa62b86538808e780269d6960dbd1a2ef"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa62b86538808e780269d6960dbd1a2ef">GetSaleEndDate</a> () const</td></tr>
+<tr class="memdesc:aa62b86538808e780269d6960dbd1a2ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">판매 종료 일자(epoch time milliseconds)를 가져옵니다.  <br /></td></tr>
+<tr class="separator:aa62b86538808e780269d6960dbd1a2ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a997ed2c7df03c78c46d64d36f3e0ef03" id="r_a997ed2c7df03c78c46d64d36f3e0ef03"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a997ed2c7df03c78c46d64d36f3e0ef03">StovePCProduct</a> ()</td></tr>
+<tr class="separator:a997ed2c7df03c78c46d64d36f3e0ef03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83bc82ec82d716d0332f2c51491f540d" id="r_a83bc82ec82d716d0332f2c51491f540d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83bc82ec82d716d0332f2c51491f540d">StovePCProduct</a> (const <a class="el" href="a00151.html">StovePCProduct</a> &amp;rhs)</td></tr>
+<tr class="separator:a83bc82ec82d716d0332f2c51491f540d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa146862835bc9881927d7af4ed667c38" id="r_aa146862835bc9881927d7af4ed667c38"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa146862835bc9881927d7af4ed667c38">StovePCProduct</a> (const StovePCProductCpp *rhs)</td></tr>
+<tr class="separator:aa146862835bc9881927d7af4ed667c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a833c65088f80c58873b91c06410776e8" id="r_a833c65088f80c58873b91c06410776e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a833c65088f80c58873b91c06410776e8">~StovePCProduct</a> ()</td></tr>
+<tr class="separator:a833c65088f80c58873b91c06410776e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28c5ec7dd30ad4f3d53d96b556013420" id="r_a28c5ec7dd30ad4f3d53d96b556013420"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00151.html">StovePCProduct</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28c5ec7dd30ad4f3d53d96b556013420">operator=</a> (const <a class="el" href="a00151.html">StovePCProduct</a> &amp;rhs)</td></tr>
+<tr class="separator:a28c5ec7dd30ad4f3d53d96b556013420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77aed21e2de4c59c13c031106adfb84a" id="r_a77aed21e2de4c59c13c031106adfb84a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00151.html">StovePCProduct</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77aed21e2de4c59c13c031106adfb84a">operator=</a> (const StovePCProductCpp *rhs)</td></tr>
+<tr class="separator:a77aed21e2de4c59c13c031106adfb84a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 멤버 함수</h2></td></tr>
+<tr class="memitem:a3f007cb5a0a01f134855d6f7009d6427" id="r_a3f007cb5a0a01f134855d6f7009d6427"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f007cb5a0a01f134855d6f7009d6427">DeepCopy</a> (const <a class="el" href="a00151.html">StovePCProduct</a> &amp;rhs)</td></tr>
+<tr class="separator:a3f007cb5a0a01f134855d6f7009d6427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35d9ef87ceb117b8052247398233093a" id="r_a35d9ef87ceb117b8052247398233093a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35d9ef87ceb117b8052247398233093a">DeepCopy</a> (const StovePCProductCpp *rhs)</td></tr>
+<tr class="separator:a35d9ef87ceb117b8052247398233093a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 속성</h2></td></tr>
+<tr class="memitem:a9139f410063095f8807069042eac4dbb" id="r_a9139f410063095f8807069042eac4dbb"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9139f410063095f8807069042eac4dbb">productId</a></td></tr>
+<tr class="memdesc:a9139f410063095f8807069042eac4dbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">플랫폼 상품 아이디    <br /></td></tr>
+<tr class="separator:a9139f410063095f8807069042eac4dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad37257b029b03222d2663d771bfc8cc" id="r_aad37257b029b03222d2663d771bfc8cc"><td class="memItemLeft" align="right" valign="top">wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad37257b029b03222d2663d771bfc8cc">gameItemId</a> = nullptr</td></tr>
+<tr class="memdesc:aad37257b029b03222d2663d771bfc8cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">상품 아이디에 매핑되는 게임 내 아이템 아이디    <br /></td></tr>
+<tr class="separator:aad37257b029b03222d2663d771bfc8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a68ababfad538b386ba9be332195907" id="r_a6a68ababfad538b386ba9be332195907"><td class="memItemLeft" align="right" valign="top">wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a68ababfad538b386ba9be332195907">name</a> = nullptr</td></tr>
+<tr class="memdesc:a6a68ababfad538b386ba9be332195907"><td class="mdescLeft">&#160;</td><td class="mdescRight">상품명    <br /></td></tr>
+<tr class="separator:a6a68ababfad538b386ba9be332195907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d8bfb31f25fc8fa51d7ec8d6b17e0f" id="r_a16d8bfb31f25fc8fa51d7ec8d6b17e0f"><td class="memItemLeft" align="right" valign="top">wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16d8bfb31f25fc8fa51d7ec8d6b17e0f">description</a> = nullptr</td></tr>
+<tr class="memdesc:a16d8bfb31f25fc8fa51d7ec8d6b17e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">상품 상세    <br /></td></tr>
+<tr class="separator:a16d8bfb31f25fc8fa51d7ec8d6b17e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f372ca3bd3193be6088ff998bb2fc49" id="r_a6f372ca3bd3193be6088ff998bb2fc49"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f372ca3bd3193be6088ff998bb2fc49">quantity</a></td></tr>
+<tr class="memdesc:a6f372ca3bd3193be6088ff998bb2fc49"><td class="mdescLeft">&#160;</td><td class="mdescRight">개별 상품 수량    <br /></td></tr>
+<tr class="separator:a6f372ca3bd3193be6088ff998bb2fc49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08224236bb5a83dc1b032873b98bc0de" id="r_a08224236bb5a83dc1b032873b98bc0de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00064.html#ac74424454915c79bef78bf5c6b9e846f">ProductTypeCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08224236bb5a83dc1b032873b98bc0de">productTypeCode</a></td></tr>
+<tr class="memdesc:a08224236bb5a83dc1b032873b98bc0de"><td class="mdescLeft">&#160;</td><td class="mdescRight">아이템 유형 코드    <br /></td></tr>
+<tr class="separator:a08224236bb5a83dc1b032873b98bc0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5299bd44ac85b1265b7afec01f819731" id="r_a5299bd44ac85b1265b7afec01f819731"><td class="memItemLeft" align="right" valign="top">wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5299bd44ac85b1265b7afec01f819731">categoryId</a> = nullptr</td></tr>
+<tr class="memdesc:a5299bd44ac85b1265b7afec01f819731"><td class="mdescLeft">&#160;</td><td class="mdescRight">카테고리 아이디    <br /></td></tr>
+<tr class="separator:a5299bd44ac85b1265b7afec01f819731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d581aba8cdfafb0eafcafe4dad3289d" id="r_a8d581aba8cdfafb0eafcafe4dad3289d"><td class="memItemLeft" align="right" valign="top">wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d581aba8cdfafb0eafcafe4dad3289d">categoryName</a> = nullptr</td></tr>
+<tr class="memdesc:a8d581aba8cdfafb0eafcafe4dad3289d"><td class="mdescLeft">&#160;</td><td class="mdescRight">카테고리 이름    <br /></td></tr>
+<tr class="separator:a8d581aba8cdfafb0eafcafe4dad3289d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae808363e80205b4bf6f9cecf8f8d2360" id="r_ae808363e80205b4bf6f9cecf8f8d2360"><td class="memItemLeft" align="right" valign="top">wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae808363e80205b4bf6f9cecf8f8d2360">currencyCode</a> = nullptr</td></tr>
+<tr class="memdesc:ae808363e80205b4bf6f9cecf8f8d2360"><td class="mdescLeft">&#160;</td><td class="mdescRight">통화 코드    <br /></td></tr>
+<tr class="separator:ae808363e80205b4bf6f9cecf8f8d2360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af04c5ceb89653e9183881472349741ad" id="r_af04c5ceb89653e9183881472349741ad"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af04c5ceb89653e9183881472349741ad">price</a></td></tr>
+<tr class="memdesc:af04c5ceb89653e9183881472349741ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">상품 정가(결제)    <br /></td></tr>
+<tr class="separator:af04c5ceb89653e9183881472349741ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb054dc9ea0815d1fc088d126e17089e" id="r_adb054dc9ea0815d1fc088d126e17089e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb054dc9ea0815d1fc088d126e17089e">displayPrice</a></td></tr>
+<tr class="memdesc:adb054dc9ea0815d1fc088d126e17089e"><td class="mdescLeft">&#160;</td><td class="mdescRight">상품 정가(전시)    <br /></td></tr>
+<tr class="separator:adb054dc9ea0815d1fc088d126e17089e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58d1897abf9148bbbb1fa1a54962bcc0" id="r_a58d1897abf9148bbbb1fa1a54962bcc0"><td class="memItemLeft" align="right" valign="top">wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58d1897abf9148bbbb1fa1a54962bcc0">displayPriceString</a> = nullptr</td></tr>
+<tr class="memdesc:a58d1897abf9148bbbb1fa1a54962bcc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">상품 정가 문자열(전시)    <br /></td></tr>
+<tr class="separator:a58d1897abf9148bbbb1fa1a54962bcc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ee02932dacc25c576dbbe9928bba874" id="r_a7ee02932dacc25c576dbbe9928bba874"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ee02932dacc25c576dbbe9928bba874">salePrice</a></td></tr>
+<tr class="memdesc:a7ee02932dacc25c576dbbe9928bba874"><td class="mdescLeft">&#160;</td><td class="mdescRight">상품 판매가(결제)    <br /></td></tr>
+<tr class="separator:a7ee02932dacc25c576dbbe9928bba874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cdd579f0c36432a4a7a403d3cbd0f1f" id="r_a9cdd579f0c36432a4a7a403d3cbd0f1f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cdd579f0c36432a4a7a403d3cbd0f1f">displaySalePrice</a></td></tr>
+<tr class="memdesc:a9cdd579f0c36432a4a7a403d3cbd0f1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">상품 판매가(전시)    <br /></td></tr>
+<tr class="separator:a9cdd579f0c36432a4a7a403d3cbd0f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5feae3cd85b0180a3d57c616438e11e8" id="r_a5feae3cd85b0180a3d57c616438e11e8"><td class="memItemLeft" align="right" valign="top">wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5feae3cd85b0180a3d57c616438e11e8">displaySalePriceString</a> = nullptr</td></tr>
+<tr class="memdesc:a5feae3cd85b0180a3d57c616438e11e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">상품 판매가 문자열(전시)    <br /></td></tr>
+<tr class="separator:a5feae3cd85b0180a3d57c616438e11e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5196b5169a9d261c71a417eccfb054bf" id="r_a5196b5169a9d261c71a417eccfb054bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5196b5169a9d261c71a417eccfb054bf">isDiscount</a></td></tr>
+<tr class="memdesc:a5196b5169a9d261c71a417eccfb054bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">할인 여부    <br /></td></tr>
+<tr class="separator:a5196b5169a9d261c71a417eccfb054bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38accedf1ad9d29b542b026f34a9632e" id="r_a38accedf1ad9d29b542b026f34a9632e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00064.html#a45cc1e118445fd96d74d081c3fade2db">DiscountType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38accedf1ad9d29b542b026f34a9632e">discountType</a></td></tr>
+<tr class="memdesc:a38accedf1ad9d29b542b026f34a9632e"><td class="mdescLeft">&#160;</td><td class="mdescRight">할인 유형    <br /></td></tr>
+<tr class="separator:a38accedf1ad9d29b542b026f34a9632e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa01dbae2095adff02d3b3148be83dc16" id="r_aa01dbae2095adff02d3b3148be83dc16"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa01dbae2095adff02d3b3148be83dc16">discountTypeValue</a></td></tr>
+<tr class="memdesc:aa01dbae2095adff02d3b3148be83dc16"><td class="mdescLeft">&#160;</td><td class="mdescRight">할인 값    <br /></td></tr>
+<tr class="separator:aa01dbae2095adff02d3b3148be83dc16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1677738a295cf4d18de62258f5ac2393" id="r_a1677738a295cf4d18de62258f5ac2393"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1677738a295cf4d18de62258f5ac2393">discountBeginDate</a></td></tr>
+<tr class="memdesc:a1677738a295cf4d18de62258f5ac2393"><td class="mdescLeft">&#160;</td><td class="mdescRight">할인 시작 일자(epoch time milliseconds)    <br /></td></tr>
+<tr class="separator:a1677738a295cf4d18de62258f5ac2393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6518b707d93c60d977176fbe0419a5d" id="r_ab6518b707d93c60d977176fbe0419a5d"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6518b707d93c60d977176fbe0419a5d">discountEndDate</a></td></tr>
+<tr class="memdesc:ab6518b707d93c60d977176fbe0419a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">할인 종료 일자(epoch time milliseconds)    <br /></td></tr>
+<tr class="separator:ab6518b707d93c60d977176fbe0419a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d7fea12d6d397a2f270bfd98ed22eef" id="r_a7d7fea12d6d397a2f270bfd98ed22eef"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d7fea12d6d397a2f270bfd98ed22eef">totalQuantity</a></td></tr>
+<tr class="memdesc:a7d7fea12d6d397a2f270bfd98ed22eef"><td class="mdescLeft">&#160;</td><td class="mdescRight">상품 총 판매수량    <br /></td></tr>
+<tr class="separator:a7d7fea12d6d397a2f270bfd98ed22eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ebf5ddba9cd333691af7da419a9e71a" id="r_a0ebf5ddba9cd333691af7da419a9e71a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ebf5ddba9cd333691af7da419a9e71a">memberQuantity</a></td></tr>
+<tr class="memdesc:a0ebf5ddba9cd333691af7da419a9e71a"><td class="mdescLeft">&#160;</td><td class="mdescRight">회원 구매 수량    <br /></td></tr>
+<tr class="separator:a0ebf5ddba9cd333691af7da419a9e71a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac575f5e3c1a0f7124007dbfbed0bb97c" id="r_ac575f5e3c1a0f7124007dbfbed0bb97c"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac575f5e3c1a0f7124007dbfbed0bb97c">guidQuantity</a></td></tr>
+<tr class="memdesc:ac575f5e3c1a0f7124007dbfbed0bb97c"><td class="mdescLeft">&#160;</td><td class="mdescRight">guid 구매 수량    <br /></td></tr>
+<tr class="separator:ac575f5e3c1a0f7124007dbfbed0bb97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add350edf1c7d79abc0695e1db61c6140" id="r_add350edf1c7d79abc0695e1db61c6140"><td class="memItemLeft" align="right" valign="top">wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add350edf1c7d79abc0695e1db61c6140">thumbnailUrl</a> = nullptr</td></tr>
+<tr class="memdesc:add350edf1c7d79abc0695e1db61c6140"><td class="mdescLeft">&#160;</td><td class="mdescRight">대표 상품 이미지    <br /></td></tr>
+<tr class="separator:add350edf1c7d79abc0695e1db61c6140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80b73c3aadb765d2b91a1b61d9492678" id="r_a80b73c3aadb765d2b91a1b61d9492678"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80b73c3aadb765d2b91a1b61d9492678">canWithdraw</a></td></tr>
+<tr class="memdesc:a80b73c3aadb765d2b91a1b61d9492678"><td class="mdescLeft">&#160;</td><td class="mdescRight">청약 철회 가능 여부    <br /></td></tr>
+<tr class="separator:a80b73c3aadb765d2b91a1b61d9492678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02700cceebeefdea7579d9200502f020" id="r_a02700cceebeefdea7579d9200502f020"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02700cceebeefdea7579d9200502f020">purchasedAtLeastOnce</a></td></tr>
+<tr class="memdesc:a02700cceebeefdea7579d9200502f020"><td class="mdescLeft">&#160;</td><td class="mdescRight">구매 여부 (구매 이력이 한 건 이상인 경우 true)    <br /></td></tr>
+<tr class="separator:a02700cceebeefdea7579d9200502f020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3719c9366f0ef44c8f6cc04281a7cf2" id="r_ae3719c9366f0ef44c8f6cc04281a7cf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00064.html#a8bd701312797f34da3a44bf99a157a1b">PurchaseLimitTypeCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3719c9366f0ef44c8f6cc04281a7cf2">purchaseLimitTypeCode</a></td></tr>
+<tr class="memdesc:ae3719c9366f0ef44c8f6cc04281a7cf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">구매 여부 (구매 이력이 한 건 이상인 경우 true)    <br /></td></tr>
+<tr class="separator:ae3719c9366f0ef44c8f6cc04281a7cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0c4832c8616f6df7e0ff5e8c8d76a24" id="r_ae0c4832c8616f6df7e0ff5e8c8d76a24"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0c4832c8616f6df7e0ff5e8c8d76a24">purchaseLimitCount</a></td></tr>
+<tr class="memdesc:ae0c4832c8616f6df7e0ff5e8c8d76a24"><td class="mdescLeft">&#160;</td><td class="mdescRight">판매 제한 수량    <br /></td></tr>
+<tr class="separator:ae0c4832c8616f6df7e0ff5e8c8d76a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4bc023cb97e257baa31d7425cdfd6d2" id="r_af4bc023cb97e257baa31d7425cdfd6d2"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4bc023cb97e257baa31d7425cdfd6d2">saleLimitCount</a></td></tr>
+<tr class="memdesc:af4bc023cb97e257baa31d7425cdfd6d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">총 판매 제한 수량 (0일 경우 무제한)    <br /></td></tr>
+<tr class="separator:af4bc023cb97e257baa31d7425cdfd6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f9c3c4f5c87620bc09cd95f0d6a8fe1" id="r_a0f9c3c4f5c87620bc09cd95f0d6a8fe1"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f9c3c4f5c87620bc09cd95f0d6a8fe1">saleBeginDate</a> = 0LL</td></tr>
+<tr class="memdesc:a0f9c3c4f5c87620bc09cd95f0d6a8fe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">판매 시작 일자(epoch time milliseconds)    <br /></td></tr>
+<tr class="separator:a0f9c3c4f5c87620bc09cd95f0d6a8fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca55376f48fb02c23b36af5175bcb83e" id="r_aca55376f48fb02c23b36af5175bcb83e"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca55376f48fb02c23b36af5175bcb83e">saleEndDate</a> = 0LL</td></tr>
+<tr class="memdesc:aca55376f48fb02c23b36af5175bcb83e"><td class="mdescLeft">&#160;</td><td class="mdescRight">판매 종료 일자(epoch time milliseconds)    <br /></td></tr>
+<tr class="separator:aca55376f48fb02c23b36af5175bcb83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">상세한 설명</h2>
+<div class="textblock"><p>개별 상품 정보를 전달하는 구조체입니다. IAP_FetchProducts 콜백에 결과 전달 시 사용됩니다.   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00319">319</a> 번째 라인에서 정의되었습니다.</p>
+</div><h2 class="groupheader">생성자 &amp; 소멸자 문서화</h2>
+<a id="a997ed2c7df03c78c46d64d36f3e0ef03" name="a997ed2c7df03c78c46d64d36f3e0ef03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a997ed2c7df03c78c46d64d36f3e0ef03">&#9670;&#160;</a></span>StovePCProduct() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Stove::PCSDK::IAP::StovePCProduct::StovePCProduct </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a83bc82ec82d716d0332f2c51491f540d" name="a83bc82ec82d716d0332f2c51491f540d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83bc82ec82d716d0332f2c51491f540d">&#9670;&#160;</a></span>StovePCProduct() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Stove::PCSDK::IAP::StovePCProduct::StovePCProduct </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00151.html">StovePCProduct</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa146862835bc9881927d7af4ed667c38" name="aa146862835bc9881927d7af4ed667c38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa146862835bc9881927d7af4ed667c38">&#9670;&#160;</a></span>StovePCProduct() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Stove::PCSDK::IAP::StovePCProduct::StovePCProduct </td>
+          <td>(</td>
+          <td class="paramtype">const StovePCProductCpp *</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a833c65088f80c58873b91c06410776e8" name="a833c65088f80c58873b91c06410776e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a833c65088f80c58873b91c06410776e8">&#9670;&#160;</a></span>~StovePCProduct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Stove::PCSDK::IAP::StovePCProduct::~StovePCProduct </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">멤버 함수 문서화</h2>
+<a id="a7147ba5d251806a9eb6f843570278764" name="a7147ba5d251806a9eb6f843570278764"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7147ba5d251806a9eb6f843570278764">&#9670;&#160;</a></span>CanWithdraw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Stove::PCSDK::IAP::StovePCProduct::CanWithdraw </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>청약 철회 가능 여부를 가져옵니다.   </p>
+<dl class="section return"><dt>반환값</dt><dd>bool canWithdraw </dd></dl>
+
+</div>
+</div>
+<a id="a3f007cb5a0a01f134855d6f7009d6427" name="a3f007cb5a0a01f134855d6f7009d6427"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f007cb5a0a01f134855d6f7009d6427">&#9670;&#160;</a></span>DeepCopy() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Stove::PCSDK::IAP::StovePCProduct::DeepCopy </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00151.html">StovePCProduct</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a35d9ef87ceb117b8052247398233093a" name="a35d9ef87ceb117b8052247398233093a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35d9ef87ceb117b8052247398233093a">&#9670;&#160;</a></span>DeepCopy() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Stove::PCSDK::IAP::StovePCProduct::DeepCopy </td>
+          <td>(</td>
+          <td class="paramtype">const StovePCProductCpp *</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5390d384364f9cde9f88df424b99f09a" name="a5390d384364f9cde9f88df424b99f09a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5390d384364f9cde9f88df424b99f09a">&#9670;&#160;</a></span>GetCategoryId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const wchar_t * Stove::PCSDK::IAP::StovePCProduct::GetCategoryId </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>카테고리 아이디를 가져옵니다.   </p>
+<dl class="section return"><dt>반환값</dt><dd>const wchar_t* categoryId </dd></dl>
+
+</div>
+</div>
+<a id="ac7486ff3a18bd2975d6403d440208fb2" name="ac7486ff3a18bd2975d6403d440208fb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7486ff3a18bd2975d6403d440208fb2">&#9670;&#160;</a></span>GetCategoryName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const wchar_t * Stove::PCSDK::IAP::StovePCProduct::GetCategoryName </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>카테고리 이름을 가져옵니다.   </p>
+<dl class="section return"><dt>반환값</dt><dd>const wchar_t* categoryName </dd></dl>
+
+</div>
+</div>
+<a id="ab8fd85d61eecec3e2a38f6faf02c6951" name="ab8fd85d61eecec3e2a38f6faf02c6951"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8fd85d61eecec3e2a38f6faf02c6951">&#9670;&#160;</a></span>GetCurrencyCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const wchar_t * Stove::PCSDK::IAP::StovePCProduct::GetCurrencyCode </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>통화 코드를 가져옵니다. </p>
+<p>상품 가격 표시에 사용 합니다.   </p><dl class="section return"><dt>반환값</dt><dd>const wchar_t* currencyCode </dd></dl>
+
+</div>
+</div>
+<a id="a8c8e8ee0fffee35410983419f881b7ae" name="a8c8e8ee0fffee35410983419f881b7ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c8e8ee0fffee35410983419f881b7ae">&#9670;&#160;</a></span>GetDescription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const wchar_t * Stove::PCSDK::IAP::StovePCProduct::GetDescription </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>상품 상세를 가져옵니다.   </p>
+<dl class="section return"><dt>반환값</dt><dd>const wchar_t* description </dd></dl>
+
+</div>
+</div>
+<a id="a20b950c556499b41a18ce4689fb94ab4" name="a20b950c556499b41a18ce4689fb94ab4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20b950c556499b41a18ce4689fb94ab4">&#9670;&#160;</a></span>GetDiscountBeginDate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Stove::PCSDK::IAP::StovePCProduct::GetDiscountBeginDate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>할인 시작 일자(epoch time milliseconds)를 가져옵니다.   </p>
+<dl class="section return"><dt>반환값</dt><dd>int64_t discountBeginDate </dd></dl>
+
+</div>
+</div>
+<a id="ac2d35c0d139fe470cb7023413c191d65" name="ac2d35c0d139fe470cb7023413c191d65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2d35c0d139fe470cb7023413c191d65">&#9670;&#160;</a></span>GetDiscountEndDate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Stove::PCSDK::IAP::StovePCProduct::GetDiscountEndDate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>할인 종료 일자(epoch time milliseconds)를 가져옵니다.   </p>
+<dl class="section return"><dt>반환값</dt><dd>int64_t discountEndDate </dd></dl>
+
+</div>
+</div>
+<a id="a91126511676599b25bc302469a7034d2" name="a91126511676599b25bc302469a7034d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91126511676599b25bc302469a7034d2">&#9670;&#160;</a></span>GetDiscountType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00064.html#a45cc1e118445fd96d74d081c3fade2db">DiscountType</a> Stove::PCSDK::IAP::StovePCProduct::GetDiscountType </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>할인 유형을 가져옵니다.   </p>
+<dl class="section return"><dt>반환값</dt><dd>DiscountType discountType </dd></dl>
+
+</div>
+</div>
+<a id="a08babf73308315a82696d4351ea294e6" name="a08babf73308315a82696d4351ea294e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08babf73308315a82696d4351ea294e6">&#9670;&#160;</a></span>GetDiscountTypeValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t Stove::PCSDK::IAP::StovePCProduct::GetDiscountTypeValue </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>할인 값을 가져옵니다.   </p>
+<dl class="section return"><dt>반환값</dt><dd>int32_t discountTypeValue </dd></dl>
+
+</div>
+</div>
+<a id="aa109784a74a5dd73f8dad60e6047f85d" name="aa109784a74a5dd73f8dad60e6047f85d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa109784a74a5dd73f8dad60e6047f85d">&#9670;&#160;</a></span>GetDisplayPrice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Stove::PCSDK::IAP::StovePCProduct::GetDisplayPrice </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>상품 정가(전시)를 가져옵니다. </p>
+<p>현재 사용 되지 않음   </p><dl class="section return"><dt>반환값</dt><dd>double displayPrice </dd></dl>
+
+</div>
+</div>
+<a id="a3e7d221d7bae8438ca3e38d5a7dafbf4" name="a3e7d221d7bae8438ca3e38d5a7dafbf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e7d221d7bae8438ca3e38d5a7dafbf4">&#9670;&#160;</a></span>GetDisplayPriceString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const wchar_t * Stove::PCSDK::IAP::StovePCProduct::GetDisplayPriceString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>상품 정가 문자열(전시)을 가져옵니다. </p>
+<p>정가 가격 표시에만 사용하세요.   </p><dl class="section return"><dt>반환값</dt><dd>const wchar_t* displayPriceString </dd></dl>
+
+</div>
+</div>
+<a id="aa05e48d1c4ce29c784dbe1cbaf986637" name="aa05e48d1c4ce29c784dbe1cbaf986637"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa05e48d1c4ce29c784dbe1cbaf986637">&#9670;&#160;</a></span>GetDisplaySalePrice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Stove::PCSDK::IAP::StovePCProduct::GetDisplaySalePrice </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>상품 판매가(전시)를 가져옵니다. </p>
+<p>현재 사용 되지 않음   </p><dl class="section return"><dt>반환값</dt><dd>double displaySalePrice </dd></dl>
+
+</div>
+</div>
+<a id="aa8199184adc9c6a2e4f3272855659c30" name="aa8199184adc9c6a2e4f3272855659c30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8199184adc9c6a2e4f3272855659c30">&#9670;&#160;</a></span>GetDisplaySalePriceString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const wchar_t * Stove::PCSDK::IAP::StovePCProduct::GetDisplaySalePriceString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>상품 판매가 문자열(전시)을 가져옵니다. </p>
+<p>상점에 통화기호가 포함된 실제 판매가를 표시할때 사용하는 값 입니다. 파트너스에서 할인 설정하면 할인 가격이 자동 반영 됩니다.   </p><dl class="section return"><dt>반환값</dt><dd>const wchar_t* displaySalePriceString </dd></dl>
+
+</div>
+</div>
+<a id="a13769ebc1900f513a57a8c532243d25b" name="a13769ebc1900f513a57a8c532243d25b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13769ebc1900f513a57a8c532243d25b">&#9670;&#160;</a></span>GetGameItemId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const wchar_t * Stove::PCSDK::IAP::StovePCProduct::GetGameItemId </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>상품 아이디에 매핑되는 게임 내 아이템 아이디를 가져옵니다.   </p>
+<dl class="section return"><dt>반환값</dt><dd>const wchar_t* gameItemId </dd></dl>
+
+</div>
+</div>
+<a id="addcd55c0523176723b518012ae49eebf" name="addcd55c0523176723b518012ae49eebf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addcd55c0523176723b518012ae49eebf">&#9670;&#160;</a></span>GetGuidQuantity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t Stove::PCSDK::IAP::StovePCProduct::GetGuidQuantity </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>guid 구매 수량을 가져옵니다. </p>
+<p>게임의 Unique 한 계정 별 구매 수량입니다.   </p><dl class="section return"><dt>반환값</dt><dd>int32_t guidQuantity </dd></dl>
+
+</div>
+</div>
+<a id="aac1b8f1ffcef07912942d4bc3fcf6e12" name="aac1b8f1ffcef07912942d4bc3fcf6e12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac1b8f1ffcef07912942d4bc3fcf6e12">&#9670;&#160;</a></span>GetMemberQuantity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t Stove::PCSDK::IAP::StovePCProduct::GetMemberQuantity </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>회원 구매 수량을 가져옵니다. </p>
+<p>로그인 한 계정 별 구매 수량입니다.   </p><dl class="section return"><dt>반환값</dt><dd>int32_t memberQuantity </dd></dl>
+
+</div>
+</div>
+<a id="a108ff108b7c06332c74e8ca1d25ccfdc" name="a108ff108b7c06332c74e8ca1d25ccfdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a108ff108b7c06332c74e8ca1d25ccfdc">&#9670;&#160;</a></span>GetName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const wchar_t * Stove::PCSDK::IAP::StovePCProduct::GetName </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>상품명을 가져옵니다.   </p>
+<dl class="section return"><dt>반환값</dt><dd>const wchar_t* name </dd></dl>
+
+</div>
+</div>
+<a id="a93cd4da05579347067b01ea842201b71" name="a93cd4da05579347067b01ea842201b71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93cd4da05579347067b01ea842201b71">&#9670;&#160;</a></span>GetPrice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Stove::PCSDK::IAP::StovePCProduct::GetPrice </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>상품 정가(결제)를 가져옵니다. </p>
+<p>상품의 정가 가격 표시에만 사용하세요.   </p><dl class="section return"><dt>반환값</dt><dd>double price </dd></dl>
+
+</div>
+</div>
+<a id="aa4733a3f1924e522ab068650d3783129" name="aa4733a3f1924e522ab068650d3783129"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4733a3f1924e522ab068650d3783129">&#9670;&#160;</a></span>GetProductId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Stove::PCSDK::IAP::StovePCProduct::GetProductId </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>플랫폼 상품 아이디를 가져옵니다.   </p>
+<dl class="section return"><dt>반환값</dt><dd>int64_t productId </dd></dl>
+
+</div>
+</div>
+<a id="a76c1ae3d208dca639cd0b98ab484b7c6" name="a76c1ae3d208dca639cd0b98ab484b7c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76c1ae3d208dca639cd0b98ab484b7c6">&#9670;&#160;</a></span>GetProductTypeCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00064.html#ac74424454915c79bef78bf5c6b9e846f">ProductTypeCode</a> Stove::PCSDK::IAP::StovePCProduct::GetProductTypeCode </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>아이템 유형 코드를 가져옵니다.   </p>
+<dl class="section return"><dt>반환값</dt><dd>ProductTypeCode productTypeCode </dd></dl>
+
+</div>
+</div>
+<a id="af111364ad218a1e7efd8c657d6d48058" name="af111364ad218a1e7efd8c657d6d48058"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af111364ad218a1e7efd8c657d6d48058">&#9670;&#160;</a></span>GetPurchasedAtLeastOnce()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Stove::PCSDK::IAP::StovePCProduct::GetPurchasedAtLeastOnce </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>구매 여부 (구매 이력이 한 건 이상인 경우 true)를 가져옵니다.   </p>
+<dl class="section return"><dt>반환값</dt><dd>bool purchasedAtLeastOnce </dd></dl>
+
+</div>
+</div>
+<a id="a161fc425027c236cb763e2e53a896e8a" name="a161fc425027c236cb763e2e53a896e8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a161fc425027c236cb763e2e53a896e8a">&#9670;&#160;</a></span>GetPurchaseLimitCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t Stove::PCSDK::IAP::StovePCProduct::GetPurchaseLimitCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>판매 제한 수량을 가져옵니다. </p>
+<p><a class="el" href="#a194ab2ca107cc35f94cebb94c99477ec" title="구매 여부 (구매 이력이 한 건 이상인 경우 true)를 가져옵니다.">GetPurchaseLimitTypeCode()</a> 값이 <a class="el" href="a00064.html#a8bd701312797f34da3a44bf99a157a1ba3c94fe830ac18aa182887ab6ac05b596" title="캐릭터별 제한">PurchaseLimitTypeCode::CHARACTER</a> 일 경우 회원 별 제한 수량   </p><dl class="section return"><dt>반환값</dt><dd>int32_t purchaseLimitCount </dd></dl>
+
+</div>
+</div>
+<a id="a194ab2ca107cc35f94cebb94c99477ec" name="a194ab2ca107cc35f94cebb94c99477ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a194ab2ca107cc35f94cebb94c99477ec">&#9670;&#160;</a></span>GetPurchaseLimitTypeCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00064.html#a8bd701312797f34da3a44bf99a157a1b">PurchaseLimitTypeCode</a> Stove::PCSDK::IAP::StovePCProduct::GetPurchaseLimitTypeCode </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>구매 여부 (구매 이력이 한 건 이상인 경우 true)를 가져옵니다.   </p>
+<dl class="section return"><dt>반환값</dt><dd>PurchaseLimitTypeCode purchaseLimitTypeCode </dd></dl>
+
+</div>
+</div>
+<a id="a220fdba7bcebdcdc8f0530666b4d52a3" name="a220fdba7bcebdcdc8f0530666b4d52a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a220fdba7bcebdcdc8f0530666b4d52a3">&#9670;&#160;</a></span>GetQuantity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t Stove::PCSDK::IAP::StovePCProduct::GetQuantity </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>개별 상품 수량을 가져옵니다.   </p>
+<dl class="section return"><dt>반환값</dt><dd>const wchar_t* quantity </dd></dl>
+
+</div>
+</div>
+<a id="addfe8a05aca6937a270329e7ee9d40f6" name="addfe8a05aca6937a270329e7ee9d40f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addfe8a05aca6937a270329e7ee9d40f6">&#9670;&#160;</a></span>GetSaleBeginDate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Stove::PCSDK::IAP::StovePCProduct::GetSaleBeginDate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>판매 시작 일자(epoch time milliseconds)를 가져옵니다. </p>
+<p>판매 기간이 상시 일 경우 null(SDK: 0) 리턴   </p><dl class="section return"><dt>반환값</dt><dd>int64_t saleBeginDate </dd></dl>
+
+</div>
+</div>
+<a id="aa62b86538808e780269d6960dbd1a2ef" name="aa62b86538808e780269d6960dbd1a2ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa62b86538808e780269d6960dbd1a2ef">&#9670;&#160;</a></span>GetSaleEndDate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Stove::PCSDK::IAP::StovePCProduct::GetSaleEndDate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>판매 종료 일자(epoch time milliseconds)를 가져옵니다. </p>
+<p>판매 기간이 상시 일 경우 null(SDK: 0) 리턴   </p><dl class="section return"><dt>반환값</dt><dd>int64_t saleEndDate </dd></dl>
+
+</div>
+</div>
+<a id="a9e66656313feb0f84f25244f14a10b7e" name="a9e66656313feb0f84f25244f14a10b7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e66656313feb0f84f25244f14a10b7e">&#9670;&#160;</a></span>GetSaleLimitCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t Stove::PCSDK::IAP::StovePCProduct::GetSaleLimitCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>총 판매 제한 수량 (0일 경우 무제한)을 가져옵니다.   </p>
+<dl class="section return"><dt>반환값</dt><dd>int32_t saleLimitCount </dd></dl>
+
+</div>
+</div>
+<a id="a9cb7ddc730d9d6f49a15c114b0fcc78a" name="a9cb7ddc730d9d6f49a15c114b0fcc78a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cb7ddc730d9d6f49a15c114b0fcc78a">&#9670;&#160;</a></span>GetSalePrice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Stove::PCSDK::IAP::StovePCProduct::GetSalePrice </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>상품 판매가(결제)를 가져옵니다. </p>
+<p>상점에 실제 판매가를 표시할때와 상품 구매 요청시 전달하는 값 입니다. 파트너스에서 할인 설정하면 할인 가격이 자동 반영 됩니다.  </p>
+
+</div>
+</div>
+<a id="a3a9a422c03e9a1a57419a8abf16db5b5" name="a3a9a422c03e9a1a57419a8abf16db5b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a9a422c03e9a1a57419a8abf16db5b5">&#9670;&#160;</a></span>GetThumbnailUrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const wchar_t * Stove::PCSDK::IAP::StovePCProduct::GetThumbnailUrl </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>대표 상품 이미지를 가져옵니다.   </p>
+<dl class="section return"><dt>반환값</dt><dd>const wchar_t* thumbnailUrl </dd></dl>
+
+</div>
+</div>
+<a id="aad22fdd686e3cb68a086c7a8a02a6e0f" name="aad22fdd686e3cb68a086c7a8a02a6e0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad22fdd686e3cb68a086c7a8a02a6e0f">&#9670;&#160;</a></span>GetTotalQuantity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t Stove::PCSDK::IAP::StovePCProduct::GetTotalQuantity </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>상품 총 판매수량을 가져옵니다.   </p>
+<dl class="section return"><dt>반환값</dt><dd>int32_t totalQuantity </dd></dl>
+
+</div>
+</div>
+<a id="a90fb6cf448bac35cdb29ad1f9784f190" name="a90fb6cf448bac35cdb29ad1f9784f190"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90fb6cf448bac35cdb29ad1f9784f190">&#9670;&#160;</a></span>IsDiscount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Stove::PCSDK::IAP::StovePCProduct::IsDiscount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>할인 여부를 가져옵니다.   </p>
+<dl class="section return"><dt>반환값</dt><dd>bool isDiscount </dd></dl>
+
+</div>
+</div>
+<a id="a28c5ec7dd30ad4f3d53d96b556013420" name="a28c5ec7dd30ad4f3d53d96b556013420"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28c5ec7dd30ad4f3d53d96b556013420">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00151.html">StovePCProduct</a> &amp; Stove::PCSDK::IAP::StovePCProduct::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00151.html">StovePCProduct</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a77aed21e2de4c59c13c031106adfb84a" name="a77aed21e2de4c59c13c031106adfb84a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77aed21e2de4c59c13c031106adfb84a">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00151.html">StovePCProduct</a> &amp; Stove::PCSDK::IAP::StovePCProduct::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const StovePCProductCpp *</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">멤버 데이터 문서화</h2>
+<a id="a80b73c3aadb765d2b91a1b61d9492678" name="a80b73c3aadb765d2b91a1b61d9492678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80b73c3aadb765d2b91a1b61d9492678">&#9670;&#160;</a></span>canWithdraw</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Stove::PCSDK::IAP::StovePCProduct::canWithdraw</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>청약 철회 가능 여부   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00952">952</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a5299bd44ac85b1265b7afec01f819731" name="a5299bd44ac85b1265b7afec01f819731"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5299bd44ac85b1265b7afec01f819731">&#9670;&#160;</a></span>categoryId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wchar_t* Stove::PCSDK::IAP::StovePCProduct::categoryId = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>카테고리 아이디   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00772">772</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a8d581aba8cdfafb0eafcafe4dad3289d" name="a8d581aba8cdfafb0eafcafe4dad3289d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d581aba8cdfafb0eafcafe4dad3289d">&#9670;&#160;</a></span>categoryName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wchar_t* Stove::PCSDK::IAP::StovePCProduct::categoryName = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>카테고리 이름   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00782">782</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="ae808363e80205b4bf6f9cecf8f8d2360" name="ae808363e80205b4bf6f9cecf8f8d2360"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae808363e80205b4bf6f9cecf8f8d2360">&#9670;&#160;</a></span>currencyCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wchar_t* Stove::PCSDK::IAP::StovePCProduct::currencyCode = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>통화 코드   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00792">792</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a16d8bfb31f25fc8fa51d7ec8d6b17e0f" name="a16d8bfb31f25fc8fa51d7ec8d6b17e0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16d8bfb31f25fc8fa51d7ec8d6b17e0f">&#9670;&#160;</a></span>description</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wchar_t* Stove::PCSDK::IAP::StovePCProduct::description = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>상품 상세   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00742">742</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a1677738a295cf4d18de62258f5ac2393" name="a1677738a295cf4d18de62258f5ac2393"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1677738a295cf4d18de62258f5ac2393">&#9670;&#160;</a></span>discountBeginDate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Stove::PCSDK::IAP::StovePCProduct::discountBeginDate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>할인 시작 일자(epoch time milliseconds)   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00892">892</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="ab6518b707d93c60d977176fbe0419a5d" name="ab6518b707d93c60d977176fbe0419a5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6518b707d93c60d977176fbe0419a5d">&#9670;&#160;</a></span>discountEndDate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Stove::PCSDK::IAP::StovePCProduct::discountEndDate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>할인 종료 일자(epoch time milliseconds)   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00902">902</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a38accedf1ad9d29b542b026f34a9632e" name="a38accedf1ad9d29b542b026f34a9632e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38accedf1ad9d29b542b026f34a9632e">&#9670;&#160;</a></span>discountType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00064.html#a45cc1e118445fd96d74d081c3fade2db">DiscountType</a> Stove::PCSDK::IAP::StovePCProduct::discountType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>할인 유형   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00872">872</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="aa01dbae2095adff02d3b3148be83dc16" name="aa01dbae2095adff02d3b3148be83dc16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa01dbae2095adff02d3b3148be83dc16">&#9670;&#160;</a></span>discountTypeValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t Stove::PCSDK::IAP::StovePCProduct::discountTypeValue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>할인 값   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00882">882</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="adb054dc9ea0815d1fc088d126e17089e" name="adb054dc9ea0815d1fc088d126e17089e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb054dc9ea0815d1fc088d126e17089e">&#9670;&#160;</a></span>displayPrice</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Stove::PCSDK::IAP::StovePCProduct::displayPrice</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>상품 정가(전시)   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00812">812</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a58d1897abf9148bbbb1fa1a54962bcc0" name="a58d1897abf9148bbbb1fa1a54962bcc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58d1897abf9148bbbb1fa1a54962bcc0">&#9670;&#160;</a></span>displayPriceString</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wchar_t* Stove::PCSDK::IAP::StovePCProduct::displayPriceString = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>상품 정가 문자열(전시)   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00822">822</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a9cdd579f0c36432a4a7a403d3cbd0f1f" name="a9cdd579f0c36432a4a7a403d3cbd0f1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cdd579f0c36432a4a7a403d3cbd0f1f">&#9670;&#160;</a></span>displaySalePrice</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Stove::PCSDK::IAP::StovePCProduct::displaySalePrice</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>상품 판매가(전시)   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00842">842</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a5feae3cd85b0180a3d57c616438e11e8" name="a5feae3cd85b0180a3d57c616438e11e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5feae3cd85b0180a3d57c616438e11e8">&#9670;&#160;</a></span>displaySalePriceString</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wchar_t* Stove::PCSDK::IAP::StovePCProduct::displaySalePriceString = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>상품 판매가 문자열(전시)   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00852">852</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="aad37257b029b03222d2663d771bfc8cc" name="aad37257b029b03222d2663d771bfc8cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad37257b029b03222d2663d771bfc8cc">&#9670;&#160;</a></span>gameItemId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wchar_t* Stove::PCSDK::IAP::StovePCProduct::gameItemId = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>상품 아이디에 매핑되는 게임 내 아이템 아이디   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00722">722</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="ac575f5e3c1a0f7124007dbfbed0bb97c" name="ac575f5e3c1a0f7124007dbfbed0bb97c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac575f5e3c1a0f7124007dbfbed0bb97c">&#9670;&#160;</a></span>guidQuantity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t Stove::PCSDK::IAP::StovePCProduct::guidQuantity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>guid 구매 수량   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00932">932</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a5196b5169a9d261c71a417eccfb054bf" name="a5196b5169a9d261c71a417eccfb054bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5196b5169a9d261c71a417eccfb054bf">&#9670;&#160;</a></span>isDiscount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Stove::PCSDK::IAP::StovePCProduct::isDiscount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>할인 여부   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00862">862</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a0ebf5ddba9cd333691af7da419a9e71a" name="a0ebf5ddba9cd333691af7da419a9e71a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ebf5ddba9cd333691af7da419a9e71a">&#9670;&#160;</a></span>memberQuantity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t Stove::PCSDK::IAP::StovePCProduct::memberQuantity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>회원 구매 수량   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00922">922</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a6a68ababfad538b386ba9be332195907" name="a6a68ababfad538b386ba9be332195907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a68ababfad538b386ba9be332195907">&#9670;&#160;</a></span>name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wchar_t* Stove::PCSDK::IAP::StovePCProduct::name = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>상품명   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00732">732</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="af04c5ceb89653e9183881472349741ad" name="af04c5ceb89653e9183881472349741ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af04c5ceb89653e9183881472349741ad">&#9670;&#160;</a></span>price</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Stove::PCSDK::IAP::StovePCProduct::price</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>상품 정가(결제)   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00802">802</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a9139f410063095f8807069042eac4dbb" name="a9139f410063095f8807069042eac4dbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9139f410063095f8807069042eac4dbb">&#9670;&#160;</a></span>productId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Stove::PCSDK::IAP::StovePCProduct::productId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>플랫폼 상품 아이디   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00712">712</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a08224236bb5a83dc1b032873b98bc0de" name="a08224236bb5a83dc1b032873b98bc0de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08224236bb5a83dc1b032873b98bc0de">&#9670;&#160;</a></span>productTypeCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00064.html#ac74424454915c79bef78bf5c6b9e846f">ProductTypeCode</a> Stove::PCSDK::IAP::StovePCProduct::productTypeCode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>아이템 유형 코드   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00762">762</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a02700cceebeefdea7579d9200502f020" name="a02700cceebeefdea7579d9200502f020"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02700cceebeefdea7579d9200502f020">&#9670;&#160;</a></span>purchasedAtLeastOnce</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Stove::PCSDK::IAP::StovePCProduct::purchasedAtLeastOnce</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>구매 여부 (구매 이력이 한 건 이상인 경우 true)   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00962">962</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="ae0c4832c8616f6df7e0ff5e8c8d76a24" name="ae0c4832c8616f6df7e0ff5e8c8d76a24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0c4832c8616f6df7e0ff5e8c8d76a24">&#9670;&#160;</a></span>purchaseLimitCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t Stove::PCSDK::IAP::StovePCProduct::purchaseLimitCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>판매 제한 수량   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00982">982</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="ae3719c9366f0ef44c8f6cc04281a7cf2" name="ae3719c9366f0ef44c8f6cc04281a7cf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3719c9366f0ef44c8f6cc04281a7cf2">&#9670;&#160;</a></span>purchaseLimitTypeCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00064.html#a8bd701312797f34da3a44bf99a157a1b">PurchaseLimitTypeCode</a> Stove::PCSDK::IAP::StovePCProduct::purchaseLimitTypeCode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>구매 여부 (구매 이력이 한 건 이상인 경우 true)   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00972">972</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a6f372ca3bd3193be6088ff998bb2fc49" name="a6f372ca3bd3193be6088ff998bb2fc49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f372ca3bd3193be6088ff998bb2fc49">&#9670;&#160;</a></span>quantity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t Stove::PCSDK::IAP::StovePCProduct::quantity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>개별 상품 수량   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00752">752</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a0f9c3c4f5c87620bc09cd95f0d6a8fe1" name="a0f9c3c4f5c87620bc09cd95f0d6a8fe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f9c3c4f5c87620bc09cd95f0d6a8fe1">&#9670;&#160;</a></span>saleBeginDate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Stove::PCSDK::IAP::StovePCProduct::saleBeginDate = 0LL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>판매 시작 일자(epoch time milliseconds)   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l01002">1002</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="aca55376f48fb02c23b36af5175bcb83e" name="aca55376f48fb02c23b36af5175bcb83e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca55376f48fb02c23b36af5175bcb83e">&#9670;&#160;</a></span>saleEndDate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Stove::PCSDK::IAP::StovePCProduct::saleEndDate = 0LL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>판매 종료 일자(epoch time milliseconds)   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l01012">1012</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="af4bc023cb97e257baa31d7425cdfd6d2" name="af4bc023cb97e257baa31d7425cdfd6d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4bc023cb97e257baa31d7425cdfd6d2">&#9670;&#160;</a></span>saleLimitCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t Stove::PCSDK::IAP::StovePCProduct::saleLimitCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>총 판매 제한 수량 (0일 경우 무제한)   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00992">992</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a7ee02932dacc25c576dbbe9928bba874" name="a7ee02932dacc25c576dbbe9928bba874"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ee02932dacc25c576dbbe9928bba874">&#9670;&#160;</a></span>salePrice</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Stove::PCSDK::IAP::StovePCProduct::salePrice</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>상품 판매가(결제)   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00832">832</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="add350edf1c7d79abc0695e1db61c6140" name="add350edf1c7d79abc0695e1db61c6140"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add350edf1c7d79abc0695e1db61c6140">&#9670;&#160;</a></span>thumbnailUrl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wchar_t* Stove::PCSDK::IAP::StovePCProduct::thumbnailUrl = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>대표 상품 이미지   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00942">942</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a7d7fea12d6d397a2f270bfd98ed22eef" name="a7d7fea12d6d397a2f270bfd98ed22eef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d7fea12d6d397a2f270bfd98ed22eef">&#9670;&#160;</a></span>totalQuantity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t Stove::PCSDK::IAP::StovePCProduct::totalQuantity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>상품 총 판매수량   </p>
+
+<p class="definition"><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00255_source.html#l00912">912</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<hr/>이 구조체에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.:<ul>
+<li><a class="el" href="a00255_source.html">IAPSDK/Deploy/Include/Misc/Structures.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="a00059.html">Stove</a></li><li class="navelem"><a class="el" href="a00060.html">PCSDK</a></li><li class="navelem"><a class="el" href="a00064.html">IAP</a></li><li class="navelem"><a class="el" href="a00151.html">StovePCProduct</a></li>
+    <li class="footer">다음에 의해 생성됨 :  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

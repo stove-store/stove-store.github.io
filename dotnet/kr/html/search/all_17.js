@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['v3_200_20net_0',['Stove PC SDK v3.0 .NET',['../index.html',1,'']]],
+  ['value_1',['value',['../a00109.html#aa6c7a8e4fb8db6a45576f0046862c610',1,'Stove::PCSDK::GameSupport::StovePCAchievement']]],
+  ['valueoperation_2',['valueOperation',['../a00105.html#aa460cca7791216958dddcf434d2bef48',1,'Stove::PCSDK::GameSupport::StovePCAchievementCondition']]],
+  ['view_3',['View',['../a00205.html',1,'Stove::PCSDK']]],
+  ['view_5fautopopup_4',['View_AutoPopup',['../a00205.html#a6de32609114ff609d7e2247c32fefe37',1,'Stove::PCSDK::View']]],
+  ['view_5fcloseallpopups_5',['View_CloseAllPopups',['../a00205.html#a0ec9cee4f559df251e19f120c1b0ab42',1,'Stove::PCSDK::View']]],
+  ['view_5fcouponpopup_6',['View_CouponPopup',['../a00205.html#a8e86fc2c2a117d0fc841daebdf25500c',1,'Stove::PCSDK::View']]],
+  ['view_5ffetchwebopenkey_7',['View_FetchWebOpenKey',['../a00205.html#a2f80823a205edcde156eab1b1afedf3c',1,'Stove::PCSDK::View']]],
+  ['view_5fgetversion_8',['View_GetVersion',['../a00205.html#a5af4e92d0271bfd4e6de5cc8dea31492',1,'Stove::PCSDK::View']]],
+  ['view_5finitialize_9',['View_Initialize',['../a00205.html#adb81ba5331d678119b0847348b4bedda',1,'Stove::PCSDK::View']]],
+  ['view_5fmanualpopup_10',['View_ManualPopup',['../a00205.html#abf7d72e24bd2d3ae15a7062a5e4a2df0',1,'Stove::PCSDK::View']]],
+  ['view_5fnewspopup_11',['View_NewsPopup',['../a00205.html#a4ad2f8ac626c8c7be3d2cfee0522b61d',1,'Stove::PCSDK::View']]],
+  ['view_5fsetpopupdisallowed_12',['View_SetPopupDisallowed',['../a00205.html#ab34ccc29a67fc21df77a1a44c436ed16',1,'Stove::PCSDK::View']]],
+  ['view_5funinitialize_13',['View_UnInitialize',['../a00205.html#ab189c46231d170239f8910753008eb67',1,'Stove::PCSDK::View']]],
+  ['viewsdk_2ecs_14',['ViewSDK.cs',['../a00029.html',1,'']]],
+  ['viewsdk_5fnet_2fdeploy_2fmisc_2fcallbacks_2ecs_15',['Callbacks.cs',['../a00241.html',1,'']]],
+  ['viewsdk_5fnet_2fdeploy_2fmisc_2fenumerations_2ecs_16',['Enumerations.cs',['../a00262.html',1,'']]],
+  ['viewsdk_5fnet_2fdeploy_2fmisc_2fstructures_2ecs_17',['Structures.cs',['../a00280.html',1,'']]],
+  ['viewsdkmethod_18',['ViewSDKMethod',['../a00205.html#ad4eec48af3d1d26a415e100f6bb15efd',1,'Stove::PCSDK::View']]],
+  ['viewsdksdkresultcode_19',['ViewSDKSDKResultCode',['../a00205.html#aae2127743a2a4510078bb8abf2f9c562',1,'Stove::PCSDK::View']]],
+  ['viewui_5fnot_5finitialized_20',['VIEWUI_NOT_INITIALIZED',['../a00125.html#aa9fd442bafd40386f5afb4b3b1c4dde6ad9bb9e20bfb4a2c22d7f28070023ed22',1,'Stove.PCSDK.IAP.VIEWUI_NOT_INITIALIZED'],['../a00205.html#aae2127743a2a4510078bb8abf2f9c562ad9bb9e20bfb4a2c22d7f28070023ed22',1,'Stove.PCSDK.View.VIEWUI_NOT_INITIALIZED']]],
+  ['viewui_5funinit_5ffailed_21',['VIEWUI_UNINIT_FAILED',['../a00125.html#aa9fd442bafd40386f5afb4b3b1c4dde6a7b9e96e189290b0b2f4c51fa1bf95815',1,'Stove.PCSDK.IAP.VIEWUI_UNINIT_FAILED'],['../a00205.html#aae2127743a2a4510078bb8abf2f9c562a7b9e96e189290b0b2f4c51fa1bf95815',1,'Stove.PCSDK.View.VIEWUI_UNINIT_FAILED']]],
+  ['voidedmillis_22',['voidedMillis',['../a00177.html#adcd2060eeba992a872133ab7588c9d11',1,'Stove::PCSDK::IAP::StovePCVoidedPurchase']]]
+];

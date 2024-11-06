@@ -1,0 +1,26 @@
+var a00163 =
+[
+    [ "StovePCStartPurchaseParam", "a00163.html#a3613a2d773cfe2f260361e775a9398c2", null ],
+    [ "StovePCStartPurchaseParam", "a00163.html#aeec3d9ac2d1fa1c21b2a227d32aada28", null ],
+    [ "StovePCStartPurchaseParam", "a00163.html#a045b7ca52d6f6680a50573b89495a40b", null ],
+    [ "~StovePCStartPurchaseParam", "a00163.html#a07be0bd37cd05e53ae59f79b7d622991", null ],
+    [ "CreateOrderProduct", "a00163.html#a6c1273bedb50ec541d2a65fe0b1278b7", null ],
+    [ "DeepCopy", "a00163.html#a7130474355fc31e4e8739e1b03ded5ce", null ],
+    [ "DeepCopy", "a00163.html#afba94f7f745ec18854bf8462a5d42f92", null ],
+    [ "GetExtraData", "a00163.html#a93cb712ea392b49c84be363834aca220", null ],
+    [ "GetOrderProduct", "a00163.html#a4a463033cf00ffa020b1880572820f29", null ],
+    [ "GetOrderProductCount", "a00163.html#adbb7bf2b4bb738bd7f1d8d199295cbdd", null ],
+    [ "GetPurchaseOption", "a00163.html#a175765f62c3014e11ffef77abcaac943", null ],
+    [ "GetServiceTxnNo", "a00163.html#a3d1bee5ce7ca1eb5adb9e0ba4a20cb15", null ],
+    [ "operator=", "a00163.html#a7eb44763ca7f77da1ac6e3d531bd9a3d", null ],
+    [ "operator=", "a00163.html#a59bf593a8c015ed981d8ebc4d5730f6a", null ],
+    [ "SetExtraData", "a00163.html#a8311f391f760a6cf7de7e34c1b19d81e", null ],
+    [ "SetOrderProduct", "a00163.html#aeb7e148d286734b7ed0e0575f4917cd8", null ],
+    [ "SetPurchaseOption", "a00163.html#a4709d202860088b2d2b5f10f94798862", null ],
+    [ "SetServiceTxnNo", "a00163.html#aec88e888ac53048b19f788d632910d6b", null ],
+    [ "extraData", "a00163.html#af69121da19fd91e5ff652b766ed69e1a", null ],
+    [ "option", "a00163.html#ac937cceda07f6dd4d4d1c3471131d5e4", null ],
+    [ "products", "a00163.html#a092f2114940425c1a770f557604df340", null ],
+    [ "productsCount", "a00163.html#a1cbeb47c20f2c18aceaa915fb5ff0161", null ],
+    [ "serviceTxnNo", "a00163.html#a3329da9a10c86f2f7f359ac06dec8ce5", null ]
+];

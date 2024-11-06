@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>StovePCSDK3 .NET Plugin: ViewSDK.cs 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="StovePCSDK.jpg"/></td>
+  <td id="projectalign">
+   <div id="projectname">StovePCSDK3 .NET Plugin<span id="projectnumber">&#160;3.3.2</span>
+   </div>
+   <div id="projectbrief">C# DLL for Stove Platform Service</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','검색',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('a00029_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">로딩중...</div>
+<div class="SRStatus" id="Searching">검색중...</div>
+<div class="SRStatus" id="NoMatches">일치하는것 없음</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ViewSDK.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="a00029.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>static <a class="code hl_namespace" href="a00032.html">Stove</a>.<a class="code hl_namespace" href="a00033.html">PCSDK</a>.<a class="code hl_class" href="a00041.html">Base</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="a00033.html">Stove.PCSDK</a></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="a00205.html">    6</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">partial class </span><a class="code hl_class" href="a00205.html">View</a></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    {</div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="a00205.html#adb81ba5331d678119b0847348b4bedda">   13</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> Result <a class="code hl_function" href="a00205.html#adb81ba5331d678119b0847348b4bedda">View_Initialize</a>()</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <span class="keywordflow">return</span> ViewInternalImpl.View_Initialize();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        }</div>
+</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="a00205.html#ab189c46231d170239f8910753008eb67">   23</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> Result <a class="code hl_function" href="a00205.html#ab189c46231d170239f8910753008eb67">View_UnInitialize</a>()</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="keywordflow">return</span> ViewInternalImpl.View_UnInitialize();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        }</div>
+</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="a00205.html#a6de32609114ff609d7e2247c32fefe37">   34</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00205.html#a6de32609114ff609d7e2247c32fefe37">View_AutoPopup</a>(WebViewMode mode, <a class="code hl_function" href="a00205.html#af3f1ff82a2697539cb401e446f85e406">OnPopupFinished</a> onFinished)</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            ViewInternalImpl.View_AutoPopup(mode, onFinished);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        }</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="a00205.html#abf7d72e24bd2d3ae15a7062a5e4a2df0">   46</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00205.html#abf7d72e24bd2d3ae15a7062a5e4a2df0">View_ManualPopup</a>(<span class="keywordtype">string</span> resourceKey, WebViewMode mode, <a class="code hl_function" href="a00205.html#af3f1ff82a2697539cb401e446f85e406">OnPopupFinished</a> onFinished)</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            ViewInternalImpl.View_ManualPopup(resourceKey, mode, onFinished);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        }</div>
+</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="a00205.html#a4ad2f8ac626c8c7be3d2cfee0522b61d">   57</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00205.html#a4ad2f8ac626c8c7be3d2cfee0522b61d">View_NewsPopup</a>(WebViewMode mode, <a class="code hl_function" href="a00205.html#af3f1ff82a2697539cb401e446f85e406">OnPopupFinished</a> onFinished)</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            ViewInternalImpl.View_NewsPopup(mode, onFinished);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        }</div>
+</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="a00205.html#a8e86fc2c2a117d0fc841daebdf25500c">   68</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00205.html#a8e86fc2c2a117d0fc841daebdf25500c">View_CouponPopup</a>(WebViewMode mode, <a class="code hl_function" href="a00205.html#af3f1ff82a2697539cb401e446f85e406">OnPopupFinished</a> onFinished)</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            ViewInternalImpl.View_CouponPopup(mode, onFinished);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        }</div>
+</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="foldopen" id="foldopen00079" data-start="{" data-end="}">
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="a00205.html#ab34ccc29a67fc21df77a1a44c436ed16">   79</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00205.html#ab34ccc29a67fc21df77a1a44c436ed16">View_SetPopupDisallowed</a>(<a class="code hl_struct" href="a00209.html">StovePCPopupDisallowed</a> popupDisallowed, <a class="code hl_function" href="a00205.html#a70018b4f2c803b0a61f257069d511724">OnSetPopupDisallowedFinished</a> onFinished)</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            ViewInternalImpl.View_SetPopupDisallowed(popupDisallowed, onFinished);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        }</div>
+</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="foldopen" id="foldopen00089" data-start="{" data-end="}">
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="a00205.html#a0ec9cee4f559df251e19f120c1b0ab42">   89</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> Result <a class="code hl_function" href="a00205.html#a0ec9cee4f559df251e19f120c1b0ab42">View_CloseAllPopups</a>()</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            <span class="keywordflow">return</span> ViewInternalImpl.View_CloseAllPopups();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        }</div>
+</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="foldopen" id="foldopen00100" data-start="{" data-end="}">
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="a00205.html#a2f80823a205edcde156eab1b1afedf3c">  100</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00205.html#a2f80823a205edcde156eab1b1afedf3c">View_FetchWebOpenKey</a>(<a class="code hl_function" href="a00205.html#a773caa0b6c34d5b9c2403853ea1d4279">OnFetchWebOpenKeyFinished</a> onFinished)</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            ViewInternalImpl.View_FetchWebOpenKey(onFinished);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        }</div>
+</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="foldopen" id="foldopen00112" data-start="{" data-end="}">
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="a00205.html#a5af4e92d0271bfd4e6de5cc8dea31492">  112</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> Result <a class="code hl_function" href="a00205.html#a5af4e92d0271bfd4e6de5cc8dea31492">View_GetVersion</a>(ref <span class="keywordtype">string</span> version, uint length)</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        {</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            <span class="keywordflow">return</span> ViewInternalImpl.View_GetVersion(ref version, length);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        }</div>
+</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    }</div>
+</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>}</div>
+<div class="ttc" id="aa00032_html"><div class="ttname"><a href="a00032.html">Stove</a></div><div class="ttdef"><b>Definition</b> <a href="a00002_source.html#l00040">BaseSDK.cs:41</a></div></div>
+<div class="ttc" id="aa00033_html"><div class="ttname"><a href="a00033.html">Stove.PCSDK</a></div><div class="ttdef"><b>Definition</b> <a href="a00002_source.html#l00040">BaseSDK.cs:41</a></div></div>
+<div class="ttc" id="aa00041_html"><div class="ttname"><a href="a00041.html">Stove.PCSDK.Base</a></div><div class="ttdef"><b>Definition</b> <a href="a00265_source.html#l00003">BaseSDK_NET/Deploy/Misc/Structures.cs:4</a></div></div>
+<div class="ttc" id="aa00205_html"><div class="ttname"><a href="a00205.html">Stove.PCSDK.View</a></div><div class="ttdef"><b>Definition</b> <a href="#l00006">ViewSDK.cs:7</a></div></div>
+<div class="ttc" id="aa00205_html_a0ec9cee4f559df251e19f120c1b0ab42"><div class="ttname"><a href="a00205.html#a0ec9cee4f559df251e19f120c1b0ab42">Stove.PCSDK.View.View_CloseAllPopups</a></div><div class="ttdeci">static Result View_CloseAllPopups()</div><div class="ttdoc">View SDK를 통해 열린 모든 팝업을 닫습니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00089">ViewSDK.cs:89</a></div></div>
+<div class="ttc" id="aa00205_html_a2f80823a205edcde156eab1b1afedf3c"><div class="ttname"><a href="a00205.html#a2f80823a205edcde156eab1b1afedf3c">Stove.PCSDK.View.View_FetchWebOpenKey</a></div><div class="ttdeci">static void View_FetchWebOpenKey(OnFetchWebOpenKeyFinished onFinished)</div><div class="ttdoc">Web Open in Game 기능을 이용하기 위한 일회성 key를 획득합니다. 외부 브라우저를 통한 Stove 커뮤니티, 고객센터 노출이 필요한 경우에만 사용합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00100">ViewSDK.cs:100</a></div></div>
+<div class="ttc" id="aa00205_html_a4ad2f8ac626c8c7be3d2cfee0522b61d"><div class="ttname"><a href="a00205.html#a4ad2f8ac626c8c7be3d2cfee0522b61d">Stove.PCSDK.View.View_NewsPopup</a></div><div class="ttdeci">static void View_NewsPopup(WebViewMode mode, OnPopupFinished onFinished)</div><div class="ttdoc">WebView를 이용하여 NewsPopup을 실행합니다</div><div class="ttdef"><b>Definition</b> <a href="#l00057">ViewSDK.cs:57</a></div></div>
+<div class="ttc" id="aa00205_html_a5af4e92d0271bfd4e6de5cc8dea31492"><div class="ttname"><a href="a00205.html#a5af4e92d0271bfd4e6de5cc8dea31492">Stove.PCSDK.View.View_GetVersion</a></div><div class="ttdeci">static Result View_GetVersion(ref string version, uint length)</div><div class="ttdoc">ViewSDK의 버전 정보를 조회합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00112">ViewSDK.cs:112</a></div></div>
+<div class="ttc" id="aa00205_html_a6de32609114ff609d7e2247c32fefe37"><div class="ttname"><a href="a00205.html#a6de32609114ff609d7e2247c32fefe37">Stove.PCSDK.View.View_AutoPopup</a></div><div class="ttdeci">static void View_AutoPopup(WebViewMode mode, OnPopupFinished onFinished)</div><div class="ttdoc">WebView를 이용하여 AutoPopup을 실행합니다</div><div class="ttdef"><b>Definition</b> <a href="#l00034">ViewSDK.cs:34</a></div></div>
+<div class="ttc" id="aa00205_html_a70018b4f2c803b0a61f257069d511724"><div class="ttname"><a href="a00205.html#a70018b4f2c803b0a61f257069d511724">Stove.PCSDK.View.OnSetPopupDisallowedFinished</a></div><div class="ttdeci">delegate void OnSetPopupDisallowedFinished(CallbackResult result)</div><div class="ttdoc">PopupDisallowed를 이용한 API 호출 시 응답받는 델리게이트</div></div>
+<div class="ttc" id="aa00205_html_a773caa0b6c34d5b9c2403853ea1d4279"><div class="ttname"><a href="a00205.html#a773caa0b6c34d5b9c2403853ea1d4279">Stove.PCSDK.View.OnFetchWebOpenKeyFinished</a></div><div class="ttdeci">delegate void OnFetchWebOpenKeyFinished(CallbackResult result, string key)</div><div class="ttdoc">FetchWebOpenKey를 이용한 API 호출 시 응답받는 콜백 함수 포인터</div></div>
+<div class="ttc" id="aa00205_html_a8e86fc2c2a117d0fc841daebdf25500c"><div class="ttname"><a href="a00205.html#a8e86fc2c2a117d0fc841daebdf25500c">Stove.PCSDK.View.View_CouponPopup</a></div><div class="ttdeci">static void View_CouponPopup(WebViewMode mode, OnPopupFinished onFinished)</div><div class="ttdoc">WebView를 이용하여 CouponPopup을 실행합니다</div><div class="ttdef"><b>Definition</b> <a href="#l00068">ViewSDK.cs:68</a></div></div>
+<div class="ttc" id="aa00205_html_ab189c46231d170239f8910753008eb67"><div class="ttname"><a href="a00205.html#ab189c46231d170239f8910753008eb67">Stove.PCSDK.View.View_UnInitialize</a></div><div class="ttdeci">static Result View_UnInitialize()</div><div class="ttdoc">ViewSDK의 자원을 해제합니다</div><div class="ttdef"><b>Definition</b> <a href="#l00023">ViewSDK.cs:23</a></div></div>
+<div class="ttc" id="aa00205_html_ab34ccc29a67fc21df77a1a44c436ed16"><div class="ttname"><a href="a00205.html#ab34ccc29a67fc21df77a1a44c436ed16">Stove.PCSDK.View.View_SetPopupDisallowed</a></div><div class="ttdeci">static void View_SetPopupDisallowed(StovePCPopupDisallowed popupDisallowed, OnSetPopupDisallowedFinished onFinished)</div><div class="ttdoc">팝업이 일정기간 동안 보여지지 않도록 설정합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00079">ViewSDK.cs:79</a></div></div>
+<div class="ttc" id="aa00205_html_abf7d72e24bd2d3ae15a7062a5e4a2df0"><div class="ttname"><a href="a00205.html#abf7d72e24bd2d3ae15a7062a5e4a2df0">Stove.PCSDK.View.View_ManualPopup</a></div><div class="ttdeci">static void View_ManualPopup(string resourceKey, WebViewMode mode, OnPopupFinished onFinished)</div><div class="ttdoc">WebView를 이용하여 ManualPopup을 실행합니다</div><div class="ttdef"><b>Definition</b> <a href="#l00046">ViewSDK.cs:46</a></div></div>
+<div class="ttc" id="aa00205_html_adb81ba5331d678119b0847348b4bedda"><div class="ttname"><a href="a00205.html#adb81ba5331d678119b0847348b4bedda">Stove.PCSDK.View.View_Initialize</a></div><div class="ttdeci">static Result View_Initialize()</div><div class="ttdoc">ViewSDK를 초기화 합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00013">ViewSDK.cs:13</a></div></div>
+<div class="ttc" id="aa00205_html_af3f1ff82a2697539cb401e446f85e406"><div class="ttname"><a href="a00205.html#af3f1ff82a2697539cb401e446f85e406">Stove.PCSDK.View.OnPopupFinished</a></div><div class="ttdeci">delegate void OnPopupFinished(CallbackResult result)</div><div class="ttdoc">WebView를 이용한 API 호출 시 응답받는 델리게이트</div></div>
+<div class="ttc" id="aa00209_html"><div class="ttname"><a href="a00209.html">Stove.PCSDK.View.StovePCPopupDisallowed</a></div><div class="ttdoc">팝업 노출을 하지 않을 때 필요한 정보입니다.</div><div class="ttdef"><b>Definition</b> <a href="a00280_source.html#l00009">ViewSDK_NET/Deploy/Misc/Structures.cs:10</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_248dc7cedc1ea0c288f821d4f2f68d94.html">Dist</a></li><li class="navelem"><a class="el" href="dir_1776cfe3663507e11a25c9ec63543070.html">DotNet_Document</a></li><li class="navelem"><a class="el" href="dir_84aa59d066baac168de48212f19182e0.html">ViewSDK_NET</a></li><li class="navelem"><a class="el" href="dir_2452eb595cae38bfeb649947b41f5b75.html">Deploy</a></li><li class="navelem"><a class="el" href="a00029.html">ViewSDK.cs</a></li>
+    <li class="footer">다음에 의해 생성됨 :  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

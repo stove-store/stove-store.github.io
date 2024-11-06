@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['base_5faccesstokenrenewed_0',['Base_AccessTokenRenewed',['../a00041.html#a453d20c4cb1c81b180a14680c0f3f361',1,'Stove::PCSDK::Base']]],
+  ['base_5fgetaccesstoken_1',['Base_GetAccessToken',['../a00041.html#a1b1e0c064f52bd0989f905e25be232cd',1,'Stove::PCSDK::Base']]],
+  ['base_5fgetgds_2',['Base_GetGds',['../a00041.html#a1f139da0310f52059382e18ed2dffcc4',1,'Stove::PCSDK::Base']]],
+  ['base_5fgetsignin_3',['Base_GetSignin',['../a00041.html#ac92b9a5bf210cde6f35c9f355c4874c7',1,'Stove::PCSDK::Base']]],
+  ['base_5fgettracehint_4',['Base_GetTraceHint',['../a00041.html#aed9caddf32324f5cc14a168799512765',1,'Stove::PCSDK::Base']]],
+  ['base_5fgetuser_5',['Base_GetUser',['../a00041.html#a1622bea27a3170285c7d72b0b098d3ec',1,'Stove::PCSDK::Base']]],
+  ['base_5fgetversion_6',['Base_GetVersion',['../a00041.html#abdb57882a93665fb42f39c8fb1fc0531',1,'Stove::PCSDK::Base']]],
+  ['base_5finitialize_7',['Base_Initialize',['../a00041.html#a33770f229db801b5b27aab7f9a9a2b26',1,'Stove::PCSDK::Base']]],
+  ['base_5foverimmersionnotification_8',['Base_OverImmersionNotification',['../a00041.html#ac69b7fa22964da51cef4e2155df797de',1,'Stove::PCSDK::Base']]],
+  ['base_5frestartappifnecessary_9',['Base_RestartAppIfNecessary',['../a00041.html#ab537bf98883ccbe3c866d355c2e5b90d',1,'Stove::PCSDK::Base']]],
+  ['base_5frestartappifnecessaryasync_10',['Base_RestartAppIfNecessaryAsync',['../a00041.html#a26cd57a7e07769224225eeab16a1279f',1,'Stove::PCSDK::Base']]],
+  ['base_5fruncallback_11',['Base_RunCallback',['../a00041.html#a7facd915e38e16d06dfaf790f6ce6fe7',1,'Stove::PCSDK::Base']]],
+  ['base_5fruncallbackwithtimeout_12',['Base_RunCallbackWithTimeout',['../a00041.html#ae43630674afee8a32139c86772a0f746',1,'Stove::PCSDK::Base']]],
+  ['base_5fsetgameprofile_13',['Base_SetGameProfile',['../a00041.html#a1b79da2ca828f485927122216564ef6d',1,'Stove::PCSDK::Base']]],
+  ['base_5fsetlanguage_14',['Base_SetLanguage',['../a00041.html#a0924d6898e2922fafd2fa6c35750a827',1,'Stove::PCSDK::Base']]],
+  ['base_5fshutdownnotification_15',['Base_ShutdownNotification',['../a00041.html#ac8d7d23edf9dc466efa00bfa1fc893bb',1,'Stove::PCSDK::Base']]],
+  ['base_5funinitialize_16',['Base_UnInitialize',['../a00041.html#a30dba0a5088d69a629b60214c5c51fcd',1,'Stove::PCSDK::Base']]]
+];

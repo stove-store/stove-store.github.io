@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>StovePCSDK3 .NET Plugin: Callbacks.cs 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="StovePCSDK.jpg"/></td>
+  <td id="projectalign">
+   <div id="projectname">StovePCSDK3 .NET Plugin<span id="projectnumber">&#160;3.3.2</span>
+   </div>
+   <div id="projectbrief">C# DLL for Stove Platform Service</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','검색',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('a00232_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">로딩중...</div>
+<div class="SRStatus" id="Searching">검색중...</div>
+<div class="SRStatus" id="NoMatches">일치하는것 없음</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">IAPSDK_NET/Deploy/Misc/Callbacks.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="a00232.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>static <a class="code hl_namespace" href="a00032.html">Stove</a>.<a class="code hl_namespace" href="a00033.html">PCSDK</a>.<a class="code hl_class" href="a00041.html">Base</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="a00033.html">Stove.PCSDK</a></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">partial class </span>IAP</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="a00125.html#ab150a7be3bb1c24ed6ce86892ee4ba7a">   13</a></span>        <span class="keyword">public</span> delegate <span class="keywordtype">void</span> <a class="code hl_function" href="a00125.html#ab150a7be3bb1c24ed6ce86892ee4ba7a">OnFetchShopCategoriesFinished</a>(CallbackResult result, <a class="code hl_struct" href="a00129.html">StovePCShopCategory</a>[] shopCategories);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="a00125.html#aa4a1e55380210d1cf26c34983a4f494f">   20</a></span>        <span class="keyword">public</span> delegate <span class="keywordtype">void</span> <a class="code hl_function" href="a00125.html#aa4a1e55380210d1cf26c34983a4f494f">OnFetchProductsFinished</a>(CallbackResult result, <a class="code hl_struct" href="a00137.html">StovePCProduct</a>[] products);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="a00125.html#af18911307ca4127af2d10a4955528deb">   27</a></span>        <span class="keyword">public</span> delegate <span class="keywordtype">void</span> <a class="code hl_function" href="a00125.html#af18911307ca4127af2d10a4955528deb">OnStartPurchaseFinished</a>(CallbackResult result, <a class="code hl_struct" href="a00161.html">StovePCPurchaseResult</a> purchase);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="a00125.html#a1e87d26464f72cafec74e0291f16a387">   36</a></span>        <span class="keyword">public</span> delegate <span class="keywordtype">void</span> <a class="code hl_function" href="a00125.html#a1e87d26464f72cafec74e0291f16a387">OnConfirmPurchaseFinished</a>(CallbackResult result, <span class="keywordtype">bool</span> status, <a class="code hl_struct" href="a00153.html">StovePCPurchasedProduct</a>[] purchasedProducts, <a class="code hl_struct" href="a00157.html">StovePCChargeInfo</a>[] chargeInfos);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="a00125.html#a0cc494614a9e15f06018a0e32fc0a22f">   43</a></span>        <span class="keyword">public</span> delegate <span class="keywordtype">void</span> <a class="code hl_function" href="a00125.html#a0cc494614a9e15f06018a0e32fc0a22f">OnFetchInventoryFinished</a>(CallbackResult result, <a class="code hl_struct" href="a00165.html">StovePCInventoryItem</a>[] inventoryItems);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="a00125.html#a318e2dde138c748251d71a9368605d6b">   51</a></span>        <span class="keyword">public</span> delegate <span class="keywordtype">void</span> <a class="code hl_function" href="a00125.html#a318e2dde138c748251d71a9368605d6b">OnFetchTermsAgreementFinished</a>(CallbackResult result, <span class="keywordtype">bool</span> agreed, <span class="keywordtype">string</span> url);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="a00125.html#a405f4cd5306cd399cb484548a95df19e">   58</a></span>        <span class="keyword">public</span> delegate <span class="keywordtype">void</span> <a class="code hl_function" href="a00125.html#a405f4cd5306cd399cb484548a95df19e">OnStartPaymentFinished</a>(CallbackResult result, <span class="keywordtype">string</span> url);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="a00125.html#a5d6f9abc4e96fbed20bc478fd95ec100">   65</a></span>        <span class="keyword">public</span> delegate <span class="keywordtype">void</span> <a class="code hl_function" href="a00125.html#a5d6f9abc4e96fbed20bc478fd95ec100">OnFetchVoidedPurchasesFinished</a>(CallbackResult result, <a class="code hl_struct" href="a00177.html">StovePCVoidedPurchase</a>[] voidedPurchase);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
+<div class="ttc" id="aa00032_html"><div class="ttname"><a href="a00032.html">Stove</a></div><div class="ttdef"><b>Definition</b> <a href="a00002_source.html#l00040">BaseSDK.cs:41</a></div></div>
+<div class="ttc" id="aa00033_html"><div class="ttname"><a href="a00033.html">Stove.PCSDK</a></div><div class="ttdef"><b>Definition</b> <a href="a00002_source.html#l00040">BaseSDK.cs:41</a></div></div>
+<div class="ttc" id="aa00041_html"><div class="ttname"><a href="a00041.html">Stove.PCSDK.Base</a></div><div class="ttdef"><b>Definition</b> <a href="a00265_source.html#l00003">BaseSDK_NET/Deploy/Misc/Structures.cs:4</a></div></div>
+<div class="ttc" id="aa00125_html_a0cc494614a9e15f06018a0e32fc0a22f"><div class="ttname"><a href="a00125.html#a0cc494614a9e15f06018a0e32fc0a22f">Stove.PCSDK.IAP.OnFetchInventoryFinished</a></div><div class="ttdeci">delegate void OnFetchInventoryFinished(CallbackResult result, StovePCInventoryItem[] inventoryItems)</div><div class="ttdoc">IAP_FetchInventory API 호출 시 응답받는 델리게이트</div></div>
+<div class="ttc" id="aa00125_html_a1e87d26464f72cafec74e0291f16a387"><div class="ttname"><a href="a00125.html#a1e87d26464f72cafec74e0291f16a387">Stove.PCSDK.IAP.OnConfirmPurchaseFinished</a></div><div class="ttdeci">delegate void OnConfirmPurchaseFinished(CallbackResult result, bool status, StovePCPurchasedProduct[] purchasedProducts, StovePCChargeInfo[] chargeInfos)</div><div class="ttdoc">IAP_ConfirmPurchase API 호출 시 응답받는 델리게이트</div></div>
+<div class="ttc" id="aa00125_html_a318e2dde138c748251d71a9368605d6b"><div class="ttname"><a href="a00125.html#a318e2dde138c748251d71a9368605d6b">Stove.PCSDK.IAP.OnFetchTermsAgreementFinished</a></div><div class="ttdeci">delegate void OnFetchTermsAgreementFinished(CallbackResult result, bool agreed, string url)</div><div class="ttdoc">IAP_FetchTermsAgreement API 호출 시 응답받는 델리게이트</div></div>
+<div class="ttc" id="aa00125_html_a405f4cd5306cd399cb484548a95df19e"><div class="ttname"><a href="a00125.html#a405f4cd5306cd399cb484548a95df19e">Stove.PCSDK.IAP.OnStartPaymentFinished</a></div><div class="ttdeci">delegate void OnStartPaymentFinished(CallbackResult result, string url)</div><div class="ttdoc">IAP_StartPayment API 호출 시 응답받는 델리게이트</div></div>
+<div class="ttc" id="aa00125_html_a5d6f9abc4e96fbed20bc478fd95ec100"><div class="ttname"><a href="a00125.html#a5d6f9abc4e96fbed20bc478fd95ec100">Stove.PCSDK.IAP.OnFetchVoidedPurchasesFinished</a></div><div class="ttdeci">delegate void OnFetchVoidedPurchasesFinished(CallbackResult result, StovePCVoidedPurchase[] voidedPurchase)</div><div class="ttdoc">IAP_FetchVoidedPurchases API 호출 시 응답받는 델리게이트</div></div>
+<div class="ttc" id="aa00125_html_aa4a1e55380210d1cf26c34983a4f494f"><div class="ttname"><a href="a00125.html#aa4a1e55380210d1cf26c34983a4f494f">Stove.PCSDK.IAP.OnFetchProductsFinished</a></div><div class="ttdeci">delegate void OnFetchProductsFinished(CallbackResult result, StovePCProduct[] products)</div><div class="ttdoc">IAP_FetchProducts API 호출 시 응답받는 델리게이트</div></div>
+<div class="ttc" id="aa00125_html_ab150a7be3bb1c24ed6ce86892ee4ba7a"><div class="ttname"><a href="a00125.html#ab150a7be3bb1c24ed6ce86892ee4ba7a">Stove.PCSDK.IAP.OnFetchShopCategoriesFinished</a></div><div class="ttdeci">delegate void OnFetchShopCategoriesFinished(CallbackResult result, StovePCShopCategory[] shopCategories)</div><div class="ttdoc">IAP_FetchShopCategories API 호출 시 응답받는 델리게이트</div></div>
+<div class="ttc" id="aa00125_html_af18911307ca4127af2d10a4955528deb"><div class="ttname"><a href="a00125.html#af18911307ca4127af2d10a4955528deb">Stove.PCSDK.IAP.OnStartPurchaseFinished</a></div><div class="ttdeci">delegate void OnStartPurchaseFinished(CallbackResult result, StovePCPurchaseResult purchase)</div><div class="ttdoc">IAP_StartPurchase API 호출 시 응답받는 델리게이트</div></div>
+<div class="ttc" id="aa00129_html"><div class="ttname"><a href="a00129.html">Stove.PCSDK.IAP.StovePCShopCategory</a></div><div class="ttdoc">개별 카테고리 정보를 전달합니다. IAP_FetchShopCategories 콜백에 결과 전달 시 사용합니다.</div><div class="ttdef"><b>Definition</b> <a href="a00271_source.html#l00014">IAPSDK_NET/Deploy/Misc/Structures.cs:15</a></div></div>
+<div class="ttc" id="aa00137_html"><div class="ttname"><a href="a00137.html">Stove.PCSDK.IAP.StovePCProduct</a></div><div class="ttdoc">개별 상품 정보를 전달하는 구조체입니다. IAP_FetchProducts 콜백에 결과 전달 시 사용됩니다.</div><div class="ttdef"><b>Definition</b> <a href="a00271_source.html#l00071">IAPSDK_NET/Deploy/Misc/Structures.cs:72</a></div></div>
+<div class="ttc" id="aa00153_html"><div class="ttname"><a href="a00153.html">Stove.PCSDK.IAP.StovePCPurchasedProduct</a></div><div class="ttdoc">구매한 상품의 정보를 전달하는 구조체입니다. IAP_ConfirmPurchase 콜백에 결과 전달 시 사용합니다.</div><div class="ttdef"><b>Definition</b> <a href="a00271_source.html#l00325">IAPSDK_NET/Deploy/Misc/Structures.cs:326</a></div></div>
+<div class="ttc" id="aa00157_html"><div class="ttname"><a href="a00157.html">Stove.PCSDK.IAP.StovePCChargeInfo</a></div><div class="ttdoc">상품을 구매할 때 사용한 재화 정보를 전달하는 구조체입니다. IAP_StartPurchase 및 IAP_ConfirmPurchaseCpp 콜백에 결과 전달 시 사용합니다.</div><div class="ttdef"><b>Definition</b> <a href="a00271_source.html#l00364">IAPSDK_NET/Deploy/Misc/Structures.cs:365</a></div></div>
+<div class="ttc" id="aa00161_html"><div class="ttname"><a href="a00161.html">Stove.PCSDK.IAP.StovePCPurchaseResult</a></div><div class="ttdoc">구매 작업 결과 정보를 전달하는 구조체입니다. IAP_StartPurchase 콜백에 결과 전달 시 사용합니다.</div><div class="ttdef"><b>Definition</b> <a href="a00271_source.html#l00399">IAPSDK_NET/Deploy/Misc/Structures.cs:400</a></div></div>
+<div class="ttc" id="aa00165_html"><div class="ttname"><a href="a00165.html">Stove.PCSDK.IAP.StovePCInventoryItem</a></div><div class="ttdoc">구매 기록 정보를 전달하는 구조체입니다. IAP_FetchInventory 콜백에 결과 전달 시 사용합니다.</div><div class="ttdef"><b>Definition</b> <a href="a00271_source.html#l00468">IAPSDK_NET/Deploy/Misc/Structures.cs:469</a></div></div>
+<div class="ttc" id="aa00177_html"><div class="ttname"><a href="a00177.html">Stove.PCSDK.IAP.StovePCVoidedPurchase</a></div><div class="ttdoc">환불 처리 정보를 전달하는 구조체입니다. IAP_FetchVoidedPurchases 콜백에 결과 전달 시 사용합니다.</div><div class="ttdef"><b>Definition</b> <a href="a00271_source.html#l00581">IAPSDK_NET/Deploy/Misc/Structures.cs:582</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_248dc7cedc1ea0c288f821d4f2f68d94.html">Dist</a></li><li class="navelem"><a class="el" href="dir_1776cfe3663507e11a25c9ec63543070.html">DotNet_Document</a></li><li class="navelem"><a class="el" href="dir_3ff9b683d55485f92c842cef64d19335.html">IAPSDK_NET</a></li><li class="navelem"><a class="el" href="dir_cb3ab7a14af7abd3431a8765bb5dbdea.html">Deploy</a></li><li class="navelem"><a class="el" href="dir_b309ad497cfb8c98b97d063034069ed1.html">Misc</a></li><li class="navelem"><a class="el" href="a00232.html">Callbacks.cs</a></li>
+    <li class="footer">다음에 의해 생성됨 :  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

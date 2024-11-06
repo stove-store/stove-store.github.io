@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['managed_5fexception_0',['MANAGED_EXCEPTION',['../a00061.html#a26b534462135c359084763e5bdedef14ad39caad7773f9d769161673dffba5db5',1,'Stove::PCSDK::Base::MANAGED_EXCEPTION'],['../a00062.html#a86c2236c2100e11f886f0e190d751053ad39caad7773f9d769161673dffba5db5',1,'Stove::PCSDK::GameSupport::MANAGED_EXCEPTION'],['../a00063.html#a9ec4d0a39eac68d6e988e8b2c1fea6b3ad39caad7773f9d769161673dffba5db5',1,'Stove::PCSDK::GamingServices::MANAGED_EXCEPTION'],['../a00064.html#a1a6d21961b619f8e3e99469592298ee2ad39caad7773f9d769161673dffba5db5',1,'Stove::PCSDK::IAP::MANAGED_EXCEPTION'],['../a00065.html#a6f10fe667b8ac30569647c897e90eb4dad39caad7773f9d769161673dffba5db5',1,'Stove::PCSDK::Ownership::MANAGED_EXCEPTION'],['../a00066.html#a74c64925e27831d81c16bd331f15a491ad39caad7773f9d769161673dffba5db5',1,'Stove::PCSDK::PCBang::MANAGED_EXCEPTION'],['../a00067.html#a7542759723183ad11d2524f59d94c9cead39caad7773f9d769161673dffba5db5',1,'Stove::PCSDK::View::MANAGED_EXCEPTION']]],
+  ['manual_5fpopup_1',['MANUAL_POPUP',['../a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a5698506e8c78a53ab1006c3973455f69',1,'Stove::PCSDK::View']]],
+  ['member_2',['MEMBER',['../a00064.html#a8bd701312797f34da3a44bf99a157a1ba77e6cb59f088a2937324f798be141b4b',1,'Stove::PCSDK::IAP']]],
+  ['modify_5fstat_3',['MODIFY_STAT',['../a00062.html#ac4c3aaa2ca109760662af575f8690184a7733374f5a30cf33de024603055704d7',1,'Stove::PCSDK::GameSupport']]]
+];
