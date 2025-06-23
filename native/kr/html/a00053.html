@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="StovePCSDK.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">StovePCSDK3<span id="projectnumber">&#160;3.3.2.3.g9ca65.dirty</span>
+   <div id="projectname">StovePCSDK3<span id="projectnumber">&#160;3.3.4</span>
    </div>
    <div id="projectbrief">C/C++ DLL for Stove Platform Service</div>
   </td>
@@ -142,6 +142,11 @@ $(function(){initNavTree('a00053.html',''); initResizable(true); });
 &#160;&#160;<a class="el" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a623d5e6c8cc1ebd6f69bbf7d689fc296">Stove::PCSDK::View::COUPON_POPUP</a> = 87U
 , <a class="el" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39adbe8b038a5ab270d0e8805286c53b9ce">Stove::PCSDK::View::FETCH_COMMUNITY</a> = 88U
 , <a class="el" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a7718c4f98d99689ebf15e87cf719b53d">Stove::PCSDK::View::COMMUNITY_POPUP</a> = 89U
+, <a class="el" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a0426f1be54e5ae3740168024fa92b09c">Stove::PCSDK::View::FETCH_VERIFY_IDENTIFICATION</a> = 90U
+, <br />
+&#160;&#160;<a class="el" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39aaa953124fc35b70e4e508d98a58cdfce">Stove::PCSDK::View::VERIFY_IDENTIFICATION_POPUP</a> = 91U
+, <a class="el" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a3379100126af4d9d8df01da6ba742a9e">Stove::PCSDK::View::FETCH_CS</a> = 92U
+, <a class="el" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a2da7442c5a879a767e2657cf8be3f84a">Stove::PCSDK::View::CS_POPUP</a> = 93U
 , <a class="el" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a5cdec293163d27f8d8f1e7a156ea6aa7">Stove::PCSDK::View::SET_POPUP_DISALLOWED</a> = 160U
 , <br />
 &#160;&#160;<a class="el" href="a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a361b88111754a925a6494aeeea56a886">Stove::PCSDK::View::CLOSE_ALL_POPUPS</a> = 161U
@@ -173,19 +178,25 @@ $(function(){initNavTree('a00053.html',''); initResizable(true); });
 &#160;&#160;<a class="el" href="a00067.html#a7542759723183ad11d2524f59d94c9ceac6fdba1c48d9813a1dfd878a1756d2d8">Stove::PCSDK::View::RESPONSE_INVALID_VALUE_FORMAT</a> = 26U
 , <a class="el" href="a00067.html#a7542759723183ad11d2524f59d94c9ceaced61cd095bbd4b5da066fb670292e64">Stove::PCSDK::View::LOG_81PLUG_ERROR</a> = 27U
 , <a class="el" href="a00067.html#a7542759723183ad11d2524f59d94c9cea4d77ea607bc5801f7413b0e8e060612e">Stove::PCSDK::View::UPDATE_81PLUG_FEED_ERROR</a> = 28U
+, <a class="el" href="a00067.html#a7542759723183ad11d2524f59d94c9ceacadf555c2fe95f3090ebb5a424e01d6e">Stove::PCSDK::View::ASYNC_OPERATION_IN_PROGRESS</a> = 29U
+, <br />
+&#160;&#160;<a class="el" href="a00067.html#a7542759723183ad11d2524f59d94c9cea2066886874efe9c14701cf3231b6ba49">Stove::PCSDK::View::BASE_UNINITIALIZED</a> = 30U
 , <a class="el" href="a00067.html#a7542759723183ad11d2524f59d94c9ceaa738d94a1223530902a971b9c5a11ae6">Stove::PCSDK::View::PCSDK_DLL_NOT_FOUND</a> = 251U
-, <br />
-&#160;&#160;<a class="el" href="a00067.html#a7542759723183ad11d2524f59d94c9cea3e860a081575fc82cc7b6ed2ca602947">Stove::PCSDK::View::NOT_IMPLEMENTED</a> = 252U
+, <a class="el" href="a00067.html#a7542759723183ad11d2524f59d94c9cea3e860a081575fc82cc7b6ed2ca602947">Stove::PCSDK::View::NOT_IMPLEMENTED</a> = 252U
 , <a class="el" href="a00067.html#a7542759723183ad11d2524f59d94c9ceae61780aea0c20d1019d1b24bfbd0a253">Stove::PCSDK::View::UNMANAGED_EXCEPTION</a> = 253U
-, <a class="el" href="a00067.html#a7542759723183ad11d2524f59d94c9cead39caad7773f9d769161673dffba5db5">Stove::PCSDK::View::MANAGED_EXCEPTION</a> = 254U
+, <br />
+&#160;&#160;<a class="el" href="a00067.html#a7542759723183ad11d2524f59d94c9cead39caad7773f9d769161673dffba5db5">Stove::PCSDK::View::MANAGED_EXCEPTION</a> = 254U
 , <a class="el" href="a00067.html#a7542759723183ad11d2524f59d94c9cea9a10f345b0f755d461a8673a5e9ef6b4">Stove::PCSDK::View::UNKNOWN_ERROR</a> = 255U
-, <br />
-&#160;&#160;<a class="el" href="a00067.html#a7542759723183ad11d2524f59d94c9cead9bb9e20bfb4a2c22d7f28070023ed22">Stove::PCSDK::View::VIEWUI_NOT_INITIALIZED</a> = 80U
+, <a class="el" href="a00067.html#a7542759723183ad11d2524f59d94c9cead9bb9e20bfb4a2c22d7f28070023ed22">Stove::PCSDK::View::VIEWUI_NOT_INITIALIZED</a> = 80U
 , <a class="el" href="a00067.html#a7542759723183ad11d2524f59d94c9cea7b9e96e189290b0b2f4c51fa1bf95815">Stove::PCSDK::View::VIEWUI_UNINIT_FAILED</a> = 81U
-, <a class="el" href="a00067.html#a7542759723183ad11d2524f59d94c9cead04fbfb98a350444d7c9a92d0ab393e8">Stove::PCSDK::View::WEBVIEW_CREATE_FAIL</a> = 82U
-, <a class="el" href="a00067.html#a7542759723183ad11d2524f59d94c9cea9540cf03deffbf38f8be361ea05dc94c">Stove::PCSDK::View::WEBVIEW_LOAD_URL_FAIL</a> = 83U
 , <br />
-&#160;&#160;<a class="el" href="a00067.html#a7542759723183ad11d2524f59d94c9ceaf37a8dc1bf13601f2854a392ef537519">Stove::PCSDK::View::WEBVIEW_CLOSE_ALL_FAIL</a> = 84U
+&#160;&#160;<a class="el" href="a00067.html#a7542759723183ad11d2524f59d94c9cead04fbfb98a350444d7c9a92d0ab393e8">Stove::PCSDK::View::WEBVIEW_CREATE_FAIL</a> = 82U
+, <a class="el" href="a00067.html#a7542759723183ad11d2524f59d94c9cea9540cf03deffbf38f8be361ea05dc94c">Stove::PCSDK::View::WEBVIEW_LOAD_URL_FAIL</a> = 83U
+, <a class="el" href="a00067.html#a7542759723183ad11d2524f59d94c9ceaf37a8dc1bf13601f2854a392ef537519">Stove::PCSDK::View::WEBVIEW_CLOSE_ALL_FAIL</a> = 84U
+, <a class="el" href="a00067.html#a7542759723183ad11d2524f59d94c9cea29f54208c0e037e992a48c189e9627c3">Stove::PCSDK::View::WEBVIEW_CLOSE_FAIL</a> = 85U
+, <br />
+&#160;&#160;<a class="el" href="a00067.html#a7542759723183ad11d2524f59d94c9cea151b2dcbe518db43d5c99ebe91fb6c5d">Stove::PCSDK::View::WEBVIEW_CREATE_COOKIE_FAIL</a> = 86U
+, <a class="el" href="a00067.html#a7542759723183ad11d2524f59d94c9cea363f395d7e1c19f78c9d41a406d895fb">Stove::PCSDK::View::NO_POPUP_DATA</a> = 87U
 <br />
  }</td></tr>
 <tr class="separator:a7542759723183ad11d2524f59d94c9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>

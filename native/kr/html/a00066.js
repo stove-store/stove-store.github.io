@@ -1,8 +1,8 @@
 var a00066 =
 [
-    [ "StovePCBangStatus", "a00203.html", "a00203" ],
-    [ "StovePCBangUserLogin", "a00199.html", "a00199" ],
-    [ "StovePCRefreshUserBenefits", "a00207.html", "a00207" ],
+    [ "StovePCBangStatus", "a00207.html", "a00207" ],
+    [ "StovePCBangUserLogin", "a00203.html", "a00203" ],
+    [ "StovePCRefreshUserBenefits", "a00211.html", "a00211" ],
     [ "OnPCBangCheckPCBangStatusOnFinished", "a00066.html#a12148047137cf2133b0104a6aea8ea48", null ],
     [ "OnPCBangRefreshUserBenefitsOnFinished", "a00066.html#abaa1444eb071f64e58ded93b8518d54e", null ],
     [ "OnPCBangUserLoginOnFinished", "a00066.html#a67fe0bc6a6df29adf18093db96970d69", null ],
@@ -44,6 +44,8 @@ var a00066 =
       [ "RESPONSE_INVALID_VALUE_FORMAT", "a00066.html#a74c64925e27831d81c16bd331f15a491ac6fdba1c48d9813a1dfd878a1756d2d8", null ],
       [ "LOG_81PLUG_ERROR", "a00066.html#a74c64925e27831d81c16bd331f15a491aced61cd095bbd4b5da066fb670292e64", null ],
       [ "UPDATE_81PLUG_FEED_ERROR", "a00066.html#a74c64925e27831d81c16bd331f15a491a4d77ea607bc5801f7413b0e8e060612e", null ],
+      [ "ASYNC_OPERATION_IN_PROGRESS", "a00066.html#a74c64925e27831d81c16bd331f15a491acadf555c2fe95f3090ebb5a424e01d6e", null ],
+      [ "BASE_UNINITIALIZED", "a00066.html#a74c64925e27831d81c16bd331f15a491a2066886874efe9c14701cf3231b6ba49", null ],
       [ "PCSDK_DLL_NOT_FOUND", "a00066.html#a74c64925e27831d81c16bd331f15a491aa738d94a1223530902a971b9c5a11ae6", null ],
       [ "NOT_IMPLEMENTED", "a00066.html#a74c64925e27831d81c16bd331f15a491a3e860a081575fc82cc7b6ed2ca602947", null ],
       [ "UNMANAGED_EXCEPTION", "a00066.html#a74c64925e27831d81c16bd331f15a491ae61780aea0c20d1019d1b24bfbd0a253", null ],

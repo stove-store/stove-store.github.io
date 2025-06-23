@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="StovePCSDK.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">StovePCSDK3<span id="projectnumber">&#160;3.3.2.3.g9ca65.dirty</span>
+   <div id="projectname">StovePCSDK3<span id="projectnumber">&#160;3.3.4</span>
    </div>
    <div id="projectbrief">C/C++ DLL for Stove Platform Service</div>
   </td>
@@ -105,34 +105,36 @@ $(function(){initNavTree('a00029_source.html',''); initResizable(true); });
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="a00219.html">Misc/Callbacks.h</a>&quot;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span><a class="code hl_namespace" href="a00059.html">Stove</a></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">namespace </span>PCSDK</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    {</div>
-<div class="foldopen" id="foldopen00021" data-start="{" data-end="}">
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="a00063.html">   21</a></span>        <span class="keyword">namespace </span>GamingServices</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="a00223.html">Misc/Callbacks.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="a00032.html">Misc/GamingServicesSDKResult.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span><a class="code hl_namespace" href="a00059.html">Stove</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">namespace </span>PCSDK</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    {</div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="a00063.html">   22</a></span>        <span class="keyword">namespace </span>GamingServices</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        {</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="a00063.html#a26e28395834088e36e487903d298e577">   34</a></span>            <a class="code hl_struct" href="a00071.html">Result</a> <a class="code hl_function" href="a00063.html#a26e28395834088e36e487903d298e577">GamingServices_Initialize</a>();</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="a00063.html#a8e2f95c5b0636c778c08f9b457425e59">   47</a></span>            <a class="code hl_struct" href="a00071.html">Result</a> <a class="code hl_function" href="a00063.html#a8e2f95c5b0636c778c08f9b457425e59">GamingServices_UnInitialize</a>();</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="a00063.html#a3e87dab221b934003281c86886d5c5a5">   66</a></span>            <span class="keywordtype">void</span> <a class="code hl_function" href="a00063.html#a3e87dab221b934003281c86886d5c5a5">GamingServices_FetchCharacter</a>(<span class="keyword">const</span> <span class="keywordtype">wchar_t</span>* worldId, <span class="keyword">const</span> <span class="keywordtype">wchar_t</span>* channelId, <a class="code hl_typedef" href="a00063.html#a61cc9258b760056cd8607321b0f6f9f6">OnFetchCharacterFinished</a> onFinished);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="a00063.html#a1dddf3d703aafb737c242ed8104fb37e">   83</a></span>            <a class="code hl_struct" href="a00071.html">Result</a> <a class="code hl_function" href="a00063.html#a1dddf3d703aafb737c242ed8104fb37e">GamingServices_GetVersion</a>(__out <span class="keywordtype">wchar_t</span>* version, uint32_t length);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="a00063.html#a8e2f95c5b0636c778c08f9b457425e59">   46</a></span>            <a class="code hl_struct" href="a00071.html">Result</a> <a class="code hl_function" href="a00063.html#a8e2f95c5b0636c778c08f9b457425e59">GamingServices_UnInitialize</a>();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="a00063.html#a3e87dab221b934003281c86886d5c5a5">   64</a></span>            <span class="keywordtype">void</span> <a class="code hl_function" href="a00063.html#a3e87dab221b934003281c86886d5c5a5">GamingServices_FetchCharacter</a>(<span class="keyword">const</span> <span class="keywordtype">wchar_t</span>* worldId, <span class="keyword">const</span> <span class="keywordtype">wchar_t</span>* channelId, <a class="code hl_typedef" href="a00063.html#a61cc9258b760056cd8607321b0f6f9f6">OnFetchCharacterFinished</a> onFinished);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="a00063.html#a1dddf3d703aafb737c242ed8104fb37e">   80</a></span>            <a class="code hl_struct" href="a00071.html">Result</a> <a class="code hl_function" href="a00063.html#a1dddf3d703aafb737c242ed8104fb37e">GamingServices_GetVersion</a>(__out <span class="keywordtype">wchar_t</span>* version, uint32_t length);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        }</div>
 </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>}</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}</div>
+<div class="ttc" id="aa00032_html"><div class="ttname"><a href="a00032.html">GamingServicesSDKResult.h</a></div><div class="ttdoc">GamingServicesSDK에서 사용하는 Code값의 헤더 파일입니다.</div></div>
 <div class="ttc" id="aa00059_html"><div class="ttname"><a href="a00059.html">Stove</a></div><div class="ttdef"><b>Definition</b> <a href="a00002_source.html#l00070">BaseSDK.h:71</a></div></div>
 <div class="ttc" id="aa00063_html_a1dddf3d703aafb737c242ed8104fb37e"><div class="ttname"><a href="a00063.html#a1dddf3d703aafb737c242ed8104fb37e">Stove::PCSDK::GamingServices::GamingServices_GetVersion</a></div><div class="ttdeci">Result GamingServices_GetVersion(__out wchar_t *version, uint32_t length)</div><div class="ttdoc">GamingServicesSDK의 버전 정보를 조회합니다.</div></div>
 <div class="ttc" id="aa00063_html_a26e28395834088e36e487903d298e577"><div class="ttname"><a href="a00063.html#a26e28395834088e36e487903d298e577">Stove::PCSDK::GamingServices::GamingServices_Initialize</a></div><div class="ttdeci">Result GamingServices_Initialize()</div><div class="ttdoc">GamingServicesSDK를 초기화 합니다.</div></div>
 <div class="ttc" id="aa00063_html_a3e87dab221b934003281c86886d5c5a5"><div class="ttname"><a href="a00063.html#a3e87dab221b934003281c86886d5c5a5">Stove::PCSDK::GamingServices::GamingServices_FetchCharacter</a></div><div class="ttdeci">void GamingServices_FetchCharacter(const wchar_t *worldId, const wchar_t *channelId, OnFetchCharacterFinished onFinished)</div><div class="ttdoc">게임 캐릭터 정보를 조회합니다.</div></div>
-<div class="ttc" id="aa00063_html_a61cc9258b760056cd8607321b0f6f9f6"><div class="ttname"><a href="a00063.html#a61cc9258b760056cd8607321b0f6f9f6">Stove::PCSDK::GamingServices::OnFetchCharacterFinished</a></div><div class="ttdeci">void(__cdecl * OnFetchCharacterFinished)(CallbackResult callbackResult, const wchar_t *jsonString)</div><div class="ttdoc">GamingServices_FetchCharacter API 호출 시 응답받는 콜백 함수 포인터</div><div class="ttdef"><b>Definition</b> <a href="a00219_source.html#l00034">GamingServicesSDK/Deploy/Include/Misc/Callbacks.h:34</a></div></div>
+<div class="ttc" id="aa00063_html_a61cc9258b760056cd8607321b0f6f9f6"><div class="ttname"><a href="a00063.html#a61cc9258b760056cd8607321b0f6f9f6">Stove::PCSDK::GamingServices::OnFetchCharacterFinished</a></div><div class="ttdeci">void(__cdecl * OnFetchCharacterFinished)(CallbackResult callbackResult, const wchar_t *jsonString)</div><div class="ttdoc">GamingServices_FetchCharacter API 호출 시 응답받는 콜백 함수 포인터</div><div class="ttdef"><b>Definition</b> <a href="a00223_source.html#l00034">GamingServicesSDK/Deploy/Include/Misc/Callbacks.h:34</a></div></div>
 <div class="ttc" id="aa00063_html_a8e2f95c5b0636c778c08f9b457425e59"><div class="ttname"><a href="a00063.html#a8e2f95c5b0636c778c08f9b457425e59">Stove::PCSDK::GamingServices::GamingServices_UnInitialize</a></div><div class="ttdeci">Result GamingServices_UnInitialize()</div><div class="ttdoc">GamingServicesSDK의 자원을 해제합니다.</div></div>
 <div class="ttc" id="aa00071_html"><div class="ttname"><a href="a00071.html">Stove::PCSDK::Result</a></div><div class="ttdoc">Stove PCSDK 3.x에서 기본 API 호출시 전달받는 구조체입니다.</div><div class="ttdef"><b>Definition</b> <a href="a00014_source.html#l00035">Result.h:36</a></div></div>
-<div class="ttc" id="aa00219_html"><div class="ttname"><a href="a00219.html">Callbacks.h</a></div><div class="ttdoc">GamingServicesSDK에서 사용하는 Callback 값의 헤더 파일입니다.</div></div>
+<div class="ttc" id="aa00223_html"><div class="ttname"><a href="a00223.html">Callbacks.h</a></div><div class="ttdoc">GamingServicesSDK에서 사용하는 Callback 값의 헤더 파일입니다.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

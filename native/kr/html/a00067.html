@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="StovePCSDK.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">StovePCSDK3<span id="projectnumber">&#160;3.3.2.3.g9ca65.dirty</span>
+   <div id="projectname">StovePCSDK3<span id="projectnumber">&#160;3.3.4</span>
    </div>
    <div id="projectbrief">C/C++ DLL for Stove Platform Service</div>
   </td>
@@ -110,8 +110,8 @@ $(function(){initNavTree('a00067.html',''); initResizable(true); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 클래스</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00211.html">StovePCPopupDisallowed</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">팝업 노출을 하지 않을 때 필요한 정보입니다.    <a href="a00211.html#details">더 자세히 ...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00215.html">StovePCPopupDisallowed</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">팝업 노출을 하지 않을 때 필요한 정보입니다.    <a href="a00215.html#details">더 자세히 ...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -125,6 +125,12 @@ $(function(){initNavTree('a00067.html',''); initResizable(true); });
 <tr class="memitem:a31c9f7a7746e141b13befcd9bae6b12c" id="r_a31c9f7a7746e141b13befcd9bae6b12c"><td class="memItemLeft" align="right" valign="top">typedef void(__cdecl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31c9f7a7746e141b13befcd9bae6b12c">OnFetchWebOpenKeyFinished</a>) (<a class="el" href="a00075.html">CallbackResult</a> callbackResult, const wchar_t *key)</td></tr>
 <tr class="memdesc:a31c9f7a7746e141b13befcd9bae6b12c"><td class="mdescLeft">&#160;</td><td class="mdescRight">FetchWebOpenKey를 이용한 API 호출 시 응답받는 콜백 함수 포인터  <br /></td></tr>
 <tr class="separator:a31c9f7a7746e141b13befcd9bae6b12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7109dd87bb77e3da418069b132b2a09" id="r_ad7109dd87bb77e3da418069b132b2a09"><td class="memItemLeft" align="right" valign="top">typedef void(__cdecl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7109dd87bb77e3da418069b132b2a09">OnViewPopupDestroyFinished</a>) (<a class="el" href="a00075.html">CallbackResult</a> callbackResult)</td></tr>
+<tr class="memdesc:ad7109dd87bb77e3da418069b132b2a09"><td class="mdescLeft">&#160;</td><td class="mdescRight">View_PopupDestroyNotification API를 통해 등록하는 콜백 함수 포인터 콜백은 ViewSDK를 통해 생성된 팝업이 모두 닫혀야 호출됩니다.  <br /></td></tr>
+<tr class="separator:ad7109dd87bb77e3da418069b132b2a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f168cb4eda7cca7ebf50ecabc151d50" id="r_a1f168cb4eda7cca7ebf50ecabc151d50"><td class="memItemLeft" align="right" valign="top">typedef void(__cdecl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f168cb4eda7cca7ebf50ecabc151d50">OnVerifyIdentificationPopupDestroyFinished</a>) (<a class="el" href="a00075.html">CallbackResult</a> callbackResult, const wchar_t *simKey)</td></tr>
+<tr class="memdesc:a1f168cb4eda7cca7ebf50ecabc151d50"><td class="mdescLeft">&#160;</td><td class="mdescRight">VerifyIdentificationPopup API를 이용한 팝업을 닫을 시 응답 받는 콜백 함수 포인터  <br /></td></tr>
+<tr class="separator:a1f168cb4eda7cca7ebf50ecabc151d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 열거형 타입</h2></td></tr>
@@ -160,6 +166,11 @@ $(function(){initNavTree('a00067.html',''); initResizable(true); });
 &#160;&#160;<a class="el" href="#a6ae77b1b5a45eb7c66f86cdf1203fb39a623d5e6c8cc1ebd6f69bbf7d689fc296">COUPON_POPUP</a> = 87U
 , <a class="el" href="#a6ae77b1b5a45eb7c66f86cdf1203fb39adbe8b038a5ab270d0e8805286c53b9ce">FETCH_COMMUNITY</a> = 88U
 , <a class="el" href="#a6ae77b1b5a45eb7c66f86cdf1203fb39a7718c4f98d99689ebf15e87cf719b53d">COMMUNITY_POPUP</a> = 89U
+, <a class="el" href="#a6ae77b1b5a45eb7c66f86cdf1203fb39a0426f1be54e5ae3740168024fa92b09c">FETCH_VERIFY_IDENTIFICATION</a> = 90U
+, <br />
+&#160;&#160;<a class="el" href="#a6ae77b1b5a45eb7c66f86cdf1203fb39aaa953124fc35b70e4e508d98a58cdfce">VERIFY_IDENTIFICATION_POPUP</a> = 91U
+, <a class="el" href="#a6ae77b1b5a45eb7c66f86cdf1203fb39a3379100126af4d9d8df01da6ba742a9e">FETCH_CS</a> = 92U
+, <a class="el" href="#a6ae77b1b5a45eb7c66f86cdf1203fb39a2da7442c5a879a767e2657cf8be3f84a">CS_POPUP</a> = 93U
 , <a class="el" href="#a6ae77b1b5a45eb7c66f86cdf1203fb39a5cdec293163d27f8d8f1e7a156ea6aa7">SET_POPUP_DISALLOWED</a> = 160U
 , <br />
 &#160;&#160;<a class="el" href="#a6ae77b1b5a45eb7c66f86cdf1203fb39a361b88111754a925a6494aeeea56a886">CLOSE_ALL_POPUPS</a> = 161U
@@ -191,19 +202,25 @@ $(function(){initNavTree('a00067.html',''); initResizable(true); });
 &#160;&#160;<a class="el" href="#a7542759723183ad11d2524f59d94c9ceac6fdba1c48d9813a1dfd878a1756d2d8">RESPONSE_INVALID_VALUE_FORMAT</a> = 26U
 , <a class="el" href="#a7542759723183ad11d2524f59d94c9ceaced61cd095bbd4b5da066fb670292e64">LOG_81PLUG_ERROR</a> = 27U
 , <a class="el" href="#a7542759723183ad11d2524f59d94c9cea4d77ea607bc5801f7413b0e8e060612e">UPDATE_81PLUG_FEED_ERROR</a> = 28U
+, <a class="el" href="#a7542759723183ad11d2524f59d94c9ceacadf555c2fe95f3090ebb5a424e01d6e">ASYNC_OPERATION_IN_PROGRESS</a> = 29U
+, <br />
+&#160;&#160;<a class="el" href="#a7542759723183ad11d2524f59d94c9cea2066886874efe9c14701cf3231b6ba49">BASE_UNINITIALIZED</a> = 30U
 , <a class="el" href="#a7542759723183ad11d2524f59d94c9ceaa738d94a1223530902a971b9c5a11ae6">PCSDK_DLL_NOT_FOUND</a> = 251U
-, <br />
-&#160;&#160;<a class="el" href="#a7542759723183ad11d2524f59d94c9cea3e860a081575fc82cc7b6ed2ca602947">NOT_IMPLEMENTED</a> = 252U
+, <a class="el" href="#a7542759723183ad11d2524f59d94c9cea3e860a081575fc82cc7b6ed2ca602947">NOT_IMPLEMENTED</a> = 252U
 , <a class="el" href="#a7542759723183ad11d2524f59d94c9ceae61780aea0c20d1019d1b24bfbd0a253">UNMANAGED_EXCEPTION</a> = 253U
-, <a class="el" href="#a7542759723183ad11d2524f59d94c9cead39caad7773f9d769161673dffba5db5">MANAGED_EXCEPTION</a> = 254U
+, <br />
+&#160;&#160;<a class="el" href="#a7542759723183ad11d2524f59d94c9cead39caad7773f9d769161673dffba5db5">MANAGED_EXCEPTION</a> = 254U
 , <a class="el" href="#a7542759723183ad11d2524f59d94c9cea9a10f345b0f755d461a8673a5e9ef6b4">UNKNOWN_ERROR</a> = 255U
-, <br />
-&#160;&#160;<a class="el" href="#a7542759723183ad11d2524f59d94c9cead9bb9e20bfb4a2c22d7f28070023ed22">VIEWUI_NOT_INITIALIZED</a> = 80U
+, <a class="el" href="#a7542759723183ad11d2524f59d94c9cead9bb9e20bfb4a2c22d7f28070023ed22">VIEWUI_NOT_INITIALIZED</a> = 80U
 , <a class="el" href="#a7542759723183ad11d2524f59d94c9cea7b9e96e189290b0b2f4c51fa1bf95815">VIEWUI_UNINIT_FAILED</a> = 81U
-, <a class="el" href="#a7542759723183ad11d2524f59d94c9cead04fbfb98a350444d7c9a92d0ab393e8">WEBVIEW_CREATE_FAIL</a> = 82U
-, <a class="el" href="#a7542759723183ad11d2524f59d94c9cea9540cf03deffbf38f8be361ea05dc94c">WEBVIEW_LOAD_URL_FAIL</a> = 83U
 , <br />
-&#160;&#160;<a class="el" href="#a7542759723183ad11d2524f59d94c9ceaf37a8dc1bf13601f2854a392ef537519">WEBVIEW_CLOSE_ALL_FAIL</a> = 84U
+&#160;&#160;<a class="el" href="#a7542759723183ad11d2524f59d94c9cead04fbfb98a350444d7c9a92d0ab393e8">WEBVIEW_CREATE_FAIL</a> = 82U
+, <a class="el" href="#a7542759723183ad11d2524f59d94c9cea9540cf03deffbf38f8be361ea05dc94c">WEBVIEW_LOAD_URL_FAIL</a> = 83U
+, <a class="el" href="#a7542759723183ad11d2524f59d94c9ceaf37a8dc1bf13601f2854a392ef537519">WEBVIEW_CLOSE_ALL_FAIL</a> = 84U
+, <a class="el" href="#a7542759723183ad11d2524f59d94c9cea29f54208c0e037e992a48c189e9627c3">WEBVIEW_CLOSE_FAIL</a> = 85U
+, <br />
+&#160;&#160;<a class="el" href="#a7542759723183ad11d2524f59d94c9cea151b2dcbe518db43d5c99ebe91fb6c5d">WEBVIEW_CREATE_COOKIE_FAIL</a> = 86U
+, <a class="el" href="#a7542759723183ad11d2524f59d94c9cea363f395d7e1c19f78c9d41a406d895fb">NO_POPUP_DATA</a> = 87U
 <br />
  }</td></tr>
 <tr class="separator:a7542759723183ad11d2524f59d94c9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,22 +230,40 @@ $(function(){initNavTree('a00067.html',''); initResizable(true); });
 <tr class="memitem:ad012966ec4afe7f2295ecb1e20eecb2b" id="r_ad012966ec4afe7f2295ecb1e20eecb2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00071.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad012966ec4afe7f2295ecb1e20eecb2b">View_Initialize</a> ()</td></tr>
 <tr class="memdesc:ad012966ec4afe7f2295ecb1e20eecb2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ViewSDK를 초기화 합니다.  <br /></td></tr>
 <tr class="separator:ad012966ec4afe7f2295ecb1e20eecb2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22faf18b4f5ffe481c5c8ba01d34f87b" id="r_a22faf18b4f5ffe481c5c8ba01d34f87b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00071.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22faf18b4f5ffe481c5c8ba01d34f87b">View_InitializeWithWndInfo</a> (const void *mainWndHandle)</td></tr>
+<tr class="memdesc:a22faf18b4f5ffe481c5c8ba01d34f87b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ViewSDK를 초기화 합니다. Internal Style 팝업의 부모 윈도우가 될 메인 윈도우 핸들이 필요합니다.  <br /></td></tr>
+<tr class="separator:a22faf18b4f5ffe481c5c8ba01d34f87b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7abb1dcce23aa602d18e96ea4e00ba3a" id="r_a7abb1dcce23aa602d18e96ea4e00ba3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00071.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7abb1dcce23aa602d18e96ea4e00ba3a">View_UnInitialize</a> ()</td></tr>
 <tr class="memdesc:a7abb1dcce23aa602d18e96ea4e00ba3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ViewSDK의 자원을 해제합니다  <br /></td></tr>
 <tr class="separator:a7abb1dcce23aa602d18e96ea4e00ba3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7de56ee5fd966ed2dc5ed38668e38e02" id="r_a7de56ee5fd966ed2dc5ed38668e38e02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7de56ee5fd966ed2dc5ed38668e38e02">View_AutoPopup</a> (<a class="el" href="a00061.html#ad44c444fa6c9c706d4f593e731b1d643">Base::WebViewMode</a> mode, <a class="el" href="#ad13aafffe19febabbf5d9414f313a983">OnPopupFinished</a> onFinished)</td></tr>
 <tr class="memdesc:a7de56ee5fd966ed2dc5ed38668e38e02"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 AutoPopup을 실행합니다  <br /></td></tr>
 <tr class="separator:a7de56ee5fd966ed2dc5ed38668e38e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad38ba1b9c516893e46879d46128445aa" id="r_ad38ba1b9c516893e46879d46128445aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad38ba1b9c516893e46879d46128445aa">View_AutoPopupEx</a> (<a class="el" href="a00061.html#ad44c444fa6c9c706d4f593e731b1d643">Base::WebViewMode</a> mode, <a class="el" href="#ad13aafffe19febabbf5d9414f313a983">OnPopupFinished</a> onFinished, <a class="el" href="#ad7109dd87bb77e3da418069b132b2a09">OnViewPopupDestroyFinished</a> onDestroy)</td></tr>
+<tr class="memdesc:ad38ba1b9c516893e46879d46128445aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 AutoPopup을 실행합니다  <br /></td></tr>
+<tr class="separator:ad38ba1b9c516893e46879d46128445aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca44430c9131af2b4a3e03569c172e59" id="r_aca44430c9131af2b4a3e03569c172e59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca44430c9131af2b4a3e03569c172e59">View_ManualPopup</a> (const wchar_t *resourceKey, <a class="el" href="a00061.html#ad44c444fa6c9c706d4f593e731b1d643">Base::WebViewMode</a> mode, <a class="el" href="#ad13aafffe19febabbf5d9414f313a983">OnPopupFinished</a> onFinished)</td></tr>
 <tr class="memdesc:aca44430c9131af2b4a3e03569c172e59"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 ManualPopup을 실행합니다  <br /></td></tr>
 <tr class="separator:aca44430c9131af2b4a3e03569c172e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae560961ed8d081bc4da9e45abf6cadcc" id="r_ae560961ed8d081bc4da9e45abf6cadcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae560961ed8d081bc4da9e45abf6cadcc">View_ManualPopupEx</a> (const wchar_t *resourceKey, <a class="el" href="a00061.html#ad44c444fa6c9c706d4f593e731b1d643">Base::WebViewMode</a> mode, <a class="el" href="#ad13aafffe19febabbf5d9414f313a983">OnPopupFinished</a> onFinished, <a class="el" href="#ad7109dd87bb77e3da418069b132b2a09">OnViewPopupDestroyFinished</a> onDestroy)</td></tr>
+<tr class="memdesc:ae560961ed8d081bc4da9e45abf6cadcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 ManualPopup을 실행합니다  <br /></td></tr>
+<tr class="separator:ae560961ed8d081bc4da9e45abf6cadcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65ade96768e0ec217e27d14fd9a4a9f0" id="r_a65ade96768e0ec217e27d14fd9a4a9f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65ade96768e0ec217e27d14fd9a4a9f0">View_NewsPopup</a> (<a class="el" href="a00061.html#ad44c444fa6c9c706d4f593e731b1d643">Base::WebViewMode</a> mode, <a class="el" href="#ad13aafffe19febabbf5d9414f313a983">OnPopupFinished</a> onFinished)</td></tr>
 <tr class="memdesc:a65ade96768e0ec217e27d14fd9a4a9f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 NewsPopup을 실행합니다  <br /></td></tr>
 <tr class="separator:a65ade96768e0ec217e27d14fd9a4a9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e2ac394b77714dd540a465079193817" id="r_a2e2ac394b77714dd540a465079193817"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e2ac394b77714dd540a465079193817">View_NewsPopupEx</a> (<a class="el" href="a00061.html#ad44c444fa6c9c706d4f593e731b1d643">Base::WebViewMode</a> mode, <a class="el" href="#ad13aafffe19febabbf5d9414f313a983">OnPopupFinished</a> onFinished, <a class="el" href="#ad7109dd87bb77e3da418069b132b2a09">OnViewPopupDestroyFinished</a> onDestroy)</td></tr>
+<tr class="memdesc:a2e2ac394b77714dd540a465079193817"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 NewsPopup을 실행합니다  <br /></td></tr>
+<tr class="separator:a2e2ac394b77714dd540a465079193817"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa579281b71771403e6b66195662b7954" id="r_aa579281b71771403e6b66195662b7954"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa579281b71771403e6b66195662b7954">View_CouponPopup</a> (<a class="el" href="a00061.html#ad44c444fa6c9c706d4f593e731b1d643">Base::WebViewMode</a> mode, <a class="el" href="#ad13aafffe19febabbf5d9414f313a983">OnPopupFinished</a> onFinished)</td></tr>
 <tr class="memdesc:aa579281b71771403e6b66195662b7954"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 CouponPopup을 실행합니다  <br /></td></tr>
 <tr class="separator:aa579281b71771403e6b66195662b7954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24854f5c92f831eadb5d61c7f744d375" id="r_a24854f5c92f831eadb5d61c7f744d375"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24854f5c92f831eadb5d61c7f744d375">View_SetPopupDisallowed</a> (const <a class="el" href="a00211.html">StovePCPopupDisallowed</a> *disallowed, <a class="el" href="#aad63901693dd891b99c729a386f1af8b">OnSetPopupDisallowedFinished</a> onSetPopupDisallowed)</td></tr>
+<tr class="memitem:a16efaad411d1eca197073503eb637cb3" id="r_a16efaad411d1eca197073503eb637cb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16efaad411d1eca197073503eb637cb3">View_CouponPopupEx</a> (<a class="el" href="a00061.html#ad44c444fa6c9c706d4f593e731b1d643">Base::WebViewMode</a> mode, <a class="el" href="#ad13aafffe19febabbf5d9414f313a983">OnPopupFinished</a> onFinished, <a class="el" href="#ad7109dd87bb77e3da418069b132b2a09">OnViewPopupDestroyFinished</a> onDestroy)</td></tr>
+<tr class="memdesc:a16efaad411d1eca197073503eb637cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 CouponPopup을 실행합니다  <br /></td></tr>
+<tr class="separator:a16efaad411d1eca197073503eb637cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e623356c30b0873bff1081e256e6f23" id="r_a4e623356c30b0873bff1081e256e6f23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e623356c30b0873bff1081e256e6f23">View_VerifyIdentificationPopup</a> (bool compareIdentifier, <a class="el" href="a00061.html#ad44c444fa6c9c706d4f593e731b1d643">Base::WebViewMode</a> mode, <a class="el" href="#ad13aafffe19febabbf5d9414f313a983">OnPopupFinished</a> onFinished, <a class="el" href="#a1f168cb4eda7cca7ebf50ecabc151d50">OnVerifyIdentificationPopupDestroyFinished</a> onDestroy)</td></tr>
+<tr class="memdesc:a4e623356c30b0873bff1081e256e6f23"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 View_VerifyIdentificationPopup을 실행합니다  <br /></td></tr>
+<tr class="separator:a4e623356c30b0873bff1081e256e6f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24854f5c92f831eadb5d61c7f744d375" id="r_a24854f5c92f831eadb5d61c7f744d375"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24854f5c92f831eadb5d61c7f744d375">View_SetPopupDisallowed</a> (const <a class="el" href="a00215.html">StovePCPopupDisallowed</a> *disallowed, <a class="el" href="#aad63901693dd891b99c729a386f1af8b">OnSetPopupDisallowedFinished</a> onSetPopupDisallowed)</td></tr>
 <tr class="memdesc:a24854f5c92f831eadb5d61c7f744d375"><td class="mdescLeft">&#160;</td><td class="mdescRight">팝업이 일정기간 동안 보여지지 않도록 설정합니다.  <br /></td></tr>
 <tr class="separator:a24854f5c92f831eadb5d61c7f744d375"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a081babbfc4e8e769595b7c598d17e23e" id="r_a081babbfc4e8e769595b7c598d17e23e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00071.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a081babbfc4e8e769595b7c598d17e23e">View_CloseAllPopups</a> ()</td></tr>
@@ -263,12 +298,12 @@ $(function(){initNavTree('a00067.html',''); initResizable(true); });
 <dl class="params"><dt>매개변수</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname"><a class="el" href="a00075.html" title="Stove PCSDK 3.x에서 Callback 호출시 전달받는 구조체입니다.">CallbackResult</a></td><td>callbackResult 콜백 결과 값 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">const</td><td>wchar_t* key Web Open in Game 호출에 사용되는 일회성 key   </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">wchar_t*</td><td>key Web Open in Game 호출에 사용되는 일회성 key   </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition"><a class="el" href="a00231_source.html">ViewSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00231_source.html#l00056">56</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00235_source.html">ViewSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00235_source.html#l00056">56</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
@@ -292,7 +327,7 @@ $(function(){initNavTree('a00067.html',''); initResizable(true); });
   </dd>
 </dl>
 
-<p class="definition"><a class="el" href="a00231_source.html">ViewSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00231_source.html#l00031">31</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00235_source.html">ViewSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00235_source.html#l00031">31</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
@@ -316,7 +351,56 @@ $(function(){initNavTree('a00067.html',''); initResizable(true); });
   </dd>
 </dl>
 
-<p class="definition"><a class="el" href="a00231_source.html">ViewSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00231_source.html#l00042">42</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00235_source.html">ViewSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00235_source.html#l00042">42</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a1f168cb4eda7cca7ebf50ecabc151d50" name="a1f168cb4eda7cca7ebf50ecabc151d50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f168cb4eda7cca7ebf50ecabc151d50">&#9670;&#160;</a></span>OnVerifyIdentificationPopupDestroyFinished</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(__cdecl * Stove::PCSDK::View::OnVerifyIdentificationPopupDestroyFinished) (<a class="el" href="a00075.html">CallbackResult</a> callbackResult, const wchar_t *simKey)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>VerifyIdentificationPopup API를 이용한 팝업을 닫을 시 응답 받는 콜백 함수 포인터 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname"><a class="el" href="a00075.html" title="Stove PCSDK 3.x에서 Callback 호출시 전달받는 구조체입니다.">CallbackResult</a></td><td>callbackResult 콜백 결과 값 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">wchar_t*</td><td>simKey SDI 방식이 아닌, 플랫폼 API를 이용한 본인 인증 결과 검증 시 사용되는 SimKey (게임 서버 전달 필요)   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"><a class="el" href="a00235_source.html">ViewSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00235_source.html#l00083">83</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="ad7109dd87bb77e3da418069b132b2a09" name="ad7109dd87bb77e3da418069b132b2a09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7109dd87bb77e3da418069b132b2a09">&#9670;&#160;</a></span>OnViewPopupDestroyFinished</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(__cdecl * Stove::PCSDK::View::OnViewPopupDestroyFinished) (<a class="el" href="a00075.html">CallbackResult</a> callbackResult)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>View_PopupDestroyNotification API를 통해 등록하는 콜백 함수 포인터 콜백은 ViewSDK를 통해 생성된 팝업이 모두 닫혀야 호출됩니다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname"><a class="el" href="a00075.html" title="Stove PCSDK 3.x에서 Callback 호출시 전달받는 구조체입니다.">CallbackResult</a></td><td>callbackResult 콜백 결과 값   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"><a class="el" href="a00235_source.html">ViewSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00235_source.html#l00070">70</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
@@ -359,7 +443,7 @@ $(function(){initNavTree('a00067.html',''); initResizable(true); });
 </td></tr>
 </table>
 
-<p class="definition"><a class="el" href="a00246_source.html">ViewSDK/Deploy/Include/Misc/Enumerations.h</a> 파일의 <a class="el" href="a00246_source.html#l00030">30</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00250_source.html">ViewSDK/Deploy/Include/Misc/Enumerations.h</a> 파일의 <a class="el" href="a00250_source.html#l00030">30</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
@@ -413,6 +497,14 @@ $(function(){initNavTree('a00067.html',''); initResizable(true); });
 </td></tr>
 <tr><td class="fieldname"><a id="a6ae77b1b5a45eb7c66f86cdf1203fb39a7718c4f98d99689ebf15e87cf719b53d" name="a6ae77b1b5a45eb7c66f86cdf1203fb39a7718c4f98d99689ebf15e87cf719b53d"></a>COMMUNITY_POPUP&#160;</td><td class="fielddoc"><p>89 : View_CommunityPopup (Deprecated) </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a6ae77b1b5a45eb7c66f86cdf1203fb39a0426f1be54e5ae3740168024fa92b09c" name="a6ae77b1b5a45eb7c66f86cdf1203fb39a0426f1be54e5ae3740168024fa92b09c"></a>FETCH_VERIFY_IDENTIFICATION&#160;</td><td class="fielddoc"><p>90 : Internal FetchVerifyIdentification </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6ae77b1b5a45eb7c66f86cdf1203fb39aaa953124fc35b70e4e508d98a58cdfce" name="a6ae77b1b5a45eb7c66f86cdf1203fb39aaa953124fc35b70e4e508d98a58cdfce"></a>VERIFY_IDENTIFICATION_POPUP&#160;</td><td class="fielddoc"><p>91 : View_VerifyIdentificationPopup </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6ae77b1b5a45eb7c66f86cdf1203fb39a3379100126af4d9d8df01da6ba742a9e" name="a6ae77b1b5a45eb7c66f86cdf1203fb39a3379100126af4d9d8df01da6ba742a9e"></a>FETCH_CS&#160;</td><td class="fielddoc"><p>92 : Internal FetchCS </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6ae77b1b5a45eb7c66f86cdf1203fb39a2da7442c5a879a767e2657cf8be3f84a" name="a6ae77b1b5a45eb7c66f86cdf1203fb39a2da7442c5a879a767e2657cf8be3f84a"></a>CS_POPUP&#160;</td><td class="fielddoc"><p>93 : View_CSPopup (Internal) </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a6ae77b1b5a45eb7c66f86cdf1203fb39a5cdec293163d27f8d8f1e7a156ea6aa7" name="a6ae77b1b5a45eb7c66f86cdf1203fb39a5cdec293163d27f8d8f1e7a156ea6aa7"></a>SET_POPUP_DISALLOWED&#160;</td><td class="fielddoc"><p>160 : View_SetPopupDisallowed </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a6ae77b1b5a45eb7c66f86cdf1203fb39a361b88111754a925a6494aeeea56a886" name="a6ae77b1b5a45eb7c66f86cdf1203fb39a361b88111754a925a6494aeeea56a886"></a>CLOSE_ALL_POPUPS&#160;</td><td class="fielddoc"><p>161 : View_CloseAllPopups </p>
@@ -445,9 +537,9 @@ $(function(){initNavTree('a00067.html',''); initResizable(true); });
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">열거형 멤버</th></tr><tr><td class="fieldname"><a id="a7542759723183ad11d2524f59d94c9cead0749aaba8b833466dfcbb0428e4f89c" name="a7542759723183ad11d2524f59d94c9cead0749aaba8b833466dfcbb0428e4f89c"></a>SUCCESS&#160;</td><td class="fielddoc"><p>성공   </p>
+<tr><th colspan="2">열거형 멤버</th></tr><tr><td class="fieldname"><a id="a7542759723183ad11d2524f59d94c9cead0749aaba8b833466dfcbb0428e4f89c" name="a7542759723183ad11d2524f59d94c9cead0749aaba8b833466dfcbb0428e4f89c"></a>SUCCESS&#160;</td><td class="fielddoc"><p>0 : 성공   </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a7542759723183ad11d2524f59d94c9ceac2759effffc94bb9acc71d69fe3e8a1f" name="a7542759723183ad11d2524f59d94c9ceac2759effffc94bb9acc71d69fe3e8a1f"></a>FAIL&#160;</td><td class="fielddoc"><p>실패   </p>
+<tr><td class="fieldname"><a id="a7542759723183ad11d2524f59d94c9ceac2759effffc94bb9acc71d69fe3e8a1f" name="a7542759723183ad11d2524f59d94c9ceac2759effffc94bb9acc71d69fe3e8a1f"></a>FAIL&#160;</td><td class="fielddoc"><p>1 : 실패   </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a7542759723183ad11d2524f59d94c9cea2188ade13df339354cd8c383dda3f8bb" name="a7542759723183ad11d2524f59d94c9cea2188ade13df339354cd8c383dda3f8bb"></a>INVALID_CONFIG&#160;</td><td class="fielddoc"><p>2 : Config 파일을 찾을 수 없습니다.   </p>
 </td></tr>
@@ -483,6 +575,9 @@ $(function(){initNavTree('a00067.html',''); initResizable(true); });
 </td></tr>
 <tr><td class="fieldname"><a id="a7542759723183ad11d2524f59d94c9cea4d77ea607bc5801f7413b0e8e060612e" name="a7542759723183ad11d2524f59d94c9cea4d77ea607bc5801f7413b0e8e060612e"></a>UPDATE_81PLUG_FEED_ERROR&#160;</td><td class="fielddoc"><p>28 : 81 Plug 업데이트를 실패했습니다. (Deprecated)   </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a7542759723183ad11d2524f59d94c9ceacadf555c2fe95f3090ebb5a424e01d6e" name="a7542759723183ad11d2524f59d94c9ceacadf555c2fe95f3090ebb5a424e01d6e"></a>ASYNC_OPERATION_IN_PROGRESS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7542759723183ad11d2524f59d94c9cea2066886874efe9c14701cf3231b6ba49" name="a7542759723183ad11d2524f59d94c9cea2066886874efe9c14701cf3231b6ba49"></a>BASE_UNINITIALIZED&#160;</td><td class="fielddoc"><p>30 : BaseSDK를 Uninitialize하였습니다.   </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a7542759723183ad11d2524f59d94c9ceaa738d94a1223530902a971b9c5a11ae6" name="a7542759723183ad11d2524f59d94c9ceaa738d94a1223530902a971b9c5a11ae6"></a>PCSDK_DLL_NOT_FOUND&#160;</td><td class="fielddoc"><p>251 : PC SDK DLL을 찾지 못했습니다.   </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a7542759723183ad11d2524f59d94c9cea3e860a081575fc82cc7b6ed2ca602947" name="a7542759723183ad11d2524f59d94c9cea3e860a081575fc82cc7b6ed2ca602947"></a>NOT_IMPLEMENTED&#160;</td><td class="fielddoc"><p>252 : 해당 내용은 구현되지 않았습니다.   </p>
@@ -503,9 +598,15 @@ $(function(){initNavTree('a00067.html',''); initResizable(true); });
 </td></tr>
 <tr><td class="fieldname"><a id="a7542759723183ad11d2524f59d94c9ceaf37a8dc1bf13601f2854a392ef537519" name="a7542759723183ad11d2524f59d94c9ceaf37a8dc1bf13601f2854a392ef537519"></a>WEBVIEW_CLOSE_ALL_FAIL&#160;</td><td class="fielddoc"><p>84 : Webview 일괄 닫기에 실패했습니다.   </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a7542759723183ad11d2524f59d94c9cea29f54208c0e037e992a48c189e9627c3" name="a7542759723183ad11d2524f59d94c9cea29f54208c0e037e992a48c189e9627c3"></a>WEBVIEW_CLOSE_FAIL&#160;</td><td class="fielddoc"><p>85 : Webview 닫기에 실패했습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7542759723183ad11d2524f59d94c9cea151b2dcbe518db43d5c99ebe91fb6c5d" name="a7542759723183ad11d2524f59d94c9cea151b2dcbe518db43d5c99ebe91fb6c5d"></a>WEBVIEW_CREATE_COOKIE_FAIL&#160;</td><td class="fielddoc"><p>86 : Cookie 생성에 실패했습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7542759723183ad11d2524f59d94c9cea363f395d7e1c19f78c9d41a406d895fb" name="a7542759723183ad11d2524f59d94c9cea363f395d7e1c19f78c9d41a406d895fb"></a>NO_POPUP_DATA&#160;</td><td class="fielddoc"><p>87 : 팝업 데이터가 존재하지 않습니다.   </p>
+</td></tr>
 </table>
 
-<p class="definition"><a class="el" href="a00053_source.html">ViewSDKResult.h</a> 파일의 <a class="el" href="a00053_source.html#l00104">104</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00053_source.html">ViewSDKResult.h</a> 파일의 <a class="el" href="a00053_source.html#l00116">116</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
@@ -532,8 +633,44 @@ $(function(){initNavTree('a00067.html',''); initResizable(true); });
 <p>WebView를 이용하여 AutoPopup을 실행합니다 </p>
 <dl class="params"><dt>매개변수</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">const</td><td>WebViewMode mode WebView를 실행하는 모드 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">WebViewMode</td><td>mode WebView를 실행하는 모드 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">OnPopupFinished</td><td>onFinished WebView 실행에 대한 결과를 넘겨받는 Callback 함수   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad38ba1b9c516893e46879d46128445aa" name="ad38ba1b9c516893e46879d46128445aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad38ba1b9c516893e46879d46128445aa">&#9670;&#160;</a></span>View_AutoPopupEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Stove::PCSDK::View::View_AutoPopupEx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00061.html#ad44c444fa6c9c706d4f593e731b1d643">Base::WebViewMode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ad13aafffe19febabbf5d9414f313a983">OnPopupFinished</a></td>          <td class="paramname"><span class="paramname"><em>onFinished</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ad7109dd87bb77e3da418069b132b2a09">OnViewPopupDestroyFinished</a></td>          <td class="paramname"><span class="paramname"><em>onDestroy</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>WebView를 이용하여 AutoPopup을 실행합니다 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">WebViewMode</td><td>mode WebView를 실행하는 모드 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnPopupFinished</td><td>onFinished WebView 실행에 대한 결과를 넘겨받는 Callback 함수 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnViewPopupDestroyFinished</td><td>onDestroy 팝업을 닫을 시 응답받는 콜백 함수 포인터   </td></tr>
   </table>
   </dd>
 </dl>
@@ -556,7 +693,7 @@ $(function(){initNavTree('a00067.html',''); initResizable(true); });
 </div><div class="memdoc">
 
 <p><a class="el" href="a00067.html">View</a> SDK를 통해 열린 모든 팝업을 닫습니다. </p>
-<dl class="section return"><dt>반환값</dt><dd>class <a class="el" href="a00071.html" title="Stove PCSDK 3.x에서 기본 API 호출시 전달받는 구조체입니다.">Result</a> 함수 호출 결과  </dd></dl>
+<dl class="section return"><dt>반환값</dt><dd>struct <a class="el" href="a00071.html" title="Stove PCSDK 3.x에서 기본 API 호출시 전달받는 구조체입니다.">Result</a> 함수 호출 결과  </dd></dl>
 
 </div>
 </div>
@@ -584,6 +721,42 @@ $(function(){initNavTree('a00067.html',''); initResizable(true); });
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">WebViewMode</td><td>mode WebView를 실행하는 모드 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">OnPopupFinished</td><td>onFinished WebView 실행에 대한 결과를 넘겨받는 Callback 함수   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a16efaad411d1eca197073503eb637cb3" name="a16efaad411d1eca197073503eb637cb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16efaad411d1eca197073503eb637cb3">&#9670;&#160;</a></span>View_CouponPopupEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Stove::PCSDK::View::View_CouponPopupEx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00061.html#ad44c444fa6c9c706d4f593e731b1d643">Base::WebViewMode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ad13aafffe19febabbf5d9414f313a983">OnPopupFinished</a></td>          <td class="paramname"><span class="paramname"><em>onFinished</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ad7109dd87bb77e3da418069b132b2a09">OnViewPopupDestroyFinished</a></td>          <td class="paramname"><span class="paramname"><em>onDestroy</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>WebView를 이용하여 CouponPopup을 실행합니다 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">WebViewMode</td><td>mode WebView를 실행하는 모드 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnPopupFinished</td><td>onFinished WebView 실행에 대한 결과를 넘겨받는 Callback 함수 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnViewPopupDestroyFinished</td><td>onDestroy 팝업을 닫을 시 응답받는 콜백 함수 포인터   </td></tr>
   </table>
   </dd>
 </dl>
@@ -642,7 +815,7 @@ $(function(){initNavTree('a00067.html',''); initResizable(true); });
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>반환값</dt><dd>class <a class="el" href="a00071.html" title="Stove PCSDK 3.x에서 기본 API 호출시 전달받는 구조체입니다.">Result</a> 함수 호출 결과   </dd></dl>
+<dl class="section return"><dt>반환값</dt><dd>struct <a class="el" href="a00071.html" title="Stove PCSDK 3.x에서 기본 API 호출시 전달받는 구조체입니다.">Result</a> 함수 호출 결과   </dd></dl>
 
 </div>
 </div>
@@ -662,7 +835,33 @@ $(function(){initNavTree('a00067.html',''); initResizable(true); });
 </div><div class="memdoc">
 
 <p>ViewSDK를 초기화 합니다. </p>
-<dl class="section return"><dt>반환값</dt><dd>class <a class="el" href="a00071.html" title="Stove PCSDK 3.x에서 기본 API 호출시 전달받는 구조체입니다.">Result</a> 함수 호출 결과   </dd></dl>
+<dl class="section return"><dt>반환값</dt><dd>struct <a class="el" href="a00071.html" title="Stove PCSDK 3.x에서 기본 API 호출시 전달받는 구조체입니다.">Result</a> 함수 호출 결과   </dd></dl>
+
+</div>
+</div>
+<a id="a22faf18b4f5ffe481c5c8ba01d34f87b" name="a22faf18b4f5ffe481c5c8ba01d34f87b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22faf18b4f5ffe481c5c8ba01d34f87b">&#9670;&#160;</a></span>View_InitializeWithWndInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00071.html">Result</a> Stove::PCSDK::View::View_InitializeWithWndInfo </td>
+          <td>(</td>
+          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>mainWndHandle</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ViewSDK를 초기화 합니다. Internal Style 팝업의 부모 윈도우가 될 메인 윈도우 핸들이 필요합니다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">void*</td><td>mainWndHandle Internal Style 팝업의 부모 윈도우가 될 메인 윈도우 핸들 (HWND) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>struct <a class="el" href="a00071.html" title="Stove PCSDK 3.x에서 기본 API 호출시 전달받는 구조체입니다.">Result</a> 함수 호출 결과   </dd></dl>
 
 </div>
 </div>
@@ -693,9 +892,51 @@ $(function(){initNavTree('a00067.html',''); initResizable(true); });
 <p>WebView를 이용하여 ManualPopup을 실행합니다 </p>
 <dl class="params"><dt>매개변수</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">const</td><td>wchar_t* resourceKey Manual Poupup에 대한 ResourceKey </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">const</td><td>WebViewMode mode WebView를 실행하는 모드 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wchar_t*</td><td>resourceKey Manual Poupup에 대한 ResourceKey </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">WebViewMode</td><td>mode WebView를 실행하는 모드 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">OnPopupFinished</td><td>onFinished WebView 실행에 대한 결과를 넘겨받는 Callback 함수   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae560961ed8d081bc4da9e45abf6cadcc" name="ae560961ed8d081bc4da9e45abf6cadcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae560961ed8d081bc4da9e45abf6cadcc">&#9670;&#160;</a></span>View_ManualPopupEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Stove::PCSDK::View::View_ManualPopupEx </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *</td>          <td class="paramname"><span class="paramname"><em>resourceKey</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00061.html#ad44c444fa6c9c706d4f593e731b1d643">Base::WebViewMode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ad13aafffe19febabbf5d9414f313a983">OnPopupFinished</a></td>          <td class="paramname"><span class="paramname"><em>onFinished</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ad7109dd87bb77e3da418069b132b2a09">OnViewPopupDestroyFinished</a></td>          <td class="paramname"><span class="paramname"><em>onDestroy</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>WebView를 이용하여 ManualPopup을 실행합니다 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wchar_t*</td><td>resourceKey Manual Poupup에 대한 ResourceKey </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">WebViewMode</td><td>mode WebView를 실행하는 모드 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnPopupFinished</td><td>onFinished WebView 실행에 대한 결과를 넘겨받는 Callback 함수 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnViewPopupDestroyFinished</td><td>onDestroy 팝업을 닫을 시 응답받는 콜백 함수 포인터   </td></tr>
   </table>
   </dd>
 </dl>
@@ -732,6 +973,42 @@ $(function(){initNavTree('a00067.html',''); initResizable(true); });
 
 </div>
 </div>
+<a id="a2e2ac394b77714dd540a465079193817" name="a2e2ac394b77714dd540a465079193817"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e2ac394b77714dd540a465079193817">&#9670;&#160;</a></span>View_NewsPopupEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Stove::PCSDK::View::View_NewsPopupEx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00061.html#ad44c444fa6c9c706d4f593e731b1d643">Base::WebViewMode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ad13aafffe19febabbf5d9414f313a983">OnPopupFinished</a></td>          <td class="paramname"><span class="paramname"><em>onFinished</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ad7109dd87bb77e3da418069b132b2a09">OnViewPopupDestroyFinished</a></td>          <td class="paramname"><span class="paramname"><em>onDestroy</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>WebView를 이용하여 NewsPopup을 실행합니다 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">WebViewMode</td><td>mode WebView를 실행하는 모드 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnPopupFinished</td><td>onFinished WebView 실행에 대한 결과를 넘겨받는 Callback 함수 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnViewPopupDestroyFinished</td><td>onDestroy 팝업을 닫을 시 응답받는 콜백 함수 포인터   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a24854f5c92f831eadb5d61c7f744d375" name="a24854f5c92f831eadb5d61c7f744d375"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a24854f5c92f831eadb5d61c7f744d375">&#9670;&#160;</a></span>View_SetPopupDisallowed()</h2>
 
@@ -741,7 +1018,7 @@ $(function(){initNavTree('a00067.html',''); initResizable(true); });
         <tr>
           <td class="memname">void Stove::PCSDK::View::View_SetPopupDisallowed </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00211.html">StovePCPopupDisallowed</a> *</td>          <td class="paramname"><span class="paramname"><em>popupDisallowed</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="a00215.html">StovePCPopupDisallowed</a> *</td>          <td class="paramname"><span class="paramname"><em>disallowed</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -754,7 +1031,7 @@ $(function(){initNavTree('a00067.html',''); initResizable(true); });
 <p>팝업이 일정기간 동안 보여지지 않도록 설정합니다. </p>
 <dl class="params"><dt>매개변수</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">const</td><td>StovePCPopupDisallowed* popupDisallowed 팝업 노출을 하지 않을 때 필요한 정보 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">StovePCPopupDisallowed*</td><td>popupDisallowed 팝업 노출을 하지 않을 때 필요한 정보 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">OnSetPopupDisallowedFinished</td><td>onFinished PopupDisallowed 실행에 대한 결과를 넘겨받는 Callback 함수   </td></tr>
   </table>
   </dd>
@@ -778,7 +1055,49 @@ $(function(){initNavTree('a00067.html',''); initResizable(true); });
 </div><div class="memdoc">
 
 <p>ViewSDK의 자원을 해제합니다 </p>
-<dl class="section return"><dt>반환값</dt><dd>class <a class="el" href="a00071.html" title="Stove PCSDK 3.x에서 기본 API 호출시 전달받는 구조체입니다.">Result</a> 함수 호출 결과  </dd></dl>
+<dl class="section return"><dt>반환값</dt><dd>struct <a class="el" href="a00071.html" title="Stove PCSDK 3.x에서 기본 API 호출시 전달받는 구조체입니다.">Result</a> 함수 호출 결과  </dd></dl>
+
+</div>
+</div>
+<a id="a4e623356c30b0873bff1081e256e6f23" name="a4e623356c30b0873bff1081e256e6f23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e623356c30b0873bff1081e256e6f23">&#9670;&#160;</a></span>View_VerifyIdentificationPopup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Stove::PCSDK::View::View_VerifyIdentificationPopup </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>compareIdentifier</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00061.html#ad44c444fa6c9c706d4f593e731b1d643">Base::WebViewMode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ad13aafffe19febabbf5d9414f313a983">OnPopupFinished</a></td>          <td class="paramname"><span class="paramname"><em>onFinished</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a1f168cb4eda7cca7ebf50ecabc151d50">OnVerifyIdentificationPopupDestroyFinished</a></td>          <td class="paramname"><span class="paramname"><em>onDestroy</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>WebView를 이용하여 View_VerifyIdentificationPopup을 실행합니다 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bool</td><td>compareIdentifier SDI를 이용한 검증 여부 (false 일 경우, simKey를 제공합니다) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">WebViewMode</td><td>mode WebView를 실행하는 모드 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnPopupFinished</td><td>onFinished WebView 실행에 대한 결과를 넘겨받는 Callback 함수 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnVerifyIdentificationPopupDestroyFinished</td><td>onDestroy VerifyIdentificationPopup 팝업을 닫을 시 응답받는 콜백 함수 포인터   </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -803,7 +1122,7 @@ $(function(){initNavTree('a00067.html',''); initResizable(true); });
 </table>
 </div><div class="memdoc">
 
-<p class="definition"><a class="el" href="a00053_source.html">ViewSDKResult.h</a> 파일의 <a class="el" href="a00053_source.html#l00414">414</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00053_source.html">ViewSDKResult.h</a> 파일의 <a class="el" href="a00053_source.html#l00476">476</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>

@@ -1,4 +1,4 @@
 var a00017 =
 [
-    [ "Stove.PCSDK.GamingServices", "a00121.html", "a00121" ]
+    [ "Stove.PCSDK.GamingServices", "a00138.html", "a00138" ]
 ];

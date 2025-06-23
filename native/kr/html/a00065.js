@@ -1,6 +1,6 @@
 var a00065 =
 [
-    [ "StovePCOwnership", "a00195.html", "a00195" ],
+    [ "StovePCOwnership", "a00199.html", "a00199" ],
     [ "OnOwnershipListFinished", "a00065.html#a1a3bf8534be6b0c5b1c0b53dc6d1f716", null ],
     [ "OwnershipCode", "a00065.html#ae5a32196f0c1cec7bfbd3da663eb0d69", [
       [ "NONE", "a00065.html#ae5a32196f0c1cec7bfbd3da663eb0d69ab50339a10e1de285ac99d4c3990b8693", null ],
@@ -40,6 +40,8 @@ var a00065 =
       [ "RESPONSE_VALUE_IS_NULL", "a00065.html#a6f10fe667b8ac30569647c897e90eb4da569b30b95c9ef7eabaea7879e9311982", null ],
       [ "RESPONSE_INVALID_VALUE_FORMAT", "a00065.html#a6f10fe667b8ac30569647c897e90eb4dac6fdba1c48d9813a1dfd878a1756d2d8", null ],
       [ "LOG_81PLUG_ERROR", "a00065.html#a6f10fe667b8ac30569647c897e90eb4daced61cd095bbd4b5da066fb670292e64", null ],
+      [ "ASYNC_OPERATION_IN_PROGRESS", "a00065.html#a6f10fe667b8ac30569647c897e90eb4dacadf555c2fe95f3090ebb5a424e01d6e", null ],
+      [ "BASE_UNINITIALIZED", "a00065.html#a6f10fe667b8ac30569647c897e90eb4da2066886874efe9c14701cf3231b6ba49", null ],
       [ "UPDATE_81PLUG_FEED_ERROR", "a00065.html#a6f10fe667b8ac30569647c897e90eb4da4d77ea607bc5801f7413b0e8e060612e", null ],
       [ "PCSDK_DLL_NOT_FOUND", "a00065.html#a6f10fe667b8ac30569647c897e90eb4daa738d94a1223530902a971b9c5a11ae6", null ],
       [ "NOT_IMPLEMENTED", "a00065.html#a6f10fe667b8ac30569647c897e90eb4da3e860a081575fc82cc7b6ed2ca602947", null ],

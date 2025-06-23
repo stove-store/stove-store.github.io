@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="StovePCSDK.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">StovePCSDK3<span id="projectnumber">&#160;3.3.2.3.g9ca65.dirty</span>
+   <div id="projectname">StovePCSDK3<span id="projectnumber">&#160;3.3.4</span>
    </div>
    <div id="projectbrief">C/C++ DLL for Stove Platform Service</div>
   </td>
@@ -112,6 +112,7 @@ $(function(){initNavTree('namespacemembers.html',''); initResizable(true); });
 <li>Base_GetUser()&#160;:&#160;<a class="el" href="a00061.html#a7da29fc907d222af0fe2be6e37f3d305">Stove::PCSDK::Base</a></li>
 <li>Base_GetVersion()&#160;:&#160;<a class="el" href="a00061.html#abedfac582063dced3cd20f0632b2dffd">Stove::PCSDK::Base</a></li>
 <li>Base_Initialize()&#160;:&#160;<a class="el" href="a00061.html#a752e746b69a3108afd987289dda9a377">Stove::PCSDK::Base</a></li>
+<li>Base_OpenExternalUrl()&#160;:&#160;<a class="el" href="a00061.html#afe5756e9dab3f3c7901ddc213bf10c4e">Stove::PCSDK::Base</a></li>
 <li>Base_OverImmersionNotification()&#160;:&#160;<a class="el" href="a00061.html#a93d454d05ca938c002797857824c6075">Stove::PCSDK::Base</a></li>
 <li>Base_RestartAppIfNecessary()&#160;:&#160;<a class="el" href="a00061.html#a919bd468ad998edd5e732cad7a10aa7a">Stove::PCSDK::Base</a></li>
 <li>Base_RestartAppIfNecessaryAsync()&#160;:&#160;<a class="el" href="a00061.html#a4cc669714c6efca50de78ac0345f0cd8">Stove::PCSDK::Base</a></li>
@@ -160,12 +161,17 @@ $(function(){initNavTree('namespacemembers.html',''); initResizable(true); });
 <li>IAP_FetchProducts()&#160;:&#160;<a class="el" href="a00064.html#a66068f00de142ecdc07696c1b90baaf4">Stove::PCSDK::IAP</a></li>
 <li>IAP_FetchShopCategories()&#160;:&#160;<a class="el" href="a00064.html#a921628c078229f2ec5cb7b026698cdb3">Stove::PCSDK::IAP</a></li>
 <li>IAP_FetchTermsAgreement()&#160;:&#160;<a class="el" href="a00064.html#a70a1c0f1188e7c3936a45e986dd33d59">Stove::PCSDK::IAP</a></li>
+<li>IAP_FetchTermsAgreementEx()&#160;:&#160;<a class="el" href="a00064.html#aacca0ead29effa898b27c738c945abdd">Stove::PCSDK::IAP</a></li>
 <li>IAP_FetchVoidedPurchases()&#160;:&#160;<a class="el" href="a00064.html#a354bb1db419fe162fd512851481da170">Stove::PCSDK::IAP</a></li>
 <li>IAP_GetVersion()&#160;:&#160;<a class="el" href="a00064.html#a10b7d10533e6deb1592f0d6896594ccd">Stove::PCSDK::IAP</a></li>
 <li>IAP_Initialize()&#160;:&#160;<a class="el" href="a00064.html#aad3f559bbf314604c9595ec1a2dccaf7">Stove::PCSDK::IAP</a></li>
+<li>IAP_InitializeWithWndInfo()&#160;:&#160;<a class="el" href="a00064.html#a00f46ca201491f612159d843fe3cc74e">Stove::PCSDK::IAP</a></li>
 <li>IAP_StartPayment()&#160;:&#160;<a class="el" href="a00064.html#a68aea8bfccfc513999f538805643a0ac">Stove::PCSDK::IAP</a></li>
+<li>IAP_StartPaymentEx()&#160;:&#160;<a class="el" href="a00064.html#a9fae84a5d2653b776cfaa698134e95bc">Stove::PCSDK::IAP</a></li>
 <li>IAP_StartPurchase()&#160;:&#160;<a class="el" href="a00064.html#a7005628603ce02099937f38c28d23d43">Stove::PCSDK::IAP</a></li>
+<li>IAP_StartPurchaseEx()&#160;:&#160;<a class="el" href="a00064.html#a36e1f9ecda435d39926001a3fa15433e">Stove::PCSDK::IAP</a></li>
 <li>IAP_UnInitialize()&#160;:&#160;<a class="el" href="a00064.html#ad8f12664fbfd403fa725280dffac7567">Stove::PCSDK::IAP</a></li>
+<li>IAP_WithdrawGame()&#160;:&#160;<a class="el" href="a00064.html#a15c321203c8dd39ad6d5b14aa1cfb8af">Stove::PCSDK::IAP</a></li>
 <li>IAPSDKName&#160;:&#160;<a class="el" href="a00064.html#ac97a6b58f9010da907e8c1895e0539c3">Stove::PCSDK::IAP</a></li>
 </ul>
 
@@ -178,11 +184,13 @@ $(function(){initNavTree('namespacemembers.html',''); initResizable(true); });
 <li>OnFetchInventoryFinished&#160;:&#160;<a class="el" href="a00064.html#a7777083c1acf24a469acb67aca68b45a">Stove::PCSDK::IAP</a></li>
 <li>OnFetchProductsFinished&#160;:&#160;<a class="el" href="a00064.html#aaf409bf2a9fc1346cfe458dd86c92023">Stove::PCSDK::IAP</a></li>
 <li>OnFetchShopCategoriesFinished&#160;:&#160;<a class="el" href="a00064.html#a33307954939fb5bcf0fe83afbab71522">Stove::PCSDK::IAP</a></li>
-<li>OnFetchTermsAgreementFinished&#160;:&#160;<a class="el" href="a00064.html#ac6a0342ac10ac206e881f35b2637a5cd">Stove::PCSDK::IAP</a></li>
+<li>OnFetchTermsAgreementFinished&#160;:&#160;<a class="el" href="a00064.html#a6f464c086419e89e0756cb9e758167d2">Stove::PCSDK::IAP</a></li>
 <li>OnFetchVoidedPurchasesFinished&#160;:&#160;<a class="el" href="a00064.html#a60301795e2d9f0e1012b74ac7540fddd">Stove::PCSDK::IAP</a></li>
 <li>OnFetchWebOpenKeyFinished&#160;:&#160;<a class="el" href="a00067.html#a31c9f7a7746e141b13befcd9bae6b12c">Stove::PCSDK::View</a></li>
+<li>OnIAPPopupDestroyFinished&#160;:&#160;<a class="el" href="a00064.html#acc3b175c5057402e5a371a89ad24a55d">Stove::PCSDK::IAP</a></li>
 <li>OnInitializeFinished&#160;:&#160;<a class="el" href="a00061.html#ac8aa54a99a94ac5963252b79b63f4ea9">Stove::PCSDK::Base</a></li>
 <li>OnModifyStatFinished&#160;:&#160;<a class="el" href="a00062.html#a2239fc9a87b5f557b0e7758ee859f7e0">Stove::PCSDK::GameSupport</a></li>
+<li>OnOpenExternalUrlFinished&#160;:&#160;<a class="el" href="a00061.html#a5a663a6f61fbeb548f0f974b8a99a2a4">Stove::PCSDK::Base</a></li>
 <li>OnOverImmersionFinished&#160;:&#160;<a class="el" href="a00061.html#a1d9f8e25e682a27d0a360d3199de43c2">Stove::PCSDK::Base</a></li>
 <li>OnOwnershipListFinished&#160;:&#160;<a class="el" href="a00065.html#a1a3bf8534be6b0c5b1c0b53dc6d1f716">Stove::PCSDK::Ownership</a></li>
 <li>OnPCBangCheckPCBangStatusOnFinished&#160;:&#160;<a class="el" href="a00066.html#a12148047137cf2133b0104a6aea8ea48">Stove::PCSDK::PCBang</a></li>
@@ -195,9 +203,12 @@ $(function(){initNavTree('namespacemembers.html',''); initResizable(true); });
 <li>OnRestartAppIfNecessaryAsyncFinished&#160;:&#160;<a class="el" href="a00061.html#a23e27f2d31fa7f881d7b0a8d43938639">Stove::PCSDK::Base</a></li>
 <li>OnSetPopupDisallowedFinished&#160;:&#160;<a class="el" href="a00067.html#aad63901693dd891b99c729a386f1af8b">Stove::PCSDK::View</a></li>
 <li>OnShutdownFinished&#160;:&#160;<a class="el" href="a00061.html#af433392f45afa6d18911d4917ab4e8f8">Stove::PCSDK::Base</a></li>
-<li>OnStartPaymentFinished&#160;:&#160;<a class="el" href="a00064.html#ae82280fef56586100358877ea84a83b5">Stove::PCSDK::IAP</a></li>
+<li>OnStartPaymentFinished&#160;:&#160;<a class="el" href="a00064.html#a3443fae104313e3d67bc6cac4c16ed30">Stove::PCSDK::IAP</a></li>
 <li>OnStartPurchaseFinished&#160;:&#160;<a class="el" href="a00064.html#a301f9988952f77956fe7c505a38819ee">Stove::PCSDK::IAP</a></li>
 <li>OnStatFinished&#160;:&#160;<a class="el" href="a00062.html#ab2df9a16d6abcc845d07afbf0a6baa96">Stove::PCSDK::GameSupport</a></li>
+<li>OnVerifyIdentificationPopupDestroyFinished&#160;:&#160;<a class="el" href="a00067.html#a1f168cb4eda7cca7ebf50ecabc151d50">Stove::PCSDK::View</a></li>
+<li>OnViewPopupDestroyFinished&#160;:&#160;<a class="el" href="a00067.html#ad7109dd87bb77e3da418069b132b2a09">Stove::PCSDK::View</a></li>
+<li>OnWithdrawGameFinished&#160;:&#160;<a class="el" href="a00064.html#a0e7782171cbccc20a8eeddc5b8862668">Stove::PCSDK::IAP</a></li>
 <li>Ownership_GetVersion()&#160;:&#160;<a class="el" href="a00065.html#a594cf979f1018c7839ca36c18e3ea6ff">Stove::PCSDK::Ownership</a></li>
 <li>Ownership_Initialize()&#160;:&#160;<a class="el" href="a00065.html#ac4835a083e45edd1925c60f667b94289">Stove::PCSDK::Ownership</a></li>
 <li>Ownership_OwnershipList()&#160;:&#160;<a class="el" href="a00065.html#a0c1873922ccbb6cb3b1ee5355807bd5b">Stove::PCSDK::Ownership</a></li>
@@ -235,15 +246,21 @@ $(function(){initNavTree('namespacemembers.html',''); initResizable(true); });
 
 <h3><a id="index_v" name="index_v"></a>- v -</h3><ul>
 <li>View_AutoPopup()&#160;:&#160;<a class="el" href="a00067.html#a7de56ee5fd966ed2dc5ed38668e38e02">Stove::PCSDK::View</a></li>
+<li>View_AutoPopupEx()&#160;:&#160;<a class="el" href="a00067.html#ad38ba1b9c516893e46879d46128445aa">Stove::PCSDK::View</a></li>
 <li>View_CloseAllPopups()&#160;:&#160;<a class="el" href="a00067.html#a081babbfc4e8e769595b7c598d17e23e">Stove::PCSDK::View</a></li>
 <li>View_CouponPopup()&#160;:&#160;<a class="el" href="a00067.html#aa579281b71771403e6b66195662b7954">Stove::PCSDK::View</a></li>
+<li>View_CouponPopupEx()&#160;:&#160;<a class="el" href="a00067.html#a16efaad411d1eca197073503eb637cb3">Stove::PCSDK::View</a></li>
 <li>View_FetchWebOpenKey()&#160;:&#160;<a class="el" href="a00067.html#ac17e8ed85ef146932617073d1a012fca">Stove::PCSDK::View</a></li>
 <li>View_GetVersion()&#160;:&#160;<a class="el" href="a00067.html#a2f40661f3fb68c4ea8b9e5aa5b7ad246">Stove::PCSDK::View</a></li>
 <li>View_Initialize()&#160;:&#160;<a class="el" href="a00067.html#ad012966ec4afe7f2295ecb1e20eecb2b">Stove::PCSDK::View</a></li>
+<li>View_InitializeWithWndInfo()&#160;:&#160;<a class="el" href="a00067.html#a22faf18b4f5ffe481c5c8ba01d34f87b">Stove::PCSDK::View</a></li>
 <li>View_ManualPopup()&#160;:&#160;<a class="el" href="a00067.html#aca44430c9131af2b4a3e03569c172e59">Stove::PCSDK::View</a></li>
+<li>View_ManualPopupEx()&#160;:&#160;<a class="el" href="a00067.html#ae560961ed8d081bc4da9e45abf6cadcc">Stove::PCSDK::View</a></li>
 <li>View_NewsPopup()&#160;:&#160;<a class="el" href="a00067.html#a65ade96768e0ec217e27d14fd9a4a9f0">Stove::PCSDK::View</a></li>
+<li>View_NewsPopupEx()&#160;:&#160;<a class="el" href="a00067.html#a2e2ac394b77714dd540a465079193817">Stove::PCSDK::View</a></li>
 <li>View_SetPopupDisallowed()&#160;:&#160;<a class="el" href="a00067.html#a24854f5c92f831eadb5d61c7f744d375">Stove::PCSDK::View</a></li>
 <li>View_UnInitialize()&#160;:&#160;<a class="el" href="a00067.html#a7abb1dcce23aa602d18e96ea4e00ba3a">Stove::PCSDK::View</a></li>
+<li>View_VerifyIdentificationPopup()&#160;:&#160;<a class="el" href="a00067.html#a4e623356c30b0873bff1081e256e6f23">Stove::PCSDK::View</a></li>
 <li>ViewSDKName&#160;:&#160;<a class="el" href="a00067.html#af50c3233af59e02f428d573d265205ce">Stove::PCSDK::View</a></li>
 </ul>
 

@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="StovePCSDK.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">StovePCSDK3<span id="projectnumber">&#160;3.3.2.3.g9ca65.dirty</span>
+   <div id="projectname">StovePCSDK3<span id="projectnumber">&#160;3.3.4</span>
    </div>
    <div id="projectbrief">C/C++ DLL for Stove Platform Service</div>
   </td>
@@ -110,13 +110,13 @@ $(function(){initNavTree('a00065.html',''); initResizable(true); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 클래스</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00195.html">StovePCOwnership</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ownership_OwnershipList 관련 API 호출시 응답받는 콜백의 OwnerShip 구조체입니다.    <a href="a00195.html#details">더 자세히 ...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00199.html">StovePCOwnership</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ownership_OwnershipList 관련 API 호출시 응답받는 콜백의 OwnerShip 구조체입니다.    <a href="a00199.html#details">더 자세히 ...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 타입정의</h2></td></tr>
-<tr class="memitem:a1a3bf8534be6b0c5b1c0b53dc6d1f716" id="r_a1a3bf8534be6b0c5b1c0b53dc6d1f716"><td class="memItemLeft" align="right" valign="top">typedef void(__cdecl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a3bf8534be6b0c5b1c0b53dc6d1f716">OnOwnershipListFinished</a>) (<a class="el" href="a00075.html">CallbackResult</a> callbackResult, <a class="el" href="a00195.html">StovePCOwnership</a> *ownerships, uint32_t ownershipSize)</td></tr>
+<tr class="memitem:a1a3bf8534be6b0c5b1c0b53dc6d1f716" id="r_a1a3bf8534be6b0c5b1c0b53dc6d1f716"><td class="memItemLeft" align="right" valign="top">typedef void(__cdecl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a3bf8534be6b0c5b1c0b53dc6d1f716">OnOwnershipListFinished</a>) (<a class="el" href="a00075.html">CallbackResult</a> callbackResult, <a class="el" href="a00199.html">StovePCOwnership</a> *ownerships, uint32_t ownershipSize)</td></tr>
 <tr class="memdesc:a1a3bf8534be6b0c5b1c0b53dc6d1f716"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ownership_OwnershipList API 호출 시 응답받는 콜백 함수 포인터  <br /></td></tr>
 <tr class="separator:a1a3bf8534be6b0c5b1c0b53dc6d1f716"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -130,7 +130,7 @@ $(function(){initNavTree('a00065.html',''); initResizable(true); });
 <tr class="memitem:a1ab9469feeaffb1366167e46fcca997b" id="r_a1ab9469feeaffb1366167e46fcca997b"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ab9469feeaffb1366167e46fcca997b">OwnershipGameCode</a> : uint32_t { <a class="el" href="#a1ab9469feeaffb1366167e46fcca997bab50339a10e1de285ac99d4c3990b8693">NONE</a> = 0
 , <a class="el" href="#a1ab9469feeaffb1366167e46fcca997bae4ac03f6c9f00665644e868dd1fb9f1e">BASIC</a> = 3
 , <a class="el" href="#a1ab9469feeaffb1366167e46fcca997babd6dbd063f5ab7394879e3c08781cd72">DEMO</a> = 4
-, <a class="el" href="#a1ab9469feeaffb1366167e46fcca997baba2c48de56cc959794adfb2169a7fbe3">DLC</a> = 4
+, <a class="el" href="#a1ab9469feeaffb1366167e46fcca997baba2c48de56cc959794adfb2169a7fbe3">DLC</a> = 5
  }</td></tr>
 <tr class="separator:a1ab9469feeaffb1366167e46fcca997b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf66ce4a8350e253a4f887b78f34654c" id="r_abf66ce4a8350e253a4f887b78f34654c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf66ce4a8350e253a4f887b78f34654c">SDKMethod</a> : uint32_t { <br />
@@ -167,12 +167,15 @@ $(function(){initNavTree('a00065.html',''); initResizable(true); });
 , <br />
 &#160;&#160;<a class="el" href="#a6f10fe667b8ac30569647c897e90eb4dac6fdba1c48d9813a1dfd878a1756d2d8">RESPONSE_INVALID_VALUE_FORMAT</a> = 26U
 , <a class="el" href="#a6f10fe667b8ac30569647c897e90eb4daced61cd095bbd4b5da066fb670292e64">LOG_81PLUG_ERROR</a> = 27U
-, <a class="el" href="#a6f10fe667b8ac30569647c897e90eb4da4d77ea607bc5801f7413b0e8e060612e">UPDATE_81PLUG_FEED_ERROR</a> = 28U
-, <a class="el" href="#a6f10fe667b8ac30569647c897e90eb4daa738d94a1223530902a971b9c5a11ae6">PCSDK_DLL_NOT_FOUND</a> = 251U
+, <a class="el" href="#a6f10fe667b8ac30569647c897e90eb4dacadf555c2fe95f3090ebb5a424e01d6e">ASYNC_OPERATION_IN_PROGRESS</a> = 29U
+, <a class="el" href="#a6f10fe667b8ac30569647c897e90eb4da2066886874efe9c14701cf3231b6ba49">BASE_UNINITIALIZED</a> = 30U
 , <br />
-&#160;&#160;<a class="el" href="#a6f10fe667b8ac30569647c897e90eb4da3e860a081575fc82cc7b6ed2ca602947">NOT_IMPLEMENTED</a> = 252U
+&#160;&#160;<a class="el" href="#a6f10fe667b8ac30569647c897e90eb4da4d77ea607bc5801f7413b0e8e060612e">UPDATE_81PLUG_FEED_ERROR</a> = 28U
+, <a class="el" href="#a6f10fe667b8ac30569647c897e90eb4daa738d94a1223530902a971b9c5a11ae6">PCSDK_DLL_NOT_FOUND</a> = 251U
+, <a class="el" href="#a6f10fe667b8ac30569647c897e90eb4da3e860a081575fc82cc7b6ed2ca602947">NOT_IMPLEMENTED</a> = 252U
 , <a class="el" href="#a6f10fe667b8ac30569647c897e90eb4dae61780aea0c20d1019d1b24bfbd0a253">UNMANAGED_EXCEPTION</a> = 253U
-, <a class="el" href="#a6f10fe667b8ac30569647c897e90eb4dad39caad7773f9d769161673dffba5db5">MANAGED_EXCEPTION</a> = 254U
+, <br />
+&#160;&#160;<a class="el" href="#a6f10fe667b8ac30569647c897e90eb4dad39caad7773f9d769161673dffba5db5">MANAGED_EXCEPTION</a> = 254U
 , <a class="el" href="#a6f10fe667b8ac30569647c897e90eb4da9a10f345b0f755d461a8673a5e9ef6b4">UNKNOWN_ERROR</a> = 255U
 <br />
  }</td></tr>
@@ -206,7 +209,7 @@ $(function(){initNavTree('a00065.html',''); initResizable(true); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(__cdecl * Stove::PCSDK::Ownership::OnOwnershipListFinished) (<a class="el" href="a00075.html">CallbackResult</a> callbackResult, <a class="el" href="a00195.html">StovePCOwnership</a> *ownerships, uint32_t ownershipSize)</td>
+          <td class="memname">typedef void(__cdecl * Stove::PCSDK::Ownership::OnOwnershipListFinished) (<a class="el" href="a00075.html">CallbackResult</a> callbackResult, <a class="el" href="a00199.html">StovePCOwnership</a> *ownerships, uint32_t ownershipSize)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -215,13 +218,13 @@ $(function(){initNavTree('a00065.html',''); initResizable(true); });
 <dl class="params"><dt>매개변수</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname"><a class="el" href="a00075.html" title="Stove PCSDK 3.x에서 Callback 호출시 전달받는 구조체입니다.">CallbackResult</a></td><td>callbackResult 콜백 결과 값 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">StovePCOwnership*</td><td>ownerships <a class="el" href="a00195.html" title="Ownership_OwnershipList 관련 API 호출시 응답받는 콜백의 OwnerShip 구조체입니다.">StovePCOwnership</a> 배열 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">uint32_t</td><td>ownershipSize <a class="el" href="a00195.html" title="Ownership_OwnershipList 관련 API 호출시 응답받는 콜백의 OwnerShip 구조체입니다.">StovePCOwnership</a> 배열의 크기   </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">StovePCOwnership*</td><td>ownerships <a class="el" href="a00199.html" title="Ownership_OwnershipList 관련 API 호출시 응답받는 콜백의 OwnerShip 구조체입니다.">StovePCOwnership</a> 배열 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">uint32_t</td><td>ownershipSize <a class="el" href="a00199.html" title="Ownership_OwnershipList 관련 API 호출시 응답받는 콜백의 OwnerShip 구조체입니다.">StovePCOwnership</a> 배열의 크기   </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition"><a class="el" href="a00225_source.html">OwnershipSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00225_source.html#l00036">36</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00229_source.html">OwnershipSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00229_source.html#l00036">36</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
@@ -250,11 +253,12 @@ $(function(){initNavTree('a00065.html',''); initResizable(true); });
 </td></tr>
 <tr><td class="fieldname"><a id="ae5a32196f0c1cec7bfbd3da663eb0d69a632c866c68f2467e646559f5bcb93746" name="ae5a32196f0c1cec7bfbd3da663eb0d69a632c866c68f2467e646559f5bcb93746"></a>ACQUIRE&#160;</td><td class="fielddoc"><p>소유권 획득   </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae5a32196f0c1cec7bfbd3da663eb0d69a709181461ec3398615ecc2ae850589e6" name="ae5a32196f0c1cec7bfbd3da663eb0d69a709181461ec3398615ecc2ae850589e6"></a>LOSE&#160;</td><td class="fielddoc"><p>소유권 해제 (구매 취소한 경우)   </p>
+<tr><td class="fieldname"><a id="ae5a32196f0c1cec7bfbd3da663eb0d69a709181461ec3398615ecc2ae850589e6" name="ae5a32196f0c1cec7bfbd3da663eb0d69a709181461ec3398615ecc2ae850589e6"></a>LOSE&#160;</td><td class="fielddoc"><p>소유권 해제 </p>
+<p>구매 취소한 경우   </p>
 </td></tr>
 </table>
 
-<p class="definition"><a class="el" href="a00240_source.html">OwnershipSDK/Deploy/Include/Misc/Enumerations.h</a> 파일의 <a class="el" href="a00240_source.html#l00030">30</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00244_source.html">OwnershipSDK/Deploy/Include/Misc/Enumerations.h</a> 파일의 <a class="el" href="a00244_source.html#l00030">30</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
@@ -288,7 +292,7 @@ $(function(){initNavTree('a00065.html',''); initResizable(true); });
 </td></tr>
 </table>
 
-<p class="definition"><a class="el" href="a00240_source.html">OwnershipSDK/Deploy/Include/Misc/Enumerations.h</a> 파일의 <a class="el" href="a00240_source.html#l00067">67</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00244_source.html">OwnershipSDK/Deploy/Include/Misc/Enumerations.h</a> 파일의 <a class="el" href="a00244_source.html#l00074">74</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
@@ -350,9 +354,9 @@ $(function(){initNavTree('a00065.html',''); initResizable(true); });
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">열거형 멤버</th></tr><tr><td class="fieldname"><a id="a6f10fe667b8ac30569647c897e90eb4dad0749aaba8b833466dfcbb0428e4f89c" name="a6f10fe667b8ac30569647c897e90eb4dad0749aaba8b833466dfcbb0428e4f89c"></a>SUCCESS&#160;</td><td class="fielddoc"><p>성공   </p>
+<tr><th colspan="2">열거형 멤버</th></tr><tr><td class="fieldname"><a id="a6f10fe667b8ac30569647c897e90eb4dad0749aaba8b833466dfcbb0428e4f89c" name="a6f10fe667b8ac30569647c897e90eb4dad0749aaba8b833466dfcbb0428e4f89c"></a>SUCCESS&#160;</td><td class="fielddoc"><p>0 : 성공   </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a6f10fe667b8ac30569647c897e90eb4dac2759effffc94bb9acc71d69fe3e8a1f" name="a6f10fe667b8ac30569647c897e90eb4dac2759effffc94bb9acc71d69fe3e8a1f"></a>FAIL&#160;</td><td class="fielddoc"><p>실패   </p>
+<tr><td class="fieldname"><a id="a6f10fe667b8ac30569647c897e90eb4dac2759effffc94bb9acc71d69fe3e8a1f" name="a6f10fe667b8ac30569647c897e90eb4dac2759effffc94bb9acc71d69fe3e8a1f"></a>FAIL&#160;</td><td class="fielddoc"><p>1 : 실패   </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a6f10fe667b8ac30569647c897e90eb4da2188ade13df339354cd8c383dda3f8bb" name="a6f10fe667b8ac30569647c897e90eb4da2188ade13df339354cd8c383dda3f8bb"></a>INVALID_CONFIG&#160;</td><td class="fielddoc"><p>2 : Config 파일을 찾을 수 없습니다.   </p>
 </td></tr>
@@ -385,6 +389,9 @@ $(function(){initNavTree('a00065.html',''); initResizable(true); });
 <tr><td class="fieldname"><a id="a6f10fe667b8ac30569647c897e90eb4dac6fdba1c48d9813a1dfd878a1756d2d8" name="a6f10fe667b8ac30569647c897e90eb4dac6fdba1c48d9813a1dfd878a1756d2d8"></a>RESPONSE_INVALID_VALUE_FORMAT&#160;</td><td class="fielddoc"><p>26 : Http API Response 포멧이 틀립니다.   </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a6f10fe667b8ac30569647c897e90eb4daced61cd095bbd4b5da066fb670292e64" name="a6f10fe667b8ac30569647c897e90eb4daced61cd095bbd4b5da066fb670292e64"></a>LOG_81PLUG_ERROR&#160;</td><td class="fielddoc"><p>27 : 81 Plug 전송을 실패했습니다. (Deprecated)   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6f10fe667b8ac30569647c897e90eb4dacadf555c2fe95f3090ebb5a424e01d6e" name="a6f10fe667b8ac30569647c897e90eb4dacadf555c2fe95f3090ebb5a424e01d6e"></a>ASYNC_OPERATION_IN_PROGRESS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6f10fe667b8ac30569647c897e90eb4da2066886874efe9c14701cf3231b6ba49" name="a6f10fe667b8ac30569647c897e90eb4da2066886874efe9c14701cf3231b6ba49"></a>BASE_UNINITIALIZED&#160;</td><td class="fielddoc"><p>30 : BaseSDK를 Uninitialize하였습니다.   </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a6f10fe667b8ac30569647c897e90eb4da4d77ea607bc5801f7413b0e8e060612e" name="a6f10fe667b8ac30569647c897e90eb4da4d77ea607bc5801f7413b0e8e060612e"></a>UPDATE_81PLUG_FEED_ERROR&#160;</td><td class="fielddoc"><p>28 : 81 Plug 업데이트를 실패했습니다. (Deprecated)   </p>
 </td></tr>
@@ -522,7 +529,7 @@ $(function(){initNavTree('a00065.html',''); initResizable(true); });
 </table>
 </div><div class="memdoc">
 
-<p class="definition"><a class="el" href="a00041_source.html">OwnershipSDKResult.h</a> 파일의 <a class="el" href="a00041_source.html#l00324">324</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00041_source.html">OwnershipSDKResult.h</a> 파일의 <a class="el" href="a00041_source.html#l00344">344</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>

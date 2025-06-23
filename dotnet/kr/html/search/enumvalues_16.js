@@ -1,5 +1,12 @@
 var searchData=
 [
-  ['zh_5fcn_0',['zh_cn',['../a00041.html#a35bede673a316339087906f1c7e37472a603c850ce083881dcec33b324efe0e67',1,'Stove::PCSDK::Base']]],
-  ['zh_5ftw_1',['zh_tw',['../a00041.html#a35bede673a316339087906f1c7e37472a2716bf5ec94767ef1bd502a183907475',1,'Stove::PCSDK::Base']]]
+  ['webview_5fclose_5fall_5ffail_0',['WEBVIEW_CLOSE_ALL_FAIL',['../a00142.html#aa9fd442bafd40386f5afb4b3b1c4dde6af37a8dc1bf13601f2854a392ef537519',1,'Stove.PCSDK.IAP.WEBVIEW_CLOSE_ALL_FAIL'],['../a00226.html#aae2127743a2a4510078bb8abf2f9c562af37a8dc1bf13601f2854a392ef537519',1,'Stove.PCSDK.View.WEBVIEW_CLOSE_ALL_FAIL']]],
+  ['webview_5fclose_5ffail_1',['WEBVIEW_CLOSE_FAIL',['../a00226.html#aae2127743a2a4510078bb8abf2f9c562a29f54208c0e037e992a48c189e9627c3',1,'Stove::PCSDK::View']]],
+  ['webview_5fclosed_5fbefore_5fpurchase_2',['WEBVIEW_CLOSED_BEFORE_PURCHASE',['../a00142.html#aa9fd442bafd40386f5afb4b3b1c4dde6aa1b23b298bff36e05ae82a49d3941a2e',1,'Stove::PCSDK::IAP']]],
+  ['webview_5fcreate_5fcookie_5ffail_3',['WEBVIEW_CREATE_COOKIE_FAIL',['../a00142.html#aa9fd442bafd40386f5afb4b3b1c4dde6a151b2dcbe518db43d5c99ebe91fb6c5d',1,'Stove.PCSDK.IAP.WEBVIEW_CREATE_COOKIE_FAIL'],['../a00226.html#aae2127743a2a4510078bb8abf2f9c562a151b2dcbe518db43d5c99ebe91fb6c5d',1,'Stove.PCSDK.View.WEBVIEW_CREATE_COOKIE_FAIL']]],
+  ['webview_5fcreate_5ffail_4',['WEBVIEW_CREATE_FAIL',['../a00142.html#aa9fd442bafd40386f5afb4b3b1c4dde6ad04fbfb98a350444d7c9a92d0ab393e8',1,'Stove.PCSDK.IAP.WEBVIEW_CREATE_FAIL'],['../a00226.html#aae2127743a2a4510078bb8abf2f9c562ad04fbfb98a350444d7c9a92d0ab393e8',1,'Stove.PCSDK.View.WEBVIEW_CREATE_FAIL']]],
+  ['webview_5fload_5furl_5ffail_5',['WEBVIEW_LOAD_URL_FAIL',['../a00142.html#aa9fd442bafd40386f5afb4b3b1c4dde6a9540cf03deffbf38f8be361ea05dc94c',1,'Stove.PCSDK.IAP.WEBVIEW_LOAD_URL_FAIL'],['../a00226.html#aae2127743a2a4510078bb8abf2f9c562a9540cf03deffbf38f8be361ea05dc94c',1,'Stove.PCSDK.View.WEBVIEW_LOAD_URL_FAIL']]],
+  ['with_5fwebview_6',['WITH_WEBVIEW',['../a00142.html#a8b15dfb190e3bd5b059b3ec4742bd163a88e01d7a9d0899173c7607df6f9738cf',1,'Stove.PCSDK.IAP.WITH_WEBVIEW'],['../a00142.html#affc0276b207fa1c5d130cfc15d093601a88e01d7a9d0899173c7607df6f9738cf',1,'Stove.PCSDK.IAP.WITH_WEBVIEW'],['../a00142.html#ab9a03cba6ab6a16e166bcad5512fd854a88e01d7a9d0899173c7607df6f9738cf',1,'Stove.PCSDK.IAP.WITH_WEBVIEW']]],
+  ['with_5fwebview_5fand_5fconfirm_5fresult_7',['WITH_WEBVIEW_AND_CONFIRM_RESULT',['../a00142.html#a8b15dfb190e3bd5b059b3ec4742bd163a20f72fdd2b467e07fbff2260fbd90296',1,'Stove::PCSDK::IAP']]],
+  ['withdraw_5fgame_8',['WITHDRAW_GAME',['../a00142.html#a993fa16aeace7b14989e6a1314ba34d7aeee697e700163ce87ab4e32c72b81e96',1,'Stove::PCSDK::IAP']]]
 ];

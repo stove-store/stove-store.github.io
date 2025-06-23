@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="StovePCSDK.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">StovePCSDK3<span id="projectnumber">&#160;3.3.2.3.g9ca65.dirty</span>
+   <div id="projectname">StovePCSDK3<span id="projectnumber">&#160;3.3.4</span>
    </div>
    <div id="projectbrief">C/C++ DLL for Stove Platform Service</div>
   </td>
@@ -147,7 +147,10 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">IAP_FetchTermsAgreement API에 대한 옵션을 전달하는 구조체입니다.    <a href="a00183.html#details">더 자세히 ...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00191.html">StovePCVoidedPurchase</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">환불 처리 정보를 전달하는 구조체입니다. IAP_FetchVoidedPurchases 콜백에 결과 전달 시 사용합니다.    <a href="a00191.html#details">더 자세히 ...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">환불 처리 정보를 전달하는 구조체입니다.  <a href="a00191.html#details">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00195.html">StovePCWithdrawGameOption</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">IAP_WithdrawGame API에 대한 옵션을 전달하는 구조체입니다.    <a href="a00195.html#details">더 자세히 ...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -167,15 +170,21 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 <tr class="memitem:a7777083c1acf24a469acb67aca68b45a" id="r_a7777083c1acf24a469acb67aca68b45a"><td class="memItemLeft" align="right" valign="top">typedef void(__cdecl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7777083c1acf24a469acb67aca68b45a">OnFetchInventoryFinished</a>) (<a class="el" href="a00075.html">CallbackResult</a> callbackResult, <a class="el" href="a00179.html">StovePCInventoryItem</a> *inventoryItems, uint32_t inventoryItemSize)</td></tr>
 <tr class="memdesc:a7777083c1acf24a469acb67aca68b45a"><td class="mdescLeft">&#160;</td><td class="mdescRight">IAP_FetchInventory API 호출 시 응답받는 콜백 함수 포인터  <br /></td></tr>
 <tr class="separator:a7777083c1acf24a469acb67aca68b45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6a0342ac10ac206e881f35b2637a5cd" id="r_ac6a0342ac10ac206e881f35b2637a5cd"><td class="memItemLeft" align="right" valign="top">typedef void(__cdecl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6a0342ac10ac206e881f35b2637a5cd">OnFetchTermsAgreementFinished</a>) (<a class="el" href="a00075.html">CallbackResult</a> callbackResult, bool agreed, LPCWSTR url)</td></tr>
-<tr class="memdesc:ac6a0342ac10ac206e881f35b2637a5cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">IAP_FetchTermsAgreement API 호출 시 응답받는 콜백 함수 포인터  <br /></td></tr>
-<tr class="separator:ac6a0342ac10ac206e881f35b2637a5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae82280fef56586100358877ea84a83b5" id="r_ae82280fef56586100358877ea84a83b5"><td class="memItemLeft" align="right" valign="top">typedef void(__cdecl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae82280fef56586100358877ea84a83b5">OnStartPaymentFinished</a>) (<a class="el" href="a00075.html">CallbackResult</a> callbackResult, LPCWSTR url)</td></tr>
-<tr class="memdesc:ae82280fef56586100358877ea84a83b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">IAP_StartPayment API 호출 시 응답받는 콜백 함수 포인터  <br /></td></tr>
-<tr class="separator:ae82280fef56586100358877ea84a83b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f464c086419e89e0756cb9e758167d2" id="r_a6f464c086419e89e0756cb9e758167d2"><td class="memItemLeft" align="right" valign="top">typedef void(__cdecl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f464c086419e89e0756cb9e758167d2">OnFetchTermsAgreementFinished</a>) (<a class="el" href="a00075.html">CallbackResult</a> callbackResult, bool agreed, const wchar_t *url)</td></tr>
+<tr class="memdesc:a6f464c086419e89e0756cb9e758167d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">IAP_FetchTermsAgreement API 호출 시 응답받는 콜백 함수 포인터  <br /></td></tr>
+<tr class="separator:a6f464c086419e89e0756cb9e758167d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3443fae104313e3d67bc6cac4c16ed30" id="r_a3443fae104313e3d67bc6cac4c16ed30"><td class="memItemLeft" align="right" valign="top">typedef void(__cdecl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3443fae104313e3d67bc6cac4c16ed30">OnStartPaymentFinished</a>) (<a class="el" href="a00075.html">CallbackResult</a> callbackResult, const wchar_t *url)</td></tr>
+<tr class="memdesc:a3443fae104313e3d67bc6cac4c16ed30"><td class="mdescLeft">&#160;</td><td class="mdescRight">IAP_StartPayment API 호출 시 응답받는 콜백 함수 포인터  <br /></td></tr>
+<tr class="separator:a3443fae104313e3d67bc6cac4c16ed30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60301795e2d9f0e1012b74ac7540fddd" id="r_a60301795e2d9f0e1012b74ac7540fddd"><td class="memItemLeft" align="right" valign="top">typedef void(__cdecl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60301795e2d9f0e1012b74ac7540fddd">OnFetchVoidedPurchasesFinished</a>) (<a class="el" href="a00075.html">CallbackResult</a> callbackResult, <a class="el" href="a00191.html">StovePCVoidedPurchase</a> *voidedPurchases, uint32_t voidedPurchaseSize)</td></tr>
 <tr class="memdesc:a60301795e2d9f0e1012b74ac7540fddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">IAP_FetchVoidedPurchases API 호출 시 응답받는 콜백 함수 포인터  <br /></td></tr>
 <tr class="separator:a60301795e2d9f0e1012b74ac7540fddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc3b175c5057402e5a371a89ad24a55d" id="r_acc3b175c5057402e5a371a89ad24a55d"><td class="memItemLeft" align="right" valign="top">typedef void(__cdecl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc3b175c5057402e5a371a89ad24a55d">OnIAPPopupDestroyFinished</a>) (<a class="el" href="a00075.html">CallbackResult</a> callbackResult)</td></tr>
+<tr class="memdesc:acc3b175c5057402e5a371a89ad24a55d"><td class="mdescLeft">&#160;</td><td class="mdescRight">IAP_PopupDestroyNotification API를 통해 등록하는 콜백 함수 포인터 콜백은 IAPSDK를 통해 생성된 팝업이 모두 닫혀야 호출됩니다.  <br /></td></tr>
+<tr class="separator:acc3b175c5057402e5a371a89ad24a55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e7782171cbccc20a8eeddc5b8862668" id="r_a0e7782171cbccc20a8eeddc5b8862668"><td class="memItemLeft" align="right" valign="top">typedef void(__cdecl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e7782171cbccc20a8eeddc5b8862668">OnWithdrawGameFinished</a>) (<a class="el" href="a00075.html">CallbackResult</a> callbackResult, bool gameWithdrawal)</td></tr>
+<tr class="memdesc:a0e7782171cbccc20a8eeddc5b8862668"><td class="mdescLeft">&#160;</td><td class="mdescRight">IAP_WithdrawGame API 호출 시 응답받는 콜백 함수 포인터  <br /></td></tr>
+<tr class="separator:a0e7782171cbccc20a8eeddc5b8862668"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 열거형 타입</h2></td></tr>
@@ -242,6 +251,7 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 , <br />
 &#160;&#160;<a class="el" href="#af8a0e8d77b3c09c2b02391299cc48adca2dd4d1d766cad9d5703c567cea1795a1">FETCH_VOIDED_PURCHASES</a> = 87U
 , <a class="el" href="#af8a0e8d77b3c09c2b02391299cc48adca361b88111754a925a6494aeeea56a886">CLOSE_ALL_POPUPS</a> = 88U
+, <a class="el" href="#af8a0e8d77b3c09c2b02391299cc48adcaeee697e700163ce87ab4e32c72b81e96">WITHDRAW_GAME</a> = 89U
 <br />
  }</td></tr>
 <tr class="separator:af8a0e8d77b3c09c2b02391299cc48adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -269,25 +279,29 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 &#160;&#160;<a class="el" href="#a1a6d21961b619f8e3e99469592298ee2ac6fdba1c48d9813a1dfd878a1756d2d8">RESPONSE_INVALID_VALUE_FORMAT</a> = 26U
 , <a class="el" href="#a1a6d21961b619f8e3e99469592298ee2aced61cd095bbd4b5da066fb670292e64">LOG_81PLUG_ERROR</a> = 27U
 , <a class="el" href="#a1a6d21961b619f8e3e99469592298ee2a4d77ea607bc5801f7413b0e8e060612e">UPDATE_81PLUG_FEED_ERROR</a> = 28U
+, <a class="el" href="#a1a6d21961b619f8e3e99469592298ee2acadf555c2fe95f3090ebb5a424e01d6e">ASYNC_OPERATION_IN_PROGRESS</a> = 29U
+, <br />
+&#160;&#160;<a class="el" href="#a1a6d21961b619f8e3e99469592298ee2a2066886874efe9c14701cf3231b6ba49">BASE_UNINITIALIZED</a> = 30U
 , <a class="el" href="#a1a6d21961b619f8e3e99469592298ee2aa738d94a1223530902a971b9c5a11ae6">PCSDK_DLL_NOT_FOUND</a> = 251U
-, <br />
-&#160;&#160;<a class="el" href="#a1a6d21961b619f8e3e99469592298ee2a3e860a081575fc82cc7b6ed2ca602947">NOT_IMPLEMENTED</a> = 252U
+, <a class="el" href="#a1a6d21961b619f8e3e99469592298ee2a3e860a081575fc82cc7b6ed2ca602947">NOT_IMPLEMENTED</a> = 252U
 , <a class="el" href="#a1a6d21961b619f8e3e99469592298ee2ae61780aea0c20d1019d1b24bfbd0a253">UNMANAGED_EXCEPTION</a> = 253U
-, <a class="el" href="#a1a6d21961b619f8e3e99469592298ee2ad39caad7773f9d769161673dffba5db5">MANAGED_EXCEPTION</a> = 254U
+, <br />
+&#160;&#160;<a class="el" href="#a1a6d21961b619f8e3e99469592298ee2ad39caad7773f9d769161673dffba5db5">MANAGED_EXCEPTION</a> = 254U
 , <a class="el" href="#a1a6d21961b619f8e3e99469592298ee2a9a10f345b0f755d461a8673a5e9ef6b4">UNKNOWN_ERROR</a> = 255U
-, <br />
-&#160;&#160;<a class="el" href="#a1a6d21961b619f8e3e99469592298ee2ad9bb9e20bfb4a2c22d7f28070023ed22">VIEWUI_NOT_INITIALIZED</a> = 80U
+, <a class="el" href="#a1a6d21961b619f8e3e99469592298ee2ad9bb9e20bfb4a2c22d7f28070023ed22">VIEWUI_NOT_INITIALIZED</a> = 80U
 , <a class="el" href="#a1a6d21961b619f8e3e99469592298ee2a7b9e96e189290b0b2f4c51fa1bf95815">VIEWUI_UNINIT_FAILED</a> = 81U
-, <a class="el" href="#a1a6d21961b619f8e3e99469592298ee2ad04fbfb98a350444d7c9a92d0ab393e8">WEBVIEW_CREATE_FAIL</a> = 82U
+, <br />
+&#160;&#160;<a class="el" href="#a1a6d21961b619f8e3e99469592298ee2ad04fbfb98a350444d7c9a92d0ab393e8">WEBVIEW_CREATE_FAIL</a> = 82U
 , <a class="el" href="#a1a6d21961b619f8e3e99469592298ee2a9540cf03deffbf38f8be361ea05dc94c">WEBVIEW_LOAD_URL_FAIL</a> = 83U
-, <br />
-&#160;&#160;<a class="el" href="#a1a6d21961b619f8e3e99469592298ee2aa1b23b298bff36e05ae82a49d3941a2e">WEBVIEW_CLOSED_BEFORE_PURCHASE</a> = 84U
+, <a class="el" href="#a1a6d21961b619f8e3e99469592298ee2aa1b23b298bff36e05ae82a49d3941a2e">WEBVIEW_CLOSED_BEFORE_PURCHASE</a> = 84U
 , <a class="el" href="#a1a6d21961b619f8e3e99469592298ee2a5bf1b4865358454eed8a42a57795c671">PARAMETER_LENGTH_EXCEEDED</a> = 85U
-, <a class="el" href="#a1a6d21961b619f8e3e99469592298ee2ad3f2bee8d368162bd0641c8580704a67">INVALID_JSON_STRING</a> = 86U
-, <a class="el" href="#a1a6d21961b619f8e3e99469592298ee2a151b2dcbe518db43d5c99ebe91fb6c5d">WEBVIEW_CREATE_COOKIE_FAIL</a> = 87U
 , <br />
-&#160;&#160;<a class="el" href="#a1a6d21961b619f8e3e99469592298ee2a81a43ac7165828dd46c59829e6e7d6ff">INVALID_ORDER_PRODUCT_INFORMATION</a> = 88U
+&#160;&#160;<a class="el" href="#a1a6d21961b619f8e3e99469592298ee2ad3f2bee8d368162bd0641c8580704a67">INVALID_JSON_STRING</a> = 86U
+, <a class="el" href="#a1a6d21961b619f8e3e99469592298ee2a151b2dcbe518db43d5c99ebe91fb6c5d">WEBVIEW_CREATE_COOKIE_FAIL</a> = 87U
+, <a class="el" href="#a1a6d21961b619f8e3e99469592298ee2a81a43ac7165828dd46c59829e6e7d6ff">INVALID_ORDER_PRODUCT_INFORMATION</a> = 88U
 , <a class="el" href="#a1a6d21961b619f8e3e99469592298ee2af37a8dc1bf13601f2854a392ef537519">WEBVIEW_CLOSE_ALL_FAIL</a> = 89U
+, <br />
+&#160;&#160;<a class="el" href="#a1a6d21961b619f8e3e99469592298ee2a29f54208c0e037e992a48c189e9627c3">WEBVIEW_CLOSE_FAIL</a> = 90U
 <br />
  }</td></tr>
 <tr class="separator:a1a6d21961b619f8e3e99469592298ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -297,6 +311,9 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 <tr class="memitem:aad3f559bbf314604c9595ec1a2dccaf7" id="r_aad3f559bbf314604c9595ec1a2dccaf7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00071.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad3f559bbf314604c9595ec1a2dccaf7">IAP_Initialize</a> (const wchar_t *shopKey)</td></tr>
 <tr class="memdesc:aad3f559bbf314604c9595ec1a2dccaf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">IAPSDK를 초기화 합니다.  <br /></td></tr>
 <tr class="separator:aad3f559bbf314604c9595ec1a2dccaf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f46ca201491f612159d843fe3cc74e" id="r_a00f46ca201491f612159d843fe3cc74e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00071.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00f46ca201491f612159d843fe3cc74e">IAP_InitializeWithWndInfo</a> (const wchar_t *shopKey, const void *mainWndHandle)</td></tr>
+<tr class="memdesc:a00f46ca201491f612159d843fe3cc74e"><td class="mdescLeft">&#160;</td><td class="mdescRight">IAPSDK를 초기화 합니다. Internal Style 팝업의 부모 윈도우가 될 메인 윈도우 핸들이 필요합니다.  <br /></td></tr>
+<tr class="separator:a00f46ca201491f612159d843fe3cc74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8f12664fbfd403fa725280dffac7567" id="r_ad8f12664fbfd403fa725280dffac7567"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00071.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8f12664fbfd403fa725280dffac7567">IAP_UnInitialize</a> ()</td></tr>
 <tr class="memdesc:ad8f12664fbfd403fa725280dffac7567"><td class="mdescLeft">&#160;</td><td class="mdescRight">IAPSDK의 자원을 해제합니다  <br /></td></tr>
 <tr class="separator:ad8f12664fbfd403fa725280dffac7567"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -309,24 +326,36 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 <tr class="memitem:a7005628603ce02099937f38c28d23d43" id="r_a7005628603ce02099937f38c28d23d43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7005628603ce02099937f38c28d23d43">IAP_StartPurchase</a> (const <a class="el" href="a00163.html">StovePCStartPurchaseParam</a> *params, <a class="el" href="#a301f9988952f77956fe7c505a38819ee">OnStartPurchaseFinished</a> onFinished)</td></tr>
 <tr class="memdesc:a7005628603ce02099937f38c28d23d43"><td class="mdescLeft">&#160;</td><td class="mdescRight">상품구매를 시작하기 위한 결제 URL 을 전달받거나 WebView2를 이용하여 결제를 시작합니다.  <br /></td></tr>
 <tr class="separator:a7005628603ce02099937f38c28d23d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36e1f9ecda435d39926001a3fa15433e" id="r_a36e1f9ecda435d39926001a3fa15433e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36e1f9ecda435d39926001a3fa15433e">IAP_StartPurchaseEx</a> (const <a class="el" href="a00163.html">StovePCStartPurchaseParam</a> *params, <a class="el" href="#a301f9988952f77956fe7c505a38819ee">OnStartPurchaseFinished</a> onFinished, <a class="el" href="#acc3b175c5057402e5a371a89ad24a55d">OnIAPPopupDestroyFinished</a> onDestroy)</td></tr>
+<tr class="memdesc:a36e1f9ecda435d39926001a3fa15433e"><td class="mdescLeft">&#160;</td><td class="mdescRight">상품구매를 시작하기 위한 결제 URL 을 전달받거나 WebView2를 이용하여 결제를 시작합니다.  <br /></td></tr>
+<tr class="separator:a36e1f9ecda435d39926001a3fa15433e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eb410fb132d65a03334bd91b2a8164a" id="r_a3eb410fb132d65a03334bd91b2a8164a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3eb410fb132d65a03334bd91b2a8164a">IAP_ConfirmPurchase</a> (int64_t transactionMasterNumber, <a class="el" href="#ad4fd3bce2c051199d2ef4df5a5af3688">OnConfirmPurchaseFinished</a> onFinished)</td></tr>
 <tr class="memdesc:a3eb410fb132d65a03334bd91b2a8164a"><td class="mdescLeft">&#160;</td><td class="mdescRight">상품구매 완료후 구매 ID로 정상처리 되었는지 확인 합니다.  <br /></td></tr>
 <tr class="separator:a3eb410fb132d65a03334bd91b2a8164a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaff5c14fe06460b3ea13c3de00baeb22" id="r_aaff5c14fe06460b3ea13c3de00baeb22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaff5c14fe06460b3ea13c3de00baeb22">IAP_FetchInventory</a> (<a class="el" href="#a7777083c1acf24a469acb67aca68b45a">OnFetchInventoryFinished</a> onFinished)</td></tr>
 <tr class="memdesc:aaff5c14fe06460b3ea13c3de00baeb22"><td class="mdescLeft">&#160;</td><td class="mdescRight">전체 구매한 상품목록을 조회합니다.  <br /></td></tr>
 <tr class="separator:aaff5c14fe06460b3ea13c3de00baeb22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70a1c0f1188e7c3936a45e986dd33d59" id="r_a70a1c0f1188e7c3936a45e986dd33d59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70a1c0f1188e7c3936a45e986dd33d59">IAP_FetchTermsAgreement</a> (const <a class="el" href="a00183.html">StovePCTermsOption</a> *options, <a class="el" href="#ac6a0342ac10ac206e881f35b2637a5cd">OnFetchTermsAgreementFinished</a> onFinished)</td></tr>
+<tr class="memitem:a70a1c0f1188e7c3936a45e986dd33d59" id="r_a70a1c0f1188e7c3936a45e986dd33d59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70a1c0f1188e7c3936a45e986dd33d59">IAP_FetchTermsAgreement</a> (const <a class="el" href="a00183.html">StovePCTermsOption</a> *options, <a class="el" href="#a6f464c086419e89e0756cb9e758167d2">OnFetchTermsAgreementFinished</a> onFinished)</td></tr>
 <tr class="memdesc:a70a1c0f1188e7c3936a45e986dd33d59"><td class="mdescLeft">&#160;</td><td class="mdescRight">필수 약관 동의 여부를 조회합니다.  <br /></td></tr>
 <tr class="separator:a70a1c0f1188e7c3936a45e986dd33d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68aea8bfccfc513999f538805643a0ac" id="r_a68aea8bfccfc513999f538805643a0ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68aea8bfccfc513999f538805643a0ac">IAP_StartPayment</a> (const <a class="el" href="a00187.html">StovePCPaymentOption</a> *options, <a class="el" href="#ae82280fef56586100358877ea84a83b5">OnStartPaymentFinished</a> onFinished)</td></tr>
+<tr class="memitem:aacca0ead29effa898b27c738c945abdd" id="r_aacca0ead29effa898b27c738c945abdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacca0ead29effa898b27c738c945abdd">IAP_FetchTermsAgreementEx</a> (const <a class="el" href="a00183.html">StovePCTermsOption</a> *options, <a class="el" href="#a6f464c086419e89e0756cb9e758167d2">OnFetchTermsAgreementFinished</a> onFinished, <a class="el" href="#acc3b175c5057402e5a371a89ad24a55d">OnIAPPopupDestroyFinished</a> onDestroy)</td></tr>
+<tr class="memdesc:aacca0ead29effa898b27c738c945abdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">필수 약관 동의 여부를 조회합니다.  <br /></td></tr>
+<tr class="separator:aacca0ead29effa898b27c738c945abdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68aea8bfccfc513999f538805643a0ac" id="r_a68aea8bfccfc513999f538805643a0ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68aea8bfccfc513999f538805643a0ac">IAP_StartPayment</a> (const <a class="el" href="a00187.html">StovePCPaymentOption</a> *options, <a class="el" href="#a3443fae104313e3d67bc6cac4c16ed30">OnStartPaymentFinished</a> onFinished)</td></tr>
 <tr class="memdesc:a68aea8bfccfc513999f538805643a0ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">1회성 결제를 시작하기 위한 결제 URL 을 전달받거나 WebView2를 이용하여 결제를 시작합니다.  <br /></td></tr>
 <tr class="separator:a68aea8bfccfc513999f538805643a0ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fae84a5d2653b776cfaa698134e95bc" id="r_a9fae84a5d2653b776cfaa698134e95bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fae84a5d2653b776cfaa698134e95bc">IAP_StartPaymentEx</a> (const <a class="el" href="a00187.html">StovePCPaymentOption</a> *options, <a class="el" href="#a3443fae104313e3d67bc6cac4c16ed30">OnStartPaymentFinished</a> onFinished, <a class="el" href="#acc3b175c5057402e5a371a89ad24a55d">OnIAPPopupDestroyFinished</a> onDestroy)</td></tr>
+<tr class="memdesc:a9fae84a5d2653b776cfaa698134e95bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">1회성 결제를 시작하기 위한 결제 URL 을 전달받거나 WebView2를 이용하여 결제를 시작합니다.  <br /></td></tr>
+<tr class="separator:a9fae84a5d2653b776cfaa698134e95bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a354bb1db419fe162fd512851481da170" id="r_a354bb1db419fe162fd512851481da170"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a354bb1db419fe162fd512851481da170">IAP_FetchVoidedPurchases</a> (<a class="el" href="#a60301795e2d9f0e1012b74ac7540fddd">OnFetchVoidedPurchasesFinished</a> onFinished)</td></tr>
 <tr class="memdesc:a354bb1db419fe162fd512851481da170"><td class="mdescLeft">&#160;</td><td class="mdescRight">현재 사용자가 환불 처리한 구매 기록 목록을 조회합니다.  <br /></td></tr>
 <tr class="separator:a354bb1db419fe162fd512851481da170"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab113f368713a7a64b55513a1b91718ee" id="r_ab113f368713a7a64b55513a1b91718ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00071.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab113f368713a7a64b55513a1b91718ee">IAP_CloseAllPopups</a> ()</td></tr>
 <tr class="memdesc:ab113f368713a7a64b55513a1b91718ee"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00064.html">IAP</a> SDK를 통해 열린 모든 팝업을 닫습니다.  <br /></td></tr>
 <tr class="separator:ab113f368713a7a64b55513a1b91718ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15c321203c8dd39ad6d5b14aa1cfb8af" id="r_a15c321203c8dd39ad6d5b14aa1cfb8af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15c321203c8dd39ad6d5b14aa1cfb8af">IAP_WithdrawGame</a> (const <a class="el" href="a00195.html">StovePCWithdrawGameOption</a> *options, <a class="el" href="#a0e7782171cbccc20a8eeddc5b8862668">OnWithdrawGameFinished</a> onFinished, <a class="el" href="#acc3b175c5057402e5a371a89ad24a55d">OnIAPPopupDestroyFinished</a> onDestroy)</td></tr>
+<tr class="memdesc:a15c321203c8dd39ad6d5b14aa1cfb8af"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 WithdrawGame (게임 탈퇴) 팝업을 실행합니다.  <br /></td></tr>
+<tr class="separator:a15c321203c8dd39ad6d5b14aa1cfb8af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10b7d10533e6deb1592f0d6896594ccd" id="r_a10b7d10533e6deb1592f0d6896594ccd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00071.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10b7d10533e6deb1592f0d6896594ccd">IAP_GetVersion</a> (__out wchar_t *version, uint32_t length)</td></tr>
 <tr class="memdesc:a10b7d10533e6deb1592f0d6896594ccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">IAPSDK의 버전 정보를 조회합니다.  <br /></td></tr>
 <tr class="separator:a10b7d10533e6deb1592f0d6896594ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -362,7 +391,7 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
   </dd>
 </dl>
 
-<p class="definition"><a class="el" href="a00222_source.html">IAPSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00222_source.html#l00088">88</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00226_source.html">IAPSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00226_source.html#l00088">88</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
@@ -388,7 +417,7 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
   </dd>
 </dl>
 
-<p class="definition"><a class="el" href="a00222_source.html">IAPSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00222_source.html#l00104">104</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00226_source.html">IAPSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00226_source.html#l00104">104</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
@@ -414,7 +443,7 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
   </dd>
 </dl>
 
-<p class="definition"><a class="el" href="a00222_source.html">IAPSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00222_source.html#l00052">52</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00226_source.html">IAPSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00226_source.html#l00052">52</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
@@ -440,18 +469,18 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
   </dd>
 </dl>
 
-<p class="definition"><a class="el" href="a00222_source.html">IAPSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00222_source.html#l00036">36</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00226_source.html">IAPSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00226_source.html#l00036">36</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
-<a id="ac6a0342ac10ac206e881f35b2637a5cd" name="ac6a0342ac10ac206e881f35b2637a5cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6a0342ac10ac206e881f35b2637a5cd">&#9670;&#160;</a></span>OnFetchTermsAgreementFinished</h2>
+<a id="a6f464c086419e89e0756cb9e758167d2" name="a6f464c086419e89e0756cb9e758167d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f464c086419e89e0756cb9e758167d2">&#9670;&#160;</a></span>OnFetchTermsAgreementFinished</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(__cdecl * Stove::PCSDK::IAP::OnFetchTermsAgreementFinished) (<a class="el" href="a00075.html">CallbackResult</a> callbackResult, bool agreed, LPCWSTR url)</td>
+          <td class="memname">typedef void(__cdecl * Stove::PCSDK::IAP::OnFetchTermsAgreementFinished) (<a class="el" href="a00075.html">CallbackResult</a> callbackResult, bool agreed, const wchar_t *url)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -461,12 +490,12 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname"><a class="el" href="a00075.html" title="Stove PCSDK 3.x에서 Callback 호출시 전달받는 구조체입니다.">CallbackResult</a></td><td>callbackResult 콜백 결과 값 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">bool</td><td>agreed 이용약관 동의 여부 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">LPCWSTR</td><td>url 이용약관 url 주소 (agreed == true 이면 빈값)   </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">wchar*</td><td>url 이용약관 url 주소 (agreed == true 이면 빈값)   </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition"><a class="el" href="a00222_source.html">IAPSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00222_source.html#l00120">120</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00226_source.html">IAPSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00226_source.html#l00120">120</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
@@ -486,24 +515,48 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 <dl class="params"><dt>매개변수</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname"><a class="el" href="a00075.html" title="Stove PCSDK 3.x에서 Callback 호출시 전달받는 구조체입니다.">CallbackResult</a></td><td>callbackResult 콜백 결과 값 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">StovePCVoidedPurchase*</td><td>voidedPurchases <a class="el" href="a00191.html" title="환불 처리 정보를 전달하는 구조체입니다. IAP_FetchVoidedPurchases 콜백에 결과 전달 시 사용합니다.">StovePCVoidedPurchase</a> 배열 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">uint32_t</td><td>voidedPurchaseSize <a class="el" href="a00191.html" title="환불 처리 정보를 전달하는 구조체입니다. IAP_FetchVoidedPurchases 콜백에 결과 전달 시 사용합니다.">StovePCVoidedPurchase</a> 배열 크기   </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">StovePCVoidedPurchase*</td><td>voidedPurchases <a class="el" href="a00191.html" title="환불 처리 정보를 전달하는 구조체입니다.">StovePCVoidedPurchase</a> 배열 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">uint32_t</td><td>voidedPurchaseSize <a class="el" href="a00191.html" title="환불 처리 정보를 전달하는 구조체입니다.">StovePCVoidedPurchase</a> 배열 크기   </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition"><a class="el" href="a00222_source.html">IAPSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00222_source.html#l00150">150</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00226_source.html">IAPSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00226_source.html#l00150">150</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
-<a id="ae82280fef56586100358877ea84a83b5" name="ae82280fef56586100358877ea84a83b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae82280fef56586100358877ea84a83b5">&#9670;&#160;</a></span>OnStartPaymentFinished</h2>
+<a id="acc3b175c5057402e5a371a89ad24a55d" name="acc3b175c5057402e5a371a89ad24a55d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc3b175c5057402e5a371a89ad24a55d">&#9670;&#160;</a></span>OnIAPPopupDestroyFinished</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(__cdecl * Stove::PCSDK::IAP::OnStartPaymentFinished) (<a class="el" href="a00075.html">CallbackResult</a> callbackResult, LPCWSTR url)</td>
+          <td class="memname">typedef void(__cdecl * Stove::PCSDK::IAP::OnIAPPopupDestroyFinished) (<a class="el" href="a00075.html">CallbackResult</a> callbackResult)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IAP_PopupDestroyNotification API를 통해 등록하는 콜백 함수 포인터 콜백은 IAPSDK를 통해 생성된 팝업이 모두 닫혀야 호출됩니다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname"><a class="el" href="a00075.html" title="Stove PCSDK 3.x에서 Callback 호출시 전달받는 구조체입니다.">CallbackResult</a></td><td>callbackResult 콜백 결과 값   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"><a class="el" href="a00226_source.html">IAPSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00226_source.html#l00165">165</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a3443fae104313e3d67bc6cac4c16ed30" name="a3443fae104313e3d67bc6cac4c16ed30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3443fae104313e3d67bc6cac4c16ed30">&#9670;&#160;</a></span>OnStartPaymentFinished</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(__cdecl * Stove::PCSDK::IAP::OnStartPaymentFinished) (<a class="el" href="a00075.html">CallbackResult</a> callbackResult, const wchar_t *url)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -512,12 +565,12 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 <dl class="params"><dt>매개변수</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname"><a class="el" href="a00075.html" title="Stove PCSDK 3.x에서 Callback 호출시 전달받는 구조체입니다.">CallbackResult</a></td><td>callbackResult 콜백 결과 값 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">LPCWSTR</td><td>url 1회용 결제 url 주소   </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">wchar_t*</td><td>url 1회용 결제 url 주소   </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition"><a class="el" href="a00222_source.html">IAPSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00222_source.html#l00134">134</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00226_source.html">IAPSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00226_source.html#l00134">134</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
@@ -542,7 +595,32 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
   </dd>
 </dl>
 
-<p class="definition"><a class="el" href="a00222_source.html">IAPSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00222_source.html#l00066">66</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00226_source.html">IAPSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00226_source.html#l00066">66</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a0e7782171cbccc20a8eeddc5b8862668" name="a0e7782171cbccc20a8eeddc5b8862668"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e7782171cbccc20a8eeddc5b8862668">&#9670;&#160;</a></span>OnWithdrawGameFinished</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(__cdecl * Stove::PCSDK::IAP::OnWithdrawGameFinished) (<a class="el" href="a00075.html">CallbackResult</a> callbackResult, bool gameWithdrawal)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IAP_WithdrawGame API 호출 시 응답받는 콜백 함수 포인터 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname"><a class="el" href="a00075.html" title="Stove PCSDK 3.x에서 Callback 호출시 전달받는 구조체입니다.">CallbackResult</a></td><td>callbackResult 콜백 결과 값 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">bool</td><td>gameWithdrawal 게임 해지 여부   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"><a class="el" href="a00226_source.html">IAPSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00226_source.html#l00180">180</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
@@ -577,7 +655,7 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 </td></tr>
 </table>
 
-<p class="definition"><a class="el" href="a00237_source.html">IAPSDK/Deploy/Include/Misc/Enumerations.h</a> 파일의 <a class="el" href="a00237_source.html#l00226">226</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00241_source.html">IAPSDK/Deploy/Include/Misc/Enumerations.h</a> 파일의 <a class="el" href="a00241_source.html#l00230">230</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
@@ -613,7 +691,7 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 </td></tr>
 </table>
 
-<p class="definition"><a class="el" href="a00237_source.html">IAPSDK/Deploy/Include/Misc/Enumerations.h</a> 파일의 <a class="el" href="a00237_source.html#l00174">174</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00241_source.html">IAPSDK/Deploy/Include/Misc/Enumerations.h</a> 파일의 <a class="el" href="a00241_source.html#l00178">178</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
@@ -649,7 +727,7 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 </td></tr>
 </table>
 
-<p class="definition"><a class="el" href="a00237_source.html">IAPSDK/Deploy/Include/Misc/Enumerations.h</a> 파일의 <a class="el" href="a00237_source.html#l00268">268</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00241_source.html">IAPSDK/Deploy/Include/Misc/Enumerations.h</a> 파일의 <a class="el" href="a00241_source.html#l00272">272</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
@@ -683,7 +761,7 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 </td></tr>
 </table>
 
-<p class="definition"><a class="el" href="a00237_source.html">IAPSDK/Deploy/Include/Misc/Enumerations.h</a> 파일의 <a class="el" href="a00237_source.html#l00320">320</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00241_source.html">IAPSDK/Deploy/Include/Misc/Enumerations.h</a> 파일의 <a class="el" href="a00241_source.html#l00324">324</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
@@ -735,6 +813,8 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 </td></tr>
 <tr><td class="fieldname"><a id="af8a0e8d77b3c09c2b02391299cc48adca361b88111754a925a6494aeeea56a886" name="af8a0e8d77b3c09c2b02391299cc48adca361b88111754a925a6494aeeea56a886"></a>CLOSE_ALL_POPUPS&#160;</td><td class="fielddoc"><p>88 : IAP_CloseAllPopups </p>
 </td></tr>
+<tr><td class="fieldname"><a id="af8a0e8d77b3c09c2b02391299cc48adcaeee697e700163ce87ab4e32c72b81e96" name="af8a0e8d77b3c09c2b02391299cc48adcaeee697e700163ce87ab4e32c72b81e96"></a>WITHDRAW_GAME&#160;</td><td class="fielddoc"><p>89 : IAP_WithdrawGame </p>
+</td></tr>
 </table>
 
 <p class="definition"><a class="el" href="a00038_source.html">IAPSDKResult.h</a> 파일의 <a class="el" href="a00038_source.html#l00030">30</a> 번째 라인에서 정의되었습니다.</p>
@@ -761,9 +841,9 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">열거형 멤버</th></tr><tr><td class="fieldname"><a id="a1a6d21961b619f8e3e99469592298ee2ad0749aaba8b833466dfcbb0428e4f89c" name="a1a6d21961b619f8e3e99469592298ee2ad0749aaba8b833466dfcbb0428e4f89c"></a>SUCCESS&#160;</td><td class="fielddoc"><p>성공   </p>
+<tr><th colspan="2">열거형 멤버</th></tr><tr><td class="fieldname"><a id="a1a6d21961b619f8e3e99469592298ee2ad0749aaba8b833466dfcbb0428e4f89c" name="a1a6d21961b619f8e3e99469592298ee2ad0749aaba8b833466dfcbb0428e4f89c"></a>SUCCESS&#160;</td><td class="fielddoc"><p>0 : 성공   </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1a6d21961b619f8e3e99469592298ee2ac2759effffc94bb9acc71d69fe3e8a1f" name="a1a6d21961b619f8e3e99469592298ee2ac2759effffc94bb9acc71d69fe3e8a1f"></a>FAIL&#160;</td><td class="fielddoc"><p>실패   </p>
+<tr><td class="fieldname"><a id="a1a6d21961b619f8e3e99469592298ee2ac2759effffc94bb9acc71d69fe3e8a1f" name="a1a6d21961b619f8e3e99469592298ee2ac2759effffc94bb9acc71d69fe3e8a1f"></a>FAIL&#160;</td><td class="fielddoc"><p>1 : 실패   </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1a6d21961b619f8e3e99469592298ee2a2188ade13df339354cd8c383dda3f8bb" name="a1a6d21961b619f8e3e99469592298ee2a2188ade13df339354cd8c383dda3f8bb"></a>INVALID_CONFIG&#160;</td><td class="fielddoc"><p>2 : Config 파일을 찾을 수 없습니다.   </p>
 </td></tr>
@@ -799,6 +879,9 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 </td></tr>
 <tr><td class="fieldname"><a id="a1a6d21961b619f8e3e99469592298ee2a4d77ea607bc5801f7413b0e8e060612e" name="a1a6d21961b619f8e3e99469592298ee2a4d77ea607bc5801f7413b0e8e060612e"></a>UPDATE_81PLUG_FEED_ERROR&#160;</td><td class="fielddoc"><p>28 : 81 Plug 업데이트를 실패했습니다. (Deprecated)   </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a1a6d21961b619f8e3e99469592298ee2acadf555c2fe95f3090ebb5a424e01d6e" name="a1a6d21961b619f8e3e99469592298ee2acadf555c2fe95f3090ebb5a424e01d6e"></a>ASYNC_OPERATION_IN_PROGRESS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1a6d21961b619f8e3e99469592298ee2a2066886874efe9c14701cf3231b6ba49" name="a1a6d21961b619f8e3e99469592298ee2a2066886874efe9c14701cf3231b6ba49"></a>BASE_UNINITIALIZED&#160;</td><td class="fielddoc"><p>30 : BaseSDK를 Uninitialize하였습니다.   </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a1a6d21961b619f8e3e99469592298ee2aa738d94a1223530902a971b9c5a11ae6" name="a1a6d21961b619f8e3e99469592298ee2aa738d94a1223530902a971b9c5a11ae6"></a>PCSDK_DLL_NOT_FOUND&#160;</td><td class="fielddoc"><p>251 : PC SDK DLL을 찾지 못했습니다.   </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1a6d21961b619f8e3e99469592298ee2a3e860a081575fc82cc7b6ed2ca602947" name="a1a6d21961b619f8e3e99469592298ee2a3e860a081575fc82cc7b6ed2ca602947"></a>NOT_IMPLEMENTED&#160;</td><td class="fielddoc"><p>252 : 해당 내용은 구현되지 않았습니다.   </p>
@@ -829,9 +912,11 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 </td></tr>
 <tr><td class="fieldname"><a id="a1a6d21961b619f8e3e99469592298ee2af37a8dc1bf13601f2854a392ef537519" name="a1a6d21961b619f8e3e99469592298ee2af37a8dc1bf13601f2854a392ef537519"></a>WEBVIEW_CLOSE_ALL_FAIL&#160;</td><td class="fielddoc"><p>89 : Webview 일괄 닫기에 실패했습니다.   </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a1a6d21961b619f8e3e99469592298ee2a29f54208c0e037e992a48c189e9627c3" name="a1a6d21961b619f8e3e99469592298ee2a29f54208c0e037e992a48c189e9627c3"></a>WEBVIEW_CLOSE_FAIL&#160;</td><td class="fielddoc"><p>90 : Webview 닫기에 실패했습니다.   </p>
+</td></tr>
 </table>
 
-<p class="definition"><a class="el" href="a00038_source.html">IAPSDKResult.h</a> 파일의 <a class="el" href="a00038_source.html#l00090">90</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00038_source.html">IAPSDKResult.h</a> 파일의 <a class="el" href="a00038_source.html#l00093">93</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
@@ -859,13 +944,13 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 <table class="fieldtable">
 <tr><th colspan="2">열거형 멤버</th></tr><tr><td class="fieldname"><a id="a42869494d491e2f9b792b736953dc446a5b39c8b553c821e7cddc6da64b5bd2ee" name="a42869494d491e2f9b792b736953dc446a5b39c8b553c821e7cddc6da64b5bd2ee"></a>DEFAULT&#160;</td><td class="fielddoc"><p>가장 기초적인 동작입니다. <a class="el" href="a00059.html">Stove</a> Webview를 사용하지 않고 게임 캐시 구매를 수동으로 연동하는 경우에 사용합니다. 결과에 포함된 일회용 URL을 통해 <a class="el" href="a00059.html">Stove</a> 웹 결제 페이지를 별도로 열어서 결제를 진행해야 합니다.   </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a42869494d491e2f9b792b736953dc446a88e01d7a9d0899173c7607df6f9738cf" name="a42869494d491e2f9b792b736953dc446a88e01d7a9d0899173c7607df6f9738cf"></a>WITH_WEBVIEW&#160;</td><td class="fielddoc"><p><a class="el" href="a00059.html">Stove</a> Webview를 통해 <a class="el" href="a00059.html">Stove</a> 웹 결제 페이지를 열고 게임 캐시 구매를 진행합니다. </p>
+<tr><td class="fieldname"><a id="a42869494d491e2f9b792b736953dc446a88e01d7a9d0899173c7607df6f9738cf" name="a42869494d491e2f9b792b736953dc446a88e01d7a9d0899173c7607df6f9738cf"></a>WITH_WEBVIEW&#160;</td><td class="fielddoc"><p><a class="el" href="a00059.html">Stove</a> Webview를 통해 <a class="el" href="a00059.html">Stove</a> 웹 결제 페이지를 열고 게임 캐시 구매를 진행합니다.   </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a42869494d491e2f9b792b736953dc446af97e9e3f8baa7a233168283260fe42fa" name="a42869494d491e2f9b792b736953dc446af97e9e3f8baa7a233168283260fe42fa"></a>_MAX_COUNT&#160;</td><td class="fielddoc"><p>StovePCPaymentOperation의 끝을 나타내는 값이며 유효한 operation이 아닙니다.   </p>
 </td></tr>
 </table>
 
-<p class="definition"><a class="el" href="a00237_source.html">IAPSDK/Deploy/Include/Misc/Enumerations.h</a> 파일의 <a class="el" href="a00237_source.html#l00090">90</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00241_source.html">IAPSDK/Deploy/Include/Misc/Enumerations.h</a> 파일의 <a class="el" href="a00241_source.html#l00090">90</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
@@ -901,7 +986,7 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 </td></tr>
 </table>
 
-<p class="definition"><a class="el" href="a00237_source.html">IAPSDK/Deploy/Include/Misc/Enumerations.h</a> 파일의 <a class="el" href="a00237_source.html#l00030">30</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00241_source.html">IAPSDK/Deploy/Include/Misc/Enumerations.h</a> 파일의 <a class="el" href="a00241_source.html#l00030">30</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
@@ -935,7 +1020,7 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 </td></tr>
 </table>
 
-<p class="definition"><a class="el" href="a00237_source.html">IAPSDK/Deploy/Include/Misc/Enumerations.h</a> 파일의 <a class="el" href="a00237_source.html#l00130">130</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00241_source.html">IAPSDK/Deploy/Include/Misc/Enumerations.h</a> 파일의 <a class="el" href="a00241_source.html#l00134">134</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
@@ -956,7 +1041,7 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 </div><div class="memdoc">
 
 <p><a class="el" href="a00064.html">IAP</a> SDK를 통해 열린 모든 팝업을 닫습니다. </p>
-<dl class="section return"><dt>반환값</dt><dd>class <a class="el" href="a00071.html" title="Stove PCSDK 3.x에서 기본 API 호출시 전달받는 구조체입니다.">Result</a> 함수 호출 결과   </dd></dl>
+<dl class="section return"><dt>반환값</dt><dd>struct <a class="el" href="a00071.html" title="Stove PCSDK 3.x에서 기본 API 호출시 전달받는 구조체입니다.">Result</a> 함수 호출 결과   </dd></dl>
 
 </div>
 </div>
@@ -969,7 +1054,7 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
         <tr>
           <td class="memname">void Stove::PCSDK::IAP::IAP_ConfirmPurchase </td>
           <td>(</td>
-          <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>transactionMasterNo</em></span>, </td>
+          <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>transactionMasterNumber</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1037,7 +1122,7 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 <p>스토브 플랫폼에 등록된 상품 정보를 조회합니다. </p>
 <dl class="params"><dt>매개변수</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">const</td><td>StovePCFetchProductParam* params 조회할 상품 정보 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">StovePCFetchProductParam*</td><td>params 조회할 상품 정보 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">OnFetchProductsFinished</td><td>onFinished 조회한 상점에 대한 정보를 등록한 Callback 함수에 넘겨줍니다   </td></tr>
   </table>
   </dd>
@@ -1084,7 +1169,7 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="#ac6a0342ac10ac206e881f35b2637a5cd">OnFetchTermsAgreementFinished</a></td>          <td class="paramname"><span class="paramname"><em>onFinished</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="#a6f464c086419e89e0756cb9e758167d2">OnFetchTermsAgreementFinished</a></td>          <td class="paramname"><span class="paramname"><em>onFinished</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1092,8 +1177,44 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 <p>필수 약관 동의 여부를 조회합니다. </p>
 <dl class="params"><dt>매개변수</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">const</td><td>StovePCTermsOption* options API에 대한 옵션을 전달하는 구조체입니다 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">StovePCTermsOption*</td><td>options API에 대한 옵션을 전달하는 구조체입니다 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">OnFetchTermsAgreementFinished</td><td>onFinished 필수 약관 동의에 대한 정보를 등록한 Callback 함수에 넘겨줍니다   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aacca0ead29effa898b27c738c945abdd" name="aacca0ead29effa898b27c738c945abdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacca0ead29effa898b27c738c945abdd">&#9670;&#160;</a></span>IAP_FetchTermsAgreementEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Stove::PCSDK::IAP::IAP_FetchTermsAgreementEx </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00183.html">StovePCTermsOption</a> *</td>          <td class="paramname"><span class="paramname"><em>options</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a6f464c086419e89e0756cb9e758167d2">OnFetchTermsAgreementFinished</a></td>          <td class="paramname"><span class="paramname"><em>onFinished</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#acc3b175c5057402e5a371a89ad24a55d">OnIAPPopupDestroyFinished</a></td>          <td class="paramname"><span class="paramname"><em>onDestroy</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>필수 약관 동의 여부를 조회합니다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">StovePCTermsOption*</td><td>options API에 대한 옵션을 전달하는 구조체입니다 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnFetchTermsAgreementFinished</td><td>onFinished 필수 약관 동의에 대한 정보를 등록한 Callback 함수에 넘겨줍니다 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnIAPPopupDestroyFinished</td><td>onDestroy 팝업이 닫힐 경우에 대한 결과를 넘겨받는 Callback 함수   </td></tr>
   </table>
   </dd>
 </dl>
@@ -1152,7 +1273,7 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>반환값</dt><dd>class <a class="el" href="a00071.html" title="Stove PCSDK 3.x에서 기본 API 호출시 전달받는 구조체입니다.">Result</a> 함수 호출 결과   </dd></dl>
+<dl class="section return"><dt>반환값</dt><dd>struct <a class="el" href="a00071.html" title="Stove PCSDK 3.x에서 기본 API 호출시 전달받는 구조체입니다.">Result</a> 함수 호출 결과   </dd></dl>
 
 </div>
 </div>
@@ -1174,11 +1295,42 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 <p>IAPSDK를 초기화 합니다. </p>
 <dl class="params"><dt>매개변수</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">const</td><td>wchar_t* shopKey 파트너스로부터 발급받은 shopKey </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wchar_t*</td><td>shopKey 파트너스로부터 발급받은 shopKey </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>반환값</dt><dd>class <a class="el" href="a00071.html" title="Stove PCSDK 3.x에서 기본 API 호출시 전달받는 구조체입니다.">Result</a> 함수 호출 결과   </dd></dl>
+<dl class="section return"><dt>반환값</dt><dd>struct <a class="el" href="a00071.html" title="Stove PCSDK 3.x에서 기본 API 호출시 전달받는 구조체입니다.">Result</a> 함수 호출 결과   </dd></dl>
+
+</div>
+</div>
+<a id="a00f46ca201491f612159d843fe3cc74e" name="a00f46ca201491f612159d843fe3cc74e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00f46ca201491f612159d843fe3cc74e">&#9670;&#160;</a></span>IAP_InitializeWithWndInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00071.html">Result</a> Stove::PCSDK::IAP::IAP_InitializeWithWndInfo </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *</td>          <td class="paramname"><span class="paramname"><em>shopKey</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>mainWndHandle</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IAPSDK를 초기화 합니다. Internal Style 팝업의 부모 윈도우가 될 메인 윈도우 핸들이 필요합니다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wchar_t*</td><td>shopKey 파트너스로부터 발급받은 shopKey </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">void*</td><td>mainWndHandle Internal Style 팝업의 부모 윈도우가 될 메인 윈도우 핸들 (HWND) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>struct <a class="el" href="a00071.html" title="Stove PCSDK 3.x에서 기본 API 호출시 전달받는 구조체입니다.">Result</a> 함수 호출 결과   </dd></dl>
 
 </div>
 </div>
@@ -1196,7 +1348,7 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="#ae82280fef56586100358877ea84a83b5">OnStartPaymentFinished</a></td>          <td class="paramname"><span class="paramname"><em>onFinished</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="#a3443fae104313e3d67bc6cac4c16ed30">OnStartPaymentFinished</a></td>          <td class="paramname"><span class="paramname"><em>onFinished</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1204,8 +1356,44 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 <p>1회성 결제를 시작하기 위한 결제 URL 을 전달받거나 WebView2를 이용하여 결제를 시작합니다. </p>
 <dl class="params"><dt>매개변수</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">const</td><td>StovePCPaymentOption* options API에 대한 옵션을 전달하는 구조체입니다 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">StovePCPaymentOption*</td><td>options API에 대한 옵션을 전달하는 구조체입니다 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">OnStartPaymentFinished</td><td>onFinished 1회성 결제에 대한 정보를 등록한 Callback 함수에 넘겨줍니다   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9fae84a5d2653b776cfaa698134e95bc" name="a9fae84a5d2653b776cfaa698134e95bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fae84a5d2653b776cfaa698134e95bc">&#9670;&#160;</a></span>IAP_StartPaymentEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Stove::PCSDK::IAP::IAP_StartPaymentEx </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00187.html">StovePCPaymentOption</a> *</td>          <td class="paramname"><span class="paramname"><em>options</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a3443fae104313e3d67bc6cac4c16ed30">OnStartPaymentFinished</a></td>          <td class="paramname"><span class="paramname"><em>onFinished</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#acc3b175c5057402e5a371a89ad24a55d">OnIAPPopupDestroyFinished</a></td>          <td class="paramname"><span class="paramname"><em>onDestroy</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>1회성 결제를 시작하기 위한 결제 URL 을 전달받거나 WebView2를 이용하여 결제를 시작합니다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">StovePCPaymentOption*</td><td>options API에 대한 옵션을 전달하는 구조체입니다 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnStartPaymentFinished</td><td>onFinished 1회성 결제에 대한 정보를 등록한 Callback 함수에 넘겨줍니다 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnIAPPopupDestroyFinished</td><td>onDestroy 팝업이 닫힐 경우에 대한 결과를 넘겨받는 Callback 함수   </td></tr>
   </table>
   </dd>
 </dl>
@@ -1234,8 +1422,44 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 <p>상품구매를 시작하기 위한 결제 URL 을 전달받거나 WebView2를 이용하여 결제를 시작합니다. </p>
 <dl class="params"><dt>매개변수</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">const</td><td>StovePCStartPurchaseParam* params 상품 구매에 대한 정보 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">StovePCStartPurchaseParam*</td><td>params 상품 구매에 대한 정보 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">OnStartPurchaseFinished</td><td>onFinished 상품 구매에 대한 정보를 등록한 Callback 함수에 넘겨줍니다   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a36e1f9ecda435d39926001a3fa15433e" name="a36e1f9ecda435d39926001a3fa15433e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36e1f9ecda435d39926001a3fa15433e">&#9670;&#160;</a></span>IAP_StartPurchaseEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Stove::PCSDK::IAP::IAP_StartPurchaseEx </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00163.html">StovePCStartPurchaseParam</a> *</td>          <td class="paramname"><span class="paramname"><em>params</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a301f9988952f77956fe7c505a38819ee">OnStartPurchaseFinished</a></td>          <td class="paramname"><span class="paramname"><em>onFinished</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#acc3b175c5057402e5a371a89ad24a55d">OnIAPPopupDestroyFinished</a></td>          <td class="paramname"><span class="paramname"><em>onDestroy</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>상품구매를 시작하기 위한 결제 URL 을 전달받거나 WebView2를 이용하여 결제를 시작합니다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">StovePCStartPurchaseParam*</td><td>params 상품 구매에 대한 정보 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnStartPurchaseFinished</td><td>onFinished 상품 구매에 대한 정보를 등록한 Callback 함수에 넘겨줍니다 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnIAPPopupDestroyFinished</td><td>onDestroy 팝업이 닫힐 경우에 대한 결과를 넘겨받는 Callback 함수   </td></tr>
   </table>
   </dd>
 </dl>
@@ -1258,7 +1482,43 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 </div><div class="memdoc">
 
 <p>IAPSDK의 자원을 해제합니다 </p>
-<dl class="section return"><dt>반환값</dt><dd>class <a class="el" href="a00071.html" title="Stove PCSDK 3.x에서 기본 API 호출시 전달받는 구조체입니다.">Result</a> 함수 호출 결과   </dd></dl>
+<dl class="section return"><dt>반환값</dt><dd>struct <a class="el" href="a00071.html" title="Stove PCSDK 3.x에서 기본 API 호출시 전달받는 구조체입니다.">Result</a> 함수 호출 결과   </dd></dl>
+
+</div>
+</div>
+<a id="a15c321203c8dd39ad6d5b14aa1cfb8af" name="a15c321203c8dd39ad6d5b14aa1cfb8af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15c321203c8dd39ad6d5b14aa1cfb8af">&#9670;&#160;</a></span>IAP_WithdrawGame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Stove::PCSDK::IAP::IAP_WithdrawGame </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00195.html">StovePCWithdrawGameOption</a> *</td>          <td class="paramname"><span class="paramname"><em>options</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a0e7782171cbccc20a8eeddc5b8862668">OnWithdrawGameFinished</a></td>          <td class="paramname"><span class="paramname"><em>onFinished</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#acc3b175c5057402e5a371a89ad24a55d">OnIAPPopupDestroyFinished</a></td>          <td class="paramname"><span class="paramname"><em>onDestroy</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>WebView를 이용하여 WithdrawGame (게임 탈퇴) 팝업을 실행합니다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">StovePCWithdrawGameOption*</td><td>options API에 대한 옵션을 전달하는 구조체입니다 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnWithdrawGameFinished</td><td>onFinished WebView 실행에 대한 결과를 넘겨받는 콜백 함수 포인터, 게임 탈퇴 여부가 포함되어 있습니다. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnIAPPopupDestroyFinished</td><td>onDestroy 팝업을 닫을 시 응답받는 콜백 함수 포인터   </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1283,7 +1543,7 @@ $(function(){initNavTree('a00064.html',''); initResizable(true); });
 </table>
 </div><div class="memdoc">
 
-<p class="definition"><a class="el" href="a00038_source.html">IAPSDKResult.h</a> 파일의 <a class="el" href="a00038_source.html#l00450">450</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00038_source.html">IAPSDKResult.h</a> 파일의 <a class="el" href="a00038_source.html#l00483">483</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>

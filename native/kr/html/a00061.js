@@ -10,6 +10,7 @@ var a00061 =
     [ "StovePCTraceHint", "a00107.html", "a00107" ],
     [ "StovePCUser", "a00087.html", "a00087" ],
     [ "OnInitializeFinished", "a00061.html#ac8aa54a99a94ac5963252b79b63f4ea9", null ],
+    [ "OnOpenExternalUrlFinished", "a00061.html#a5a663a6f61fbeb548f0f974b8a99a2a4", null ],
     [ "OnOverImmersionFinished", "a00061.html#a1d9f8e25e682a27d0a360d3199de43c2", null ],
     [ "OnRenewTokenFinished", "a00061.html#ab0064a1bdd67ee1a23f6e38f44980e91", null ],
     [ "OnRestartAppIfNecessaryAsyncFinished", "a00061.html#a23e27f2d31fa7f881d7b0a8d43938639", null ],
@@ -33,6 +34,7 @@ var a00061 =
       [ "GET_SIGNIN", "a00061.html#a7746a5e889b0877f6f26b6702323c912a332f6bdf8dacdd8794977bf7aea49f4e", null ],
       [ "RESTART_APP_IF_NECESSARY", "a00061.html#a7746a5e889b0877f6f26b6702323c912af456d5af4f0a20f6a8d523a94c91e13a", null ],
       [ "RESTART_APP_IF_NECESSARY_ASYNC", "a00061.html#a7746a5e889b0877f6f26b6702323c912a9aeb48ab86543a074daa19387ae425bc", null ],
+      [ "OPEN_EXTERNAL_URL", "a00061.html#a7746a5e889b0877f6f26b6702323c912af6031ec043eddc4aeacfc3182f3623d2", null ],
       [ "INTERNAL_SET_PLAYTIME_REPORT", "a00061.html#a7746a5e889b0877f6f26b6702323c912a7246b73b35fb1da8c75e1399d5c55b9b", null ],
       [ "INTERNAL_OPERATOR_REPORT_PLAYTIME", "a00061.html#a7746a5e889b0877f6f26b6702323c912ad5f0dd77bbe15d3e1a27e7dc41221cb5", null ],
       [ "INTERNAL_GAME_EXIT_REPORT_PLAYTIME", "a00061.html#a7746a5e889b0877f6f26b6702323c912a0f01b0c2f9f47361fb5b569d9c92d11e", null ],
@@ -50,7 +52,13 @@ var a00061 =
       [ "INTERNAL_TRANSLATE_LANGUAGE", "a00061.html#a7746a5e889b0877f6f26b6702323c912ac64777c0142d35919c1a8b08294c51ab", null ],
       [ "INTERNAL_GET_GAMEMETA", "a00061.html#a7746a5e889b0877f6f26b6702323c912a845842913d667122d6f7239bff6500da", null ],
       [ "FORCE_REFRESH_TOKEN", "a00061.html#a7746a5e889b0877f6f26b6702323c912a26e17190fed253c666c346001c1da3b7", null ],
-      [ "GET_RENEW_TOKEN_TO_PRIVATE", "a00061.html#a7746a5e889b0877f6f26b6702323c912a859d58b3638628c41f0012532d9e9fee", null ]
+      [ "GET_RENEW_TOKEN_TO_PRIVATE", "a00061.html#a7746a5e889b0877f6f26b6702323c912a859d58b3638628c41f0012532d9e9fee", null ],
+      [ "GET_TOKEN_TO_PRIVATE", "a00061.html#a7746a5e889b0877f6f26b6702323c912a84b99b41828cbfcb3f4b7f3f0b7df36e", null ],
+      [ "GET_ENV_TO_PRIVATE", "a00061.html#a7746a5e889b0877f6f26b6702323c912ae792ffa7d599da42c57444d5a26efc93", null ],
+      [ "GET_GAMEID_TO_PRIVATE", "a00061.html#a7746a5e889b0877f6f26b6702323c912a319aadb170da9f6f67b44ec11d9645b4", null ],
+      [ "GET_MEMBERNO_TO_PRIVATE", "a00061.html#a7746a5e889b0877f6f26b6702323c912a5cfffb318664808e703894028f483b56", null ],
+      [ "GET_PUBLIC_IP", "a00061.html#a7746a5e889b0877f6f26b6702323c912a615dca24b6b38152a04bbf98ad6fe778", null ],
+      [ "GET_TRANSLATE_LANGUAGE", "a00061.html#a7746a5e889b0877f6f26b6702323c912a8e3227b242024da75e74cdd05266960a", null ]
     ] ],
     [ "SDKResultCode", "a00061.html#a26b534462135c359084763e5bdedef14", [
       [ "SUCCESS", "a00061.html#a26b534462135c359084763e5bdedef14ad0749aaba8b833466dfcbb0428e4f89c", null ],
@@ -72,6 +80,8 @@ var a00061 =
       [ "RESPONSE_INVALID_VALUE_FORMAT", "a00061.html#a26b534462135c359084763e5bdedef14ac6fdba1c48d9813a1dfd878a1756d2d8", null ],
       [ "LOG_81PLUG_ERROR", "a00061.html#a26b534462135c359084763e5bdedef14aced61cd095bbd4b5da066fb670292e64", null ],
       [ "UPDATE_81PLUG_FEED_ERROR", "a00061.html#a26b534462135c359084763e5bdedef14a4d77ea607bc5801f7413b0e8e060612e", null ],
+      [ "ASYNC_OPERATION_IN_PROGRESS", "a00061.html#a26b534462135c359084763e5bdedef14acadf555c2fe95f3090ebb5a424e01d6e", null ],
+      [ "BASE_UNINITIALIZED", "a00061.html#a26b534462135c359084763e5bdedef14a2066886874efe9c14701cf3231b6ba49", null ],
       [ "PCSDK_DLL_NOT_FOUND", "a00061.html#a26b534462135c359084763e5bdedef14aa738d94a1223530902a971b9c5a11ae6", null ],
       [ "NOT_IMPLEMENTED", "a00061.html#a26b534462135c359084763e5bdedef14a3e860a081575fc82cc7b6ed2ca602947", null ],
       [ "UNMANAGED_EXCEPTION", "a00061.html#a26b534462135c359084763e5bdedef14ae61780aea0c20d1019d1b24bfbd0a253", null ],
@@ -83,7 +93,10 @@ var a00061 =
       [ "INVALID_GDS_INFO", "a00061.html#a26b534462135c359084763e5bdedef14ae39f5cc97835414f91596878afe736ca", null ],
       [ "NEED_STOVE_LAUNCHER", "a00061.html#a26b534462135c359084763e5bdedef14a32fd64d9e66953b2aaabfe0682af7241", null ],
       [ "LAUNCHER_FAILED_CREATE_REQUIRED", "a00061.html#a26b534462135c359084763e5bdedef14a024797ac319b2f715ef86b845a4754d4", null ],
-      [ "RENEW_TOKEN_MAX_RETRY_COUNT_EXCEEDED", "a00061.html#a26b534462135c359084763e5bdedef14ae4afded15a483f61fcbcd65911885c6e", null ]
+      [ "RENEW_TOKEN_MAX_RETRY_COUNT_EXCEEDED", "a00061.html#a26b534462135c359084763e5bdedef14ae4afded15a483f61fcbcd65911885c6e", null ],
+      [ "IPC_CONNECT_FAILED", "a00061.html#a26b534462135c359084763e5bdedef14ac6d0b3b1131abd7ec7c021e538ffbed3", null ],
+      [ "IPC_AES_KEY_NOT_RECEIVED", "a00061.html#a26b534462135c359084763e5bdedef14af4b9ac38fe02993a55b687481f467f29", null ],
+      [ "IPC_TIMEOUT", "a00061.html#a26b534462135c359084763e5bdedef14a0690d27c1821d3ffe5ff8de5fac924b3", null ]
     ] ],
     [ "StoveLanguage", "a00061.html#ad4345f01ae2ef609bf09b59f0adcc935", [
       [ "system", "a00061.html#ad4345f01ae2ef609bf09b59f0adcc935a54b53072540eeeb8f8e9343e71f28176", null ],
@@ -91,7 +104,12 @@ var a00061 =
       [ "ko", "a00061.html#ad4345f01ae2ef609bf09b59f0adcc935aed73f6b46391b95e1d03c6818a73b8b9", null ],
       [ "ja", "a00061.html#ad4345f01ae2ef609bf09b59f0adcc935aa78c5bf69b40d464b954ef76815c6fa0", null ],
       [ "zh_cn", "a00061.html#ad4345f01ae2ef609bf09b59f0adcc935a603c850ce083881dcec33b324efe0e67", null ],
-      [ "zh_tw", "a00061.html#ad4345f01ae2ef609bf09b59f0adcc935a2716bf5ec94767ef1bd502a183907475", null ]
+      [ "zh_tw", "a00061.html#ad4345f01ae2ef609bf09b59f0adcc935a2716bf5ec94767ef1bd502a183907475", null ],
+      [ "de", "a00061.html#ad4345f01ae2ef609bf09b59f0adcc935a5f02f0889301fd7be1ac972c11bf3e7d", null ],
+      [ "fr", "a00061.html#ad4345f01ae2ef609bf09b59f0adcc935a82a9e4d26595c87ab6e442391d8c5bba", null ],
+      [ "es", "a00061.html#ad4345f01ae2ef609bf09b59f0adcc935a12470fe406d44017d96eab37dd65fc14", null ],
+      [ "pt", "a00061.html#ad4345f01ae2ef609bf09b59f0adcc935afc9fdf084e290f26a270390dc49061a2", null ],
+      [ "th", "a00061.html#ad4345f01ae2ef609bf09b59f0adcc935a1fdc0f893412ce55f0d2811821b84d3b", null ]
     ] ],
     [ "WebViewMode", "a00061.html#ad44c444fa6c9c706d4f593e731b1d643", [
       [ "EXTERNAL", "a00061.html#ad44c444fa6c9c706d4f593e731b1d643a3932d629fb5e2be9d09b3a4485b3cc9d", null ],
@@ -109,6 +127,7 @@ var a00061 =
     [ "Base_GetUser", "a00061.html#a7da29fc907d222af0fe2be6e37f3d305", null ],
     [ "Base_GetVersion", "a00061.html#abedfac582063dced3cd20f0632b2dffd", null ],
     [ "Base_Initialize", "a00061.html#a752e746b69a3108afd987289dda9a377", null ],
+    [ "Base_OpenExternalUrl", "a00061.html#afe5756e9dab3f3c7901ddc213bf10c4e", null ],
     [ "Base_OverImmersionNotification", "a00061.html#a93d454d05ca938c002797857824c6075", null ],
     [ "Base_RestartAppIfNecessary", "a00061.html#a919bd468ad998edd5e732cad7a10aa7a", null ],
     [ "Base_RestartAppIfNecessaryAsync", "a00061.html#a4cc669714c6efca50de78ac0345f0cd8", null ],

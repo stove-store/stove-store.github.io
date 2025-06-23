@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="StovePCSDK.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">StovePCSDK3<span id="projectnumber">&#160;3.3.2.3.g9ca65.dirty</span>
+   <div id="projectname">StovePCSDK3<span id="projectnumber">&#160;3.3.4</span>
    </div>
    <div id="projectbrief">C/C++ DLL for Stove Platform Service</div>
   </td>
@@ -108,9 +108,10 @@ $(function(){initNavTree('a00056.html',''); initResizable(true); });
 <p>ViewSDK에서 제공하는 함수의 헤더입니다.    
 <a href="#details">더 자세히 ...</a></p>
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
-<code>#include &quot;<a class="el" href="a00231_source.html">Misc/Callbacks.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00246_source.html">Misc/Enumerations.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00264_source.html">Misc/Structures.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00235_source.html">Misc/Callbacks.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00250_source.html">Misc/Enumerations.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00268_source.html">Misc/Structures.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00053_source.html">Misc/ViewSDKResult.h</a>&quot;</code><br />
 </div>
 <p><a href="a00056_source.html">이 파일의 소스 코드 페이지로 가기</a></p>
 <table class="memberdecls">
@@ -128,22 +129,40 @@ $(function(){initNavTree('a00056.html',''); initResizable(true); });
 <tr class="memitem:ad012966ec4afe7f2295ecb1e20eecb2b" id="r_ad012966ec4afe7f2295ecb1e20eecb2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00071.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#ad012966ec4afe7f2295ecb1e20eecb2b">Stove::PCSDK::View::View_Initialize</a> ()</td></tr>
 <tr class="memdesc:ad012966ec4afe7f2295ecb1e20eecb2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ViewSDK를 초기화 합니다.  <br /></td></tr>
 <tr class="separator:ad012966ec4afe7f2295ecb1e20eecb2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22faf18b4f5ffe481c5c8ba01d34f87b" id="r_a22faf18b4f5ffe481c5c8ba01d34f87b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00071.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a22faf18b4f5ffe481c5c8ba01d34f87b">Stove::PCSDK::View::View_InitializeWithWndInfo</a> (const void *mainWndHandle)</td></tr>
+<tr class="memdesc:a22faf18b4f5ffe481c5c8ba01d34f87b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ViewSDK를 초기화 합니다. Internal Style 팝업의 부모 윈도우가 될 메인 윈도우 핸들이 필요합니다.  <br /></td></tr>
+<tr class="separator:a22faf18b4f5ffe481c5c8ba01d34f87b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7abb1dcce23aa602d18e96ea4e00ba3a" id="r_a7abb1dcce23aa602d18e96ea4e00ba3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00071.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a7abb1dcce23aa602d18e96ea4e00ba3a">Stove::PCSDK::View::View_UnInitialize</a> ()</td></tr>
 <tr class="memdesc:a7abb1dcce23aa602d18e96ea4e00ba3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ViewSDK의 자원을 해제합니다  <br /></td></tr>
 <tr class="separator:a7abb1dcce23aa602d18e96ea4e00ba3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7de56ee5fd966ed2dc5ed38668e38e02" id="r_a7de56ee5fd966ed2dc5ed38668e38e02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a7de56ee5fd966ed2dc5ed38668e38e02">Stove::PCSDK::View::View_AutoPopup</a> (<a class="el" href="a00061.html#ad44c444fa6c9c706d4f593e731b1d643">Base::WebViewMode</a> mode, <a class="el" href="a00067.html#ad13aafffe19febabbf5d9414f313a983">OnPopupFinished</a> onFinished)</td></tr>
 <tr class="memdesc:a7de56ee5fd966ed2dc5ed38668e38e02"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 AutoPopup을 실행합니다  <br /></td></tr>
 <tr class="separator:a7de56ee5fd966ed2dc5ed38668e38e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad38ba1b9c516893e46879d46128445aa" id="r_ad38ba1b9c516893e46879d46128445aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#ad38ba1b9c516893e46879d46128445aa">Stove::PCSDK::View::View_AutoPopupEx</a> (<a class="el" href="a00061.html#ad44c444fa6c9c706d4f593e731b1d643">Base::WebViewMode</a> mode, <a class="el" href="a00067.html#ad13aafffe19febabbf5d9414f313a983">OnPopupFinished</a> onFinished, <a class="el" href="a00067.html#ad7109dd87bb77e3da418069b132b2a09">OnViewPopupDestroyFinished</a> onDestroy)</td></tr>
+<tr class="memdesc:ad38ba1b9c516893e46879d46128445aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 AutoPopup을 실행합니다  <br /></td></tr>
+<tr class="separator:ad38ba1b9c516893e46879d46128445aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca44430c9131af2b4a3e03569c172e59" id="r_aca44430c9131af2b4a3e03569c172e59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#aca44430c9131af2b4a3e03569c172e59">Stove::PCSDK::View::View_ManualPopup</a> (const wchar_t *resourceKey, <a class="el" href="a00061.html#ad44c444fa6c9c706d4f593e731b1d643">Base::WebViewMode</a> mode, <a class="el" href="a00067.html#ad13aafffe19febabbf5d9414f313a983">OnPopupFinished</a> onFinished)</td></tr>
 <tr class="memdesc:aca44430c9131af2b4a3e03569c172e59"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 ManualPopup을 실행합니다  <br /></td></tr>
 <tr class="separator:aca44430c9131af2b4a3e03569c172e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae560961ed8d081bc4da9e45abf6cadcc" id="r_ae560961ed8d081bc4da9e45abf6cadcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#ae560961ed8d081bc4da9e45abf6cadcc">Stove::PCSDK::View::View_ManualPopupEx</a> (const wchar_t *resourceKey, <a class="el" href="a00061.html#ad44c444fa6c9c706d4f593e731b1d643">Base::WebViewMode</a> mode, <a class="el" href="a00067.html#ad13aafffe19febabbf5d9414f313a983">OnPopupFinished</a> onFinished, <a class="el" href="a00067.html#ad7109dd87bb77e3da418069b132b2a09">OnViewPopupDestroyFinished</a> onDestroy)</td></tr>
+<tr class="memdesc:ae560961ed8d081bc4da9e45abf6cadcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 ManualPopup을 실행합니다  <br /></td></tr>
+<tr class="separator:ae560961ed8d081bc4da9e45abf6cadcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65ade96768e0ec217e27d14fd9a4a9f0" id="r_a65ade96768e0ec217e27d14fd9a4a9f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a65ade96768e0ec217e27d14fd9a4a9f0">Stove::PCSDK::View::View_NewsPopup</a> (<a class="el" href="a00061.html#ad44c444fa6c9c706d4f593e731b1d643">Base::WebViewMode</a> mode, <a class="el" href="a00067.html#ad13aafffe19febabbf5d9414f313a983">OnPopupFinished</a> onFinished)</td></tr>
 <tr class="memdesc:a65ade96768e0ec217e27d14fd9a4a9f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 NewsPopup을 실행합니다  <br /></td></tr>
 <tr class="separator:a65ade96768e0ec217e27d14fd9a4a9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e2ac394b77714dd540a465079193817" id="r_a2e2ac394b77714dd540a465079193817"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a2e2ac394b77714dd540a465079193817">Stove::PCSDK::View::View_NewsPopupEx</a> (<a class="el" href="a00061.html#ad44c444fa6c9c706d4f593e731b1d643">Base::WebViewMode</a> mode, <a class="el" href="a00067.html#ad13aafffe19febabbf5d9414f313a983">OnPopupFinished</a> onFinished, <a class="el" href="a00067.html#ad7109dd87bb77e3da418069b132b2a09">OnViewPopupDestroyFinished</a> onDestroy)</td></tr>
+<tr class="memdesc:a2e2ac394b77714dd540a465079193817"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 NewsPopup을 실행합니다  <br /></td></tr>
+<tr class="separator:a2e2ac394b77714dd540a465079193817"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa579281b71771403e6b66195662b7954" id="r_aa579281b71771403e6b66195662b7954"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#aa579281b71771403e6b66195662b7954">Stove::PCSDK::View::View_CouponPopup</a> (<a class="el" href="a00061.html#ad44c444fa6c9c706d4f593e731b1d643">Base::WebViewMode</a> mode, <a class="el" href="a00067.html#ad13aafffe19febabbf5d9414f313a983">OnPopupFinished</a> onFinished)</td></tr>
 <tr class="memdesc:aa579281b71771403e6b66195662b7954"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 CouponPopup을 실행합니다  <br /></td></tr>
 <tr class="separator:aa579281b71771403e6b66195662b7954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24854f5c92f831eadb5d61c7f744d375" id="r_a24854f5c92f831eadb5d61c7f744d375"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a24854f5c92f831eadb5d61c7f744d375">Stove::PCSDK::View::View_SetPopupDisallowed</a> (const <a class="el" href="a00211.html">StovePCPopupDisallowed</a> *disallowed, <a class="el" href="a00067.html#aad63901693dd891b99c729a386f1af8b">OnSetPopupDisallowedFinished</a> onSetPopupDisallowed)</td></tr>
+<tr class="memitem:a16efaad411d1eca197073503eb637cb3" id="r_a16efaad411d1eca197073503eb637cb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a16efaad411d1eca197073503eb637cb3">Stove::PCSDK::View::View_CouponPopupEx</a> (<a class="el" href="a00061.html#ad44c444fa6c9c706d4f593e731b1d643">Base::WebViewMode</a> mode, <a class="el" href="a00067.html#ad13aafffe19febabbf5d9414f313a983">OnPopupFinished</a> onFinished, <a class="el" href="a00067.html#ad7109dd87bb77e3da418069b132b2a09">OnViewPopupDestroyFinished</a> onDestroy)</td></tr>
+<tr class="memdesc:a16efaad411d1eca197073503eb637cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 CouponPopup을 실행합니다  <br /></td></tr>
+<tr class="separator:a16efaad411d1eca197073503eb637cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e623356c30b0873bff1081e256e6f23" id="r_a4e623356c30b0873bff1081e256e6f23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a4e623356c30b0873bff1081e256e6f23">Stove::PCSDK::View::View_VerifyIdentificationPopup</a> (bool compareIdentifier, <a class="el" href="a00061.html#ad44c444fa6c9c706d4f593e731b1d643">Base::WebViewMode</a> mode, <a class="el" href="a00067.html#ad13aafffe19febabbf5d9414f313a983">OnPopupFinished</a> onFinished, <a class="el" href="a00067.html#a1f168cb4eda7cca7ebf50ecabc151d50">OnVerifyIdentificationPopupDestroyFinished</a> onDestroy)</td></tr>
+<tr class="memdesc:a4e623356c30b0873bff1081e256e6f23"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 View_VerifyIdentificationPopup을 실행합니다  <br /></td></tr>
+<tr class="separator:a4e623356c30b0873bff1081e256e6f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24854f5c92f831eadb5d61c7f744d375" id="r_a24854f5c92f831eadb5d61c7f744d375"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a24854f5c92f831eadb5d61c7f744d375">Stove::PCSDK::View::View_SetPopupDisallowed</a> (const <a class="el" href="a00215.html">StovePCPopupDisallowed</a> *disallowed, <a class="el" href="a00067.html#aad63901693dd891b99c729a386f1af8b">OnSetPopupDisallowedFinished</a> onSetPopupDisallowed)</td></tr>
 <tr class="memdesc:a24854f5c92f831eadb5d61c7f744d375"><td class="mdescLeft">&#160;</td><td class="mdescRight">팝업이 일정기간 동안 보여지지 않도록 설정합니다.  <br /></td></tr>
 <tr class="separator:a24854f5c92f831eadb5d61c7f744d375"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a081babbfc4e8e769595b7c598d17e23e" id="r_a081babbfc4e8e769595b7c598d17e23e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00071.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a081babbfc4e8e769595b7c598d17e23e">Stove::PCSDK::View::View_CloseAllPopups</a> ()</td></tr>

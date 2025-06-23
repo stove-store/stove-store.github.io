@@ -1,9 +1,11 @@
 var a00067 =
 [
-    [ "StovePCPopupDisallowed", "a00211.html", "a00211" ],
+    [ "StovePCPopupDisallowed", "a00215.html", "a00215" ],
     [ "OnFetchWebOpenKeyFinished", "a00067.html#a31c9f7a7746e141b13befcd9bae6b12c", null ],
     [ "OnPopupFinished", "a00067.html#ad13aafffe19febabbf5d9414f313a983", null ],
     [ "OnSetPopupDisallowedFinished", "a00067.html#aad63901693dd891b99c729a386f1af8b", null ],
+    [ "OnVerifyIdentificationPopupDestroyFinished", "a00067.html#a1f168cb4eda7cca7ebf50ecabc151d50", null ],
+    [ "OnViewPopupDestroyFinished", "a00067.html#ad7109dd87bb77e3da418069b132b2a09", null ],
     [ "CloseButtonType", "a00067.html#af0644b4a8b9ce5d4a77ce3ba727b9c38", [
       [ "CUSTOM", "a00067.html#af0644b4a8b9ce5d4a77ce3ba727b9c38a72baef04098f035e8a320b03ad197818", null ],
       [ "PRESET_01", "a00067.html#af0644b4a8b9ce5d4a77ce3ba727b9c38a8c4d35c7d579885c3724d710d39d2e6b", null ],
@@ -30,6 +32,10 @@ var a00067 =
       [ "COUPON_POPUP", "a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a623d5e6c8cc1ebd6f69bbf7d689fc296", null ],
       [ "FETCH_COMMUNITY", "a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39adbe8b038a5ab270d0e8805286c53b9ce", null ],
       [ "COMMUNITY_POPUP", "a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a7718c4f98d99689ebf15e87cf719b53d", null ],
+      [ "FETCH_VERIFY_IDENTIFICATION", "a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a0426f1be54e5ae3740168024fa92b09c", null ],
+      [ "VERIFY_IDENTIFICATION_POPUP", "a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39aaa953124fc35b70e4e508d98a58cdfce", null ],
+      [ "FETCH_CS", "a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a3379100126af4d9d8df01da6ba742a9e", null ],
+      [ "CS_POPUP", "a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a2da7442c5a879a767e2657cf8be3f84a", null ],
       [ "SET_POPUP_DISALLOWED", "a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a5cdec293163d27f8d8f1e7a156ea6aa7", null ],
       [ "CLOSE_ALL_POPUPS", "a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a361b88111754a925a6494aeeea56a886", null ],
       [ "FETCH_WEB_OPEN_KEY", "a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a39487d4714d3a4fbf64aedceae2c81fa", null ]
@@ -54,6 +60,8 @@ var a00067 =
       [ "RESPONSE_INVALID_VALUE_FORMAT", "a00067.html#a7542759723183ad11d2524f59d94c9ceac6fdba1c48d9813a1dfd878a1756d2d8", null ],
       [ "LOG_81PLUG_ERROR", "a00067.html#a7542759723183ad11d2524f59d94c9ceaced61cd095bbd4b5da066fb670292e64", null ],
       [ "UPDATE_81PLUG_FEED_ERROR", "a00067.html#a7542759723183ad11d2524f59d94c9cea4d77ea607bc5801f7413b0e8e060612e", null ],
+      [ "ASYNC_OPERATION_IN_PROGRESS", "a00067.html#a7542759723183ad11d2524f59d94c9ceacadf555c2fe95f3090ebb5a424e01d6e", null ],
+      [ "BASE_UNINITIALIZED", "a00067.html#a7542759723183ad11d2524f59d94c9cea2066886874efe9c14701cf3231b6ba49", null ],
       [ "PCSDK_DLL_NOT_FOUND", "a00067.html#a7542759723183ad11d2524f59d94c9ceaa738d94a1223530902a971b9c5a11ae6", null ],
       [ "NOT_IMPLEMENTED", "a00067.html#a7542759723183ad11d2524f59d94c9cea3e860a081575fc82cc7b6ed2ca602947", null ],
       [ "UNMANAGED_EXCEPTION", "a00067.html#a7542759723183ad11d2524f59d94c9ceae61780aea0c20d1019d1b24bfbd0a253", null ],
@@ -63,17 +71,26 @@ var a00067 =
       [ "VIEWUI_UNINIT_FAILED", "a00067.html#a7542759723183ad11d2524f59d94c9cea7b9e96e189290b0b2f4c51fa1bf95815", null ],
       [ "WEBVIEW_CREATE_FAIL", "a00067.html#a7542759723183ad11d2524f59d94c9cead04fbfb98a350444d7c9a92d0ab393e8", null ],
       [ "WEBVIEW_LOAD_URL_FAIL", "a00067.html#a7542759723183ad11d2524f59d94c9cea9540cf03deffbf38f8be361ea05dc94c", null ],
-      [ "WEBVIEW_CLOSE_ALL_FAIL", "a00067.html#a7542759723183ad11d2524f59d94c9ceaf37a8dc1bf13601f2854a392ef537519", null ]
+      [ "WEBVIEW_CLOSE_ALL_FAIL", "a00067.html#a7542759723183ad11d2524f59d94c9ceaf37a8dc1bf13601f2854a392ef537519", null ],
+      [ "WEBVIEW_CLOSE_FAIL", "a00067.html#a7542759723183ad11d2524f59d94c9cea29f54208c0e037e992a48c189e9627c3", null ],
+      [ "WEBVIEW_CREATE_COOKIE_FAIL", "a00067.html#a7542759723183ad11d2524f59d94c9cea151b2dcbe518db43d5c99ebe91fb6c5d", null ],
+      [ "NO_POPUP_DATA", "a00067.html#a7542759723183ad11d2524f59d94c9cea363f395d7e1c19f78c9d41a406d895fb", null ]
     ] ],
     [ "View_AutoPopup", "a00067.html#a7de56ee5fd966ed2dc5ed38668e38e02", null ],
+    [ "View_AutoPopupEx", "a00067.html#ad38ba1b9c516893e46879d46128445aa", null ],
     [ "View_CloseAllPopups", "a00067.html#a081babbfc4e8e769595b7c598d17e23e", null ],
     [ "View_CouponPopup", "a00067.html#aa579281b71771403e6b66195662b7954", null ],
+    [ "View_CouponPopupEx", "a00067.html#a16efaad411d1eca197073503eb637cb3", null ],
     [ "View_FetchWebOpenKey", "a00067.html#ac17e8ed85ef146932617073d1a012fca", null ],
     [ "View_GetVersion", "a00067.html#a2f40661f3fb68c4ea8b9e5aa5b7ad246", null ],
     [ "View_Initialize", "a00067.html#ad012966ec4afe7f2295ecb1e20eecb2b", null ],
+    [ "View_InitializeWithWndInfo", "a00067.html#a22faf18b4f5ffe481c5c8ba01d34f87b", null ],
     [ "View_ManualPopup", "a00067.html#aca44430c9131af2b4a3e03569c172e59", null ],
+    [ "View_ManualPopupEx", "a00067.html#ae560961ed8d081bc4da9e45abf6cadcc", null ],
     [ "View_NewsPopup", "a00067.html#a65ade96768e0ec217e27d14fd9a4a9f0", null ],
+    [ "View_NewsPopupEx", "a00067.html#a2e2ac394b77714dd540a465079193817", null ],
     [ "View_SetPopupDisallowed", "a00067.html#a24854f5c92f831eadb5d61c7f744d375", null ],
     [ "View_UnInitialize", "a00067.html#a7abb1dcce23aa602d18e96ea4e00ba3a", null ],
+    [ "View_VerifyIdentificationPopup", "a00067.html#a4e623356c30b0873bff1081e256e6f23", null ],
     [ "ViewSDKName", "a00067.html#af50c3233af59e02f428d573d265205ce", null ]
 ];

@@ -46,7 +46,8 @@ var menudata={children:[
 {text:"p",url:"namespacemembers_func.html#index_p"},
 {text:"v",url:"namespacemembers_func.html#index_v"}]},
 {text:"변수",url:"namespacemembers_vars.html"},
-{text:"타입정의",url:"namespacemembers_type.html"},
+{text:"타입정의",url:"namespacemembers_type.html",children:[
+{text:"o",url:"namespacemembers_type.html#index_o"}]},
 {text:"열거형 타입",url:"namespacemembers_enum.html"}]}]},
 {text:"클래스",url:"annotated.html",children:[
 {text:"클래스 목록",url:"annotated.html"},

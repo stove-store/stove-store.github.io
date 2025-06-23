@@ -11,13 +11,14 @@ var searchData=
   ['base_5fgetuser_8',['Base_GetUser',['../a00061.html#a7da29fc907d222af0fe2be6e37f3d305',1,'Stove::PCSDK::Base']]],
   ['base_5fgetversion_9',['Base_GetVersion',['../a00061.html#abedfac582063dced3cd20f0632b2dffd',1,'Stove::PCSDK::Base']]],
   ['base_5finitialize_10',['Base_Initialize',['../a00061.html#a752e746b69a3108afd987289dda9a377',1,'Stove::PCSDK::Base']]],
-  ['base_5foverimmersionnotification_11',['Base_OverImmersionNotification',['../a00061.html#a93d454d05ca938c002797857824c6075',1,'Stove::PCSDK::Base']]],
-  ['base_5frestartappifnecessary_12',['Base_RestartAppIfNecessary',['../a00061.html#a919bd468ad998edd5e732cad7a10aa7a',1,'Stove::PCSDK::Base']]],
-  ['base_5frestartappifnecessaryasync_13',['Base_RestartAppIfNecessaryAsync',['../a00061.html#a4cc669714c6efca50de78ac0345f0cd8',1,'Stove::PCSDK::Base']]],
-  ['base_5fruncallback_14',['Base_RunCallback',['../a00061.html#aa4a1b358b6ec7a5a3faf9b30aa90a842',1,'Stove::PCSDK::Base']]],
-  ['base_5fruncallbackwithtimeout_15',['Base_RunCallbackWithTimeout',['../a00061.html#ae4d7bd3e95ff52503bb1f17fe2685993',1,'Stove::PCSDK::Base']]],
-  ['base_5fsetgameprofile_16',['Base_SetGameProfile',['../a00061.html#afa1e2b06b87acc12accdfe1e215e4799',1,'Stove::PCSDK::Base']]],
-  ['base_5fsetlanguage_17',['Base_SetLanguage',['../a00061.html#a13be02dde7dd8a8eacb21e63f1f76d02',1,'Stove::PCSDK::Base']]],
-  ['base_5fshutdownnotification_18',['Base_ShutdownNotification',['../a00061.html#aa0ad2e5fa549d292256d44c08c30d648',1,'Stove::PCSDK::Base']]],
-  ['base_5funinitialize_19',['Base_UnInitialize',['../a00061.html#a52565b46d510fb7913e9e8e4f061073e',1,'Stove::PCSDK::Base']]]
+  ['base_5fopenexternalurl_11',['Base_OpenExternalUrl',['../a00061.html#afe5756e9dab3f3c7901ddc213bf10c4e',1,'Stove::PCSDK::Base']]],
+  ['base_5foverimmersionnotification_12',['Base_OverImmersionNotification',['../a00061.html#a93d454d05ca938c002797857824c6075',1,'Stove::PCSDK::Base']]],
+  ['base_5frestartappifnecessary_13',['Base_RestartAppIfNecessary',['../a00061.html#a919bd468ad998edd5e732cad7a10aa7a',1,'Stove::PCSDK::Base']]],
+  ['base_5frestartappifnecessaryasync_14',['Base_RestartAppIfNecessaryAsync',['../a00061.html#a4cc669714c6efca50de78ac0345f0cd8',1,'Stove::PCSDK::Base']]],
+  ['base_5fruncallback_15',['Base_RunCallback',['../a00061.html#aa4a1b358b6ec7a5a3faf9b30aa90a842',1,'Stove::PCSDK::Base']]],
+  ['base_5fruncallbackwithtimeout_16',['Base_RunCallbackWithTimeout',['../a00061.html#ae4d7bd3e95ff52503bb1f17fe2685993',1,'Stove::PCSDK::Base']]],
+  ['base_5fsetgameprofile_17',['Base_SetGameProfile',['../a00061.html#afa1e2b06b87acc12accdfe1e215e4799',1,'Stove::PCSDK::Base']]],
+  ['base_5fsetlanguage_18',['Base_SetLanguage',['../a00061.html#a13be02dde7dd8a8eacb21e63f1f76d02',1,'Stove::PCSDK::Base']]],
+  ['base_5fshutdownnotification_19',['Base_ShutdownNotification',['../a00061.html#aa0ad2e5fa549d292256d44c08c30d648',1,'Stove::PCSDK::Base']]],
+  ['base_5funinitialize_20',['Base_UnInitialize',['../a00061.html#a52565b46d510fb7913e9e8e4f061073e',1,'Stove::PCSDK::Base']]]
 ];

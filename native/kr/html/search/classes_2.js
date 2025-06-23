@@ -2,8 +2,8 @@ var searchData=
 [
   ['stovepcachievement_0',['StovePCAchievement',['../a00131.html',1,'Stove::PCSDK::GameSupport']]],
   ['stovepcachievementcondition_1',['StovePCAchievementCondition',['../a00127.html',1,'Stove::PCSDK::GameSupport']]],
-  ['stovepcbangstatus_2',['StovePCBangStatus',['../a00203.html',1,'Stove::PCSDK::PCBang']]],
-  ['stovepcbanguserlogin_3',['StovePCBangUserLogin',['../a00199.html',1,'Stove::PCSDK::PCBang']]],
+  ['stovepcbangstatus_2',['StovePCBangStatus',['../a00207.html',1,'Stove::PCSDK::PCBang']]],
+  ['stovepcbanguserlogin_3',['StovePCBangUserLogin',['../a00203.html',1,'Stove::PCSDK::PCBang']]],
   ['stovepcchargeinfo_4',['StovePCChargeInfo',['../a00171.html',1,'Stove::PCSDK::IAP']]],
   ['stovepcfetchproductparam_5',['StovePCFetchProductParam',['../a00147.html',1,'Stove::PCSDK::IAP']]],
   ['stovepcgameprofile_6',['StovePCGameProfile',['../a00111.html',1,'Stove::PCSDK::Base']]],
@@ -13,16 +13,16 @@ var searchData=
   ['stovepcmodifystatvalue_10',['StovePCModifyStatValue',['../a00123.html',1,'Stove::PCSDK::GameSupport']]],
   ['stovepcorderproduct_11',['StovePCOrderProduct',['../a00155.html',1,'Stove::PCSDK::IAP']]],
   ['stovepcoverimmersion_12',['StovePCOverImmersion',['../a00099.html',1,'Stove::PCSDK::Base']]],
-  ['stovepcownership_13',['StovePCOwnership',['../a00195.html',1,'Stove::PCSDK::Ownership']]],
+  ['stovepcownership_13',['StovePCOwnership',['../a00199.html',1,'Stove::PCSDK::Ownership']]],
   ['stovepcpaymentoption_14',['StovePCPaymentOption',['../a00187.html',1,'Stove::PCSDK::IAP']]],
-  ['stovepcpopupdisallowed_15',['StovePCPopupDisallowed',['../a00211.html',1,'Stove::PCSDK::View']]],
+  ['stovepcpopupdisallowed_15',['StovePCPopupDisallowed',['../a00215.html',1,'Stove::PCSDK::View']]],
   ['stovepcproduct_16',['StovePCProduct',['../a00151.html',1,'Stove::PCSDK::IAP']]],
   ['stovepcpurchasedproduct_17',['StovePCPurchasedProduct',['../a00167.html',1,'Stove::PCSDK::IAP']]],
   ['stovepcpurchaseoption_18',['StovePCPurchaseOption',['../a00159.html',1,'Stove::PCSDK::IAP']]],
   ['stovepcpurchaseresult_19',['StovePCPurchaseResult',['../a00175.html',1,'Stove::PCSDK::IAP']]],
   ['stovepcrank_20',['StovePCRank',['../a00139.html',1,'Stove::PCSDK::GameSupport']]],
   ['stovepcrankparams_21',['StovePCRankParams',['../a00135.html',1,'Stove::PCSDK::GameSupport']]],
-  ['stovepcrefreshuserbenefits_22',['StovePCRefreshUserBenefits',['../a00207.html',1,'Stove::PCSDK::PCBang']]],
+  ['stovepcrefreshuserbenefits_22',['StovePCRefreshUserBenefits',['../a00211.html',1,'Stove::PCSDK::PCBang']]],
   ['stovepcshopcategory_23',['StovePCShopCategory',['../a00143.html',1,'Stove::PCSDK::IAP']]],
   ['stovepcshutdown_24',['StovePCShutdown',['../a00103.html',1,'Stove::PCSDK::Base']]],
   ['stovepcsignin_25',['StovePCSignin',['../a00095.html',1,'Stove::PCSDK::Base']]],
@@ -33,5 +33,6 @@ var searchData=
   ['stovepctoken_30',['StovePCToken',['../a00083.html',1,'Stove::PCSDK::Base']]],
   ['stovepctracehint_31',['StovePCTraceHint',['../a00107.html',1,'Stove::PCSDK::Base']]],
   ['stovepcuser_32',['StovePCUser',['../a00087.html',1,'Stove::PCSDK::Base']]],
-  ['stovepcvoidedpurchase_33',['StovePCVoidedPurchase',['../a00191.html',1,'Stove::PCSDK::IAP']]]
+  ['stovepcvoidedpurchase_33',['StovePCVoidedPurchase',['../a00191.html',1,'Stove::PCSDK::IAP']]],
+  ['stovepcwithdrawgameoption_34',['StovePCWithdrawGameOption',['../a00195.html',1,'Stove::PCSDK::IAP']]]
 ];

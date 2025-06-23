@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['days_0',['days',['../a00211.html#a0c2a41bc67a25e62e21f76acc0708325',1,'Stove::PCSDK::View::StovePCPopupDisallowed']]],
+  ['days_0',['days',['../a00215.html#a0c2a41bc67a25e62e21f76acc0708325',1,'Stove::PCSDK::View::StovePCPopupDisallowed']]],
   ['defaultimageurl_1',['defaultImageUrl',['../a00131.html#aee4ecb95e08e54e7306741cb8aecc090',1,'Stove::PCSDK::GameSupport::StovePCAchievement']]],
   ['depth_2',['depth',['../a00143.html#a5be9c827926be886a860c068b3f7dcd6',1,'Stove::PCSDK::IAP::StovePCShopCategory']]],
   ['description_3',['description',['../a00131.html#ac1365c38d8d6136b48aea02d9796e45e',1,'Stove::PCSDK::GameSupport::StovePCAchievement::description'],['../a00151.html#a16d8bfb31f25fc8fa51d7ec8d6b17e0f',1,'Stove::PCSDK::IAP::StovePCProduct::description']]],

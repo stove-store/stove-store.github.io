@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>StovePCSDK3 .NET Plugin: Callbacks.cs 파일 참조</title>
+<title>StovePCSDK3 .NET Plugin: Stove.PCSDK.View 클래스 참조</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="StovePCSDK.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">StovePCSDK3 .NET Plugin<span id="projectnumber">&#160;3.3.2.19.gb0d6c</span>
+   <div id="projectname">StovePCSDK3 .NET Plugin<span id="projectnumber">&#160;3.3.4</span>
    </div>
    <div id="projectbrief">C# DLL for Stove Platform Service</div>
   </td>
@@ -100,31 +100,1115 @@ $(function(){initNavTree('a00226.html',''); initResizable(true); });
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">클래스</a> &#124;
-<a href="#namespaces">네임스페이스</a>  </div>
-  <div class="headertitle"><div class="title">Callbacks.cs 파일 참조</div></div>
+<a href="#pub-types">Public 타입</a> &#124;
+<a href="#pub-methods">Public 멤버 함수</a> &#124;
+<a href="#pub-static-methods">정적 Public 멤버 함수</a> &#124;
+<a href="a00223.html">모든 멤버 목록</a>  </div>
+  <div class="headertitle"><div class="title">Stove.PCSDK.View 클래스 참조</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><a href="a00226_source.html">이 파일의 소스 코드 페이지로 가기</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 클래스</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00089.html">Stove.PCSDK.GameSupport</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00230.html">StovePCPopupDisallowed</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">팝업 노출을 하지 않을 때 필요한 정보입니다.    <a href="a00230.html#details">더 자세히 ...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-네임스페이스</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html">Stove</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html">Stove.PCSDK</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 타입</h2></td></tr>
+<tr class="memitem:ad4eec48af3d1d26a415e100f6bb15efd" id="r_ad4eec48af3d1d26a415e100f6bb15efd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4eec48af3d1d26a415e100f6bb15efd">ViewSDKMethod</a> { <br />
+&#160;&#160;<a class="el" href="#ad4eec48af3d1d26a415e100f6bb15efda67d00896560d72e79b9aa815b703e9b0">INITIALIZE</a> = 1
+, <a class="el" href="#ad4eec48af3d1d26a415e100f6bb15efda2ff6505d033318bf1c77f16ede0da2e2">UNINITIALIZE</a> = 2
+, <a class="el" href="#ad4eec48af3d1d26a415e100f6bb15efdaa75ba2b290d772da89ff02c12ebac0fd">INTERNAL_SEND_81PLUG</a> = 3
+, <a class="el" href="#ad4eec48af3d1d26a415e100f6bb15efdaf514c74728995327313519299d0bcc0b">INTERNAL_UPDATE_81PLUG</a> = 4
+, <br />
+&#160;&#160;<a class="el" href="#ad4eec48af3d1d26a415e100f6bb15efda3e4d39d03ce99d4daaab3749af67ff13">GET_VERSION</a> = 5
+, <a class="el" href="#ad4eec48af3d1d26a415e100f6bb15efda06d824d082233e5e5063da579d996d2c">FETCH_AUTO</a> = 80
+, <a class="el" href="#ad4eec48af3d1d26a415e100f6bb15efdab771ba7294db84e0d3cae059fc5018f4">AUTO_POPUP</a> = 81
+, <a class="el" href="#ad4eec48af3d1d26a415e100f6bb15efda6a113d9a7846d3ccfd9ca5d433a30f49">FETCH_MANUAL</a> = 82
+, <br />
+&#160;&#160;<a class="el" href="#ad4eec48af3d1d26a415e100f6bb15efda5698506e8c78a53ab1006c3973455f69">MANUAL_POPUP</a> = 83
+, <a class="el" href="#ad4eec48af3d1d26a415e100f6bb15efda0adf9e45583f100f30b44276a8275feb">FETCH_NEWS</a> = 84
+, <a class="el" href="#ad4eec48af3d1d26a415e100f6bb15efda9370e96ac5092dbe089aadebb5307b69">NEWS_POPUP</a> = 85
+, <a class="el" href="#ad4eec48af3d1d26a415e100f6bb15efda2dcf8de60b49ef11e2c75f501f06fcee">FETCH_COUPON</a> = 86
+, <br />
+&#160;&#160;<a class="el" href="#ad4eec48af3d1d26a415e100f6bb15efda623d5e6c8cc1ebd6f69bbf7d689fc296">COUPON_POPUP</a> = 87
+, <a class="el" href="#ad4eec48af3d1d26a415e100f6bb15efdadbe8b038a5ab270d0e8805286c53b9ce">FETCH_COMMUNITY</a> = 88
+, <a class="el" href="#ad4eec48af3d1d26a415e100f6bb15efda7718c4f98d99689ebf15e87cf719b53d">COMMUNITY_POPUP</a> = 89
+, <a class="el" href="#ad4eec48af3d1d26a415e100f6bb15efda0426f1be54e5ae3740168024fa92b09c">FETCH_VERIFY_IDENTIFICATION</a> = 90
+, <br />
+&#160;&#160;<a class="el" href="#ad4eec48af3d1d26a415e100f6bb15efdaaa953124fc35b70e4e508d98a58cdfce">VERIFY_IDENTIFICATION_POPUP</a> = 91
+, <a class="el" href="#ad4eec48af3d1d26a415e100f6bb15efda3379100126af4d9d8df01da6ba742a9e">FETCH_CS</a> = 92
+, <a class="el" href="#ad4eec48af3d1d26a415e100f6bb15efda2da7442c5a879a767e2657cf8be3f84a">CS_POPUP</a> = 93
+, <a class="el" href="#ad4eec48af3d1d26a415e100f6bb15efda5cdec293163d27f8d8f1e7a156ea6aa7">SET_POPUP_DISALLOWED</a> = 160
+, <br />
+&#160;&#160;<a class="el" href="#ad4eec48af3d1d26a415e100f6bb15efda361b88111754a925a6494aeeea56a886">CLOSE_ALL_POPUPS</a> = 161
+, <a class="el" href="#ad4eec48af3d1d26a415e100f6bb15efda39487d4714d3a4fbf64aedceae2c81fa">FETCH_WEB_OPEN_KEY</a> = 162
+<br />
+ }</td></tr>
+<tr class="memdesc:ad4eec48af3d1d26a415e100f6bb15efd"><td class="mdescLeft">&#160;</td><td class="mdescRight">ViewSDK에서 사용하는 함수들의 Code    <a href="#ad4eec48af3d1d26a415e100f6bb15efd">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:ad4eec48af3d1d26a415e100f6bb15efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae2127743a2a4510078bb8abf2f9c562" id="r_aae2127743a2a4510078bb8abf2f9c562"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae2127743a2a4510078bb8abf2f9c562">ViewSDKSDKResultCode</a> { <br />
+&#160;&#160;<a class="el" href="#aae2127743a2a4510078bb8abf2f9c562ad0749aaba8b833466dfcbb0428e4f89c">SUCCESS</a> = 0
+, <a class="el" href="#aae2127743a2a4510078bb8abf2f9c562ac2759effffc94bb9acc71d69fe3e8a1f">FAIL</a> = 1
+, <a class="el" href="#aae2127743a2a4510078bb8abf2f9c562a2188ade13df339354cd8c383dda3f8bb">INVALID_CONFIG</a> = 2
+, <a class="el" href="#aae2127743a2a4510078bb8abf2f9c562af9b5d387731eda84307c7a5808c4eea4">INVALID_LOG_LEVEL</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="#aae2127743a2a4510078bb8abf2f9c562a5bcbd8690b7f6ad566aff5274bb168d3">INVALID_LOG_PATH</a> = 4
+, <a class="el" href="#aae2127743a2a4510078bb8abf2f9c562a4a775a051faafd7eed30f5a95548729a">INVALID_PARAM</a> = 5
+, <a class="el" href="#aae2127743a2a4510078bb8abf2f9c562a1a9cebe6b290d77208bf3a6ee29338be">BASE_NOT_INITIALIZED</a> = 16
+, <a class="el" href="#aae2127743a2a4510078bb8abf2f9c562a02de9649e258d1dd94056e676061e969">NOT_INITIALIZED</a> = 17
+, <br />
+&#160;&#160;<a class="el" href="#aae2127743a2a4510078bb8abf2f9c562a1940a630a2a25829533b90f9be04f184">ALREADY_INITIALIZED</a> = 18
+, <a class="el" href="#aae2127743a2a4510078bb8abf2f9c562a697abab5f5d7e71608a29888daeca158">INVALID_ACCESS_TOKEN</a> = 19
+, <a class="el" href="#aae2127743a2a4510078bb8abf2f9c562a5aaaa6f48c0ceebeaff2bdde6f9c463b">NULL_TOKEN_ENTITY</a> = 20
+, <a class="el" href="#aae2127743a2a4510078bb8abf2f9c562aa07555b85890c1a02b8bf1cf0d028d30">NULL_ENTITY</a> = 21
+, <br />
+&#160;&#160;<a class="el" href="#aae2127743a2a4510078bb8abf2f9c562a04a21bd3acbbb1ca97bb0787b13f891c">HTTP_ERROR</a> = 22
+, <a class="el" href="#aae2127743a2a4510078bb8abf2f9c562aad61b70936ef9772fbb93726087a72fc">RESPONSE_ERROR</a> = 23
+, <a class="el" href="#aae2127743a2a4510078bb8abf2f9c562af0f78fca54db0634445759d2a2172e0e">RESPONSE_INVALID_CODE</a> = 24
+, <a class="el" href="#aae2127743a2a4510078bb8abf2f9c562a569b30b95c9ef7eabaea7879e9311982">RESPONSE_VALUE_IS_NULL</a> = 25
+, <br />
+&#160;&#160;<a class="el" href="#aae2127743a2a4510078bb8abf2f9c562ac6fdba1c48d9813a1dfd878a1756d2d8">RESPONSE_INVALID_VALUE_FORMAT</a> = 26
+, <a class="el" href="#aae2127743a2a4510078bb8abf2f9c562aced61cd095bbd4b5da066fb670292e64">LOG_81PLUG_ERROR</a> = 27
+, <a class="el" href="#aae2127743a2a4510078bb8abf2f9c562a4d77ea607bc5801f7413b0e8e060612e">UPDATE_81PLUG_FEED_ERROR</a> = 28
+, <a class="el" href="#aae2127743a2a4510078bb8abf2f9c562acadf555c2fe95f3090ebb5a424e01d6e">ASYNC_OPERATION_IN_PROGRESS</a> = 29
+, <br />
+&#160;&#160;<a class="el" href="#aae2127743a2a4510078bb8abf2f9c562a2066886874efe9c14701cf3231b6ba49">BASE_UNINITIALIZED</a> = 30
+, <a class="el" href="#aae2127743a2a4510078bb8abf2f9c562aa738d94a1223530902a971b9c5a11ae6">PCSDK_DLL_NOT_FOUND</a> = 251
+, <a class="el" href="#aae2127743a2a4510078bb8abf2f9c562a3e860a081575fc82cc7b6ed2ca602947">NOT_IMPLEMENTED</a> = 252
+, <a class="el" href="#aae2127743a2a4510078bb8abf2f9c562ae61780aea0c20d1019d1b24bfbd0a253">UNMANAGED_EXCEPTION</a> = 253
+, <br />
+&#160;&#160;<a class="el" href="#aae2127743a2a4510078bb8abf2f9c562ad39caad7773f9d769161673dffba5db5">MANAGED_EXCEPTION</a> = 254
+, <a class="el" href="#aae2127743a2a4510078bb8abf2f9c562a9a10f345b0f755d461a8673a5e9ef6b4">UNKNOWN_ERROR</a> = 255
+, <a class="el" href="#aae2127743a2a4510078bb8abf2f9c562ad9bb9e20bfb4a2c22d7f28070023ed22">VIEWUI_NOT_INITIALIZED</a> = 80
+, <a class="el" href="#aae2127743a2a4510078bb8abf2f9c562a7b9e96e189290b0b2f4c51fa1bf95815">VIEWUI_UNINIT_FAILED</a> = 81
+, <br />
+&#160;&#160;<a class="el" href="#aae2127743a2a4510078bb8abf2f9c562ad04fbfb98a350444d7c9a92d0ab393e8">WEBVIEW_CREATE_FAIL</a> = 82
+, <a class="el" href="#aae2127743a2a4510078bb8abf2f9c562a9540cf03deffbf38f8be361ea05dc94c">WEBVIEW_LOAD_URL_FAIL</a> = 83
+, <a class="el" href="#aae2127743a2a4510078bb8abf2f9c562af37a8dc1bf13601f2854a392ef537519">WEBVIEW_CLOSE_ALL_FAIL</a> = 84
+, <a class="el" href="#aae2127743a2a4510078bb8abf2f9c562a29f54208c0e037e992a48c189e9627c3">WEBVIEW_CLOSE_FAIL</a> = 85
+, <br />
+&#160;&#160;<a class="el" href="#aae2127743a2a4510078bb8abf2f9c562a151b2dcbe518db43d5c99ebe91fb6c5d">WEBVIEW_CREATE_COOKIE_FAIL</a> = 86
+, <a class="el" href="#aae2127743a2a4510078bb8abf2f9c562a363f395d7e1c19f78c9d41a406d895fb">NO_POPUP_DATA</a> = 87
+<br />
+ }</td></tr>
+<tr class="memdesc:aae2127743a2a4510078bb8abf2f9c562"><td class="mdescLeft">&#160;</td><td class="mdescRight">ViewSDK에서 사용하는 함수의 Result Code    <a href="#aae2127743a2a4510078bb8abf2f9c562">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:aae2127743a2a4510078bb8abf2f9c562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 멤버 함수</h2></td></tr>
+<tr class="memitem:af3f1ff82a2697539cb401e446f85e406" id="r_af3f1ff82a2697539cb401e446f85e406"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3f1ff82a2697539cb401e446f85e406">OnPopupFinished</a> (CallbackResult result)</td></tr>
+<tr class="memdesc:af3f1ff82a2697539cb401e446f85e406"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용한 API 호출 시 응답받는 델리게이트  <br /></td></tr>
+<tr class="separator:af3f1ff82a2697539cb401e446f85e406"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70018b4f2c803b0a61f257069d511724" id="r_a70018b4f2c803b0a61f257069d511724"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70018b4f2c803b0a61f257069d511724">OnSetPopupDisallowedFinished</a> (CallbackResult result)</td></tr>
+<tr class="memdesc:a70018b4f2c803b0a61f257069d511724"><td class="mdescLeft">&#160;</td><td class="mdescRight">PopupDisallowed를 이용한 API 호출 시 응답받는 델리게이트  <br /></td></tr>
+<tr class="separator:a70018b4f2c803b0a61f257069d511724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a773caa0b6c34d5b9c2403853ea1d4279" id="r_a773caa0b6c34d5b9c2403853ea1d4279"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a773caa0b6c34d5b9c2403853ea1d4279">OnFetchWebOpenKeyFinished</a> (CallbackResult result, string key)</td></tr>
+<tr class="memdesc:a773caa0b6c34d5b9c2403853ea1d4279"><td class="mdescLeft">&#160;</td><td class="mdescRight">FetchWebOpenKey를 이용한 API 호출 시 응답받는 델리게이트  <br /></td></tr>
+<tr class="separator:a773caa0b6c34d5b9c2403853ea1d4279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ddf63fa1b27adadd5aa2b2dbac83896" id="r_a5ddf63fa1b27adadd5aa2b2dbac83896"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ddf63fa1b27adadd5aa2b2dbac83896">OnViewPopupDestroyFinished</a> (CallbackResult result)</td></tr>
+<tr class="memdesc:a5ddf63fa1b27adadd5aa2b2dbac83896"><td class="mdescLeft">&#160;</td><td class="mdescRight">FetchWebOpenKey를 이용한 API 호출 시 응답받는 델리게이트  <br /></td></tr>
+<tr class="separator:a5ddf63fa1b27adadd5aa2b2dbac83896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a671c179a7f048641ec6ab278d57f2292" id="r_a671c179a7f048641ec6ab278d57f2292"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a671c179a7f048641ec6ab278d57f2292">OnVerifyIdentificationPopupDestroyFinished</a> (CallbackResult result, string simKey)</td></tr>
+<tr class="memdesc:a671c179a7f048641ec6ab278d57f2292"><td class="mdescLeft">&#160;</td><td class="mdescRight">VerifyIdentificationPopup API를 이용한 팝업을 닫을 시 응답 받는 델리게이트  <br /></td></tr>
+<tr class="separator:a671c179a7f048641ec6ab278d57f2292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+정적 Public 멤버 함수</h2></td></tr>
+<tr class="memitem:adb81ba5331d678119b0847348b4bedda" id="r_adb81ba5331d678119b0847348b4bedda"><td class="memItemLeft" align="right" valign="top">static Result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb81ba5331d678119b0847348b4bedda">View_Initialize</a> ()</td></tr>
+<tr class="memdesc:adb81ba5331d678119b0847348b4bedda"><td class="mdescLeft">&#160;</td><td class="mdescRight">ViewSDK를 초기화 합니다.  <br /></td></tr>
+<tr class="separator:adb81ba5331d678119b0847348b4bedda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab4c448161d44032a94df5463517505" id="r_a4ab4c448161d44032a94df5463517505"><td class="memItemLeft" align="right" valign="top">static Result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ab4c448161d44032a94df5463517505">View_InitializeWithWndInfo</a> (IntPtr mainWndHandle)</td></tr>
+<tr class="memdesc:a4ab4c448161d44032a94df5463517505"><td class="mdescLeft">&#160;</td><td class="mdescRight">ViewSDK를 초기화 합니다. Internal Style 팝업의 부모 윈도우가 될 메인 윈도우 핸들이 필요합니다.  <br /></td></tr>
+<tr class="separator:a4ab4c448161d44032a94df5463517505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab189c46231d170239f8910753008eb67" id="r_ab189c46231d170239f8910753008eb67"><td class="memItemLeft" align="right" valign="top">static Result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab189c46231d170239f8910753008eb67">View_UnInitialize</a> ()</td></tr>
+<tr class="memdesc:ab189c46231d170239f8910753008eb67"><td class="mdescLeft">&#160;</td><td class="mdescRight">ViewSDK의 자원을 해제합니다  <br /></td></tr>
+<tr class="separator:ab189c46231d170239f8910753008eb67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6de32609114ff609d7e2247c32fefe37" id="r_a6de32609114ff609d7e2247c32fefe37"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6de32609114ff609d7e2247c32fefe37">View_AutoPopup</a> (WebViewMode mode, <a class="el" href="#af3f1ff82a2697539cb401e446f85e406">OnPopupFinished</a> onFinished)</td></tr>
+<tr class="memdesc:a6de32609114ff609d7e2247c32fefe37"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 AutoPopup을 실행합니다  <br /></td></tr>
+<tr class="separator:a6de32609114ff609d7e2247c32fefe37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66d52a09ef7fac7880db1f9be991782d" id="r_a66d52a09ef7fac7880db1f9be991782d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66d52a09ef7fac7880db1f9be991782d">View_AutoPopupEx</a> (WebViewMode mode, <a class="el" href="#af3f1ff82a2697539cb401e446f85e406">OnPopupFinished</a> onFinished, <a class="el" href="#a5ddf63fa1b27adadd5aa2b2dbac83896">OnViewPopupDestroyFinished</a> onDestroy)</td></tr>
+<tr class="memdesc:a66d52a09ef7fac7880db1f9be991782d"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 AutoPopup을 실행합니다  <br /></td></tr>
+<tr class="separator:a66d52a09ef7fac7880db1f9be991782d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf7d72e24bd2d3ae15a7062a5e4a2df0" id="r_abf7d72e24bd2d3ae15a7062a5e4a2df0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf7d72e24bd2d3ae15a7062a5e4a2df0">View_ManualPopup</a> (string resourceKey, WebViewMode mode, <a class="el" href="#af3f1ff82a2697539cb401e446f85e406">OnPopupFinished</a> onFinished)</td></tr>
+<tr class="memdesc:abf7d72e24bd2d3ae15a7062a5e4a2df0"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 ManualPopup을 실행합니다  <br /></td></tr>
+<tr class="separator:abf7d72e24bd2d3ae15a7062a5e4a2df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07964d2856e5183650e26387930e6b0e" id="r_a07964d2856e5183650e26387930e6b0e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07964d2856e5183650e26387930e6b0e">View_ManualPopupEx</a> (string resourceKey, WebViewMode mode, <a class="el" href="#af3f1ff82a2697539cb401e446f85e406">OnPopupFinished</a> onFinished, <a class="el" href="#a5ddf63fa1b27adadd5aa2b2dbac83896">OnViewPopupDestroyFinished</a> onDestroy)</td></tr>
+<tr class="memdesc:a07964d2856e5183650e26387930e6b0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 ManualPopup을 실행합니다  <br /></td></tr>
+<tr class="separator:a07964d2856e5183650e26387930e6b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad2f8ac626c8c7be3d2cfee0522b61d" id="r_a4ad2f8ac626c8c7be3d2cfee0522b61d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ad2f8ac626c8c7be3d2cfee0522b61d">View_NewsPopup</a> (WebViewMode mode, <a class="el" href="#af3f1ff82a2697539cb401e446f85e406">OnPopupFinished</a> onFinished)</td></tr>
+<tr class="memdesc:a4ad2f8ac626c8c7be3d2cfee0522b61d"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 NewsPopup을 실행합니다  <br /></td></tr>
+<tr class="separator:a4ad2f8ac626c8c7be3d2cfee0522b61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeda55b129b821f7e4d22722c75493fde" id="r_aeda55b129b821f7e4d22722c75493fde"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeda55b129b821f7e4d22722c75493fde">View_NewsPopupEx</a> (WebViewMode mode, <a class="el" href="#af3f1ff82a2697539cb401e446f85e406">OnPopupFinished</a> onFinished, <a class="el" href="#a5ddf63fa1b27adadd5aa2b2dbac83896">OnViewPopupDestroyFinished</a> onDestroy)</td></tr>
+<tr class="memdesc:aeda55b129b821f7e4d22722c75493fde"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 NewsPopup을 실행합니다  <br /></td></tr>
+<tr class="separator:aeda55b129b821f7e4d22722c75493fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e86fc2c2a117d0fc841daebdf25500c" id="r_a8e86fc2c2a117d0fc841daebdf25500c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e86fc2c2a117d0fc841daebdf25500c">View_CouponPopup</a> (WebViewMode mode, <a class="el" href="#af3f1ff82a2697539cb401e446f85e406">OnPopupFinished</a> onFinished)</td></tr>
+<tr class="memdesc:a8e86fc2c2a117d0fc841daebdf25500c"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 CouponPopup을 실행합니다  <br /></td></tr>
+<tr class="separator:a8e86fc2c2a117d0fc841daebdf25500c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae85fc4c8ad1c39380f9f23c7143c23f1" id="r_ae85fc4c8ad1c39380f9f23c7143c23f1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae85fc4c8ad1c39380f9f23c7143c23f1">View_CouponPopupEx</a> (WebViewMode mode, <a class="el" href="#af3f1ff82a2697539cb401e446f85e406">OnPopupFinished</a> onFinished, <a class="el" href="#a5ddf63fa1b27adadd5aa2b2dbac83896">OnViewPopupDestroyFinished</a> onDestroy)</td></tr>
+<tr class="memdesc:ae85fc4c8ad1c39380f9f23c7143c23f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 CouponPopup을 실행합니다  <br /></td></tr>
+<tr class="separator:ae85fc4c8ad1c39380f9f23c7143c23f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44def35e20aebba422aacd5d9411a65c" id="r_a44def35e20aebba422aacd5d9411a65c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44def35e20aebba422aacd5d9411a65c">View_VerifyIdentificationPopup</a> (bool compareIdentifier, WebViewMode mode, <a class="el" href="#af3f1ff82a2697539cb401e446f85e406">OnPopupFinished</a> onFinished, <a class="el" href="#a671c179a7f048641ec6ab278d57f2292">OnVerifyIdentificationPopupDestroyFinished</a> onDestroy)</td></tr>
+<tr class="memdesc:a44def35e20aebba422aacd5d9411a65c"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 VerifyIdentificationPopup 실행합니다 param[in] bool compareIdentifier SDI를 이용한 검증 여부 (false 일 경우, simKey를 제공합니다) param[in] WebViewMode mode WebView를 실행하는 모드 param[in] OnPopupFinished onFinished WebView 실행에 대한 결과를 넘겨받는 Callback 함수 param[in] OnIdentityVerificationPopupDestroyFinished onDestroy 팝업을 닫을 시 응답받는 Callback 함수    <br /></td></tr>
+<tr class="separator:a44def35e20aebba422aacd5d9411a65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab34ccc29a67fc21df77a1a44c436ed16" id="r_ab34ccc29a67fc21df77a1a44c436ed16"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab34ccc29a67fc21df77a1a44c436ed16">View_SetPopupDisallowed</a> (<a class="el" href="a00230.html">StovePCPopupDisallowed</a> popupDisallowed, <a class="el" href="#a70018b4f2c803b0a61f257069d511724">OnSetPopupDisallowedFinished</a> onFinished)</td></tr>
+<tr class="memdesc:ab34ccc29a67fc21df77a1a44c436ed16"><td class="mdescLeft">&#160;</td><td class="mdescRight">팝업이 일정기간 동안 보여지지 않도록 설정합니다.  <br /></td></tr>
+<tr class="separator:ab34ccc29a67fc21df77a1a44c436ed16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ec9cee4f559df251e19f120c1b0ab42" id="r_a0ec9cee4f559df251e19f120c1b0ab42"><td class="memItemLeft" align="right" valign="top">static Result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ec9cee4f559df251e19f120c1b0ab42">View_CloseAllPopups</a> ()</td></tr>
+<tr class="memdesc:a0ec9cee4f559df251e19f120c1b0ab42"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00226.html">View</a> SDK를 통해 열린 모든 팝업을 닫습니다.  <br /></td></tr>
+<tr class="separator:a0ec9cee4f559df251e19f120c1b0ab42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f80823a205edcde156eab1b1afedf3c" id="r_a2f80823a205edcde156eab1b1afedf3c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f80823a205edcde156eab1b1afedf3c">View_FetchWebOpenKey</a> (<a class="el" href="#a773caa0b6c34d5b9c2403853ea1d4279">OnFetchWebOpenKeyFinished</a> onFinished)</td></tr>
+<tr class="memdesc:a2f80823a205edcde156eab1b1afedf3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Web Open in Game 기능을 이용하기 위한 일회성 key를 획득합니다. 외부 브라우저를 통한 <a class="el" href="a00032.html">Stove</a> 커뮤니티, 고객센터 노출이 필요한 경우에만 사용합니다.  <br /></td></tr>
+<tr class="separator:a2f80823a205edcde156eab1b1afedf3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5af4e92d0271bfd4e6de5cc8dea31492" id="r_a5af4e92d0271bfd4e6de5cc8dea31492"><td class="memItemLeft" align="right" valign="top">static Result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5af4e92d0271bfd4e6de5cc8dea31492">View_GetVersion</a> (ref string version, uint length)</td></tr>
+<tr class="memdesc:a5af4e92d0271bfd4e6de5cc8dea31492"><td class="mdescLeft">&#160;</td><td class="mdescRight">ViewSDK의 버전 정보를 조회합니다.  <br /></td></tr>
+<tr class="separator:a5af4e92d0271bfd4e6de5cc8dea31492"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">상세한 설명</h2>
+<div class="textblock">
+<p class="definition"><a class="el" href="a00029_source.html">ViewSDK.cs</a> 파일의 <a class="el" href="a00029_source.html#l00012">12</a> 번째 라인에서 정의되었습니다.</p>
+</div><h2 class="groupheader">멤버 열거형 문서화</h2>
+<a id="ad4eec48af3d1d26a415e100f6bb15efd" name="ad4eec48af3d1d26a415e100f6bb15efd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4eec48af3d1d26a415e100f6bb15efd">&#9670;&#160;</a></span>ViewSDKMethod</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ad4eec48af3d1d26a415e100f6bb15efd">Stove.PCSDK.View.ViewSDKMethod</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ViewSDK에서 사용하는 함수들의 Code   </p>
+<table class="fieldtable">
+<tr><th colspan="2">열거형 멤버</th></tr><tr><td class="fieldname"><a id="ad4eec48af3d1d26a415e100f6bb15efda67d00896560d72e79b9aa815b703e9b0" name="ad4eec48af3d1d26a415e100f6bb15efda67d00896560d72e79b9aa815b703e9b0"></a>INITIALIZE&#160;</td><td class="fielddoc"><p>1 : View_Initialize </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4eec48af3d1d26a415e100f6bb15efda2ff6505d033318bf1c77f16ede0da2e2" name="ad4eec48af3d1d26a415e100f6bb15efda2ff6505d033318bf1c77f16ede0da2e2"></a>UNINITIALIZE&#160;</td><td class="fielddoc"><p>2 : View_UnInitialize </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4eec48af3d1d26a415e100f6bb15efdaa75ba2b290d772da89ff02c12ebac0fd" name="ad4eec48af3d1d26a415e100f6bb15efdaa75ba2b290d772da89ff02c12ebac0fd"></a>INTERNAL_SEND_81PLUG&#160;</td><td class="fielddoc"><p>3 : Internal method (Deprecated) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4eec48af3d1d26a415e100f6bb15efdaf514c74728995327313519299d0bcc0b" name="ad4eec48af3d1d26a415e100f6bb15efdaf514c74728995327313519299d0bcc0b"></a>INTERNAL_UPDATE_81PLUG&#160;</td><td class="fielddoc"><p>4 : Internal method (Deprecated) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4eec48af3d1d26a415e100f6bb15efda3e4d39d03ce99d4daaab3749af67ff13" name="ad4eec48af3d1d26a415e100f6bb15efda3e4d39d03ce99d4daaab3749af67ff13"></a>GET_VERSION&#160;</td><td class="fielddoc"><p>5 : View_GetVersion </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4eec48af3d1d26a415e100f6bb15efda06d824d082233e5e5063da579d996d2c" name="ad4eec48af3d1d26a415e100f6bb15efda06d824d082233e5e5063da579d996d2c"></a>FETCH_AUTO&#160;</td><td class="fielddoc"><p>80 : Internal FetchAuto </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4eec48af3d1d26a415e100f6bb15efdab771ba7294db84e0d3cae059fc5018f4" name="ad4eec48af3d1d26a415e100f6bb15efdab771ba7294db84e0d3cae059fc5018f4"></a>AUTO_POPUP&#160;</td><td class="fielddoc"><p>81 : View_AutoPopup </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4eec48af3d1d26a415e100f6bb15efda6a113d9a7846d3ccfd9ca5d433a30f49" name="ad4eec48af3d1d26a415e100f6bb15efda6a113d9a7846d3ccfd9ca5d433a30f49"></a>FETCH_MANUAL&#160;</td><td class="fielddoc"><p>82 : Internal FetchManual </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4eec48af3d1d26a415e100f6bb15efda5698506e8c78a53ab1006c3973455f69" name="ad4eec48af3d1d26a415e100f6bb15efda5698506e8c78a53ab1006c3973455f69"></a>MANUAL_POPUP&#160;</td><td class="fielddoc"><p>83 : View_ManualPopup </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4eec48af3d1d26a415e100f6bb15efda0adf9e45583f100f30b44276a8275feb" name="ad4eec48af3d1d26a415e100f6bb15efda0adf9e45583f100f30b44276a8275feb"></a>FETCH_NEWS&#160;</td><td class="fielddoc"><p>84 : Internal FetchNews </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4eec48af3d1d26a415e100f6bb15efda9370e96ac5092dbe089aadebb5307b69" name="ad4eec48af3d1d26a415e100f6bb15efda9370e96ac5092dbe089aadebb5307b69"></a>NEWS_POPUP&#160;</td><td class="fielddoc"><p>85 : View_NewsPopup </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4eec48af3d1d26a415e100f6bb15efda2dcf8de60b49ef11e2c75f501f06fcee" name="ad4eec48af3d1d26a415e100f6bb15efda2dcf8de60b49ef11e2c75f501f06fcee"></a>FETCH_COUPON&#160;</td><td class="fielddoc"><p>86 : Internal FetchCoupon </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4eec48af3d1d26a415e100f6bb15efda623d5e6c8cc1ebd6f69bbf7d689fc296" name="ad4eec48af3d1d26a415e100f6bb15efda623d5e6c8cc1ebd6f69bbf7d689fc296"></a>COUPON_POPUP&#160;</td><td class="fielddoc"><p>87 : View_CouponPopup </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4eec48af3d1d26a415e100f6bb15efdadbe8b038a5ab270d0e8805286c53b9ce" name="ad4eec48af3d1d26a415e100f6bb15efdadbe8b038a5ab270d0e8805286c53b9ce"></a>FETCH_COMMUNITY&#160;</td><td class="fielddoc"><p>88 : Internal FetchCommunity (Deprecated) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4eec48af3d1d26a415e100f6bb15efda7718c4f98d99689ebf15e87cf719b53d" name="ad4eec48af3d1d26a415e100f6bb15efda7718c4f98d99689ebf15e87cf719b53d"></a>COMMUNITY_POPUP&#160;</td><td class="fielddoc"><p>89 : View_CommunityPopup (Deprecated) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4eec48af3d1d26a415e100f6bb15efda0426f1be54e5ae3740168024fa92b09c" name="ad4eec48af3d1d26a415e100f6bb15efda0426f1be54e5ae3740168024fa92b09c"></a>FETCH_VERIFY_IDENTIFICATION&#160;</td><td class="fielddoc"><p>90 : Internal FetchVerifyIdentification </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4eec48af3d1d26a415e100f6bb15efdaaa953124fc35b70e4e508d98a58cdfce" name="ad4eec48af3d1d26a415e100f6bb15efdaaa953124fc35b70e4e508d98a58cdfce"></a>VERIFY_IDENTIFICATION_POPUP&#160;</td><td class="fielddoc"><p>91 : View_VerifyIdentificationPopup </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4eec48af3d1d26a415e100f6bb15efda3379100126af4d9d8df01da6ba742a9e" name="ad4eec48af3d1d26a415e100f6bb15efda3379100126af4d9d8df01da6ba742a9e"></a>FETCH_CS&#160;</td><td class="fielddoc"><p>92 : Internal FetchCS </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4eec48af3d1d26a415e100f6bb15efda2da7442c5a879a767e2657cf8be3f84a" name="ad4eec48af3d1d26a415e100f6bb15efda2da7442c5a879a767e2657cf8be3f84a"></a>CS_POPUP&#160;</td><td class="fielddoc"><p>93 : View_CSPopup (Internal) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4eec48af3d1d26a415e100f6bb15efda5cdec293163d27f8d8f1e7a156ea6aa7" name="ad4eec48af3d1d26a415e100f6bb15efda5cdec293163d27f8d8f1e7a156ea6aa7"></a>SET_POPUP_DISALLOWED&#160;</td><td class="fielddoc"><p>160 : View_SetPopupDisallowed </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4eec48af3d1d26a415e100f6bb15efda361b88111754a925a6494aeeea56a886" name="ad4eec48af3d1d26a415e100f6bb15efda361b88111754a925a6494aeeea56a886"></a>CLOSE_ALL_POPUPS&#160;</td><td class="fielddoc"><p>161 : View_CloseAllPopups </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4eec48af3d1d26a415e100f6bb15efda39487d4714d3a4fbf64aedceae2c81fa" name="ad4eec48af3d1d26a415e100f6bb15efda39487d4714d3a4fbf64aedceae2c81fa"></a>FETCH_WEB_OPEN_KEY&#160;</td><td class="fielddoc"><p>162 : View_FetchWebOpenKey </p>
+</td></tr>
+</table>
+
+<p class="definition"><a class="el" href="a00351_source.html">ViewSDK_NET/Deploy/Misc/Enumerations.cs</a> 파일의 <a class="el" href="a00351_source.html#l00013">13</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="aae2127743a2a4510078bb8abf2f9c562" name="aae2127743a2a4510078bb8abf2f9c562"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae2127743a2a4510078bb8abf2f9c562">&#9670;&#160;</a></span>ViewSDKSDKResultCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#aae2127743a2a4510078bb8abf2f9c562">Stove.PCSDK.View.ViewSDKSDKResultCode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ViewSDK에서 사용하는 함수의 Result Code   </p>
+<table class="fieldtable">
+<tr><th colspan="2">열거형 멤버</th></tr><tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562ad0749aaba8b833466dfcbb0428e4f89c" name="aae2127743a2a4510078bb8abf2f9c562ad0749aaba8b833466dfcbb0428e4f89c"></a>SUCCESS&#160;</td><td class="fielddoc"><p>성공   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562ac2759effffc94bb9acc71d69fe3e8a1f" name="aae2127743a2a4510078bb8abf2f9c562ac2759effffc94bb9acc71d69fe3e8a1f"></a>FAIL&#160;</td><td class="fielddoc"><p>실패   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562a2188ade13df339354cd8c383dda3f8bb" name="aae2127743a2a4510078bb8abf2f9c562a2188ade13df339354cd8c383dda3f8bb"></a>INVALID_CONFIG&#160;</td><td class="fielddoc"><p>2 : Config 파일을 찾을 수 없습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562af9b5d387731eda84307c7a5808c4eea4" name="aae2127743a2a4510078bb8abf2f9c562af9b5d387731eda84307c7a5808c4eea4"></a>INVALID_LOG_LEVEL&#160;</td><td class="fielddoc"><p>3 : 로그 레벨의 값이 유효하지 않습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562a5bcbd8690b7f6ad566aff5274bb168d3" name="aae2127743a2a4510078bb8abf2f9c562a5bcbd8690b7f6ad566aff5274bb168d3"></a>INVALID_LOG_PATH&#160;</td><td class="fielddoc"><p>4 : 로그 경로가 유효하지 않습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562a4a775a051faafd7eed30f5a95548729a" name="aae2127743a2a4510078bb8abf2f9c562a4a775a051faafd7eed30f5a95548729a"></a>INVALID_PARAM&#160;</td><td class="fielddoc"><p>5 : 잘못된 매개변수가 입력되었습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562a1a9cebe6b290d77208bf3a6ee29338be" name="aae2127743a2a4510078bb8abf2f9c562a1a9cebe6b290d77208bf3a6ee29338be"></a>BASE_NOT_INITIALIZED&#160;</td><td class="fielddoc"><p>16 : BaseSDK가 Initialize가 되지 않았습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562a02de9649e258d1dd94056e676061e969" name="aae2127743a2a4510078bb8abf2f9c562a02de9649e258d1dd94056e676061e969"></a>NOT_INITIALIZED&#160;</td><td class="fielddoc"><p>17 : 초기화가 되지 않았습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562a1940a630a2a25829533b90f9be04f184" name="aae2127743a2a4510078bb8abf2f9c562a1940a630a2a25829533b90f9be04f184"></a>ALREADY_INITIALIZED&#160;</td><td class="fielddoc"><p>18 : 이미 초기화가 되었습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562a697abab5f5d7e71608a29888daeca158" name="aae2127743a2a4510078bb8abf2f9c562a697abab5f5d7e71608a29888daeca158"></a>INVALID_ACCESS_TOKEN&#160;</td><td class="fielddoc"><p>19 : AccessToken을 찾을 수 없습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562a5aaaa6f48c0ceebeaff2bdde6f9c463b" name="aae2127743a2a4510078bb8abf2f9c562a5aaaa6f48c0ceebeaff2bdde6f9c463b"></a>NULL_TOKEN_ENTITY&#160;</td><td class="fielddoc"><p>20 : Token 객체를 찾을 수 없습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562aa07555b85890c1a02b8bf1cf0d028d30" name="aae2127743a2a4510078bb8abf2f9c562aa07555b85890c1a02b8bf1cf0d028d30"></a>NULL_ENTITY&#160;</td><td class="fielddoc"><p>21 : 현재 객체를 찾을 수 없습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562a04a21bd3acbbb1ca97bb0787b13f891c" name="aae2127743a2a4510078bb8abf2f9c562a04a21bd3acbbb1ca97bb0787b13f891c"></a>HTTP_ERROR&#160;</td><td class="fielddoc"><p>22 : Http 통신 에러가 발생했습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562aad61b70936ef9772fbb93726087a72fc" name="aae2127743a2a4510078bb8abf2f9c562aad61b70936ef9772fbb93726087a72fc"></a>RESPONSE_ERROR&#160;</td><td class="fielddoc"><p>23 : Http API Response 에러가 발생했습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562af0f78fca54db0634445759d2a2172e0e" name="aae2127743a2a4510078bb8abf2f9c562af0f78fca54db0634445759d2a2172e0e"></a>RESPONSE_INVALID_CODE&#160;</td><td class="fielddoc"><p>24 : Http API Response Code를 찾을 수 없습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562a569b30b95c9ef7eabaea7879e9311982" name="aae2127743a2a4510078bb8abf2f9c562a569b30b95c9ef7eabaea7879e9311982"></a>RESPONSE_VALUE_IS_NULL&#160;</td><td class="fielddoc"><p>25 : Http API Response 값이 비어있습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562ac6fdba1c48d9813a1dfd878a1756d2d8" name="aae2127743a2a4510078bb8abf2f9c562ac6fdba1c48d9813a1dfd878a1756d2d8"></a>RESPONSE_INVALID_VALUE_FORMAT&#160;</td><td class="fielddoc"><p>26 : Http API Response 포멧이 틀립니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562aced61cd095bbd4b5da066fb670292e64" name="aae2127743a2a4510078bb8abf2f9c562aced61cd095bbd4b5da066fb670292e64"></a>LOG_81PLUG_ERROR&#160;</td><td class="fielddoc"><p>27 : 81 Plug 전송을 실패했습니다. (Deprecated)   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562a4d77ea607bc5801f7413b0e8e060612e" name="aae2127743a2a4510078bb8abf2f9c562a4d77ea607bc5801f7413b0e8e060612e"></a>UPDATE_81PLUG_FEED_ERROR&#160;</td><td class="fielddoc"><p>28 : 81 Plug 업데이트를 실패했습니다. (Deprecated)   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562acadf555c2fe95f3090ebb5a424e01d6e" name="aae2127743a2a4510078bb8abf2f9c562acadf555c2fe95f3090ebb5a424e01d6e"></a>ASYNC_OPERATION_IN_PROGRESS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562a2066886874efe9c14701cf3231b6ba49" name="aae2127743a2a4510078bb8abf2f9c562a2066886874efe9c14701cf3231b6ba49"></a>BASE_UNINITIALIZED&#160;</td><td class="fielddoc"><p>30 : BaseSDK를 Uninitialize하였습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562aa738d94a1223530902a971b9c5a11ae6" name="aae2127743a2a4510078bb8abf2f9c562aa738d94a1223530902a971b9c5a11ae6"></a>PCSDK_DLL_NOT_FOUND&#160;</td><td class="fielddoc"><p>251 : PC SDK DLL을 찾지 못했습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562a3e860a081575fc82cc7b6ed2ca602947" name="aae2127743a2a4510078bb8abf2f9c562a3e860a081575fc82cc7b6ed2ca602947"></a>NOT_IMPLEMENTED&#160;</td><td class="fielddoc"><p>252 : 해당 내용은 구현되지 않았습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562ae61780aea0c20d1019d1b24bfbd0a253" name="aae2127743a2a4510078bb8abf2f9c562ae61780aea0c20d1019d1b24bfbd0a253"></a>UNMANAGED_EXCEPTION&#160;</td><td class="fielddoc"><p>253 : 관리되지 않는 예외가 발생하였습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562ad39caad7773f9d769161673dffba5db5" name="aae2127743a2a4510078bb8abf2f9c562ad39caad7773f9d769161673dffba5db5"></a>MANAGED_EXCEPTION&#160;</td><td class="fielddoc"><p>254 : 관리되는 예외가 발생하였습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562a9a10f345b0f755d461a8673a5e9ef6b4" name="aae2127743a2a4510078bb8abf2f9c562a9a10f345b0f755d461a8673a5e9ef6b4"></a>UNKNOWN_ERROR&#160;</td><td class="fielddoc"><p>255 : 알 수 없는 에러가 발생하였습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562ad9bb9e20bfb4a2c22d7f28070023ed22" name="aae2127743a2a4510078bb8abf2f9c562ad9bb9e20bfb4a2c22d7f28070023ed22"></a>VIEWUI_NOT_INITIALIZED&#160;</td><td class="fielddoc"><p>80 : ViewUI가 초기화되지 않았습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562a7b9e96e189290b0b2f4c51fa1bf95815" name="aae2127743a2a4510078bb8abf2f9c562a7b9e96e189290b0b2f4c51fa1bf95815"></a>VIEWUI_UNINIT_FAILED&#160;</td><td class="fielddoc"><p>81 : ViewUI 정리에 실패했습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562ad04fbfb98a350444d7c9a92d0ab393e8" name="aae2127743a2a4510078bb8abf2f9c562ad04fbfb98a350444d7c9a92d0ab393e8"></a>WEBVIEW_CREATE_FAIL&#160;</td><td class="fielddoc"><p>82 : Webview 생성에 실패했습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562a9540cf03deffbf38f8be361ea05dc94c" name="aae2127743a2a4510078bb8abf2f9c562a9540cf03deffbf38f8be361ea05dc94c"></a>WEBVIEW_LOAD_URL_FAIL&#160;</td><td class="fielddoc"><p>83 : URL 불러오기를 실패하였습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562af37a8dc1bf13601f2854a392ef537519" name="aae2127743a2a4510078bb8abf2f9c562af37a8dc1bf13601f2854a392ef537519"></a>WEBVIEW_CLOSE_ALL_FAIL&#160;</td><td class="fielddoc"><p>84 : Webview 일괄 닫기에 실패했습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562a29f54208c0e037e992a48c189e9627c3" name="aae2127743a2a4510078bb8abf2f9c562a29f54208c0e037e992a48c189e9627c3"></a>WEBVIEW_CLOSE_FAIL&#160;</td><td class="fielddoc"><p>85 : Webview 닫기에 실패했습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562a151b2dcbe518db43d5c99ebe91fb6c5d" name="aae2127743a2a4510078bb8abf2f9c562a151b2dcbe518db43d5c99ebe91fb6c5d"></a>WEBVIEW_CREATE_COOKIE_FAIL&#160;</td><td class="fielddoc"><p>86 : Cookie 생성에 실패했습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aae2127743a2a4510078bb8abf2f9c562a363f395d7e1c19f78c9d41a406d895fb" name="aae2127743a2a4510078bb8abf2f9c562a363f395d7e1c19f78c9d41a406d895fb"></a>NO_POPUP_DATA&#160;</td><td class="fielddoc"><p>87 : 팝업 데이터가 존재하지 않습니다.   </p>
+</td></tr>
+</table>
+
+<p class="definition"><a class="el" href="a00351_source.html">ViewSDK_NET/Deploy/Misc/Enumerations.cs</a> 파일의 <a class="el" href="a00351_source.html#l00096">96</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<h2 class="groupheader">멤버 함수 문서화</h2>
+<a id="a773caa0b6c34d5b9c2403853ea1d4279" name="a773caa0b6c34d5b9c2403853ea1d4279"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a773caa0b6c34d5b9c2403853ea1d4279">&#9670;&#160;</a></span>OnFetchWebOpenKeyFinished()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void Stove.PCSDK.View.OnFetchWebOpenKeyFinished </td>
+          <td>(</td>
+          <td class="paramtype">CallbackResult</td>          <td class="paramname"><span class="paramname"><em>result</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>key</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FetchWebOpenKey를 이용한 API 호출 시 응답받는 델리게이트 </p>
+<p>\koeran </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">CallbackResult</td><td>callbackResult 콜백 결과 값 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">string</td><td>key Web Open in Game 호출에 사용되는 일회성 key   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af3f1ff82a2697539cb401e446f85e406" name="af3f1ff82a2697539cb401e446f85e406"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3f1ff82a2697539cb401e446f85e406">&#9670;&#160;</a></span>OnPopupFinished()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void Stove.PCSDK.View.OnPopupFinished </td>
+          <td>(</td>
+          <td class="paramtype">CallbackResult</td>          <td class="paramname"><span class="paramname"><em>result</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>WebView를 이용한 API 호출 시 응답받는 델리게이트 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">CallbackResult</td><td>callbackResult 콜백 결과 값   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a70018b4f2c803b0a61f257069d511724" name="a70018b4f2c803b0a61f257069d511724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70018b4f2c803b0a61f257069d511724">&#9670;&#160;</a></span>OnSetPopupDisallowedFinished()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void Stove.PCSDK.View.OnSetPopupDisallowedFinished </td>
+          <td>(</td>
+          <td class="paramtype">CallbackResult</td>          <td class="paramname"><span class="paramname"><em>result</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PopupDisallowed를 이용한 API 호출 시 응답받는 델리게이트 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">CallbackResult</td><td>callbackResult 콜백 결과 값   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a671c179a7f048641ec6ab278d57f2292" name="a671c179a7f048641ec6ab278d57f2292"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a671c179a7f048641ec6ab278d57f2292">&#9670;&#160;</a></span>OnVerifyIdentificationPopupDestroyFinished()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void Stove.PCSDK.View.OnVerifyIdentificationPopupDestroyFinished </td>
+          <td>(</td>
+          <td class="paramtype">CallbackResult</td>          <td class="paramname"><span class="paramname"><em>result</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>simKey</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>VerifyIdentificationPopup API를 이용한 팝업을 닫을 시 응답 받는 델리게이트 </p>
+<p>\koeran </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">CallbackResult</td><td>callbackResult 콜백 결과 값 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">string</td><td>simKey SDI 방식이 아닌, 플랫폼 API를 이용한 본인 인증 결과 검증 시 사용되는 SimKey (게임 서버 전달 필요)   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5ddf63fa1b27adadd5aa2b2dbac83896" name="a5ddf63fa1b27adadd5aa2b2dbac83896"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ddf63fa1b27adadd5aa2b2dbac83896">&#9670;&#160;</a></span>OnViewPopupDestroyFinished()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void Stove.PCSDK.View.OnViewPopupDestroyFinished </td>
+          <td>(</td>
+          <td class="paramtype">CallbackResult</td>          <td class="paramname"><span class="paramname"><em>result</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FetchWebOpenKey를 이용한 API 호출 시 응답받는 델리게이트 </p>
+<p>\koeran </p><dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">CallbackResult</td><td>callbackResult 콜백 결과 값   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6de32609114ff609d7e2247c32fefe37" name="a6de32609114ff609d7e2247c32fefe37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6de32609114ff609d7e2247c32fefe37">&#9670;&#160;</a></span>View_AutoPopup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Stove.PCSDK.View.View_AutoPopup </td>
+          <td>(</td>
+          <td class="paramtype">WebViewMode</td>          <td class="paramname"><span class="paramname"><em>mode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#af3f1ff82a2697539cb401e446f85e406">OnPopupFinished</a></td>          <td class="paramname"><span class="paramname"><em>onFinished</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>WebView를 이용하여 AutoPopup을 실행합니다 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">WebViewMode</td><td>mode WebView를 실행하는 모드 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnPopupFinished</td><td>onFinished WebView 실행에 대한 결과를 넘겨받는 Callback 함수   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"><a class="el" href="a00029_source.html">ViewSDK.cs</a> 파일의 <a class="el" href="a00029_source.html#l00099">99</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a66d52a09ef7fac7880db1f9be991782d" name="a66d52a09ef7fac7880db1f9be991782d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66d52a09ef7fac7880db1f9be991782d">&#9670;&#160;</a></span>View_AutoPopupEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Stove.PCSDK.View.View_AutoPopupEx </td>
+          <td>(</td>
+          <td class="paramtype">WebViewMode</td>          <td class="paramname"><span class="paramname"><em>mode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#af3f1ff82a2697539cb401e446f85e406">OnPopupFinished</a></td>          <td class="paramname"><span class="paramname"><em>onFinished</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a5ddf63fa1b27adadd5aa2b2dbac83896">OnViewPopupDestroyFinished</a></td>          <td class="paramname"><span class="paramname"><em>onDestroy</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>WebView를 이용하여 AutoPopup을 실행합니다 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">WebViewMode</td><td>mode WebView를 실행하는 모드 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnPopupFinished</td><td>onFinished WebView 실행에 대한 결과를 넘겨받는 Callback 함수 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnViewPopupDestroyFinished</td><td>onDestroy 팝업을 닫을 시 응답받는 Callback 함수   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"><a class="el" href="a00029_source.html">ViewSDK.cs</a> 파일의 <a class="el" href="a00029_source.html#l00128">128</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a0ec9cee4f559df251e19f120c1b0ab42" name="a0ec9cee4f559df251e19f120c1b0ab42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ec9cee4f559df251e19f120c1b0ab42">&#9670;&#160;</a></span>View_CloseAllPopups()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Result Stove.PCSDK.View.View_CloseAllPopups </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="a00226.html">View</a> SDK를 통해 열린 모든 팝업을 닫습니다. </p>
+<dl class="section return"><dt>반환값</dt><dd>struct Result 함수 호출 결과  </dd></dl>
+
+<p class="definition"><a class="el" href="a00029_source.html">ViewSDK.cs</a> 파일의 <a class="el" href="a00029_source.html#l00477">477</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a8e86fc2c2a117d0fc841daebdf25500c" name="a8e86fc2c2a117d0fc841daebdf25500c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e86fc2c2a117d0fc841daebdf25500c">&#9670;&#160;</a></span>View_CouponPopup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Stove.PCSDK.View.View_CouponPopup </td>
+          <td>(</td>
+          <td class="paramtype">WebViewMode</td>          <td class="paramname"><span class="paramname"><em>mode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#af3f1ff82a2697539cb401e446f85e406">OnPopupFinished</a></td>          <td class="paramname"><span class="paramname"><em>onFinished</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>WebView를 이용하여 CouponPopup을 실행합니다 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">WebViewMode</td><td>mode WebView를 실행하는 모드 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnPopupFinished</td><td>onFinished WebView 실행에 대한 결과를 넘겨받는 Callback 함수   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"><a class="el" href="a00029_source.html">ViewSDK.cs</a> 파일의 <a class="el" href="a00029_source.html#l00319">319</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="ae85fc4c8ad1c39380f9f23c7143c23f1" name="ae85fc4c8ad1c39380f9f23c7143c23f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae85fc4c8ad1c39380f9f23c7143c23f1">&#9670;&#160;</a></span>View_CouponPopupEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Stove.PCSDK.View.View_CouponPopupEx </td>
+          <td>(</td>
+          <td class="paramtype">WebViewMode</td>          <td class="paramname"><span class="paramname"><em>mode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#af3f1ff82a2697539cb401e446f85e406">OnPopupFinished</a></td>          <td class="paramname"><span class="paramname"><em>onFinished</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a5ddf63fa1b27adadd5aa2b2dbac83896">OnViewPopupDestroyFinished</a></td>          <td class="paramname"><span class="paramname"><em>onDestroy</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>WebView를 이용하여 CouponPopup을 실행합니다 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">WebViewMode</td><td>mode WebView를 실행하는 모드 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnPopupFinished</td><td>onFinished WebView 실행에 대한 결과를 넘겨받는 Callback 함수 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnViewPopupDestroyFinished</td><td>onDestroy 팝업을 닫을 시 응답받는 Callback 함수   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"><a class="el" href="a00029_source.html">ViewSDK.cs</a> 파일의 <a class="el" href="a00029_source.html#l00357">357</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a2f80823a205edcde156eab1b1afedf3c" name="a2f80823a205edcde156eab1b1afedf3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f80823a205edcde156eab1b1afedf3c">&#9670;&#160;</a></span>View_FetchWebOpenKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Stove.PCSDK.View.View_FetchWebOpenKey </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a773caa0b6c34d5b9c2403853ea1d4279">OnFetchWebOpenKeyFinished</a></td>          <td class="paramname"><span class="paramname"><em>onFinished</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Web Open in Game 기능을 이용하기 위한 일회성 key를 획득합니다. 외부 브라우저를 통한 <a class="el" href="a00032.html">Stove</a> 커뮤니티, 고객센터 노출이 필요한 경우에만 사용합니다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnFetchWebOpenKeyFinished</td><td>onFinished FetchWebOpenKey 실행에 대한 결과를 넘겨받는 Callback 함수   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"><a class="el" href="a00029_source.html">ViewSDK.cs</a> 파일의 <a class="el" href="a00029_source.html#l00503">503</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a5af4e92d0271bfd4e6de5cc8dea31492" name="a5af4e92d0271bfd4e6de5cc8dea31492"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5af4e92d0271bfd4e6de5cc8dea31492">&#9670;&#160;</a></span>View_GetVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Result Stove.PCSDK.View.View_GetVersion </td>
+          <td>(</td>
+          <td class="paramtype">ref string</td>          <td class="paramname"><span class="paramname"><em>version</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>length</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ViewSDK의 버전 정보를 조회합니다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">string</td><td>version 버전 정보 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uint</td><td>length 배열의 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>struct Result 함수 호출 결과   </dd></dl>
+
+<p class="definition"><a class="el" href="a00029_source.html">ViewSDK.cs</a> 파일의 <a class="el" href="a00029_source.html#l00541">541</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="adb81ba5331d678119b0847348b4bedda" name="adb81ba5331d678119b0847348b4bedda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb81ba5331d678119b0847348b4bedda">&#9670;&#160;</a></span>View_Initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Result Stove.PCSDK.View.View_Initialize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ViewSDK를 초기화 합니다. </p>
+<dl class="section return"><dt>반환값</dt><dd>struct Result 함수 호출 결과   </dd></dl>
+
+<p class="definition"><a class="el" href="a00029_source.html">ViewSDK.cs</a> 파일의 <a class="el" href="a00029_source.html#l00024">24</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a4ab4c448161d44032a94df5463517505" name="a4ab4c448161d44032a94df5463517505"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ab4c448161d44032a94df5463517505">&#9670;&#160;</a></span>View_InitializeWithWndInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Result Stove.PCSDK.View.View_InitializeWithWndInfo </td>
+          <td>(</td>
+          <td class="paramtype">IntPtr</td>          <td class="paramname"><span class="paramname"><em>mainWndHandle</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ViewSDK를 초기화 합니다. Internal Style 팝업의 부모 윈도우가 될 메인 윈도우 핸들이 필요합니다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">IntPtr</td><td>mainWndHandle Internal Style 팝업의 부모 윈도우가 될 메인 윈도우 핸들 (HWND) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>struct Result 함수 호출 결과   </dd></dl>
+
+<p class="definition"><a class="el" href="a00029_source.html">ViewSDK.cs</a> 파일의 <a class="el" href="a00029_source.html#l00050">50</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="abf7d72e24bd2d3ae15a7062a5e4a2df0" name="abf7d72e24bd2d3ae15a7062a5e4a2df0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf7d72e24bd2d3ae15a7062a5e4a2df0">&#9670;&#160;</a></span>View_ManualPopup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Stove.PCSDK.View.View_ManualPopup </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>resourceKey</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WebViewMode</td>          <td class="paramname"><span class="paramname"><em>mode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#af3f1ff82a2697539cb401e446f85e406">OnPopupFinished</a></td>          <td class="paramname"><span class="paramname"><em>onFinished</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>WebView를 이용하여 ManualPopup을 실행합니다 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">string</td><td>resourceKey Manual Poupup에 대한 ResourceKey </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">WebViewMode</td><td>mode WebView를 실행하는 모드 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnPopupFinished</td><td>onFinished WebView 실행에 대한 결과를 넘겨받는 Callback 함수   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"><a class="el" href="a00029_source.html">ViewSDK.cs</a> 파일의 <a class="el" href="a00029_source.html#l00160">160</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a07964d2856e5183650e26387930e6b0e" name="a07964d2856e5183650e26387930e6b0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07964d2856e5183650e26387930e6b0e">&#9670;&#160;</a></span>View_ManualPopupEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Stove.PCSDK.View.View_ManualPopupEx </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>resourceKey</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WebViewMode</td>          <td class="paramname"><span class="paramname"><em>mode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#af3f1ff82a2697539cb401e446f85e406">OnPopupFinished</a></td>          <td class="paramname"><span class="paramname"><em>onFinished</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a5ddf63fa1b27adadd5aa2b2dbac83896">OnViewPopupDestroyFinished</a></td>          <td class="paramname"><span class="paramname"><em>onDestroy</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>WebView를 이용하여 ManualPopup을 실행합니다 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">string</td><td>resourceKey Manual Poupup에 대한 ResourceKey </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">WebViewMode</td><td>mode WebView를 실행하는 모드 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnPopupFinished</td><td>onFinished WebView 실행에 대한 결과를 넘겨받는 Callback 함수 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnViewPopupDestroyFinished</td><td>onDestroy 팝업을 닫을 시 응답받는 Callback 함수   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"><a class="el" href="a00029_source.html">ViewSDK.cs</a> 파일의 <a class="el" href="a00029_source.html#l00201">201</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a4ad2f8ac626c8c7be3d2cfee0522b61d" name="a4ad2f8ac626c8c7be3d2cfee0522b61d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ad2f8ac626c8c7be3d2cfee0522b61d">&#9670;&#160;</a></span>View_NewsPopup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Stove.PCSDK.View.View_NewsPopup </td>
+          <td>(</td>
+          <td class="paramtype">WebViewMode</td>          <td class="paramname"><span class="paramname"><em>mode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#af3f1ff82a2697539cb401e446f85e406">OnPopupFinished</a></td>          <td class="paramname"><span class="paramname"><em>onFinished</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>WebView를 이용하여 NewsPopup을 실행합니다 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">WebViewMode</td><td>mode WebView를 실행하는 모드 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnPopupFinished</td><td>onFinished WebView 실행에 대한 결과를 넘겨받는 Callback 함수   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"><a class="el" href="a00029_source.html">ViewSDK.cs</a> 파일의 <a class="el" href="a00029_source.html#l00241">241</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="aeda55b129b821f7e4d22722c75493fde" name="aeda55b129b821f7e4d22722c75493fde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeda55b129b821f7e4d22722c75493fde">&#9670;&#160;</a></span>View_NewsPopupEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Stove.PCSDK.View.View_NewsPopupEx </td>
+          <td>(</td>
+          <td class="paramtype">WebViewMode</td>          <td class="paramname"><span class="paramname"><em>mode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#af3f1ff82a2697539cb401e446f85e406">OnPopupFinished</a></td>          <td class="paramname"><span class="paramname"><em>onFinished</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a5ddf63fa1b27adadd5aa2b2dbac83896">OnViewPopupDestroyFinished</a></td>          <td class="paramname"><span class="paramname"><em>onDestroy</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>WebView를 이용하여 NewsPopup을 실행합니다 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">WebViewMode</td><td>mode WebView를 실행하는 모드 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnPopupFinished</td><td>onFinished WebView 실행에 대한 결과를 넘겨받는 Callback 함수 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnViewPopupDestroyFinished</td><td>onDestroy 팝업을 닫을 시 응답받는 Callback 함수   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"><a class="el" href="a00029_source.html">ViewSDK.cs</a> 파일의 <a class="el" href="a00029_source.html#l00280">280</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="ab34ccc29a67fc21df77a1a44c436ed16" name="ab34ccc29a67fc21df77a1a44c436ed16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab34ccc29a67fc21df77a1a44c436ed16">&#9670;&#160;</a></span>View_SetPopupDisallowed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Stove.PCSDK.View.View_SetPopupDisallowed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00230.html">StovePCPopupDisallowed</a></td>          <td class="paramname"><span class="paramname"><em>popupDisallowed</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a70018b4f2c803b0a61f257069d511724">OnSetPopupDisallowedFinished</a></td>          <td class="paramname"><span class="paramname"><em>onFinished</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>팝업이 일정기간 동안 보여지지 않도록 설정합니다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="a00230.html" title="팝업 노출을 하지 않을 때 필요한 정보입니다.">StovePCPopupDisallowed</a></td><td>popupDisallowed 팝업 노출을 하지 않을 때 필요한 정보 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnSetPopupDisallowedFinished</td><td>onFinished PopupDisallowed 실행에 대한 결과를 넘겨받는 Callback 함수   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"><a class="el" href="a00029_source.html">ViewSDK.cs</a> 파일의 <a class="el" href="a00029_source.html#l00442">442</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="ab189c46231d170239f8910753008eb67" name="ab189c46231d170239f8910753008eb67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab189c46231d170239f8910753008eb67">&#9670;&#160;</a></span>View_UnInitialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Result Stove.PCSDK.View.View_UnInitialize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ViewSDK의 자원을 해제합니다 </p>
+<dl class="section return"><dt>반환값</dt><dd>struct Result 함수 호출 결과  </dd></dl>
+
+<p class="definition"><a class="el" href="a00029_source.html">ViewSDK.cs</a> 파일의 <a class="el" href="a00029_source.html#l00073">73</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a44def35e20aebba422aacd5d9411a65c" name="a44def35e20aebba422aacd5d9411a65c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44def35e20aebba422aacd5d9411a65c">&#9670;&#160;</a></span>View_VerifyIdentificationPopup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Stove.PCSDK.View.View_VerifyIdentificationPopup </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>compareIdentifier</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WebViewMode</td>          <td class="paramname"><span class="paramname"><em>mode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#af3f1ff82a2697539cb401e446f85e406">OnPopupFinished</a></td>          <td class="paramname"><span class="paramname"><em>onFinished</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a671c179a7f048641ec6ab278d57f2292">OnVerifyIdentificationPopupDestroyFinished</a></td>          <td class="paramname"><span class="paramname"><em>onDestroy</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>WebView를 이용하여 VerifyIdentificationPopup 실행합니다 param[in] bool compareIdentifier SDI를 이용한 검증 여부 (false 일 경우, simKey를 제공합니다) param[in] WebViewMode mode WebView를 실행하는 모드 param[in] OnPopupFinished onFinished WebView 실행에 대한 결과를 넘겨받는 Callback 함수 param[in] OnIdentityVerificationPopupDestroyFinished onDestroy 팝업을 닫을 시 응답받는 Callback 함수   </p>
+
+<p class="definition"><a class="el" href="a00029_source.html">ViewSDK.cs</a> 파일의 <a class="el" href="a00029_source.html#l00400">400</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<hr/>이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.:<ul>
+<li><a class="el" href="a00330_source.html">ViewSDK_NET/Deploy/Misc/Callbacks.cs</a></li>
+<li><a class="el" href="a00351_source.html">ViewSDK_NET/Deploy/Misc/Enumerations.cs</a></li>
+<li><a class="el" href="a00369_source.html">ViewSDK_NET/Deploy/Misc/Structures.cs</a></li>
+<li><a class="el" href="a00029_source.html">ViewSDK.cs</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_248dc7cedc1ea0c288f821d4f2f68d94.html">Dist</a></li><li class="navelem"><a class="el" href="dir_1776cfe3663507e11a25c9ec63543070.html">DotNet_Document</a></li><li class="navelem"><a class="el" href="dir_87af200e24b7ee5efb2ef602aa4a60bb.html">GameSupportSDK_NET</a></li><li class="navelem"><a class="el" href="dir_c6d0ac40040fb2c0dee97c968832f770.html">Deploy</a></li><li class="navelem"><a class="el" href="dir_d8e54a4b262d866e31c6cb3d09d9fece.html">Misc</a></li><li class="navelem"><a class="el" href="a00226.html">Callbacks.cs</a></li>
+    <li class="navelem"><a class="el" href="a00032.html">Stove</a></li><li class="navelem"><a class="el" href="a00033.html">PCSDK</a></li><li class="navelem"><a class="el" href="a00226.html">View</a></li>
     <li class="footer">다음에 의해 생성됨 :  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>

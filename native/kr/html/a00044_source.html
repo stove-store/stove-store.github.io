@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="StovePCSDK.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">StovePCSDK3<span id="projectnumber">&#160;3.3.2.3.g9ca65.dirty</span>
+   <div id="projectname">StovePCSDK3<span id="projectnumber">&#160;3.3.4</span>
    </div>
    <div id="projectbrief">C/C++ DLL for Stove Platform Service</div>
   </td>
@@ -106,34 +106,36 @@ $(function(){initNavTree('a00044_source.html',''); initResizable(true); });
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;Windows.h&gt;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="a00225.html">Misc/Callbacks.h</a>&quot;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="a00258.html">Misc/Structures.h</a>&quot;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="a00059.html">Stove</a></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">namespace </span>PCSDK</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keyword">namespace </span>Ownership</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="a00229.html">Misc/Callbacks.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="a00262.html">Misc/Structures.h</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="a00041.html">Misc/OwnershipSDKResult.h</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span><a class="code hl_namespace" href="a00059.html">Stove</a></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">namespace </span>PCSDK</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keyword">namespace </span>Ownership</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        {</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="a00065.html#ac4835a083e45edd1925c60f667b94289">   36</a></span>            <a class="code hl_struct" href="a00071.html">Result</a> <a class="code hl_function" href="a00065.html#ac4835a083e45edd1925c60f667b94289">Ownership_Initialize</a>();</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="a00065.html#ad3ca551d76141d6d9c384cd52e7a55fc">   49</a></span>            <a class="code hl_struct" href="a00071.html">Result</a> <a class="code hl_function" href="a00065.html#ad3ca551d76141d6d9c384cd52e7a55fc">Ownership_UnInitialize</a>();</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="a00065.html#a0c1873922ccbb6cb3b1ee5355807bd5b">   62</a></span>            <span class="keywordtype">void</span> <a class="code hl_function" href="a00065.html#a0c1873922ccbb6cb3b1ee5355807bd5b">Ownership_OwnershipList</a>(<a class="code hl_typedef" href="a00065.html#a1a3bf8534be6b0c5b1c0b53dc6d1f716">OnOwnershipListFinished</a> onFinished);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="a00065.html#a594cf979f1018c7839ca36c18e3ea6ff">   79</a></span>            <a class="code hl_struct" href="a00071.html">Result</a> <a class="code hl_function" href="a00065.html#a594cf979f1018c7839ca36c18e3ea6ff">Ownership_GetVersion</a>(__out <span class="keywordtype">wchar_t</span>* version, uint32_t length);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        }</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="a00065.html#ad3ca551d76141d6d9c384cd52e7a55fc">   48</a></span>            <a class="code hl_struct" href="a00071.html">Result</a> <a class="code hl_function" href="a00065.html#ad3ca551d76141d6d9c384cd52e7a55fc">Ownership_UnInitialize</a>();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="a00065.html#a0c1873922ccbb6cb3b1ee5355807bd5b">   60</a></span>            <span class="keywordtype">void</span> <a class="code hl_function" href="a00065.html#a0c1873922ccbb6cb3b1ee5355807bd5b">Ownership_OwnershipList</a>(<a class="code hl_typedef" href="a00065.html#a1a3bf8534be6b0c5b1c0b53dc6d1f716">OnOwnershipListFinished</a> onFinished);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="a00065.html#a594cf979f1018c7839ca36c18e3ea6ff">   76</a></span>            <a class="code hl_struct" href="a00071.html">Result</a> <a class="code hl_function" href="a00065.html#a594cf979f1018c7839ca36c18e3ea6ff">Ownership_GetVersion</a>(__out <span class="keywordtype">wchar_t</span>* version, uint32_t length);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
+<div class="ttc" id="aa00041_html"><div class="ttname"><a href="a00041.html">OwnershipSDKResult.h</a></div><div class="ttdoc">OwnershipSDK에서 사용하는 Code값의 헤더 파일입니다.</div></div>
 <div class="ttc" id="aa00059_html"><div class="ttname"><a href="a00059.html">Stove</a></div><div class="ttdef"><b>Definition</b> <a href="a00002_source.html#l00070">BaseSDK.h:71</a></div></div>
 <div class="ttc" id="aa00065_html_a0c1873922ccbb6cb3b1ee5355807bd5b"><div class="ttname"><a href="a00065.html#a0c1873922ccbb6cb3b1ee5355807bd5b">Stove::PCSDK::Ownership::Ownership_OwnershipList</a></div><div class="ttdeci">void Ownership_OwnershipList(OnOwnershipListFinished onFinished)</div><div class="ttdoc">현재 실행된 게임의 소유권을 조회합니다</div></div>
-<div class="ttc" id="aa00065_html_a1a3bf8534be6b0c5b1c0b53dc6d1f716"><div class="ttname"><a href="a00065.html#a1a3bf8534be6b0c5b1c0b53dc6d1f716">Stove::PCSDK::Ownership::OnOwnershipListFinished</a></div><div class="ttdeci">void(__cdecl * OnOwnershipListFinished)(CallbackResult callbackResult, StovePCOwnership *ownerships, uint32_t ownershipSize)</div><div class="ttdoc">Ownership_OwnershipList API 호출 시 응답받는 콜백 함수 포인터</div><div class="ttdef"><b>Definition</b> <a href="a00225_source.html#l00036">OwnershipSDK/Deploy/Include/Misc/Callbacks.h:36</a></div></div>
+<div class="ttc" id="aa00065_html_a1a3bf8534be6b0c5b1c0b53dc6d1f716"><div class="ttname"><a href="a00065.html#a1a3bf8534be6b0c5b1c0b53dc6d1f716">Stove::PCSDK::Ownership::OnOwnershipListFinished</a></div><div class="ttdeci">void(__cdecl * OnOwnershipListFinished)(CallbackResult callbackResult, StovePCOwnership *ownerships, uint32_t ownershipSize)</div><div class="ttdoc">Ownership_OwnershipList API 호출 시 응답받는 콜백 함수 포인터</div><div class="ttdef"><b>Definition</b> <a href="a00229_source.html#l00036">OwnershipSDK/Deploy/Include/Misc/Callbacks.h:36</a></div></div>
 <div class="ttc" id="aa00065_html_a594cf979f1018c7839ca36c18e3ea6ff"><div class="ttname"><a href="a00065.html#a594cf979f1018c7839ca36c18e3ea6ff">Stove::PCSDK::Ownership::Ownership_GetVersion</a></div><div class="ttdeci">Result Ownership_GetVersion(__out wchar_t *version, uint32_t length)</div><div class="ttdoc">OwnershipSDK의 버전 정보를 조회합니다.</div></div>
 <div class="ttc" id="aa00065_html_ac4835a083e45edd1925c60f667b94289"><div class="ttname"><a href="a00065.html#ac4835a083e45edd1925c60f667b94289">Stove::PCSDK::Ownership::Ownership_Initialize</a></div><div class="ttdeci">Result Ownership_Initialize()</div><div class="ttdoc">OwnershipSDK를 초기화 합니다.</div></div>
 <div class="ttc" id="aa00065_html_ad3ca551d76141d6d9c384cd52e7a55fc"><div class="ttname"><a href="a00065.html#ad3ca551d76141d6d9c384cd52e7a55fc">Stove::PCSDK::Ownership::Ownership_UnInitialize</a></div><div class="ttdeci">Result Ownership_UnInitialize()</div><div class="ttdoc">OwnershipSDK의 자원을 해제합니다</div></div>
 <div class="ttc" id="aa00071_html"><div class="ttname"><a href="a00071.html">Stove::PCSDK::Result</a></div><div class="ttdoc">Stove PCSDK 3.x에서 기본 API 호출시 전달받는 구조체입니다.</div><div class="ttdef"><b>Definition</b> <a href="a00014_source.html#l00035">Result.h:36</a></div></div>
-<div class="ttc" id="aa00225_html"><div class="ttname"><a href="a00225.html">Callbacks.h</a></div><div class="ttdoc">OwnershipSDK에서 사용하는 Callback 값의 헤더 파일입니다.</div></div>
-<div class="ttc" id="aa00258_html"><div class="ttname"><a href="a00258.html">Structures.h</a></div><div class="ttdoc">OwnershipSDK에서 사용하는 Structures 값의 헤더 파일입니다.</div></div>
+<div class="ttc" id="aa00229_html"><div class="ttname"><a href="a00229.html">Callbacks.h</a></div><div class="ttdoc">OwnershipSDK에서 사용하는 Callback 값의 헤더 파일입니다.</div></div>
+<div class="ttc" id="aa00262_html"><div class="ttname"><a href="a00262.html">Structures.h</a></div><div class="ttdoc">OwnershipSDK에서 사용하는 Structures 값의 헤더 파일입니다.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

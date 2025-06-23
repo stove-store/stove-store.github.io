@@ -1,13 +1,19 @@
 var searchData=
 [
-  ['view_5fautopopup_0',['View_AutoPopup',['../a00205.html#a6de32609114ff609d7e2247c32fefe37',1,'Stove::PCSDK::View']]],
-  ['view_5fcloseallpopups_1',['View_CloseAllPopups',['../a00205.html#a0ec9cee4f559df251e19f120c1b0ab42',1,'Stove::PCSDK::View']]],
-  ['view_5fcouponpopup_2',['View_CouponPopup',['../a00205.html#a8e86fc2c2a117d0fc841daebdf25500c',1,'Stove::PCSDK::View']]],
-  ['view_5ffetchwebopenkey_3',['View_FetchWebOpenKey',['../a00205.html#a2f80823a205edcde156eab1b1afedf3c',1,'Stove::PCSDK::View']]],
-  ['view_5fgetversion_4',['View_GetVersion',['../a00205.html#a5af4e92d0271bfd4e6de5cc8dea31492',1,'Stove::PCSDK::View']]],
-  ['view_5finitialize_5',['View_Initialize',['../a00205.html#adb81ba5331d678119b0847348b4bedda',1,'Stove::PCSDK::View']]],
-  ['view_5fmanualpopup_6',['View_ManualPopup',['../a00205.html#abf7d72e24bd2d3ae15a7062a5e4a2df0',1,'Stove::PCSDK::View']]],
-  ['view_5fnewspopup_7',['View_NewsPopup',['../a00205.html#a4ad2f8ac626c8c7be3d2cfee0522b61d',1,'Stove::PCSDK::View']]],
-  ['view_5fsetpopupdisallowed_8',['View_SetPopupDisallowed',['../a00205.html#ab34ccc29a67fc21df77a1a44c436ed16',1,'Stove::PCSDK::View']]],
-  ['view_5funinitialize_9',['View_UnInitialize',['../a00205.html#ab189c46231d170239f8910753008eb67',1,'Stove::PCSDK::View']]]
+  ['view_5fautopopup_0',['View_AutoPopup',['../a00226.html#a6de32609114ff609d7e2247c32fefe37',1,'Stove::PCSDK::View']]],
+  ['view_5fautopopupex_1',['View_AutoPopupEx',['../a00226.html#a66d52a09ef7fac7880db1f9be991782d',1,'Stove::PCSDK::View']]],
+  ['view_5fcloseallpopups_2',['View_CloseAllPopups',['../a00226.html#a0ec9cee4f559df251e19f120c1b0ab42',1,'Stove::PCSDK::View']]],
+  ['view_5fcouponpopup_3',['View_CouponPopup',['../a00226.html#a8e86fc2c2a117d0fc841daebdf25500c',1,'Stove::PCSDK::View']]],
+  ['view_5fcouponpopupex_4',['View_CouponPopupEx',['../a00226.html#ae85fc4c8ad1c39380f9f23c7143c23f1',1,'Stove::PCSDK::View']]],
+  ['view_5ffetchwebopenkey_5',['View_FetchWebOpenKey',['../a00226.html#a2f80823a205edcde156eab1b1afedf3c',1,'Stove::PCSDK::View']]],
+  ['view_5fgetversion_6',['View_GetVersion',['../a00226.html#a5af4e92d0271bfd4e6de5cc8dea31492',1,'Stove::PCSDK::View']]],
+  ['view_5finitialize_7',['View_Initialize',['../a00226.html#adb81ba5331d678119b0847348b4bedda',1,'Stove::PCSDK::View']]],
+  ['view_5finitializewithwndinfo_8',['View_InitializeWithWndInfo',['../a00226.html#a4ab4c448161d44032a94df5463517505',1,'Stove::PCSDK::View']]],
+  ['view_5fmanualpopup_9',['View_ManualPopup',['../a00226.html#abf7d72e24bd2d3ae15a7062a5e4a2df0',1,'Stove::PCSDK::View']]],
+  ['view_5fmanualpopupex_10',['View_ManualPopupEx',['../a00226.html#a07964d2856e5183650e26387930e6b0e',1,'Stove::PCSDK::View']]],
+  ['view_5fnewspopup_11',['View_NewsPopup',['../a00226.html#a4ad2f8ac626c8c7be3d2cfee0522b61d',1,'Stove::PCSDK::View']]],
+  ['view_5fnewspopupex_12',['View_NewsPopupEx',['../a00226.html#aeda55b129b821f7e4d22722c75493fde',1,'Stove::PCSDK::View']]],
+  ['view_5fsetpopupdisallowed_13',['View_SetPopupDisallowed',['../a00226.html#ab34ccc29a67fc21df77a1a44c436ed16',1,'Stove::PCSDK::View']]],
+  ['view_5funinitialize_14',['View_UnInitialize',['../a00226.html#ab189c46231d170239f8910753008eb67',1,'Stove::PCSDK::View']]],
+  ['view_5fverifyidentificationpopup_15',['View_VerifyIdentificationPopup',['../a00226.html#a44def35e20aebba422aacd5d9411a65c',1,'Stove::PCSDK::View']]]
 ];

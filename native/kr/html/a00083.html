@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="StovePCSDK.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">StovePCSDK3<span id="projectnumber">&#160;3.3.2.3.g9ca65.dirty</span>
+   <div id="projectname">StovePCSDK3<span id="projectnumber">&#160;3.3.4</span>
    </div>
    <div id="projectbrief">C/C++ DLL for Stove Platform Service</div>
   </td>
@@ -110,7 +110,7 @@ $(function(){initNavTree('a00083.html',''); initResizable(true); });
 <p>Base_AccessTokenRenewed API 호출시 응답받는 콜백의 Token 구조체입니다.    
  <a href="#details">더 자세히 ...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00249_source.html">Structures.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00253_source.html">Structures.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 멤버 함수</h2></td></tr>
@@ -118,7 +118,7 @@ Public 멤버 함수</h2></td></tr>
 <tr class="memdesc:ade00a6531988da13b289bcdcfe94447d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00059.html">Stove</a> AccessToken 값을 가져옵니다.    <br /></td></tr>
 <tr class="separator:ade00a6531988da13b289bcdcfe94447d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dba2434fce43d1b2cde6116f7964ad6" id="r_a1dba2434fce43d1b2cde6116f7964ad6"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dba2434fce43d1b2cde6116f7964ad6">GetExpireIn</a> () const</td></tr>
-<tr class="memdesc:a1dba2434fce43d1b2cde6116f7964ad6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00059.html">Stove</a> AccessToken의 남은 유효 시간을 가져옵니다.    <br /></td></tr>
+<tr class="memdesc:a1dba2434fce43d1b2cde6116f7964ad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">AccessToken의 남은 만료 시간(초)을 가져옵니다.    <br /></td></tr>
 <tr class="separator:a1dba2434fce43d1b2cde6116f7964ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8324dffe470f64673f2156a811e1a50" id="r_ab8324dffe470f64673f2156a811e1a50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8324dffe470f64673f2156a811e1a50">StovePCToken</a> ()</td></tr>
 <tr class="separator:ab8324dffe470f64673f2156a811e1a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,7 +152,7 @@ Private 속성</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">상세한 설명</h2>
 <div class="textblock"><p>Base_AccessTokenRenewed API 호출시 응답받는 콜백의 Token 구조체입니다.   </p>
 
-<p class="definition"><a class="el" href="a00249_source.html">BaseSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00249_source.html#l00145">145</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00253_source.html">BaseSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00253_source.html#l00145">145</a> 번째 라인에서 정의되었습니다.</p>
 </div><h2 class="groupheader">생성자 &amp; 소멸자 문서화</h2>
 <a id="ab8324dffe470f64673f2156a811e1a50" name="ab8324dffe470f64673f2156a811e1a50"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab8324dffe470f64673f2156a811e1a50">&#9670;&#160;</a></span>StovePCToken() <span class="overload">[1/3]</span></h2>
@@ -308,7 +308,7 @@ Private 속성</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="a00059.html">Stove</a> AccessToken의 남은 유효 시간을 가져옵니다.   </p>
+<p>AccessToken의 남은 만료 시간(초)을 가져옵니다.   </p>
 <dl class="section return"><dt>반환값</dt><dd>int32_t expire_in </dd></dl>
 
 </div>
@@ -370,7 +370,7 @@ Private 속성</h2></td></tr>
 
 <p><a class="el" href="a00059.html">Stove</a> AccessToken Value </p>
 
-<p class="definition"><a class="el" href="a00249_source.html">BaseSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00249_source.html#l00184">184</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00253_source.html">BaseSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00253_source.html#l00184">184</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
@@ -396,12 +396,12 @@ Private 속성</h2></td></tr>
 
 <p><a class="el" href="a00059.html">Stove</a> AccessToken의 남은 유효 시간 (초)   </p>
 
-<p class="definition"><a class="el" href="a00249_source.html">BaseSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00249_source.html#l00194">194</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00253_source.html">BaseSDK/Deploy/Include/Misc/Structures.h</a> 파일의 <a class="el" href="a00253_source.html#l00194">194</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
 <hr/>이 구조체에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.:<ul>
-<li><a class="el" href="a00249_source.html">BaseSDK/Deploy/Include/Misc/Structures.h</a></li>
+<li><a class="el" href="a00253_source.html">BaseSDK/Deploy/Include/Misc/Structures.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

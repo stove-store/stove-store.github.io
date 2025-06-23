@@ -1,13 +1,19 @@
 var searchData=
 [
   ['view_5fautopopup_0',['View_AutoPopup',['../a00067.html#a7de56ee5fd966ed2dc5ed38668e38e02',1,'Stove::PCSDK::View']]],
-  ['view_5fcloseallpopups_1',['View_CloseAllPopups',['../a00067.html#a081babbfc4e8e769595b7c598d17e23e',1,'Stove::PCSDK::View']]],
-  ['view_5fcouponpopup_2',['View_CouponPopup',['../a00067.html#aa579281b71771403e6b66195662b7954',1,'Stove::PCSDK::View']]],
-  ['view_5ffetchwebopenkey_3',['View_FetchWebOpenKey',['../a00067.html#ac17e8ed85ef146932617073d1a012fca',1,'Stove::PCSDK::View']]],
-  ['view_5fgetversion_4',['View_GetVersion',['../a00067.html#a2f40661f3fb68c4ea8b9e5aa5b7ad246',1,'Stove::PCSDK::View']]],
-  ['view_5finitialize_5',['View_Initialize',['../a00067.html#ad012966ec4afe7f2295ecb1e20eecb2b',1,'Stove::PCSDK::View']]],
-  ['view_5fmanualpopup_6',['View_ManualPopup',['../a00067.html#aca44430c9131af2b4a3e03569c172e59',1,'Stove::PCSDK::View']]],
-  ['view_5fnewspopup_7',['View_NewsPopup',['../a00067.html#a65ade96768e0ec217e27d14fd9a4a9f0',1,'Stove::PCSDK::View']]],
-  ['view_5fsetpopupdisallowed_8',['View_SetPopupDisallowed',['../a00067.html#a24854f5c92f831eadb5d61c7f744d375',1,'Stove::PCSDK::View']]],
-  ['view_5funinitialize_9',['View_UnInitialize',['../a00067.html#a7abb1dcce23aa602d18e96ea4e00ba3a',1,'Stove::PCSDK::View']]]
+  ['view_5fautopopupex_1',['View_AutoPopupEx',['../a00067.html#ad38ba1b9c516893e46879d46128445aa',1,'Stove::PCSDK::View']]],
+  ['view_5fcloseallpopups_2',['View_CloseAllPopups',['../a00067.html#a081babbfc4e8e769595b7c598d17e23e',1,'Stove::PCSDK::View']]],
+  ['view_5fcouponpopup_3',['View_CouponPopup',['../a00067.html#aa579281b71771403e6b66195662b7954',1,'Stove::PCSDK::View']]],
+  ['view_5fcouponpopupex_4',['View_CouponPopupEx',['../a00067.html#a16efaad411d1eca197073503eb637cb3',1,'Stove::PCSDK::View']]],
+  ['view_5ffetchwebopenkey_5',['View_FetchWebOpenKey',['../a00067.html#ac17e8ed85ef146932617073d1a012fca',1,'Stove::PCSDK::View']]],
+  ['view_5fgetversion_6',['View_GetVersion',['../a00067.html#a2f40661f3fb68c4ea8b9e5aa5b7ad246',1,'Stove::PCSDK::View']]],
+  ['view_5finitialize_7',['View_Initialize',['../a00067.html#ad012966ec4afe7f2295ecb1e20eecb2b',1,'Stove::PCSDK::View']]],
+  ['view_5finitializewithwndinfo_8',['View_InitializeWithWndInfo',['../a00067.html#a22faf18b4f5ffe481c5c8ba01d34f87b',1,'Stove::PCSDK::View']]],
+  ['view_5fmanualpopup_9',['View_ManualPopup',['../a00067.html#aca44430c9131af2b4a3e03569c172e59',1,'Stove::PCSDK::View']]],
+  ['view_5fmanualpopupex_10',['View_ManualPopupEx',['../a00067.html#ae560961ed8d081bc4da9e45abf6cadcc',1,'Stove::PCSDK::View']]],
+  ['view_5fnewspopup_11',['View_NewsPopup',['../a00067.html#a65ade96768e0ec217e27d14fd9a4a9f0',1,'Stove::PCSDK::View']]],
+  ['view_5fnewspopupex_12',['View_NewsPopupEx',['../a00067.html#a2e2ac394b77714dd540a465079193817',1,'Stove::PCSDK::View']]],
+  ['view_5fsetpopupdisallowed_13',['View_SetPopupDisallowed',['../a00067.html#a24854f5c92f831eadb5d61c7f744d375',1,'Stove::PCSDK::View']]],
+  ['view_5funinitialize_14',['View_UnInitialize',['../a00067.html#a7abb1dcce23aa602d18e96ea4e00ba3a',1,'Stove::PCSDK::View']]],
+  ['view_5fverifyidentificationpopup_15',['View_VerifyIdentificationPopup',['../a00067.html#a4e623356c30b0873bff1081e256e6f23',1,'Stove::PCSDK::View']]]
 ];

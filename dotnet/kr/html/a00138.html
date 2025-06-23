@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>StovePCSDK3 .NET Plugin: 멤버 목록</title>
+<title>StovePCSDK3 .NET Plugin: Stove.PCSDK.GamingServices 클래스 참조</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="StovePCSDK.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">StovePCSDK3 .NET Plugin<span id="projectnumber">&#160;3.3.2.19.gb0d6c</span>
+   <div id="projectname">StovePCSDK3 .NET Plugin<span id="projectnumber">&#160;3.3.4</span>
    </div>
    <div id="projectbrief">C# DLL for Stove Platform Service</div>
   </td>
@@ -72,7 +72,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('a00141.html',''); initResizable(true); });
+$(function(){initNavTree('a00138.html',''); initResizable(true); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -98,21 +98,385 @@ $(function(){initNavTree('a00141.html',''); initResizable(true); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Stove.PCSDK.IAP.StovePCOrderProduct 멤버 목록</div></div>
+  <div class="summary">
+<a href="#pub-types">Public 타입</a> &#124;
+<a href="#pub-methods">Public 멤버 함수</a> &#124;
+<a href="#pub-static-methods">정적 Public 멤버 함수</a> &#124;
+<a href="a00135.html">모든 멤버 목록</a>  </div>
+  <div class="headertitle"><div class="title">Stove.PCSDK.GamingServices 클래스 참조</div></div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 타입</h2></td></tr>
+<tr class="memitem:aa129eba6fe307f20b60ca6d655e3cbc3" id="r_aa129eba6fe307f20b60ca6d655e3cbc3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa129eba6fe307f20b60ca6d655e3cbc3">GamingServicesSDKMethod</a> { <br />
+&#160;&#160;<a class="el" href="#aa129eba6fe307f20b60ca6d655e3cbc3a67d00896560d72e79b9aa815b703e9b0">INITIALIZE</a> = 1
+, <a class="el" href="#aa129eba6fe307f20b60ca6d655e3cbc3a2ff6505d033318bf1c77f16ede0da2e2">UNINITIALIZE</a> = 2
+, <a class="el" href="#aa129eba6fe307f20b60ca6d655e3cbc3aa75ba2b290d772da89ff02c12ebac0fd">INTERNAL_SEND_81PLUG</a> = 3
+, <a class="el" href="#aa129eba6fe307f20b60ca6d655e3cbc3af514c74728995327313519299d0bcc0b">INTERNAL_UPDATE_81PLUG</a> = 4
+, <br />
+&#160;&#160;<a class="el" href="#aa129eba6fe307f20b60ca6d655e3cbc3a3e4d39d03ce99d4daaab3749af67ff13">GET_VERSION</a> = 5
+, <a class="el" href="#aa129eba6fe307f20b60ca6d655e3cbc3a545e5745557a741008e46e9c313941ce">FETCH_CHRACTER</a> = 80
+<br />
+ }</td></tr>
+<tr class="memdesc:aa129eba6fe307f20b60ca6d655e3cbc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">GamingServicesSDK에서 사용하는 함수들의 Code    <a href="#aa129eba6fe307f20b60ca6d655e3cbc3">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:aa129eba6fe307f20b60ca6d655e3cbc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8846528779a64f8d402a77eae2fbd0a5" id="r_a8846528779a64f8d402a77eae2fbd0a5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5">GamingServicesSDKResultCode</a> { <br />
+&#160;&#160;<a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5ad0749aaba8b833466dfcbb0428e4f89c">SUCCESS</a> = 0
+, <a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5ac2759effffc94bb9acc71d69fe3e8a1f">FAIL</a> = 1
+, <a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5a2188ade13df339354cd8c383dda3f8bb">INVALID_CONFIG</a> = 2
+, <a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5af9b5d387731eda84307c7a5808c4eea4">INVALID_LOG_LEVEL</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5a5bcbd8690b7f6ad566aff5274bb168d3">INVALID_LOG_PATH</a> = 4
+, <a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5a4a775a051faafd7eed30f5a95548729a">INVALID_PARAM</a> = 5
+, <a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5a1a9cebe6b290d77208bf3a6ee29338be">BASE_NOT_INITIALIZED</a> = 16
+, <a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5a02de9649e258d1dd94056e676061e969">NOT_INITIALIZED</a> = 17
+, <br />
+&#160;&#160;<a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5a1940a630a2a25829533b90f9be04f184">ALREADY_INITIALIZED</a> = 18
+, <a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5a697abab5f5d7e71608a29888daeca158">INVALID_ACCESS_TOKEN</a> = 19
+, <a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5a5aaaa6f48c0ceebeaff2bdde6f9c463b">NULL_TOKEN_ENTITY</a> = 20
+, <a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5aa07555b85890c1a02b8bf1cf0d028d30">NULL_ENTITY</a> = 21
+, <br />
+&#160;&#160;<a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5a04a21bd3acbbb1ca97bb0787b13f891c">HTTP_ERROR</a> = 22
+, <a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5aad61b70936ef9772fbb93726087a72fc">RESPONSE_ERROR</a> = 23
+, <a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5af0f78fca54db0634445759d2a2172e0e">RESPONSE_INVALID_CODE</a> = 24
+, <a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5a569b30b95c9ef7eabaea7879e9311982">RESPONSE_VALUE_IS_NULL</a> = 25
+, <br />
+&#160;&#160;<a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5ac6fdba1c48d9813a1dfd878a1756d2d8">RESPONSE_INVALID_VALUE_FORMAT</a> = 26
+, <a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5aced61cd095bbd4b5da066fb670292e64">LOG_81PLUG_ERROR</a> = 27
+, <a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5a4d77ea607bc5801f7413b0e8e060612e">UPDATE_81PLUG_FEED_ERROR</a> = 28
+, <a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5acadf555c2fe95f3090ebb5a424e01d6e">ASYNC_OPERATION_IN_PROGRESS</a> = 29
+, <br />
+&#160;&#160;<a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5a2066886874efe9c14701cf3231b6ba49">BASE_UNINITIALIZED</a> = 30
+, <a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5aa738d94a1223530902a971b9c5a11ae6">PCSDK_DLL_NOT_FOUND</a> = 251
+, <a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5a3e860a081575fc82cc7b6ed2ca602947">NOT_IMPLEMENTED</a> = 252
+, <a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5ae61780aea0c20d1019d1b24bfbd0a253">UNMANAGED_EXCEPTION</a> = 253
+, <br />
+&#160;&#160;<a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5ad39caad7773f9d769161673dffba5db5">MANAGED_EXCEPTION</a> = 254
+, <a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5a9a10f345b0f755d461a8673a5e9ef6b4">UNKNOWN_ERROR</a> = 255
+<br />
+ }</td></tr>
+<tr class="memdesc:a8846528779a64f8d402a77eae2fbd0a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">GamingServicesSDK에서 사용하는 함수의 Result Code    <a href="#a8846528779a64f8d402a77eae2fbd0a5">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a8846528779a64f8d402a77eae2fbd0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 멤버 함수</h2></td></tr>
+<tr class="memitem:aedc7680179134a609dbb18e31d62c8b4" id="r_aedc7680179134a609dbb18e31d62c8b4"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedc7680179134a609dbb18e31d62c8b4">OnFetchCharacterFinished</a> (CallbackResult result, string jsonString)</td></tr>
+<tr class="memdesc:aedc7680179134a609dbb18e31d62c8b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">GamingServices_FetchCharacter API 호출 시 응답받는 콜백 함수 포인터  <br /></td></tr>
+<tr class="separator:aedc7680179134a609dbb18e31d62c8b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+정적 Public 멤버 함수</h2></td></tr>
+<tr class="memitem:ab723f0e052b03bcb7213cdfdaaf438b1" id="r_ab723f0e052b03bcb7213cdfdaaf438b1"><td class="memItemLeft" align="right" valign="top">static Result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab723f0e052b03bcb7213cdfdaaf438b1">GamingServices_Initialize</a> ()</td></tr>
+<tr class="memdesc:ab723f0e052b03bcb7213cdfdaaf438b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">GamingServicesSDK를 초기화 합니다.  <br /></td></tr>
+<tr class="separator:ab723f0e052b03bcb7213cdfdaaf438b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae54bac784a59be4fbe9fde511c00d140" id="r_ae54bac784a59be4fbe9fde511c00d140"><td class="memItemLeft" align="right" valign="top">static Result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae54bac784a59be4fbe9fde511c00d140">GamingServices_UnInitialize</a> ()</td></tr>
+<tr class="memdesc:ae54bac784a59be4fbe9fde511c00d140"><td class="mdescLeft">&#160;</td><td class="mdescRight">GamingServicesSDK의 자원을 해제합니다.  <br /></td></tr>
+<tr class="separator:ae54bac784a59be4fbe9fde511c00d140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c727a323f066558ef90b40b00abd8c5" id="r_a8c727a323f066558ef90b40b00abd8c5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c727a323f066558ef90b40b00abd8c5">GamingServices_FetchCharacter</a> (string worldId, string channelId, <a class="el" href="#aedc7680179134a609dbb18e31d62c8b4">OnFetchCharacterFinished</a> onFinished)</td></tr>
+<tr class="memdesc:a8c727a323f066558ef90b40b00abd8c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">게임 캐릭터 정보를 조회합니다.  <br /></td></tr>
+<tr class="separator:a8c727a323f066558ef90b40b00abd8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62a248cb79764bfd96fe53c56676c331" id="r_a62a248cb79764bfd96fe53c56676c331"><td class="memItemLeft" align="right" valign="top">static Result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62a248cb79764bfd96fe53c56676c331">GamingServices_GetVersion</a> (ref string version, uint length)</td></tr>
+<tr class="memdesc:a62a248cb79764bfd96fe53c56676c331"><td class="mdescLeft">&#160;</td><td class="mdescRight">GamingServicesSDK의 버전 정보를 조회합니다.  <br /></td></tr>
+<tr class="separator:a62a248cb79764bfd96fe53c56676c331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">상세한 설명</h2>
+<div class="textblock">
+<p class="definition"><a class="el" href="a00339_source.html">GamingServicesSDK_NET/Deploy/Misc/Enumerations.cs</a> 파일의 <a class="el" href="a00339_source.html#l00003">3</a> 번째 라인에서 정의되었습니다.</p>
+</div><h2 class="groupheader">멤버 열거형 문서화</h2>
+<a id="aa129eba6fe307f20b60ca6d655e3cbc3" name="aa129eba6fe307f20b60ca6d655e3cbc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa129eba6fe307f20b60ca6d655e3cbc3">&#9670;&#160;</a></span>GamingServicesSDKMethod</h2>
 
-<p>다음에 대한 모든 멤버의 목록입니다 : <a class="el" href="a00141.html">Stove.PCSDK.IAP.StovePCOrderProduct</a> (모든 상속된 멤버들도 포함합니다.)</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00141.html#adf5d6c6bde2d959490584e7fff67cc92">productId</a></td><td class="entry"><a class="el" href="a00141.html">Stove.PCSDK.IAP.StovePCOrderProduct</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="a00141.html#ad4c79a91e8942b0e9974c1188f7ff9f9">quantity</a></td><td class="entry"><a class="el" href="a00141.html">Stove.PCSDK.IAP.StovePCOrderProduct</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00141.html#a35e29d903ac45df85fc1f3ec759abb25">salePrice</a></td><td class="entry"><a class="el" href="a00141.html">Stove.PCSDK.IAP.StovePCOrderProduct</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="a00141.html#a8177878ad4043c79ed28d35f2b7cab0f">ToString</a>()</td><td class="entry"><a class="el" href="a00141.html">Stove.PCSDK.IAP.StovePCOrderProduct</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#aa129eba6fe307f20b60ca6d655e3cbc3">Stove.PCSDK.GamingServices.GamingServicesSDKMethod</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GamingServicesSDK에서 사용하는 함수들의 Code   </p>
+<table class="fieldtable">
+<tr><th colspan="2">열거형 멤버</th></tr><tr><td class="fieldname"><a id="aa129eba6fe307f20b60ca6d655e3cbc3a67d00896560d72e79b9aa815b703e9b0" name="aa129eba6fe307f20b60ca6d655e3cbc3a67d00896560d72e79b9aa815b703e9b0"></a>INITIALIZE&#160;</td><td class="fielddoc"><p>1 : GamingServices_Initialize </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa129eba6fe307f20b60ca6d655e3cbc3a2ff6505d033318bf1c77f16ede0da2e2" name="aa129eba6fe307f20b60ca6d655e3cbc3a2ff6505d033318bf1c77f16ede0da2e2"></a>UNINITIALIZE&#160;</td><td class="fielddoc"><p>2 : GamingServices_UnInitialize </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa129eba6fe307f20b60ca6d655e3cbc3aa75ba2b290d772da89ff02c12ebac0fd" name="aa129eba6fe307f20b60ca6d655e3cbc3aa75ba2b290d772da89ff02c12ebac0fd"></a>INTERNAL_SEND_81PLUG&#160;</td><td class="fielddoc"><p>3 : Internal method (Deprecated) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa129eba6fe307f20b60ca6d655e3cbc3af514c74728995327313519299d0bcc0b" name="aa129eba6fe307f20b60ca6d655e3cbc3af514c74728995327313519299d0bcc0b"></a>INTERNAL_UPDATE_81PLUG&#160;</td><td class="fielddoc"><p>4 : Internal method (Deprecated) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa129eba6fe307f20b60ca6d655e3cbc3a3e4d39d03ce99d4daaab3749af67ff13" name="aa129eba6fe307f20b60ca6d655e3cbc3a3e4d39d03ce99d4daaab3749af67ff13"></a>GET_VERSION&#160;</td><td class="fielddoc"><p>5 : GamingServices_GetVersion </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa129eba6fe307f20b60ca6d655e3cbc3a545e5745557a741008e46e9c313941ce" name="aa129eba6fe307f20b60ca6d655e3cbc3a545e5745557a741008e46e9c313941ce"></a>FETCH_CHRACTER&#160;</td><td class="fielddoc"><p>80 : GamingServices_FetchCharacter </p>
+</td></tr>
+</table>
+
+<p class="definition"><a class="el" href="a00339_source.html">GamingServicesSDK_NET/Deploy/Misc/Enumerations.cs</a> 파일의 <a class="el" href="a00339_source.html#l00013">13</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a8846528779a64f8d402a77eae2fbd0a5" name="a8846528779a64f8d402a77eae2fbd0a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8846528779a64f8d402a77eae2fbd0a5">&#9670;&#160;</a></span>GamingServicesSDKResultCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a8846528779a64f8d402a77eae2fbd0a5">Stove.PCSDK.GamingServices.GamingServicesSDKResultCode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GamingServicesSDK에서 사용하는 함수의 Result Code   </p>
+<table class="fieldtable">
+<tr><th colspan="2">열거형 멤버</th></tr><tr><td class="fieldname"><a id="a8846528779a64f8d402a77eae2fbd0a5ad0749aaba8b833466dfcbb0428e4f89c" name="a8846528779a64f8d402a77eae2fbd0a5ad0749aaba8b833466dfcbb0428e4f89c"></a>SUCCESS&#160;</td><td class="fielddoc"><p>성공   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8846528779a64f8d402a77eae2fbd0a5ac2759effffc94bb9acc71d69fe3e8a1f" name="a8846528779a64f8d402a77eae2fbd0a5ac2759effffc94bb9acc71d69fe3e8a1f"></a>FAIL&#160;</td><td class="fielddoc"><p>실패   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8846528779a64f8d402a77eae2fbd0a5a2188ade13df339354cd8c383dda3f8bb" name="a8846528779a64f8d402a77eae2fbd0a5a2188ade13df339354cd8c383dda3f8bb"></a>INVALID_CONFIG&#160;</td><td class="fielddoc"><p>2 : Config 파일을 찾을 수 없습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8846528779a64f8d402a77eae2fbd0a5af9b5d387731eda84307c7a5808c4eea4" name="a8846528779a64f8d402a77eae2fbd0a5af9b5d387731eda84307c7a5808c4eea4"></a>INVALID_LOG_LEVEL&#160;</td><td class="fielddoc"><p>3 : 로그 레벨의 값이 유효하지 않습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8846528779a64f8d402a77eae2fbd0a5a5bcbd8690b7f6ad566aff5274bb168d3" name="a8846528779a64f8d402a77eae2fbd0a5a5bcbd8690b7f6ad566aff5274bb168d3"></a>INVALID_LOG_PATH&#160;</td><td class="fielddoc"><p>4 : 로그 경로가 유효하지 않습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8846528779a64f8d402a77eae2fbd0a5a4a775a051faafd7eed30f5a95548729a" name="a8846528779a64f8d402a77eae2fbd0a5a4a775a051faafd7eed30f5a95548729a"></a>INVALID_PARAM&#160;</td><td class="fielddoc"><p>5 : 잘못된 매개변수가 입력되었습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8846528779a64f8d402a77eae2fbd0a5a1a9cebe6b290d77208bf3a6ee29338be" name="a8846528779a64f8d402a77eae2fbd0a5a1a9cebe6b290d77208bf3a6ee29338be"></a>BASE_NOT_INITIALIZED&#160;</td><td class="fielddoc"><p>16 : BaseSDK가 Initialize가 되지 않았습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8846528779a64f8d402a77eae2fbd0a5a02de9649e258d1dd94056e676061e969" name="a8846528779a64f8d402a77eae2fbd0a5a02de9649e258d1dd94056e676061e969"></a>NOT_INITIALIZED&#160;</td><td class="fielddoc"><p>17 : 초기화가 되지 않았습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8846528779a64f8d402a77eae2fbd0a5a1940a630a2a25829533b90f9be04f184" name="a8846528779a64f8d402a77eae2fbd0a5a1940a630a2a25829533b90f9be04f184"></a>ALREADY_INITIALIZED&#160;</td><td class="fielddoc"><p>18 : 이미 초기화가 되었습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8846528779a64f8d402a77eae2fbd0a5a697abab5f5d7e71608a29888daeca158" name="a8846528779a64f8d402a77eae2fbd0a5a697abab5f5d7e71608a29888daeca158"></a>INVALID_ACCESS_TOKEN&#160;</td><td class="fielddoc"><p>19 : AccessToken을 찾을 수 없습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8846528779a64f8d402a77eae2fbd0a5a5aaaa6f48c0ceebeaff2bdde6f9c463b" name="a8846528779a64f8d402a77eae2fbd0a5a5aaaa6f48c0ceebeaff2bdde6f9c463b"></a>NULL_TOKEN_ENTITY&#160;</td><td class="fielddoc"><p>20 : Token 객체를 찾을 수 없습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8846528779a64f8d402a77eae2fbd0a5aa07555b85890c1a02b8bf1cf0d028d30" name="a8846528779a64f8d402a77eae2fbd0a5aa07555b85890c1a02b8bf1cf0d028d30"></a>NULL_ENTITY&#160;</td><td class="fielddoc"><p>21 : 현재 객체를 찾을 수 없습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8846528779a64f8d402a77eae2fbd0a5a04a21bd3acbbb1ca97bb0787b13f891c" name="a8846528779a64f8d402a77eae2fbd0a5a04a21bd3acbbb1ca97bb0787b13f891c"></a>HTTP_ERROR&#160;</td><td class="fielddoc"><p>22 : Http 통신 에러가 발생했습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8846528779a64f8d402a77eae2fbd0a5aad61b70936ef9772fbb93726087a72fc" name="a8846528779a64f8d402a77eae2fbd0a5aad61b70936ef9772fbb93726087a72fc"></a>RESPONSE_ERROR&#160;</td><td class="fielddoc"><p>23 : Http API Response 에러가 발생했습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8846528779a64f8d402a77eae2fbd0a5af0f78fca54db0634445759d2a2172e0e" name="a8846528779a64f8d402a77eae2fbd0a5af0f78fca54db0634445759d2a2172e0e"></a>RESPONSE_INVALID_CODE&#160;</td><td class="fielddoc"><p>24 : Http API Response Code를 찾을 수 없습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8846528779a64f8d402a77eae2fbd0a5a569b30b95c9ef7eabaea7879e9311982" name="a8846528779a64f8d402a77eae2fbd0a5a569b30b95c9ef7eabaea7879e9311982"></a>RESPONSE_VALUE_IS_NULL&#160;</td><td class="fielddoc"><p>25 : Http API Response 값이 비어있습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8846528779a64f8d402a77eae2fbd0a5ac6fdba1c48d9813a1dfd878a1756d2d8" name="a8846528779a64f8d402a77eae2fbd0a5ac6fdba1c48d9813a1dfd878a1756d2d8"></a>RESPONSE_INVALID_VALUE_FORMAT&#160;</td><td class="fielddoc"><p>26 : Http API Response 포멧이 틀립니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8846528779a64f8d402a77eae2fbd0a5aced61cd095bbd4b5da066fb670292e64" name="a8846528779a64f8d402a77eae2fbd0a5aced61cd095bbd4b5da066fb670292e64"></a>LOG_81PLUG_ERROR&#160;</td><td class="fielddoc"><p>27 : 81 Plug 전송을 실패했습니다. (Deprecated)   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8846528779a64f8d402a77eae2fbd0a5a4d77ea607bc5801f7413b0e8e060612e" name="a8846528779a64f8d402a77eae2fbd0a5a4d77ea607bc5801f7413b0e8e060612e"></a>UPDATE_81PLUG_FEED_ERROR&#160;</td><td class="fielddoc"><p>28 : 81 Plug 업데이트를 실패했습니다. (Deprecated)   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8846528779a64f8d402a77eae2fbd0a5acadf555c2fe95f3090ebb5a424e01d6e" name="a8846528779a64f8d402a77eae2fbd0a5acadf555c2fe95f3090ebb5a424e01d6e"></a>ASYNC_OPERATION_IN_PROGRESS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8846528779a64f8d402a77eae2fbd0a5a2066886874efe9c14701cf3231b6ba49" name="a8846528779a64f8d402a77eae2fbd0a5a2066886874efe9c14701cf3231b6ba49"></a>BASE_UNINITIALIZED&#160;</td><td class="fielddoc"><p>30 : BaseSDK를 Uninitialize하였습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8846528779a64f8d402a77eae2fbd0a5aa738d94a1223530902a971b9c5a11ae6" name="a8846528779a64f8d402a77eae2fbd0a5aa738d94a1223530902a971b9c5a11ae6"></a>PCSDK_DLL_NOT_FOUND&#160;</td><td class="fielddoc"><p>251 : PC SDK DLL을 찾지 못했습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8846528779a64f8d402a77eae2fbd0a5a3e860a081575fc82cc7b6ed2ca602947" name="a8846528779a64f8d402a77eae2fbd0a5a3e860a081575fc82cc7b6ed2ca602947"></a>NOT_IMPLEMENTED&#160;</td><td class="fielddoc"><p>252 : 해당 내용은 구현되지 않았습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8846528779a64f8d402a77eae2fbd0a5ae61780aea0c20d1019d1b24bfbd0a253" name="a8846528779a64f8d402a77eae2fbd0a5ae61780aea0c20d1019d1b24bfbd0a253"></a>UNMANAGED_EXCEPTION&#160;</td><td class="fielddoc"><p>253 : 관리되지 않는 예외가 발생하였습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8846528779a64f8d402a77eae2fbd0a5ad39caad7773f9d769161673dffba5db5" name="a8846528779a64f8d402a77eae2fbd0a5ad39caad7773f9d769161673dffba5db5"></a>MANAGED_EXCEPTION&#160;</td><td class="fielddoc"><p>254 : 관리되는 예외가 발생하였습니다.   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8846528779a64f8d402a77eae2fbd0a5a9a10f345b0f755d461a8673a5e9ef6b4" name="a8846528779a64f8d402a77eae2fbd0a5a9a10f345b0f755d461a8673a5e9ef6b4"></a>UNKNOWN_ERROR&#160;</td><td class="fielddoc"><p>255 : 알 수 없는 에러가 발생하였습니다.   </p>
+</td></tr>
+</table>
+
+<p class="definition"><a class="el" href="a00339_source.html">GamingServicesSDK_NET/Deploy/Misc/Enumerations.cs</a> 파일의 <a class="el" href="a00339_source.html#l00048">48</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<h2 class="groupheader">멤버 함수 문서화</h2>
+<a id="a8c727a323f066558ef90b40b00abd8c5" name="a8c727a323f066558ef90b40b00abd8c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c727a323f066558ef90b40b00abd8c5">&#9670;&#160;</a></span>GamingServices_FetchCharacter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Stove.PCSDK.GamingServices.GamingServices_FetchCharacter </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>worldId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channelId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#aedc7680179134a609dbb18e31d62c8b4">OnFetchCharacterFinished</a></td>          <td class="paramname"><span class="paramname"><em>onFinished</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>게임 캐릭터 정보를 조회합니다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">string</td><td>조회할 캐릭터의 worldId </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">string</td><td>조회할 캐릭터의 channelId </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">OnFetchCharacterFinished</td><td>onFinished 조회한 FetchCharacter의 결과를 넘겨받는 Callback 함수 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>class Result 함수 호출 결과   </dd></dl>
+
+<p class="definition"><a class="el" href="a00017_source.html">GamingServicesSDK.cs</a> 파일의 <a class="el" href="a00017_source.html#l00077">77</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a62a248cb79764bfd96fe53c56676c331" name="a62a248cb79764bfd96fe53c56676c331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62a248cb79764bfd96fe53c56676c331">&#9670;&#160;</a></span>GamingServices_GetVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Result Stove.PCSDK.GamingServices.GamingServices_GetVersion </td>
+          <td>(</td>
+          <td class="paramtype">ref string</td>          <td class="paramname"><span class="paramname"><em>version</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>length</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>GamingServicesSDK의 버전 정보를 조회합니다. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">string</td><td>version 버전 정보 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uint</td><td>length 배열의 길이 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>class Result 함수 호출 결과   </dd></dl>
+
+<p class="definition"><a class="el" href="a00017_source.html">GamingServicesSDK.cs</a> 파일의 <a class="el" href="a00017_source.html#l00117">117</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="ab723f0e052b03bcb7213cdfdaaf438b1" name="ab723f0e052b03bcb7213cdfdaaf438b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab723f0e052b03bcb7213cdfdaaf438b1">&#9670;&#160;</a></span>GamingServices_Initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Result Stove.PCSDK.GamingServices.GamingServices_Initialize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>GamingServicesSDK를 초기화 합니다. </p>
+<dl class="section return"><dt>반환값</dt><dd>class Result 함수 호출 결과   </dd></dl>
+
+<p class="definition"><a class="el" href="a00017_source.html">GamingServicesSDK.cs</a> 파일의 <a class="el" href="a00017_source.html#l00023">23</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="ae54bac784a59be4fbe9fde511c00d140" name="ae54bac784a59be4fbe9fde511c00d140"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae54bac784a59be4fbe9fde511c00d140">&#9670;&#160;</a></span>GamingServices_UnInitialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Result Stove.PCSDK.GamingServices.GamingServices_UnInitialize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>GamingServicesSDK의 자원을 해제합니다. </p>
+<dl class="section return"><dt>반환값</dt><dd>class Result 함수 호출 결과   </dd></dl>
+
+<p class="definition"><a class="el" href="a00017_source.html">GamingServicesSDK.cs</a> 파일의 <a class="el" href="a00017_source.html#l00047">47</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="aedc7680179134a609dbb18e31d62c8b4" name="aedc7680179134a609dbb18e31d62c8b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedc7680179134a609dbb18e31d62c8b4">&#9670;&#160;</a></span>OnFetchCharacterFinished()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void Stove.PCSDK.GamingServices.OnFetchCharacterFinished </td>
+          <td>(</td>
+          <td class="paramtype">CallbackResult</td>          <td class="paramname"><span class="paramname"><em>result</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>jsonString</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GamingServices_FetchCharacter API 호출 시 응답받는 콜백 함수 포인터 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">CallbackResult</td><td>callbackResult 콜백 결과 값 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">const</td><td>wchar_t* jsonString json포멧의 문자열   </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.:<ul>
+<li><a class="el" href="a00017_source.html">GamingServicesSDK.cs</a></li>
+<li><a class="el" href="a00318_source.html">GamingServicesSDK_NET/Deploy/Misc/Callbacks.cs</a></li>
+<li><a class="el" href="a00339_source.html">GamingServicesSDK_NET/Deploy/Misc/Enumerations.cs</a></li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a00032.html">Stove</a></li><li class="navelem"><a class="el" href="a00033.html">PCSDK</a></li><li class="navelem"><a class="el" href="a00138.html">GamingServices</a></li>
     <li class="footer">다음에 의해 생성됨 :  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>

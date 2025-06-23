@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="StovePCSDK.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">StovePCSDK3<span id="projectnumber">&#160;3.3.2.3.g9ca65.dirty</span>
+   <div id="projectname">StovePCSDK3<span id="projectnumber">&#160;3.3.4</span>
    </div>
    <div id="projectbrief">C/C++ DLL for Stove Platform Service</div>
   </td>
@@ -109,8 +109,9 @@ $(function(){initNavTree('a00035.html',''); initResizable(true); });
 <a href="#details">더 자세히 ...</a></p>
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;Windows.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="a00222_source.html">Misc/Callbacks.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00255_source.html">Misc/Structures.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00226_source.html">Misc/Callbacks.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00259_source.html">Misc/Structures.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00038_source.html">Misc/IAPSDKResult.h</a>&quot;</code><br />
 </div>
 <p><a href="a00035_source.html">이 파일의 소스 코드 페이지로 가기</a></p>
 <table class="memberdecls">
@@ -128,6 +129,9 @@ $(function(){initNavTree('a00035.html',''); initResizable(true); });
 <tr class="memitem:aad3f559bbf314604c9595ec1a2dccaf7" id="r_aad3f559bbf314604c9595ec1a2dccaf7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00071.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#aad3f559bbf314604c9595ec1a2dccaf7">Stove::PCSDK::IAP::IAP_Initialize</a> (const wchar_t *shopKey)</td></tr>
 <tr class="memdesc:aad3f559bbf314604c9595ec1a2dccaf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">IAPSDK를 초기화 합니다.  <br /></td></tr>
 <tr class="separator:aad3f559bbf314604c9595ec1a2dccaf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f46ca201491f612159d843fe3cc74e" id="r_a00f46ca201491f612159d843fe3cc74e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00071.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#a00f46ca201491f612159d843fe3cc74e">Stove::PCSDK::IAP::IAP_InitializeWithWndInfo</a> (const wchar_t *shopKey, const void *mainWndHandle)</td></tr>
+<tr class="memdesc:a00f46ca201491f612159d843fe3cc74e"><td class="mdescLeft">&#160;</td><td class="mdescRight">IAPSDK를 초기화 합니다. Internal Style 팝업의 부모 윈도우가 될 메인 윈도우 핸들이 필요합니다.  <br /></td></tr>
+<tr class="separator:a00f46ca201491f612159d843fe3cc74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8f12664fbfd403fa725280dffac7567" id="r_ad8f12664fbfd403fa725280dffac7567"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00071.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#ad8f12664fbfd403fa725280dffac7567">Stove::PCSDK::IAP::IAP_UnInitialize</a> ()</td></tr>
 <tr class="memdesc:ad8f12664fbfd403fa725280dffac7567"><td class="mdescLeft">&#160;</td><td class="mdescRight">IAPSDK의 자원을 해제합니다  <br /></td></tr>
 <tr class="separator:ad8f12664fbfd403fa725280dffac7567"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,24 +144,36 @@ $(function(){initNavTree('a00035.html',''); initResizable(true); });
 <tr class="memitem:a7005628603ce02099937f38c28d23d43" id="r_a7005628603ce02099937f38c28d23d43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#a7005628603ce02099937f38c28d23d43">Stove::PCSDK::IAP::IAP_StartPurchase</a> (const <a class="el" href="a00163.html">StovePCStartPurchaseParam</a> *params, <a class="el" href="a00064.html#a301f9988952f77956fe7c505a38819ee">OnStartPurchaseFinished</a> onFinished)</td></tr>
 <tr class="memdesc:a7005628603ce02099937f38c28d23d43"><td class="mdescLeft">&#160;</td><td class="mdescRight">상품구매를 시작하기 위한 결제 URL 을 전달받거나 WebView2를 이용하여 결제를 시작합니다.  <br /></td></tr>
 <tr class="separator:a7005628603ce02099937f38c28d23d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36e1f9ecda435d39926001a3fa15433e" id="r_a36e1f9ecda435d39926001a3fa15433e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#a36e1f9ecda435d39926001a3fa15433e">Stove::PCSDK::IAP::IAP_StartPurchaseEx</a> (const <a class="el" href="a00163.html">StovePCStartPurchaseParam</a> *params, <a class="el" href="a00064.html#a301f9988952f77956fe7c505a38819ee">OnStartPurchaseFinished</a> onFinished, <a class="el" href="a00064.html#acc3b175c5057402e5a371a89ad24a55d">OnIAPPopupDestroyFinished</a> onDestroy)</td></tr>
+<tr class="memdesc:a36e1f9ecda435d39926001a3fa15433e"><td class="mdescLeft">&#160;</td><td class="mdescRight">상품구매를 시작하기 위한 결제 URL 을 전달받거나 WebView2를 이용하여 결제를 시작합니다.  <br /></td></tr>
+<tr class="separator:a36e1f9ecda435d39926001a3fa15433e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eb410fb132d65a03334bd91b2a8164a" id="r_a3eb410fb132d65a03334bd91b2a8164a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#a3eb410fb132d65a03334bd91b2a8164a">Stove::PCSDK::IAP::IAP_ConfirmPurchase</a> (int64_t transactionMasterNumber, <a class="el" href="a00064.html#ad4fd3bce2c051199d2ef4df5a5af3688">OnConfirmPurchaseFinished</a> onFinished)</td></tr>
 <tr class="memdesc:a3eb410fb132d65a03334bd91b2a8164a"><td class="mdescLeft">&#160;</td><td class="mdescRight">상품구매 완료후 구매 ID로 정상처리 되었는지 확인 합니다.  <br /></td></tr>
 <tr class="separator:a3eb410fb132d65a03334bd91b2a8164a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaff5c14fe06460b3ea13c3de00baeb22" id="r_aaff5c14fe06460b3ea13c3de00baeb22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#aaff5c14fe06460b3ea13c3de00baeb22">Stove::PCSDK::IAP::IAP_FetchInventory</a> (<a class="el" href="a00064.html#a7777083c1acf24a469acb67aca68b45a">OnFetchInventoryFinished</a> onFinished)</td></tr>
 <tr class="memdesc:aaff5c14fe06460b3ea13c3de00baeb22"><td class="mdescLeft">&#160;</td><td class="mdescRight">전체 구매한 상품목록을 조회합니다.  <br /></td></tr>
 <tr class="separator:aaff5c14fe06460b3ea13c3de00baeb22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70a1c0f1188e7c3936a45e986dd33d59" id="r_a70a1c0f1188e7c3936a45e986dd33d59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#a70a1c0f1188e7c3936a45e986dd33d59">Stove::PCSDK::IAP::IAP_FetchTermsAgreement</a> (const <a class="el" href="a00183.html">StovePCTermsOption</a> *options, <a class="el" href="a00064.html#ac6a0342ac10ac206e881f35b2637a5cd">OnFetchTermsAgreementFinished</a> onFinished)</td></tr>
+<tr class="memitem:a70a1c0f1188e7c3936a45e986dd33d59" id="r_a70a1c0f1188e7c3936a45e986dd33d59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#a70a1c0f1188e7c3936a45e986dd33d59">Stove::PCSDK::IAP::IAP_FetchTermsAgreement</a> (const <a class="el" href="a00183.html">StovePCTermsOption</a> *options, <a class="el" href="a00064.html#a6f464c086419e89e0756cb9e758167d2">OnFetchTermsAgreementFinished</a> onFinished)</td></tr>
 <tr class="memdesc:a70a1c0f1188e7c3936a45e986dd33d59"><td class="mdescLeft">&#160;</td><td class="mdescRight">필수 약관 동의 여부를 조회합니다.  <br /></td></tr>
 <tr class="separator:a70a1c0f1188e7c3936a45e986dd33d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68aea8bfccfc513999f538805643a0ac" id="r_a68aea8bfccfc513999f538805643a0ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#a68aea8bfccfc513999f538805643a0ac">Stove::PCSDK::IAP::IAP_StartPayment</a> (const <a class="el" href="a00187.html">StovePCPaymentOption</a> *options, <a class="el" href="a00064.html#ae82280fef56586100358877ea84a83b5">OnStartPaymentFinished</a> onFinished)</td></tr>
+<tr class="memitem:aacca0ead29effa898b27c738c945abdd" id="r_aacca0ead29effa898b27c738c945abdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#aacca0ead29effa898b27c738c945abdd">Stove::PCSDK::IAP::IAP_FetchTermsAgreementEx</a> (const <a class="el" href="a00183.html">StovePCTermsOption</a> *options, <a class="el" href="a00064.html#a6f464c086419e89e0756cb9e758167d2">OnFetchTermsAgreementFinished</a> onFinished, <a class="el" href="a00064.html#acc3b175c5057402e5a371a89ad24a55d">OnIAPPopupDestroyFinished</a> onDestroy)</td></tr>
+<tr class="memdesc:aacca0ead29effa898b27c738c945abdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">필수 약관 동의 여부를 조회합니다.  <br /></td></tr>
+<tr class="separator:aacca0ead29effa898b27c738c945abdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68aea8bfccfc513999f538805643a0ac" id="r_a68aea8bfccfc513999f538805643a0ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#a68aea8bfccfc513999f538805643a0ac">Stove::PCSDK::IAP::IAP_StartPayment</a> (const <a class="el" href="a00187.html">StovePCPaymentOption</a> *options, <a class="el" href="a00064.html#a3443fae104313e3d67bc6cac4c16ed30">OnStartPaymentFinished</a> onFinished)</td></tr>
 <tr class="memdesc:a68aea8bfccfc513999f538805643a0ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">1회성 결제를 시작하기 위한 결제 URL 을 전달받거나 WebView2를 이용하여 결제를 시작합니다.  <br /></td></tr>
 <tr class="separator:a68aea8bfccfc513999f538805643a0ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fae84a5d2653b776cfaa698134e95bc" id="r_a9fae84a5d2653b776cfaa698134e95bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#a9fae84a5d2653b776cfaa698134e95bc">Stove::PCSDK::IAP::IAP_StartPaymentEx</a> (const <a class="el" href="a00187.html">StovePCPaymentOption</a> *options, <a class="el" href="a00064.html#a3443fae104313e3d67bc6cac4c16ed30">OnStartPaymentFinished</a> onFinished, <a class="el" href="a00064.html#acc3b175c5057402e5a371a89ad24a55d">OnIAPPopupDestroyFinished</a> onDestroy)</td></tr>
+<tr class="memdesc:a9fae84a5d2653b776cfaa698134e95bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">1회성 결제를 시작하기 위한 결제 URL 을 전달받거나 WebView2를 이용하여 결제를 시작합니다.  <br /></td></tr>
+<tr class="separator:a9fae84a5d2653b776cfaa698134e95bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a354bb1db419fe162fd512851481da170" id="r_a354bb1db419fe162fd512851481da170"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#a354bb1db419fe162fd512851481da170">Stove::PCSDK::IAP::IAP_FetchVoidedPurchases</a> (<a class="el" href="a00064.html#a60301795e2d9f0e1012b74ac7540fddd">OnFetchVoidedPurchasesFinished</a> onFinished)</td></tr>
 <tr class="memdesc:a354bb1db419fe162fd512851481da170"><td class="mdescLeft">&#160;</td><td class="mdescRight">현재 사용자가 환불 처리한 구매 기록 목록을 조회합니다.  <br /></td></tr>
 <tr class="separator:a354bb1db419fe162fd512851481da170"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab113f368713a7a64b55513a1b91718ee" id="r_ab113f368713a7a64b55513a1b91718ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00071.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#ab113f368713a7a64b55513a1b91718ee">Stove::PCSDK::IAP::IAP_CloseAllPopups</a> ()</td></tr>
 <tr class="memdesc:ab113f368713a7a64b55513a1b91718ee"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00064.html">IAP</a> SDK를 통해 열린 모든 팝업을 닫습니다.  <br /></td></tr>
 <tr class="separator:ab113f368713a7a64b55513a1b91718ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15c321203c8dd39ad6d5b14aa1cfb8af" id="r_a15c321203c8dd39ad6d5b14aa1cfb8af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#a15c321203c8dd39ad6d5b14aa1cfb8af">Stove::PCSDK::IAP::IAP_WithdrawGame</a> (const <a class="el" href="a00195.html">StovePCWithdrawGameOption</a> *options, <a class="el" href="a00064.html#a0e7782171cbccc20a8eeddc5b8862668">OnWithdrawGameFinished</a> onFinished, <a class="el" href="a00064.html#acc3b175c5057402e5a371a89ad24a55d">OnIAPPopupDestroyFinished</a> onDestroy)</td></tr>
+<tr class="memdesc:a15c321203c8dd39ad6d5b14aa1cfb8af"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebView를 이용하여 WithdrawGame (게임 탈퇴) 팝업을 실행합니다.  <br /></td></tr>
+<tr class="separator:a15c321203c8dd39ad6d5b14aa1cfb8af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10b7d10533e6deb1592f0d6896594ccd" id="r_a10b7d10533e6deb1592f0d6896594ccd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00071.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#a10b7d10533e6deb1592f0d6896594ccd">Stove::PCSDK::IAP::IAP_GetVersion</a> (__out wchar_t *version, uint32_t length)</td></tr>
 <tr class="memdesc:a10b7d10533e6deb1592f0d6896594ccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">IAPSDK의 버전 정보를 조회합니다.  <br /></td></tr>
 <tr class="separator:a10b7d10533e6deb1592f0d6896594ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>

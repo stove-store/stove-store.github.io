@@ -28,6 +28,8 @@ var a00032 =
       [ "RESPONSE_INVALID_VALUE_FORMAT", "a00032.html#a9ec4d0a39eac68d6e988e8b2c1fea6b3ac6fdba1c48d9813a1dfd878a1756d2d8", null ],
       [ "LOG_81PLUG_ERROR", "a00032.html#a9ec4d0a39eac68d6e988e8b2c1fea6b3aced61cd095bbd4b5da066fb670292e64", null ],
       [ "UPDATE_81PLUG_FEED_ERROR", "a00032.html#a9ec4d0a39eac68d6e988e8b2c1fea6b3a4d77ea607bc5801f7413b0e8e060612e", null ],
+      [ "ASYNC_OPERATION_IN_PROGRESS", "a00032.html#a9ec4d0a39eac68d6e988e8b2c1fea6b3acadf555c2fe95f3090ebb5a424e01d6e", null ],
+      [ "BASE_UNINITIALIZED", "a00032.html#a9ec4d0a39eac68d6e988e8b2c1fea6b3a2066886874efe9c14701cf3231b6ba49", null ],
       [ "PCSDK_DLL_NOT_FOUND", "a00032.html#a9ec4d0a39eac68d6e988e8b2c1fea6b3aa738d94a1223530902a971b9c5a11ae6", null ],
       [ "NOT_IMPLEMENTED", "a00032.html#a9ec4d0a39eac68d6e988e8b2c1fea6b3a3e860a081575fc82cc7b6ed2ca602947", null ],
       [ "UNMANAGED_EXCEPTION", "a00032.html#a9ec4d0a39eac68d6e988e8b2c1fea6b3ae61780aea0c20d1019d1b24bfbd0a253", null ],

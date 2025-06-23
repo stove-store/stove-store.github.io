@@ -6,5 +6,6 @@ var searchData=
   ['community_5fpopup_3',['COMMUNITY_POPUP',['../a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a7718c4f98d99689ebf15e87cf719b53d',1,'Stove::PCSDK::View']]],
   ['confirm_5fpurchase_4',['CONFIRM_PURCHASE',['../a00064.html#af8a0e8d77b3c09c2b02391299cc48adcae9ce0619fd460f8efc15ee1f795a14e1',1,'Stove::PCSDK::IAP']]],
   ['coupon_5fpopup_5',['COUPON_POPUP',['../a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a623d5e6c8cc1ebd6f69bbf7d689fc296',1,'Stove::PCSDK::View']]],
-  ['custom_6',['CUSTOM',['../a00067.html#af0644b4a8b9ce5d4a77ce3ba727b9c38a72baef04098f035e8a320b03ad197818',1,'Stove::PCSDK::View']]]
+  ['cs_5fpopup_6',['CS_POPUP',['../a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a2da7442c5a879a767e2657cf8be3f84a',1,'Stove::PCSDK::View']]],
+  ['custom_7',['CUSTOM',['../a00067.html#af0644b4a8b9ce5d4a77ce3ba727b9c38a72baef04098f035e8a320b03ad197818',1,'Stove::PCSDK::View']]]
 ];

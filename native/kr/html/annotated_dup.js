@@ -35,18 +35,19 @@ var annotated_dup =
           [ "StovePCShopCategory", "a00143.html", "a00143" ],
           [ "StovePCStartPurchaseParam", "a00163.html", "a00163" ],
           [ "StovePCTermsOption", "a00183.html", "a00183" ],
-          [ "StovePCVoidedPurchase", "a00191.html", "a00191" ]
+          [ "StovePCVoidedPurchase", "a00191.html", "a00191" ],
+          [ "StovePCWithdrawGameOption", "a00195.html", "a00195" ]
         ] ],
         [ "Ownership", "a00065.html", [
-          [ "StovePCOwnership", "a00195.html", "a00195" ]
+          [ "StovePCOwnership", "a00199.html", "a00199" ]
         ] ],
         [ "PCBang", "a00066.html", [
-          [ "StovePCBangStatus", "a00203.html", "a00203" ],
-          [ "StovePCBangUserLogin", "a00199.html", "a00199" ],
-          [ "StovePCRefreshUserBenefits", "a00207.html", "a00207" ]
+          [ "StovePCBangStatus", "a00207.html", "a00207" ],
+          [ "StovePCBangUserLogin", "a00203.html", "a00203" ],
+          [ "StovePCRefreshUserBenefits", "a00211.html", "a00211" ]
         ] ],
         [ "View", "a00067.html", [
-          [ "StovePCPopupDisallowed", "a00211.html", "a00211" ]
+          [ "StovePCPopupDisallowed", "a00215.html", "a00215" ]
         ] ],
         [ "CallbackResult", "a00075.html", "a00075" ],
         [ "Result", "a00071.html", "a00071" ]

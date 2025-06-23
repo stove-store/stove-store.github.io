@@ -13,14 +13,17 @@ var a00064 =
     [ "StovePCStartPurchaseParam", "a00163.html", "a00163" ],
     [ "StovePCTermsOption", "a00183.html", "a00183" ],
     [ "StovePCVoidedPurchase", "a00191.html", "a00191" ],
+    [ "StovePCWithdrawGameOption", "a00195.html", "a00195" ],
     [ "OnConfirmPurchaseFinished", "a00064.html#ad4fd3bce2c051199d2ef4df5a5af3688", null ],
     [ "OnFetchInventoryFinished", "a00064.html#a7777083c1acf24a469acb67aca68b45a", null ],
     [ "OnFetchProductsFinished", "a00064.html#aaf409bf2a9fc1346cfe458dd86c92023", null ],
     [ "OnFetchShopCategoriesFinished", "a00064.html#a33307954939fb5bcf0fe83afbab71522", null ],
-    [ "OnFetchTermsAgreementFinished", "a00064.html#ac6a0342ac10ac206e881f35b2637a5cd", null ],
+    [ "OnFetchTermsAgreementFinished", "a00064.html#a6f464c086419e89e0756cb9e758167d2", null ],
     [ "OnFetchVoidedPurchasesFinished", "a00064.html#a60301795e2d9f0e1012b74ac7540fddd", null ],
-    [ "OnStartPaymentFinished", "a00064.html#ae82280fef56586100358877ea84a83b5", null ],
+    [ "OnIAPPopupDestroyFinished", "a00064.html#acc3b175c5057402e5a371a89ad24a55d", null ],
+    [ "OnStartPaymentFinished", "a00064.html#a3443fae104313e3d67bc6cac4c16ed30", null ],
     [ "OnStartPurchaseFinished", "a00064.html#a301f9988952f77956fe7c505a38819ee", null ],
+    [ "OnWithdrawGameFinished", "a00064.html#a0e7782171cbccc20a8eeddc5b8862668", null ],
     [ "DiscountType", "a00064.html#a45cc1e118445fd96d74d081c3fade2db", [
       [ "NONE", "a00064.html#a45cc1e118445fd96d74d081c3fade2dbab50339a10e1de285ac99d4c3990b8693", null ],
       [ "FIXED_RATE", "a00064.html#a45cc1e118445fd96d74d081c3fade2dba25777133da678ae93577166be0315bf7", null ],
@@ -57,7 +60,8 @@ var a00064 =
       [ "FETCH_TERMS_AGREEMENT", "a00064.html#af8a0e8d77b3c09c2b02391299cc48adcafe0a43538d3d0bd494b4a0edbfba1848", null ],
       [ "START_PAYMENT", "a00064.html#af8a0e8d77b3c09c2b02391299cc48adcafbc09784e688080f4d4ab3c3963530db", null ],
       [ "FETCH_VOIDED_PURCHASES", "a00064.html#af8a0e8d77b3c09c2b02391299cc48adca2dd4d1d766cad9d5703c567cea1795a1", null ],
-      [ "CLOSE_ALL_POPUPS", "a00064.html#af8a0e8d77b3c09c2b02391299cc48adca361b88111754a925a6494aeeea56a886", null ]
+      [ "CLOSE_ALL_POPUPS", "a00064.html#af8a0e8d77b3c09c2b02391299cc48adca361b88111754a925a6494aeeea56a886", null ],
+      [ "WITHDRAW_GAME", "a00064.html#af8a0e8d77b3c09c2b02391299cc48adcaeee697e700163ce87ab4e32c72b81e96", null ]
     ] ],
     [ "SDKResultCode", "a00064.html#a1a6d21961b619f8e3e99469592298ee2", [
       [ "SUCCESS", "a00064.html#a1a6d21961b619f8e3e99469592298ee2ad0749aaba8b833466dfcbb0428e4f89c", null ],
@@ -79,6 +83,8 @@ var a00064 =
       [ "RESPONSE_INVALID_VALUE_FORMAT", "a00064.html#a1a6d21961b619f8e3e99469592298ee2ac6fdba1c48d9813a1dfd878a1756d2d8", null ],
       [ "LOG_81PLUG_ERROR", "a00064.html#a1a6d21961b619f8e3e99469592298ee2aced61cd095bbd4b5da066fb670292e64", null ],
       [ "UPDATE_81PLUG_FEED_ERROR", "a00064.html#a1a6d21961b619f8e3e99469592298ee2a4d77ea607bc5801f7413b0e8e060612e", null ],
+      [ "ASYNC_OPERATION_IN_PROGRESS", "a00064.html#a1a6d21961b619f8e3e99469592298ee2acadf555c2fe95f3090ebb5a424e01d6e", null ],
+      [ "BASE_UNINITIALIZED", "a00064.html#a1a6d21961b619f8e3e99469592298ee2a2066886874efe9c14701cf3231b6ba49", null ],
       [ "PCSDK_DLL_NOT_FOUND", "a00064.html#a1a6d21961b619f8e3e99469592298ee2aa738d94a1223530902a971b9c5a11ae6", null ],
       [ "NOT_IMPLEMENTED", "a00064.html#a1a6d21961b619f8e3e99469592298ee2a3e860a081575fc82cc7b6ed2ca602947", null ],
       [ "UNMANAGED_EXCEPTION", "a00064.html#a1a6d21961b619f8e3e99469592298ee2ae61780aea0c20d1019d1b24bfbd0a253", null ],
@@ -93,7 +99,8 @@ var a00064 =
       [ "INVALID_JSON_STRING", "a00064.html#a1a6d21961b619f8e3e99469592298ee2ad3f2bee8d368162bd0641c8580704a67", null ],
       [ "WEBVIEW_CREATE_COOKIE_FAIL", "a00064.html#a1a6d21961b619f8e3e99469592298ee2a151b2dcbe518db43d5c99ebe91fb6c5d", null ],
       [ "INVALID_ORDER_PRODUCT_INFORMATION", "a00064.html#a1a6d21961b619f8e3e99469592298ee2a81a43ac7165828dd46c59829e6e7d6ff", null ],
-      [ "WEBVIEW_CLOSE_ALL_FAIL", "a00064.html#a1a6d21961b619f8e3e99469592298ee2af37a8dc1bf13601f2854a392ef537519", null ]
+      [ "WEBVIEW_CLOSE_ALL_FAIL", "a00064.html#a1a6d21961b619f8e3e99469592298ee2af37a8dc1bf13601f2854a392ef537519", null ],
+      [ "WEBVIEW_CLOSE_FAIL", "a00064.html#a1a6d21961b619f8e3e99469592298ee2a29f54208c0e037e992a48c189e9627c3", null ]
     ] ],
     [ "StovePCPaymentOperation", "a00064.html#a42869494d491e2f9b792b736953dc446", [
       [ "DEFAULT", "a00064.html#a42869494d491e2f9b792b736953dc446a5b39c8b553c821e7cddc6da64b5bd2ee", null ],
@@ -117,11 +124,16 @@ var a00064 =
     [ "IAP_FetchProducts", "a00064.html#a66068f00de142ecdc07696c1b90baaf4", null ],
     [ "IAP_FetchShopCategories", "a00064.html#a921628c078229f2ec5cb7b026698cdb3", null ],
     [ "IAP_FetchTermsAgreement", "a00064.html#a70a1c0f1188e7c3936a45e986dd33d59", null ],
+    [ "IAP_FetchTermsAgreementEx", "a00064.html#aacca0ead29effa898b27c738c945abdd", null ],
     [ "IAP_FetchVoidedPurchases", "a00064.html#a354bb1db419fe162fd512851481da170", null ],
     [ "IAP_GetVersion", "a00064.html#a10b7d10533e6deb1592f0d6896594ccd", null ],
     [ "IAP_Initialize", "a00064.html#aad3f559bbf314604c9595ec1a2dccaf7", null ],
+    [ "IAP_InitializeWithWndInfo", "a00064.html#a00f46ca201491f612159d843fe3cc74e", null ],
     [ "IAP_StartPayment", "a00064.html#a68aea8bfccfc513999f538805643a0ac", null ],
+    [ "IAP_StartPaymentEx", "a00064.html#a9fae84a5d2653b776cfaa698134e95bc", null ],
     [ "IAP_StartPurchase", "a00064.html#a7005628603ce02099937f38c28d23d43", null ],
+    [ "IAP_StartPurchaseEx", "a00064.html#a36e1f9ecda435d39926001a3fa15433e", null ],
     [ "IAP_UnInitialize", "a00064.html#ad8f12664fbfd403fa725280dffac7567", null ],
+    [ "IAP_WithdrawGame", "a00064.html#a15c321203c8dd39ad6d5b14aa1cfb8af", null ],
     [ "IAPSDKName", "a00064.html#ac97a6b58f9010da907e8c1895e0539c3", null ]
 ];

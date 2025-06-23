@@ -26,7 +26,8 @@ var searchData=
   ['createorderproduct_23',['CreateOrderProduct',['../a00163.html#a6c1273bedb50ec541d2a65fe0b1278b7',1,'Stove::PCSDK::IAP::StovePCStartPurchaseParam']]],
   ['createpurchasedproductlist_24',['CreatePurchasedProductList',['../a00175.html#a87f122af963a0aad8f258b23c46feb98',1,'Stove::PCSDK::IAP::StovePCPurchaseResult']]],
   ['createtransactiondetailnumberlist_25',['CreateTransactionDetailNumberList',['../a00175.html#a5e2002f3c05c836ef978c131e0784c40',1,'Stove::PCSDK::IAP::StovePCPurchaseResult']]],
-  ['currencycode_26',['currencyCode',['../a00151.html#ae808363e80205b4bf6f9cecf8f8d2360',1,'Stove::PCSDK::IAP::StovePCProduct']]],
-  ['currentvalue_27',['currentValue',['../a00119.html#afa4b9f91b57285f9985d62f32cd8122b',1,'Stove::PCSDK::GameSupport::StovePCStat::currentValue'],['../a00123.html#a9a8bc7494ebd9c5455517ae27aed20da',1,'Stove::PCSDK::GameSupport::StovePCModifyStatValue::currentValue']]],
-  ['custom_28',['CUSTOM',['../a00067.html#af0644b4a8b9ce5d4a77ce3ba727b9c38a72baef04098f035e8a320b03ad197818',1,'Stove::PCSDK::View']]]
+  ['cs_5fpopup_26',['CS_POPUP',['../a00067.html#a6ae77b1b5a45eb7c66f86cdf1203fb39a2da7442c5a879a767e2657cf8be3f84a',1,'Stove::PCSDK::View']]],
+  ['currencycode_27',['currencyCode',['../a00151.html#ae808363e80205b4bf6f9cecf8f8d2360',1,'Stove::PCSDK::IAP::StovePCProduct']]],
+  ['currentvalue_28',['currentValue',['../a00119.html#afa4b9f91b57285f9985d62f32cd8122b',1,'Stove::PCSDK::GameSupport::StovePCStat::currentValue'],['../a00123.html#a9a8bc7494ebd9c5455517ae27aed20da',1,'Stove::PCSDK::GameSupport::StovePCModifyStatValue::currentValue']]],
+  ['custom_29',['CUSTOM',['../a00067.html#af0644b4a8b9ce5d4a77ce3ba727b9c38a72baef04098f035e8a320b03ad197818',1,'Stove::PCSDK::View']]]
 ];

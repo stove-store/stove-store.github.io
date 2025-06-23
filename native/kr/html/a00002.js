@@ -11,6 +11,7 @@ var a00002 =
     [ "Base_GetUser", "a00002.html#a7da29fc907d222af0fe2be6e37f3d305", null ],
     [ "Base_GetVersion", "a00002.html#abedfac582063dced3cd20f0632b2dffd", null ],
     [ "Base_Initialize", "a00002.html#a752e746b69a3108afd987289dda9a377", null ],
+    [ "Base_OpenExternalUrl", "a00002.html#afe5756e9dab3f3c7901ddc213bf10c4e", null ],
     [ "Base_OverImmersionNotification", "a00002.html#a93d454d05ca938c002797857824c6075", null ],
     [ "Base_RestartAppIfNecessary", "a00002.html#a919bd468ad998edd5e732cad7a10aa7a", null ],
     [ "Base_RestartAppIfNecessaryAsync", "a00002.html#a4cc669714c6efca50de78ac0345f0cd8", null ],

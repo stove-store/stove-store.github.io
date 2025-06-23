@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="StovePCSDK.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">StovePCSDK3<span id="projectnumber">&#160;3.3.2.3.g9ca65.dirty</span>
+   <div id="projectname">StovePCSDK3<span id="projectnumber">&#160;3.3.4</span>
    </div>
    <div id="projectbrief">C/C++ DLL for Stove Platform Service</div>
   </td>
@@ -150,11 +150,14 @@ $(function(){initNavTree('a00063.html',''); initResizable(true); });
 &#160;&#160;<a class="el" href="#a9ec4d0a39eac68d6e988e8b2c1fea6b3ac6fdba1c48d9813a1dfd878a1756d2d8">RESPONSE_INVALID_VALUE_FORMAT</a> = 26U
 , <a class="el" href="#a9ec4d0a39eac68d6e988e8b2c1fea6b3aced61cd095bbd4b5da066fb670292e64">LOG_81PLUG_ERROR</a> = 27U
 , <a class="el" href="#a9ec4d0a39eac68d6e988e8b2c1fea6b3a4d77ea607bc5801f7413b0e8e060612e">UPDATE_81PLUG_FEED_ERROR</a> = 28U
-, <a class="el" href="#a9ec4d0a39eac68d6e988e8b2c1fea6b3aa738d94a1223530902a971b9c5a11ae6">PCSDK_DLL_NOT_FOUND</a> = 251U
+, <a class="el" href="#a9ec4d0a39eac68d6e988e8b2c1fea6b3acadf555c2fe95f3090ebb5a424e01d6e">ASYNC_OPERATION_IN_PROGRESS</a> = 29U
 , <br />
-&#160;&#160;<a class="el" href="#a9ec4d0a39eac68d6e988e8b2c1fea6b3a3e860a081575fc82cc7b6ed2ca602947">NOT_IMPLEMENTED</a> = 252U
+&#160;&#160;<a class="el" href="#a9ec4d0a39eac68d6e988e8b2c1fea6b3a2066886874efe9c14701cf3231b6ba49">BASE_UNINITIALIZED</a> = 30U
+, <a class="el" href="#a9ec4d0a39eac68d6e988e8b2c1fea6b3aa738d94a1223530902a971b9c5a11ae6">PCSDK_DLL_NOT_FOUND</a> = 251U
+, <a class="el" href="#a9ec4d0a39eac68d6e988e8b2c1fea6b3a3e860a081575fc82cc7b6ed2ca602947">NOT_IMPLEMENTED</a> = 252U
 , <a class="el" href="#a9ec4d0a39eac68d6e988e8b2c1fea6b3ae61780aea0c20d1019d1b24bfbd0a253">UNMANAGED_EXCEPTION</a> = 253U
-, <a class="el" href="#a9ec4d0a39eac68d6e988e8b2c1fea6b3ad39caad7773f9d769161673dffba5db5">MANAGED_EXCEPTION</a> = 254U
+, <br />
+&#160;&#160;<a class="el" href="#a9ec4d0a39eac68d6e988e8b2c1fea6b3ad39caad7773f9d769161673dffba5db5">MANAGED_EXCEPTION</a> = 254U
 , <a class="el" href="#a9ec4d0a39eac68d6e988e8b2c1fea6b3a9a10f345b0f755d461a8673a5e9ef6b4">UNKNOWN_ERROR</a> = 255U
 <br />
  }</td></tr>
@@ -197,12 +200,12 @@ $(function(){initNavTree('a00063.html',''); initResizable(true); });
 <dl class="params"><dt>매개변수</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname"><a class="el" href="a00075.html" title="Stove PCSDK 3.x에서 Callback 호출시 전달받는 구조체입니다.">CallbackResult</a></td><td>callbackResult 콜백 결과 값 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">const</td><td>wchar_t* jsonString json포멧의 문자열   </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">wchar_t*</td><td>jsonString json포멧의 문자열   </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition"><a class="el" href="a00219_source.html">GamingServicesSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00219_source.html#l00034">34</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00223_source.html">GamingServicesSDK/Deploy/Include/Misc/Callbacks.h</a> 파일의 <a class="el" href="a00223_source.html#l00034">34</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
@@ -265,9 +268,9 @@ $(function(){initNavTree('a00063.html',''); initResizable(true); });
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">열거형 멤버</th></tr><tr><td class="fieldname"><a id="a9ec4d0a39eac68d6e988e8b2c1fea6b3ad0749aaba8b833466dfcbb0428e4f89c" name="a9ec4d0a39eac68d6e988e8b2c1fea6b3ad0749aaba8b833466dfcbb0428e4f89c"></a>SUCCESS&#160;</td><td class="fielddoc"><p>성공   </p>
+<tr><th colspan="2">열거형 멤버</th></tr><tr><td class="fieldname"><a id="a9ec4d0a39eac68d6e988e8b2c1fea6b3ad0749aaba8b833466dfcbb0428e4f89c" name="a9ec4d0a39eac68d6e988e8b2c1fea6b3ad0749aaba8b833466dfcbb0428e4f89c"></a>SUCCESS&#160;</td><td class="fielddoc"><p>0 : 성공   </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a9ec4d0a39eac68d6e988e8b2c1fea6b3ac2759effffc94bb9acc71d69fe3e8a1f" name="a9ec4d0a39eac68d6e988e8b2c1fea6b3ac2759effffc94bb9acc71d69fe3e8a1f"></a>FAIL&#160;</td><td class="fielddoc"><p>실패   </p>
+<tr><td class="fieldname"><a id="a9ec4d0a39eac68d6e988e8b2c1fea6b3ac2759effffc94bb9acc71d69fe3e8a1f" name="a9ec4d0a39eac68d6e988e8b2c1fea6b3ac2759effffc94bb9acc71d69fe3e8a1f"></a>FAIL&#160;</td><td class="fielddoc"><p>1 : 실패   </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9ec4d0a39eac68d6e988e8b2c1fea6b3a2188ade13df339354cd8c383dda3f8bb" name="a9ec4d0a39eac68d6e988e8b2c1fea6b3a2188ade13df339354cd8c383dda3f8bb"></a>INVALID_CONFIG&#160;</td><td class="fielddoc"><p>2 : Config 파일을 찾을 수 없습니다.   </p>
 </td></tr>
@@ -302,6 +305,9 @@ $(function(){initNavTree('a00063.html',''); initResizable(true); });
 <tr><td class="fieldname"><a id="a9ec4d0a39eac68d6e988e8b2c1fea6b3aced61cd095bbd4b5da066fb670292e64" name="a9ec4d0a39eac68d6e988e8b2c1fea6b3aced61cd095bbd4b5da066fb670292e64"></a>LOG_81PLUG_ERROR&#160;</td><td class="fielddoc"><p>27 : 81 Plug 전송을 실패했습니다. (Deprecated)   </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9ec4d0a39eac68d6e988e8b2c1fea6b3a4d77ea607bc5801f7413b0e8e060612e" name="a9ec4d0a39eac68d6e988e8b2c1fea6b3a4d77ea607bc5801f7413b0e8e060612e"></a>UPDATE_81PLUG_FEED_ERROR&#160;</td><td class="fielddoc"><p>28 : 81 Plug 업데이트를 실패했습니다. (Deprecated)   </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9ec4d0a39eac68d6e988e8b2c1fea6b3acadf555c2fe95f3090ebb5a424e01d6e" name="a9ec4d0a39eac68d6e988e8b2c1fea6b3acadf555c2fe95f3090ebb5a424e01d6e"></a>ASYNC_OPERATION_IN_PROGRESS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ec4d0a39eac68d6e988e8b2c1fea6b3a2066886874efe9c14701cf3231b6ba49" name="a9ec4d0a39eac68d6e988e8b2c1fea6b3a2066886874efe9c14701cf3231b6ba49"></a>BASE_UNINITIALIZED&#160;</td><td class="fielddoc"><p>30 : BaseSDK를 Uninitialize하였습니다.   </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9ec4d0a39eac68d6e988e8b2c1fea6b3aa738d94a1223530902a971b9c5a11ae6" name="a9ec4d0a39eac68d6e988e8b2c1fea6b3aa738d94a1223530902a971b9c5a11ae6"></a>PCSDK_DLL_NOT_FOUND&#160;</td><td class="fielddoc"><p>251 : PC SDK DLL을 찾지 못했습니다.   </p>
 </td></tr>
@@ -449,7 +455,7 @@ $(function(){initNavTree('a00063.html',''); initResizable(true); });
 </table>
 </div><div class="memdoc">
 
-<p class="definition"><a class="el" href="a00032_source.html">GamingServicesSDKResult.h</a> 파일의 <a class="el" href="a00032_source.html#l00323">323</a> 번째 라인에서 정의되었습니다.</p>
+<p class="definition"><a class="el" href="a00032_source.html">GamingServicesSDKResult.h</a> 파일의 <a class="el" href="a00032_source.html#l00343">343</a> 번째 라인에서 정의되었습니다.</p>
 
 </div>
 </div>
