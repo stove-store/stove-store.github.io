@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Stove JavaScript API Playground</title><script src="./Stove JavaScript API Playground_files/lucide.min.js.다운로드"></script><script>let stoveJsService = null;
+        let gameId = 'STOVE_EPIC7';
+        let nation = 'KR';
+        let lang = 'KO';
+        let isSkipMaintenance = false;
+        let isSkipDownload = true;
+        let category = 'GAME';
+        let viewAreaId = 'SVC_AG';
+        let marketName = '';
+        let certServiceType = 'STOVE';
+        let certPlatformType = 'PC_WEB';
+        let certType = 'SELF';
+
+        function setFormData () {
+            const form = document.querySelector('form');
+            const formData = new FormData(form);
+            gameId = formData.get('gameId');
+            gameId = gameId === 'manual' ? formData.get('gameIdManual') : gameId;
+            nation = formData.get('countryCode');
+            nation = nation === 'manual' ? formData.get('countryCodeManual') : nation;
+            lang = formData.get('langCode');
+            lang = lang === 'manual' ? formData.get('langCodeManual') : lang;
+            isSkipMaintenance = formData.get('skipMaintenance') === 'false' ? false : true;
+            isSkipDownload = formData.get('skipDownload') === 'false' ? false : true;
+            viewAreaId = formData.get('viewAreaId');
+            category = formData.get('category');
+            marketName = formData.get('marketName');
+            certServiceType = formData.get('certServiceType');
+            certPlatformType = formData.get('certPlatformType');
+            certType = formData.get('certType');
+
+            console.log('gameId =>', gameId);
+            console.log('nation =>', nation);
+            console.log('lang =>', lang);
+            console.log('isSkipMaintenance =>', isSkipMaintenance);
+            console.log('isSkipDownload =>', isSkipDownload);
+            console.log('viewAreaId =>', viewAreaId);
+            console.log('category =>', category);
+            console.log('marketName =>', marketName);
+            console.log('certServiceType =>', certServiceType);
+            console.log('certPlatformType =>', certPlatformType);
+            console.log('certType =>', certType);
+            console.log('---------------------------');
+        }
+
+        function showConsole (message, value) {
+            const json = typeof value === 'object' ? JSON.stringify(value, null, 2) : value;
+            showConsolePanel();
+            logToConsolePanel(
+                '<span style="display: inline-block;font-weight: bold;margin-top: 0;padding: 10px 0;">Result :: ' + message + '</span><br>' +
+                '<p style="border: 1px solid #e3e3e3;padding: 10px;background-color: #fafafa">' + json + '</p>'
+            );
+        }
+
+        function alertPopup (error) {
+            const message = error.message + '<br>' + '( ' + error.code + ' )';
+            showAlert(message);
+        }
+
+        // 런처 실행
+        function run() {
+            setFormData();
+            stoveJsService.launcher.run({
+                gameId,
+                nation,
+                lang,
+                isSkipMaintenance
+            }).then(data => {
+                console.log('launcher.run =>', data);
+                showConsole('launcher.run', data);
+            }).catch(error => {
+                console.log('launcher.run::error =>', error.code, error.message);
+                alertPopup(error);
+            });
+        }
+
+        function download() {
+            setFormData();
+            stoveJsService.launcher.download({
+                gameId,
+                nation,
+                lang,
+            }, isSkipDownload).then(url => {
+                console.log('launcher.download =>', url);
+                showConsole('launcher.download', url);
+            }).catch(error => {
+                console.log('launcher.download::error =>', error.code, error.message);
+                alertPopup(error);
+            })
+        }
+
+        // 약관동의 체크
+        function checkTermsAgree() {
+            setFormData();
+            stoveJsService.stoveTerms.checkAgreeState({
+                service_id: gameId,
+                viewarea_id: viewAreaId,
+                nation
+            }).then(data => {
+                console.log('stoveTerms.checkAgreeState =>', data);
+                showConsole('stoveTerms.checkAgreeState', data);
+            }).catch(error => {
+                console.log('stoveTerms.checkAgreeState::error =>', error.code, error.message);
+                alertPopup(error);
+            })
+        }
+
+        // 점검 체크
+        async function checkMaintenance() {
+            setFormData();
+            try {
+                const isMaintenance = await stoveJsService.maintenance.checkState({
+                    category,
+                    service_id1: gameId,
+                    service_id2: marketName
+                });
+                console.log('maintenance.checkState =>', isMaintenance);
+                showConsole('maintenance.checkState', isMaintenance);
+
+                const isWhiteUser = await stoveJsService.whiteUser.checkState({
+                    category,
+                    service_id1: gameId
+                });
+                console.log('whiteUser.checkState =>', isWhiteUser);
+                showConsole('whiteUser.checkState', isWhiteUser);
+
+            } catch (error) {
+                console.log('maintenance::error =>', error.code, error.message);
+                alertPopup(error);
+            }
+        }
+
+        // 인증 상태값 받기
+        function createCertState() {
+            setFormData();
+            stoveJsService.sim.createCertState({
+                service: certServiceType,
+                platform_type: certPlatformType,
+                cert_type: certType
+            }).then(data => {
+                console.log('simCert.createState =>', data);
+                showConsole('simCert.createState', data);
+            }).catch(error => {
+                console.log('simCert.createState::error =>', error.code, error.message);
+                alertPopup(error);
+            });
+        }
+
+        // 게임 체커
+        function retrieveWebCheck() {
+            setFormData();
+            stoveJsService.gameChecker.retrieveWebCheck({
+                game_id: gameId,
+                nation,
+                lang
+            }).then(data => {
+                console.log('gameChecker.retrieveWebCheck =>', data);
+                showConsole('gameChecker.retrieveWebCheck', data);
+            }).catch(error => {
+                console.log('gameChecker.retrieveWebCheck::error =>', error.code, error.message);
+                alertPopup(error);
+            });
+        }
+
+        // Game ID 전환
+        function getGameId() {
+            setFormData();
+            stoveJsService.gameInfo.getGameId({
+                service_id: gameId, // Gate8 (LA : 240, EPIC7 : 362)
+            }).then(data => {
+                console.log('gameInfo.getGameId =>', data);
+                showConsole('gameInfo.getGameId', data);
+            }).catch(error => {
+                console.log('gameInfo.getGameId::error =>', error.code, error.message);
+                alertPopup(error);
+            });
+        }
+
+        function setEvents() {
+            const inputs = document.querySelectorAll('input');
+            inputs.forEach(input => {
+                let oldValue = '';
+                input.addEventListener('focus', e => {
+                    oldValue = e.target.value;
+                    e.target.value = '';
+                });
+                input.addEventListener('blur', e => {
+                    if (e.target.value === '') {
+                        e.target.value = oldValue;
+                        oldValue = '';
+                    }
+                });
+            });
+
+            [{id: 'gameId', manual: 'gameIdManual'}, {id: 'countryCode', manual: 'countryCodeManual'}, {id: 'langCode', manual: 'langCodeManual'}].forEach(({id, manual}) => {
+                const inputEl = document.querySelector(`#${id}`);
+                inputEl.addEventListener('change', (e) => {
+                    const selectedValue = e.target.value;
+                    const manualInputEl = document.querySelector(`#${manual}`);
+                    if (selectedValue === 'manual') {
+                        manualInputEl.style.display = 'inline-block';
+                        manualInputEl.focus();
+                    } else {
+                        manualInputEl.style.display = 'none';
+                        manualInputEl.value = selectedValue;
+                    }
+                });
+            });
+        }
+
+        // 스토브 JS 서비스 초기 설정
+        function init() {
+            stoveJsService = window.stoveJsService || {};
+            setFormData();
+            setEvents();
+        }</script><link href="./Stove JavaScript API Playground_files/tailwind.min.css" rel="stylesheet"><style>body {
+            background: linear-gradient(to bottom right, #f9fafb, #e2e8f0);
+        }
+        .dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: #4B5563;
+            border-radius: 9999px;
+            margin-right: 8px;
+        }
+        .form-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .form-row .label {
+            width: 140px; /* 고정 너비로 수직 정렬 유지 */
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #374151;
+            margin-right: 0.75rem;
+        }
+        .form-row input,
+        .form-row select {
+            flex: 1;
+            min-width: 0;
+        }
+        .action-button {
+            margin-top: 1rem;
+        }
+        p {
+            word-break: keep-all;
+            line-height: 1.5;
+        }</style></head><body class="text-gray-800 font-sans" onload="init()"><div class="max-w-6xl mx-auto py-12 px-6"><header class="mb-12 text-center"><img src="./Stove JavaScript API Playground_files/stove.svg" alt="Stove Logo" class="mx-auto mb-4 w-20"><h1 class="text-2xl md:text-3xl font-bold text-gray-800 tracking-tight mb-4">JavaScript API Playground</h1><p class="text-sm text-gray-500 max-w-3xl mx-auto leading-relaxed">외부 CP사 또는 내부 웹서비스 기반 페이지에서 CDN 서버를 통해 사용하는 JavaScript API를 테스트할 수 있는 서비스입니다.</p></header><form action="https://js-cdn.gate8.com/libs/stove-js-service/latest/index.html"><section class="bg-white p-8 rounded-2xl shadow-md mb-10 border border-gray-200"><h2 class="text-2xl font-bold mb-6 border-b pb-3 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="settings" class="lucide lucide-settings w-5 h-5 text-gray-700"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg> 공통 설정</h2><div class="space-y-4"><div class="form-row"><label for="gameId" class="label">게임 아이디</label><div class="w-1/5"><select name="gameId" id="gameId" class="w-full border border-gray-300 rounded-xl px-3 py-2"><option value="STOVE_LORD" selected="selected">로드나인</option><option value="LOSTARKMOBILE">로스트아크 모바일</option><option value="STOVE_EPIC7">에픽세븐</option><option value="manual">직접 입력</option></select></div><div class="w-1/5 ml-4"><input name="gameIdManual" id="gameIdManual" class="w-full border border-gray-300 rounded-xl px-3 py-2 w-full hidden" value="" placeholder="게임 아이디"></div></div><div class="form-row"><label for="countryCode" class="label">국가 코드</label><div class="w-1/5"><select name="countryCode" id="countryCode" class="w-full border border-gray-300 rounded-xl px-3 py-2"><option value="AR">아르헨티나 (AR)</option><option value="CZ">체코 (CZ)</option><option value="DE">독일 (DE)</option><option value="US">미국 (US)</option><option value="ES">스페인 (ES)</option><option value="FR">프랑스 (FR)</option><option value="ID">인도네시아 (ID)</option><option value="IT">이탈리아 (IT)</option><option value="JP">일본 (JP)</option><option value="KR" selected="selected">대한민국 (KR)</option><option value="MY">말레이시아 (MY)</option><option value="NL">네덜란드 (NL)</option><option value="PL">폴란드 (PL)</option><option value="PT">포르투갈 (PT)</option><option value="RU">러시아 (RU)</option><option value="TH">태국 (TH)</option><option value="TR">터키 (TR)</option><option value="VN">베트남 (VN)</option><option value="CN">중국 (CN)</option><option value="TW">대만 (TW)</option><option value="manual">직접 입력</option></select></div><div class="w-1/5 ml-4"><input name="countryCodeManual" id="countryCodeManual" class="w-full border border-gray-300 rounded-xl px-3 py-2 w-full hidden" value="" placeholder="Nation"></div></div><div class="form-row"><label for="langCode" class="label">언어 코드</label><div class="w-1/5"><select name="langCode" id="langCode" class="w-full border border-gray-300 rounded-xl px-3 py-2"><option value="AR">AR - 아랍어</option><option value="CS">CS - 체코어</option><option value="DE">DE - 독일어</option><option value="EN">EN - 영어</option><option value="ES">ES - 스페인어</option><option value="FR">FR - 프랑스어</option><option value="ID">ID - 인도네시아어</option><option value="IT">IT - 이탈리아어</option><option value="JA">JA - 일본어</option><option value="KO" selected="selected">KO - 한국어</option><option value="MS">MS - 말레이어</option><option value="NL">NL - 네덜란드어</option><option value="PL">PL - 폴란드어</option><option value="PT">PT - 포르투갈어</option><option value="RU">RU - 러시아어</option><option value="TH">TH - 태국어</option><option value="TR">TR - 터키어</option><option value="VI">VI - 베트남어</option><option value="ZH">ZH - 중국어</option><option value="ZH-CN">ZH-CN - 중국어(간체)</option><option value="ZH-TW">ZH-TW - 중국어(번체)</option><option value="manual">직접 입력</option></select></div><div class="w-1/5 ml-4"><input name="langCodeManual" id="langCodeManual" class="w-full border border-gray-300 rounded-xl px-3 py-2 w-full hidden" value="" placeholder="Lang"></div></div></div></section><section class="space-y-8"><div class="bg-white p-6 rounded-2xl shadow border border-gray-200"><h3 class="text-lg font-bold mb-4"><span class="dot"></span>launcher &gt; run</h3><div class="border-l-4 border-gray-300 pl-4"><p class="text-sm text-gray-600 mb-4 leading-relaxed">웹 페이지에서 PC클라이언트 (이하 런처)를 실행시키기 위한 메서드입니다.<br>조건에 따라 내부 프로세스에 점검 체크, 화이트 유저 체크를 추가로 진행합니다.</p></div><div class="form-row"><label class="label">점검 스킵</label><div class="flex gap-10"><label class="flex items-center"><input type="radio" name="skipMaintenance" value="true" checked="checked"> <span class="ml-2">TRUE</span></label> <label class="flex items-center"><input type="radio" name="skipMaintenance" value="false"> <span class="ml-2">FALSE</span></label></div></div><button class="action-button bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 font-semibold" type="button" onclick="run()">게임 실행</button></div><div class="bg-white p-6 rounded-2xl shadow border border-gray-200"><h3 class="text-lg font-bold mb-4"><span class="dot"></span>launcher &gt; download</h3><div class="border-l-4 border-gray-300 pl-4"><p class="text-sm text-gray-600 mb-4 leading-relaxed">런처가 사용자 PC에 설치되어 있지 않는 경우 다운로드를 할 수 있는 메서드입니다.<br>download 메서드 호출 후 60초 이내에 재호출하면 메모리에 캐싱된 URL을 반환,<br>60초 초과 또는 두번째 인자 isSkipDownload를 true로 설정하면 api를 재조회해서 업데이트된 URL을 내려받습니다.</p></div><div class="form-row"><label class="label">다운로드 스킵</label><div class="flex gap-10"><label class="flex items-center"><input type="radio" name="skipDownload" value="true" checked="checked"> <span class="ml-2">TRUE</span></label> <label class="flex items-center"><input type="radio" name="skipDownload" value="false"> <span class="ml-2">FALSE</span></label></div></div><button class="action-button bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 font-semibold" type="button" onclick="download()">다운로드</button></div><div class="bg-white p-6 rounded-2xl shadow border border-gray-200"><h3 class="text-lg font-bold mb-4"><span class="dot"></span>stoveTerms &gt; checkAgreeState</h3><div class="border-l-4 border-gray-300 pl-4"><p class="text-sm text-gray-600 mb-4 leading-relaxed">약관 동의 상태를 조회합니다.<br><br>STC_REWE : (웹) 스토브 회원가입 시 사용<br>STC_REMO : (모바일 SDK) 스토브 회원가입 시 사용<br>SVC_AG : (PC 게임) 서비스 약관 동의 시 사용</p></div><div class="form-row"><label for="viewAreaId" class="label">뷰 에어리어</label><div class="w-1/5"><select name="viewAreaId" id="viewAreaId" class="w-full border border-gray-300 rounded-xl px-3 py-2 w-full"><option value="STC_REWE">STC_REWE</option><option value="STC_REMO">STC_REMO</option><option value="SVC_AG" selected="selected">SVC_AG</option></select></div></div><button class="action-button bg-red-500 text-white px-5 py-2 rounded-full hover:bg-red-600 font-semibold" type="button" onclick="checkTermsAgree()">약관 동의 체크</button></div><div class="bg-white p-6 rounded-2xl shadow border border-gray-200"><h3 class="text-lg font-bold mb-4"><span class="dot"></span>maintenance &gt; checkState</h3><div class="border-l-4 border-gray-300 pl-4"><p class="text-sm text-gray-600 mb-4 leading-relaxed">점검 진행 중인지 상태를 조회합니다.</p></div><div class="space-y-4"><div class="form-row"><label for="category" class="label">카테고리</label><div class="w-1/5"><select name="category" id="category" class="w-full border border-gray-300 rounded-xl px-3 py-2 w-full"><option value="GAME">GAME</option><option value="PLATFORM">PLATFORM</option></select></div></div><div class="form-row"><label for="market" class="label">마켓 이름</label><div class="w-1/5"><select name="marketName" id="market" class="w-full border border-gray-300 rounded-xl px-3 py-2 w-full"><option>PC_MARKET</option></select></div></div></div><button class="action-button bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 font-semibold" type="button" onclick="checkMaintenance()">점검 상태 체크</button></div><div class="bg-white p-6 rounded-2xl shadow border border-gray-200"><h3 class="text-lg font-bold mb-4"><span class="dot"></span>sim &gt; createCertState</h3><div class="border-l-4 border-gray-300 pl-4"><p class="text-sm text-gray-600 mb-4 leading-relaxed">임시 인증 상태 코드값을 조회합니다.</p></div><div class="space-y-4"><div class="form-row"><label for="certServiceType" class="label">서비스 타입</label><div class="w-1/5"><select id="certServiceType" name="certServiceType" class="w-full border border-gray-300 rounded-xl px-3 py-2 w-full"><option value="STOVE">스토브</option><option value="PPOOL">피풀</option><option value="THIRD">서드파티</option></select></div></div><div class="form-row"><label for="certPlatformType" class="label">플랫폼 타입</label><div class="w-1/5"><select id="certPlatformType" name="certPlatformType" class="w-full border border-gray-300 rounded-xl px-3 py-2 w-full"><option value="PC_WEB" selected="selected">PC WEB</option><option value="MOBILE_SDK">Mobile SDK</option><option value="LAUNCHER">Launcher</option></select></div></div><div class="form-row"><label class="label">인증 타입</label><div class="flex gap-10"><label class="flex items-center"><input type="radio" name="certType" value="SELF" checked="checked"> <span class="ml-2">SELF</span></label> <label class="flex items-center"><input type="radio" name="certType" value="PARENT"> <span class="ml-2">PARENT</span></label></div></div></div><button class="action-button bg-red-500 text-white px-5 py-2 rounded-full hover:bg-red-600 font-semibold" type="button" onclick="createCertState()">인증키 발급</button></div><div class="bg-white p-6 rounded-2xl shadow border border-gray-200"><h3 class="text-lg font-bold mb-4"><span class="dot"></span>gameChecker &gt; retrieveWebCheck</h3><div class="border-l-4 border-gray-300 pl-4"><p class="text-sm text-gray-600 mb-4 leading-relaxed">게임 실행에 필요한 정보를 조회합니다.</p></div><button class="action-button bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 font-semibold" type="button" onclick="retrieveWebCheck()">게임실행 정보 조회</button></div><div class="bg-white p-6 rounded-2xl shadow border border-gray-200"><h3 class="text-lg font-bold mb-4"><span class="dot"></span>gameInfo &gt; getGameId</h3><div class="border-l-4 border-gray-300 pl-4"><p class="text-sm text-gray-600 mb-4 leading-relaxed">게임 아이디를 조회합니다.</p></div><button class="action-button bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 font-semibold" type="button" onclick="getGameId()">게임 아이디 조회</button></div></section></form></div><footer class="bg-[#1a1a1a] text-gray-400 text-sm py-10 px-6 mt-5"><div class="max-w-6xl mx-auto text-center space-y-4"><p class="text-gray-400">© Smilegate. All Rights Reserved.</p><div class="flex justify-center"><span class="text-gray-900 font-extrabold tracking-tight text-2xl leading-tight">Smilegate<sup class="text-l align-middle ml-1">®</sup></span></div></div></footer><div id="dim-backdrop" class="fixed top-0 left-0 right-0 bottom-0 bg-black opacity-10 z-40 hidden"></div><div id="alert-box" class="fixed top-0 left-0 w-full h-full flex items-center justify-center z-50 hidden"><div class="bg-white rounded-2xl shadow-xl p-4 flex flex-col items-center relative" style="width: 270px; height: 260px;"><button id="alert-close" class="absolute top-3 right-3 text-gray-400 hover:text-gray-600"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button><div class="mt-5 mb-3"><div class="bg-yellow-400 rounded-full w-12 h-12 flex items-center justify-center shadow"><span class="text-white text-2xl font-bold leading-none">!</span></div></div><h3 class="text-center font-semibold text-base mb-1">Alert message</h3><p id="alert-message" class="text-sm text-center text-gray-700 px-2">This is an alert message. It’s used to display important information.</p><button id="alert-ok" class="mt-auto bg-gray-100 text-black px-6 py-2 rounded-xl text-sm hover:bg-gray-200">OK</button></div></div><div id="console-panel" class="fixed top-0 left-0 w-full h-full flex items-center justify-center z-50 px-3 sm:px-0 hidden"><div class="bg-white rounded-xl shadow-2xl flex flex-col relative p-4" style="max-width: 560px; width: 100%; max-height: 600px; height: 100%;"><button id="console-close" class="absolute top-3 right-3 text-gray-400 hover:text-gray-600"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button><h2 class="text-lg font-bold text-center text-gray-800 mb-3">Console Output</h2><div id="console-output" class="flex-1 overflow-y-auto bg-gray-100 text-sm text-gray-800 rounded p-3 space-y-1 border border-gray-200"></div><div class="mt-4 flex justify-center items-center space-x-4"><button id="console-ok" class="bg-gray-100 text-black px-6 py-2 rounded-lg text-sm hover:bg-gray-200">확인</button></div></div></div><script>function showDimBackdrop() {
+            document.getElementById('dim-backdrop').classList.remove('hidden');
+        }
+
+        function hideDimBackdrop() {
+            document.getElementById('dim-backdrop').classList.add('hidden');
+        }
+
+        function hideAlert() {
+            document.getElementById('alert-box').classList.add('hidden');
+            hideDimBackdrop();
+        }
+
+        // 예시: 외부에서 알럿 열기
+        function showAlert(message) {
+            document.getElementById('alert-message').innerHTML = message;
+            document.getElementById('alert-box').classList.remove('hidden');
+            showDimBackdrop();
+        }
+
+        document.getElementById('alert-close').addEventListener('click', hideAlert);
+        document.getElementById('alert-ok').addEventListener('click', hideAlert);</script><script>function showConsolePanel() {
+            document.getElementById('console-panel').classList.remove('hidden');
+            showDimBackdrop();
+        }
+
+        function hideConsolePanel() {
+            document.getElementById('console-panel').classList.add('hidden');
+            hideDimBackdrop();
+        }
+
+        function clearConsoleOutput() {
+            const output = document.getElementById('console-output');
+            output.innerHTML = ''; // 모든 로그 지우기
+            hideConsolePanel();
+        }
+
+        // 로그 출력 함수
+        function logToConsolePanel(message) {
+            const output = document.getElementById('console-output');
+            const line = document.createElement('div');
+            line.innerHTML = message;
+            line.className = 'whitespace-pre-wrap';
+            output.appendChild(line);
+            output.scrollTop = output.scrollHeight; // 자동 스크롤
+        }
+
+        document.getElementById('console-close').addEventListener('click', hideConsolePanel);
+        document.getElementById('console-ok').addEventListener('click', clearConsoleOutput);</script><script>window.lucide.createIcons();</script><script defer="defer" src="./Stove JavaScript API Playground_files/game-checker.js.다운로드"></script><script defer="defer" src="./Stove JavaScript API Playground_files/game-info.js.다운로드"></script><script defer="defer" src="./Stove JavaScript API Playground_files/launcher-pack.js.다운로드"></script><script defer="defer" src="./Stove JavaScript API Playground_files/launcher.js.다운로드"></script><script defer="defer" src="./Stove JavaScript API Playground_files/maintenance.js.다운로드"></script><script defer="defer" src="./Stove JavaScript API Playground_files/sim.js.다운로드"></script><script defer="defer" src="./Stove JavaScript API Playground_files/stove-terms.js.다운로드"></script><script defer="defer" src="./Stove JavaScript API Playground_files/white-user.js.다운로드"></script></body></html>
